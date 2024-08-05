@@ -18,7 +18,7 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 mb-3">
                         <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle text-left"
                                 style="padding: 5px 15px;color:#00539B !important;border:1px #ddd solid;background:#fff"
@@ -39,7 +39,7 @@
                         </div>
 
                     </div>
-                    <div class="col-lg-6 d-flex justify-content-end align-items-center">
+                    <div class="col-lg-6 mb-3 d-flex justify-content-end align-items-center">
                         <form class="d-flex form-nav" role="search" style="border:1px #ddd solid">
                             <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
