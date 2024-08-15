@@ -20,19 +20,19 @@
                     <div class="col-lg-3 mb-3">
 
                         <div class="packet-filter" style="cursor:pointer" @click="type = 'semua'"
-                            :class="type == 'semua' ? 'active' : ''">Semua</div>
+                            :class="type == 'semua' ? 'active' : ''">SEMUA</div>
 
                     </div>
                     <div class="col-lg-3 mb-3">
 
                         <div class="packet-filter" style="cursor:pointer" @click="type = 'baru'"
-                            :class="type == 'baru' ? 'active' : ''">Pelanggan Baru</div>
+                            :class="type == 'baru' ? 'active' : ''">PELANGGAN BARU</div>
 
                     </div>
                     <div class="col-lg-3 mb-3">
 
                         <div class="packet-filter" style="cursor:pointer" @click="type = 'setia'"
-                            :class="type == 'setia' ? 'active' : ''">Pelanggan Setia
+                            :class="type == 'setia' ? 'active' : ''">PELANGGAN SETIA
                         </div>
 
                     </div>
