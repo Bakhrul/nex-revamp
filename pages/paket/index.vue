@@ -114,7 +114,7 @@
 </template>
 
 <script setup>
-    import backgroundImageMobile from "~/assets/mobile/receiver.png"
+    import backgroundImageMobile from "~/assets/mobile/paket.png"
     import backgroundImageDesktop from "~/assets/sample-banner-10.png"
 
     import Navbar from "~/components/Navbar.vue"

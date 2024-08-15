@@ -28,8 +28,8 @@
                                         class="p-3 d-flex flex-column align-items-start justify-content-start w-100">
                                         <div class="text-white fw-bold" style="font-size:22px">PAKET LIGA INGGRIS</div>
                                         <div class="text-center text-white pt-2">Liga Inggris Musim 2024/25</div>
-                                        <button @click="openPacket()" class="btn text-white p-2 mt-3 w-100" type="button"
-                                            style="background:#F3753A;">Beli Paket<i
+                                        <button @click="openPacket()" class="btn text-white p-2 mt-3 w-100"
+                                            type="button" style="background:#F3753A;">Beli Paket<i
                                                 class="bi bi-chevron-right"></i></button>
                                     </div>
                                 </div>
@@ -70,36 +70,43 @@
             <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:450px">
                 <div class="modal-content">
                     <div class="modal-body rounded">
-                        <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i class="bi bi-x"></i></button>
+                        <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
+                                class="bi bi-x"></i></button>
                         <img src="~/assets/sample-product.jpg" class="w-100 rounded" />
                         <h5 class="fw-bold mt-3">Paket Liga Inggris</h5>
-                        <div style="line-height:1.5;">Animal Planet, Discovery, BBC Earth, BBC Lifestyle, BBC World News, AXN, ONE, Rock Entertainment, Rock Action, MTV, HGTV, TLC, AFN, Citra Culinary & Travel, & 6 Channel TV Nasional</div>
+                        <div style="line-height:1.5;">Animal Planet, Discovery, BBC Earth, BBC Lifestyle, BBC World
+                            News, AXN, ONE, Rock Entertainment, Rock Action, MTV, HGTV, TLC, AFN, Citra Culinary &
+                            Travel, & 6 Channel TV Nasional</div>
                         <div class="row justify-content-center mt-2">
                             <div class="col-lg-6 mb-3 d-flex justify-content-center">
                                 <a href="javascript:void(0)" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center" style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/tokopedia.png"  style="height:40px;max-width:100%;" />
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
+                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
+                                        <img src="~/assets/tokopedia.png" style="height:40px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
                             <div class="col-lg-6 mb-3 d-flex justify-content-center">
                                 <a href="javascript:void(0)" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center" style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/bukalapak.png"  style="height:40px;max-width:100%;" />
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
+                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
+                                        <img src="~/assets/bukalapak.png" style="height:40px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
                             <div class="col-lg-6 mb-3 d-flex justify-content-center">
                                 <a href="javascript:void(0)" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center" style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/lazada.jpg"  style="height:40px;max-width:100%;" />
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
+                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
+                                        <img src="~/assets/lazada.jpg" style="height:40px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
                             <div class="col-lg-6 mb-3 d-flex justify-content-center">
                                 <a href="javascript:void(0)" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center" style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/shopee.svg"  style="height:40px;max-width:100%;" />
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
+                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
+                                        <img src="~/assets/shopee.svg" style="height:40px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
@@ -144,7 +151,14 @@
             dots: false,
             variableWidth: false,
             prevArrow: "<button type='button' class='slick-prev pull-left'><i class='bi bi-chevron-left' aria-hidden='true'></i></button>",
-            nextArrow: "<button type='button' class='slick-next pull-right'><i class='bi bi-chevron-right' aria-hidden='true'></i></button>"
+            nextArrow: "<button type='button' class='slick-next pull-right'><i class='bi bi-chevron-right' aria-hidden='true'></i></button>",
+            responsive: [{
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            }, ]
         });
     }
 </script>
