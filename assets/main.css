@@ -261,7 +261,7 @@ footer ul li {
     color: #00539B !important;
     padding: 5px 15px;
     width: 130px;
-    font-size: 13px;
+    font-size: 12px;
     border-radius: 5px;
 }
 
@@ -384,4 +384,20 @@ footer ul li {
         background-color: #fff !important;
         height:unset !important
     }   
+}
+
+.btn-close-modal-custom{
+    background-color: #fff;
+    border-radius: 100px;
+    width: 45px;
+    border: 0 !important;
+    outline: none !important;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    height: 45px;
+    font-size: 28px;
+
+    color: black !important;
+    box-shadow: 0 1px 3px rgba(17, 24, 39, .09);
 }

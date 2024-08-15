@@ -93,6 +93,7 @@
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-body">
+                        <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i class="bi bi-x"></i></button>
                         <img src="~/assets/sample-product.jpg" class="w-100" />
                         <h2 class="fw-bold mt-3">Paket Liga Inggris</h2>
                         <div style="line-height:2;">Lorem Ipsum is simply dummy text of the printing and typesetting

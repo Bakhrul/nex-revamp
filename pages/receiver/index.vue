@@ -146,6 +146,7 @@
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-body modal-body-receiver">
+                        <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i class="bi bi-x"></i></button>
                         <div class="row">
                             <div class="col-lg-5 px-5 d-flex align-items-center justify-content-center height-modal-receiver">
                                 <img src="~/assets/receiver/3.png" class="w-100" />
