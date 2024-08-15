@@ -15,12 +15,7 @@
                         </ul>
                     </div>
                     <div class="col-lg-5">
-                        <div class="footer-title mb-2">Butuh Bantuan?</div>
-                        <ul>
-                            <li><a href="javascript:void(0)" class="footer-link">cs@mynex.co.id</a></li>
-                            <li><a href="javascript:void(0)" class="footer-link">(021) 8063 7388</a></li>
-                            <li><a href="javascript:void(0)" class="footer-link">PT Mediatama Televisi</a></li>
-                        </ul>
+                      
                         <div class="footer-title mb-2">Ikuti Kami di </div>
                         <div class="d-flex flex-wrap" style="font-size: 24px">
                             <div class="me-3"><a href="javascript:void(0);"
@@ -39,6 +34,12 @@
                                     style="color:black;text-decoration: none !important"><i
                                         class="bi bi-tiktok"></i></a></div>
                         </div>
+                        <div class="footer-title mb-2 mt-3">Butuh Bantuan?</div>
+                        <ul>
+                            <li><a href="javascript:void(0)" class="footer-link">cs@mynex.co.id</a></li>
+                            <li><a href="javascript:void(0)" class="footer-link">(021) 8063 7388</a></li>
+                            <li><a href="javascript:void(0)" class="footer-link">PT Mediatama Televisi</a></li>
+                        </ul>
                     </div>
                     <div class="col-lg-4">
                         <div class="footer-title mb-2">Payment Partners</div>

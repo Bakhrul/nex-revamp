@@ -15,8 +15,8 @@
                                 andalan kamu dalam laga bergerngsi secara live selama satu musim
                             </div>
                             <div class="d-flex">
-                                <button class="btn bg-primary text-white py-1 px-5 fw-bold mt-3 mb-5 fs-5"
-                                    type="button">Beli Sekarang</button>
+                                <button class="btn bg-primary text-white py-2 px-5 fw-bold mt-3 mb-5 fs-5"
+                                    type="button">Lihat Lebih Lanjut</button>
                             </div>
                         </div>
                     </div>
@@ -193,61 +193,45 @@
                 <div class="wrap-gallery d-flex py-3" id="mom-movie-gallery"
                     style="background-color:white; overflow-x: auto; width:100%;">
                     <div class="gallery">
-                        <img src="~/assets/movie/1.png"
+                        <img src="~/assets/movie/1.jpg"
                             style="width:200px;height:300px;margin-right:10px;border-radius: 10px;" />
                     </div>
                     <div class="gallery">
-                        <img src="~/assets/movie/2.png"
+                        <img src="~/assets/movie/2.jpg"
                             style="width:200px;height:300px;margin-right:10px;border-radius: 10px;" />
                     </div>
                     <div class="gallery">
-                        <img src="~/assets/movie/3.png"
+                        <img src="~/assets/movie/3.jpg"
                             style="width:200px;height:300px;margin-right:10px;border-radius: 10px;" />
                     </div>
                     <div class="gallery">
-                        <img src="~/assets/movie/4.png"
+                        <img src="~/assets/movie/4.jpg"
                             style="width:200px;height:300px;margin-right:10px;border-radius: 10px;" />
                     </div>
                     <div class="gallery">
-                        <img src="~/assets/movie/5.png"
+                        <img src="~/assets/movie/5.jpg"
+                            style="width:200px;height:300px;margin-right:10px;border-radius: 10px;" />
+                    </div>                    
+                    <div class="gallery">
+                        <img src="~/assets/movie/1.jpg"
                             style="width:200px;height:300px;margin-right:10px;border-radius: 10px;" />
                     </div>
                     <div class="gallery">
-                        <img src="~/assets/movie/6.png"
+                        <img src="~/assets/movie/2.jpg"
                             style="width:200px;height:300px;margin-right:10px;border-radius: 10px;" />
                     </div>
                     <div class="gallery">
-                        <img src="~/assets/movie/7.png"
+                        <img src="~/assets/movie/3.jpg"
                             style="width:200px;height:300px;margin-right:10px;border-radius: 10px;" />
                     </div>
                     <div class="gallery">
-                        <img src="~/assets/movie/1.png"
+                        <img src="~/assets/movie/4.jpg"
                             style="width:200px;height:300px;margin-right:10px;border-radius: 10px;" />
                     </div>
                     <div class="gallery">
-                        <img src="~/assets/movie/2.png"
+                        <img src="~/assets/movie/5.jpg"
                             style="width:200px;height:300px;margin-right:10px;border-radius: 10px;" />
-                    </div>
-                    <div class="gallery">
-                        <img src="~/assets/movie/3.png"
-                            style="width:200px;height:300px;margin-right:10px;border-radius: 10px;" />
-                    </div>
-                    <div class="gallery">
-                        <img src="~/assets/movie/4.png"
-                            style="width:200px;height:300px;margin-right:10px;border-radius: 10px;" />
-                    </div>
-                    <div class="gallery">
-                        <img src="~/assets/movie/5.png"
-                            style="width:200px;height:300px;margin-right:10px;border-radius: 10px;" />
-                    </div>
-                    <div class="gallery">
-                        <img src="~/assets/movie/6.png"
-                            style="width:200px;height:300px;margin-right:10px;border-radius: 10px;" />
-                    </div>
-                    <div class="gallery">
-                        <img src="~/assets/movie/7.png"
-                            style="width:200px;height:300px;margin-right:10px;border-radius: 10px;" />
-                    </div>
+                    </div>                    
                 </div>
             </div>
         </section>
@@ -261,61 +245,45 @@
                 <div class="wrap-gallery d-flex py-3" id="kids-movie-gallery"
                     style="background-color:white; overflow-x: auto; width:100%;">
                     <div class="gallery">
-                        <img src="~/assets/movie/1.png"
+                        <img src="~/assets/movie/KIDS/1.jpg"
                             style="width:200px;height:300px;margin-right:10px;border-radius: 10px;" />
                     </div>
                     <div class="gallery">
-                        <img src="~/assets/movie/2.png"
+                        <img src="~/assets/movie/KIDS/2.jpg"
                             style="width:200px;height:300px;margin-right:10px;border-radius: 10px;" />
                     </div>
                     <div class="gallery">
-                        <img src="~/assets/movie/3.png"
+                        <img src="~/assets/movie/KIDS/3.jpg"
                             style="width:200px;height:300px;margin-right:10px;border-radius: 10px;" />
                     </div>
                     <div class="gallery">
-                        <img src="~/assets/movie/4.png"
+                        <img src="~/assets/movie/KIDS/4.jpg"
                             style="width:200px;height:300px;margin-right:10px;border-radius: 10px;" />
                     </div>
                     <div class="gallery">
-                        <img src="~/assets/movie/5.png"
+                        <img src="~/assets/movie/KIDS/5.jpg"
+                            style="width:200px;height:300px;margin-right:10px;border-radius: 10px;" />
+                    </div>                  
+                    <div class="gallery">
+                        <img src="~/assets/movie/KIDS/1.jpg"
                             style="width:200px;height:300px;margin-right:10px;border-radius: 10px;" />
                     </div>
                     <div class="gallery">
-                        <img src="~/assets/movie/6.png"
+                        <img src="~/assets/movie/KIDS/2.jpg"
                             style="width:200px;height:300px;margin-right:10px;border-radius: 10px;" />
                     </div>
                     <div class="gallery">
-                        <img src="~/assets/movie/7.png"
+                        <img src="~/assets/movie/KIDS/3.jpg"
                             style="width:200px;height:300px;margin-right:10px;border-radius: 10px;" />
                     </div>
                     <div class="gallery">
-                        <img src="~/assets/movie/1.png"
+                        <img src="~/assets/movie/KIDS/4.jpg"
                             style="width:200px;height:300px;margin-right:10px;border-radius: 10px;" />
                     </div>
                     <div class="gallery">
-                        <img src="~/assets/movie/2.png"
+                        <img src="~/assets/movie/KIDS/5.jpg"
                             style="width:200px;height:300px;margin-right:10px;border-radius: 10px;" />
-                    </div>
-                    <div class="gallery">
-                        <img src="~/assets/movie/3.png"
-                            style="width:200px;height:300px;margin-right:10px;border-radius: 10px;" />
-                    </div>
-                    <div class="gallery">
-                        <img src="~/assets/movie/4.png"
-                            style="width:200px;height:300px;margin-right:10px;border-radius: 10px;" />
-                    </div>
-                    <div class="gallery">
-                        <img src="~/assets/movie/5.png"
-                            style="width:200px;height:300px;margin-right:10px;border-radius: 10px;" />
-                    </div>
-                    <div class="gallery">
-                        <img src="~/assets/movie/6.png"
-                            style="width:200px;height:300px;margin-right:10px;border-radius: 10px;" />
-                    </div>
-                    <div class="gallery">
-                        <img src="~/assets/movie/7.png"
-                            style="width:200px;height:300px;margin-right:10px;border-radius: 10px;" />
-                    </div>
+                    </div>                  
                 </div>
             </div>
         </section>

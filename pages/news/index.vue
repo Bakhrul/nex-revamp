@@ -54,8 +54,8 @@
                                 <div class="fw-bold fs-5">7 Teknik Pernafasan Kabut di Anime Kimetsu no Yaiba</div>
                             </div>
                             <div class="p-3 d-flex justify-content-center footer" style="border-top:1px #ddd solid">
-                                <a class="w-100 p-2 text-center fw-bold" style="border-radius:10px;border:2px #2C69A7 solid;color:#2C69A7 !important" href="javascript:void(0)">Baca Sekarang <i style="color:#2C69A7 !important;"
-                                        class="bi bi-chevron-right"></i></a>
+                                <nuxt-link to="/news/title" class="w-100 p-2 text-center fw-bold" style="border-radius:10px;border:2px #2C69A7 solid;color:#2C69A7 !important" href="javascript:void(0)">Baca Sekarang <i style="color:#2C69A7 !important;"
+                                        class="bi bi-chevron-right"></i></nuxt-link>
                             </div>
                         </div>
                     </div>

@@ -5,7 +5,7 @@
         <div class="show-on-mobile">
             <img :src="backgroundImageMobile" class="w-100" />
             <section class="my-2">
-                <div class="container">
+                <div class="w-100">
                     <div class="accordion accordion-custom" id="accordionExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
@@ -16,14 +16,10 @@
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show"
                                 data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum
-                                    has
-                                    been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer
-                                    took a
-                                    galley of type and scrambled it to make a type specimen book.
+                                <div class="accordion-body" style="color:unset !important;padding:20px !important">
+                                    Untuk memasang TV satelit Nex, kamu memerlukan antena parabola, Nex receiver, serta
+                                    kabel-kabel yang diperlukan untuk menghubungkan antara antena, dekoder, dan
+                                    televisi.
                                 </div>
                             </div>
                         </div>
@@ -36,14 +32,9 @@
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse"
                                 data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum
-                                    has
-                                    been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer
-                                    took a
-                                    galley of type and scrambled it to make a type specimen book.
+                                <div class="accordion-body" style="color:unset !important;padding:20px !important">
+                                    Harga paket Nex bisa kamu beli dengan harga mulai dari Rp9.900 sedangkan untuk
+                                    receiver kamu bisa beli dengan harga mulai dari Rp314.000.
                                 </div>
                             </div>
                         </div>
@@ -56,14 +47,8 @@
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse"
                                 data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum
-                                    has
-                                    been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer
-                                    took a
-                                    galley of type and scrambled it to make a type specimen book.
+                                <div class="accordion-body" style="color:unset !important;padding:20px !important">
+                                    Tidak, TV satelit tidak memerlukan koneksi internet untuk menonton saluran televisi.
                                 </div>
                             </div>
 
@@ -77,14 +62,14 @@
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse"
                                 data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum
-                                    has
-                                    been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer
-                                    took a
-                                    galley of type and scrambled it to make a type specimen book.
+                                <div class="accordion-body" style="color:unset !important;padding:0 !important">
+                                    <ol>
+                                        <li>Download Aplikasi "Nex" di Google Play.</li>
+                                        <li>Klik Menu My Nex.</li>
+                                        <li>Isi data secara lengkap.</li>
+                                        <li>Lalu klik proses.</li>
+                                        <li>Nex Parabola-mu sudah aktif!</li>
+                                    </ol>
                                 </div>
                             </div>
 
@@ -98,61 +83,100 @@
                             </h2>
                             <div id="collapseFive" class="accordion-collapse collapse"
                                 data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum
-                                    has
-                                    been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer
-                                    took a
-                                    galley of type and scrambled it to make a type specimen book.
+                                <div class="accordion-body" style="color:unset !important;padding:0 !important">
+                                    <ol>
+                                        <li>Download Aplikasi "Nex" di Google Play</li>
+                                        <li>Klik Menu Cari Toko & Teknisi</li>
+                                        <li>Pilih Menu Teknisi</li>
+                                        <li>Lalu Pilih Teknisi Terdekat</li>
+                                        <li>Klik Telepon atau Whatsapp</li>
+                                        <li>Kamu akan langsung terhubung dengan Tim Teknisi</li>
+                                    </ol>
                                 </div>
                             </div>
                         </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSixMobile" aria-expanded="false"
+                                    aria-controls="collapseSixMobile">
+                                    Payments
+                                </button>
+                            </h2>
+                            <div id="collapseSixMobile" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body" style="padding: 0 !important;color:unset !important">
+                                    <div class="accordion accordion-custom" id="accordionExampleS">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" style="background:#f2f2f2 !important"
+                                                    data-bs-target="#collapseOneS" aria-expanded="true"
+                                                    aria-controls="collapseOneS">
+                                                    E-Wallet
+                                                </button>
+                                            </h2>
+                                            <div id="collapseOneS" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionExampleS">
+                                                <div class="accordion-body"
+                                                    style="color:unset !important;padding:20px !important">
+                                                    <img src="~/assets/payment/dana.png" class="mb-3" /><br>
+                                                    <img src="~/assets/payment/ovo.png" class="mb-3" /><br>
+                                                    <img src="~/assets/payment/linkaja.png" class="mb-3" /><br>
+                                                    <img src="~/assets/payment/shopeepay.png" class="mb-3" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button" type="button" style="background:#f2f2f2 !important" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseTwoS" aria-expanded="true"
+                                                    aria-controls="collapseTwoS">
+                                                    Virtual Account
+                                                </button>
+                                            </h2>
+                                            <div id="collapseTwoS" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionExampleS">
+                                                <div class="accordion-body"
+                                                    style="color:unset !important;padding:20px !important">
 
-                    </div>
-                    <h5 class="text-center mt-5">Metode Pembayaran</h5>
-                    <div class="d-flex justify-content-center mt-3">
-                        <div style="max-width:300px;width:100%">
-                            <div class="row py-3" style="border-bottom: 1px #ddd solid;">
-                                <div class="col-lg-3 fw-bold">E-Wallet</div>
-                                <div class="col-lg-9">
-                                    <div class="d-flex flex-wrap">
-                                        <img src="~/assets/payment/dana.png" class="me-2" />
-                                        <img src="~/assets/payment/ovo.png" class="me-2" />
-                                        <img src="~/assets/payment/linkaja.png" class="me-2" />
-                                        <img src="~/assets/payment/shopeepay.png" class="me-2" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row py-3" style="border-bottom: 1px #ddd solid;">
-                                <div class="col-lg-3 fw-bold">Virtual Account</div>
-                                <div class="col-lg-9">
-                                    <div class="d-flex flex-wrap">
-                                        <img src="~/assets/payment/permata.png" class="me-2" />
-                                        <img src="~/assets/payment/mandiri.png" class="me-2" />
-                                        <img src="~/assets/payment/bni.png" class="me-2" />
-                                        <img src="~/assets/payment/bri.png" class="me-2" />
-                                        <img src="~/assets/payment/bca.png" class="me-2" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row py-3" style="border-bottom: 1px #ddd solid;">
-                                <div class="col-lg-3 fw-bold">Kartu Kredit</div>
-                                <div class="col-lg-9">
-                                    <div class="d-flex flex-wrap">
-                                        <img src="~/assets/payment/visa.png" class="me-2" />
-                                        <img src="~/assets/payment/mastercard.png" class="me-2" />
+
+                                                    <img src="~/assets/payment/permata.png" class="mb-3" /><br>
+                                                    <img src="~/assets/payment/mandiri.png" class="mb-3" /><br>
+                                                    <img src="~/assets/payment/bni.png" class="mb-3" /><br>
+                                                    <img src="~/assets/payment/bri.png" class="mb-3" /><br>
+                                                    <img src="~/assets/payment/bca.png" class="mb-3" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" style="background:#f2f2f2 !important"
+                                                    data-bs-target="#collapseThreeS" aria-expanded="true"
+                                                    aria-controls="collapseThreeS">
+                                                    Kartu Kredit
+                                                </button>
+                                            </h2>
+                                            <div id="collapseThreeS" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionExampleS">
+                                                <div class="accordion-body"
+                                                    style="color:unset !important;padding:20px !important">
+                                                    <img src="~/assets/payment/visa.png" class="mb-3" /><br>
+                                                    <img src="~/assets/payment/mastercard.png" class="mb-3" />
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </section>
         </div>
         <div class="show-on-desktop">
-            <div class="d-flex align-items-center" :style="`background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('${backgroundImageDesktop}');background-size:cover;width:100%;min-height:220px`">
+            <div class="d-flex align-items-center"
+                :style="`background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('${backgroundImageDesktop}');background-size:cover;width:100%;min-height:220px`">
                 <div class="container">
                     <h1 class="text-white fw-bold">FAQ & PAYMENT</h1>
                     <div class="text-white">Menjawab Pertanyaan Sobat Nex</div>
@@ -170,118 +194,98 @@
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseOned" aria-expanded="true" style="color:black !important"
-                                            aria-controls="collapseOned">
+                                            data-bs-target="#collapseOned" aria-expanded="true"
+                                            style="color:black !important" aria-controls="collapseOned">
                                             Apa Saja yang Dibutuhkan untuk Memasang Nex?
                                         </button>
                                     </h2>
                                     <div id="collapseOned" class="accordion-collapse collapse show"
                                         data-bs-parent="#accordionExample-desktop">
-                                        <div class="accordion-body" style="color:black !important">
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem
-                                            Ipsum
-                                            has
-                                            been the industry's standard dummy text ever since the 1500s, when an
-                                            unknown
-                                            printer
-                                            took a
-                                            galley of type and scrambled it to make a type specimen book.
-                                        </div>
+                                        <div class="accordion-body" style="color:unset !important;padding:20px !important">
+                                    Untuk memasang TV satelit Nex, kamu memerlukan antena parabola, Nex receiver, serta
+                                    kabel-kabel yang diperlukan untuk menghubungkan antara antena, dekoder, dan
+                                    televisi.
+                                </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" style="color:black !important"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseTwod"
-                                            aria-expanded="false" aria-controls="collapseTwod">
+                                        <button class="accordion-button collapsed" type="button"
+                                            style="color:black !important" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwod" aria-expanded="false"
+                                            aria-controls="collapseTwod">
                                             Berapa Biaya Langganan Nex?
                                         </button>
                                     </h2>
                                     <div id="collapseTwod" class="accordion-collapse collapse"
                                         data-bs-parent="#accordionExample-desktop">
-                                        <div class="accordion-body" style="color:black !important">
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem
-                                            Ipsum
-                                            has
-                                            been the industry's standard dummy text ever since the 1500s, when an
-                                            unknown
-                                            printer
-                                            took a
-                                            galley of type and scrambled it to make a type specimen book.
-                                        </div>
+                                        <div class="accordion-body" style="color:unset !important;padding:20px !important">
+                                    Harga paket Nex bisa kamu beli dengan harga mulai dari Rp9.900 sedangkan untuk
+                                    receiver kamu bisa beli dengan harga mulai dari Rp314.000.
+                                </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" style="color:black !important"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseThreed"
-                                            aria-expanded="false" aria-controls="collapseThreed">
+                                        <button class="accordion-button collapsed" type="button"
+                                            style="color:black !important" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseThreed" aria-expanded="false"
+                                            aria-controls="collapseThreed">
                                             Apakah TV Satelit Nex Membutuhkan Internet?
                                         </button>
                                     </h2>
                                     <div id="collapseThreed" class="accordion-collapse collapse"
                                         data-bs-parent="#accordionExample-desktop">
-                                        <div class="accordion-body" style="color:black !important">
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem
-                                            Ipsum
-                                            has
-                                            been the industry's standard dummy text ever since the 1500s, when an
-                                            unknown
-                                            printer
-                                            took a
-                                            galley of type and scrambled it to make a type specimen book.
-                                        </div>
+                                        <div class="accordion-body" style="color:unset !important;padding:20px !important">
+                                    Tidak, TV satelit tidak memerlukan koneksi internet untuk menonton saluran televisi.
+                                </div>
                                     </div>
 
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" style="color:black !important"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseFourd"
-                                            aria-expanded="false" aria-controls="collapseFourd">
+                                        <button class="accordion-button collapsed" type="button"
+                                            style="color:black !important" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseFourd" aria-expanded="false"
+                                            aria-controls="collapseFourd">
                                             Bagaimana Jika Saya Mau Aktivasi via Aplikasi Nex?
                                         </button>
                                     </h2>
                                     <div id="collapseFourd" class="accordion-collapse collapse"
                                         data-bs-parent="#accordionExample-desktop">
-                                        <div class="accordion-body" style="color:black !important">
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem
-                                            Ipsum
-                                            has
-                                            been the industry's standard dummy text ever since the 1500s, when an
-                                            unknown
-                                            printer
-                                            took a
-                                            galley of type and scrambled it to make a type specimen book.
-                                        </div>
+                                        <div class="accordion-body" style="color:unset !important;padding:0 !important">
+                                    <ol>
+                                        <li>Download Aplikasi "Nex" di Google Play.</li>
+                                        <li>Klik Menu My Nex.</li>
+                                        <li>Isi data secara lengkap.</li>
+                                        <li>Lalu klik proses.</li>
+                                        <li>Nex Parabola-mu sudah aktif!</li>
+                                    </ol>
+                                </div>
                                     </div>
 
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" style="color:black !important"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseFived"
-                                            aria-expanded="false" aria-controls="collapseFived">
+                                        <button class="accordion-button collapsed" type="button"
+                                            style="color:black !important" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseFived" aria-expanded="false"
+                                            aria-controls="collapseFived">
                                             Bagaimana Jika Saya Mau Perbaikan Instalasi via Aplikasi?
                                         </button>
                                     </h2>
                                     <div id="collapseFived" class="accordion-collapse collapse"
                                         data-bs-parent="#accordionExample-desktop">
-                                        <div class="accordion-body" style="color:black !important">
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem
-                                            Ipsum
-                                            has
-                                            been the industry's standard dummy text ever since the 1500s, when an
-                                            unknown
-                                            printer
-                                            took a
-                                            galley of type and scrambled it to make a type specimen book.
-                                        </div>
+                                        <div class="accordion-body" style="color:unset !important;padding:0 !important">
+                                    <ol>
+                                        <li>Download Aplikasi "Nex" di Google Play</li>
+                                        <li>Klik Menu Cari Toko & Teknisi</li>
+                                        <li>Pilih Menu Teknisi</li>
+                                        <li>Lalu Pilih Teknisi Terdekat</li>
+                                        <li>Klik Telepon atau Whatsapp</li>
+                                        <li>Kamu akan langsung terhubung dengan Tim Teknisi</li>
+                                    </ol>
+                                </div>
                                     </div>
                                 </div>
 

@@ -53,10 +53,13 @@
                         <div class="col-lg-6">
                             <h1 class="text-white fw-bold">Teknologi NEX</h1>
                             <h5 class="text-white mt-3">Perangkat Platform</h5>
-                            <div class="text-white">Menggunakan antena parabola, baik C-BAND, KU-BAND & Receiver Nex untuk mendapatkan gambar HD (High Definition) dan suara jernih.
+                            <div class="text-white">Menggunakan antena parabola, baik C-BAND, KU-BAND & Receiver Nex
+                                untuk mendapatkan gambar HD (High Definition) dan suara jernih.
                             </div>
                             <h5 class="text-white mt-3">Keamanan (CAS)</h5>
-                            <div class="text-white">Dalam sistem penyiaran DVB, kami menggunakan peralatan pengacak standar yang mengimplementasikan DVB CSA (Common Scrambling Algorithm) untuk mengacak konten video ke dalam Stream MPEG yang disiarkan melalui satelit.
+                            <div class="text-white">Dalam sistem penyiaran DVB, kami menggunakan peralatan pengacak
+                                standar yang mengimplementasikan DVB CSA (Common Scrambling Algorithm) untuk mengacak
+                                konten video ke dalam Stream MPEG yang disiarkan melalui satelit.
                             </div>
                         </div>
                         <div class="col-lg-6 d-flex justify-content-center">
@@ -70,7 +73,7 @@
         <div class="show-on-mobile">
             <img :src="backgroundImageMobile" class="w-100" />
             <section class="my-2">
-                <div class="container">
+                <div class="w-100">
                     <div class="accordion accordion-custom" id="accordionExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
@@ -81,14 +84,28 @@
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show"
                                 data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum
-                                    has
-                                    been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer
-                                    took a
-                                    galley of type and scrambled it to make a type specimen book.
+                                <div class="accordion-body" style="padding:0 !important;color:unset !important">
+                                    <div class="d-flex align-items-center p-2"
+                                        style="background:rgb(0 0 0 / 80%) !important;">
+                                        <div class="container">
+                                            <div class="row align-items-center">
+                                                <div class="col-lg-6">
+                                                    <div class="text-white">Nex merupakan TV satelit berlangganan dari
+                                                        group SCM (Surya Citra
+                                                        Media) dibawah naungan PT. Mediatama Televisi (MTV). Nex hadir
+                                                        menawarkan beragam
+                                                        keunggulan dan menjadi pilihan terbaik untuk TV satelit serta
+                                                        sarana hiburan yang tepat
+                                                        bagi seluruh keluarga di Indonesia.</div>
+                                                </div>
+                                                <div class="col-lg-6 d-flex justify-content-center">
+                                                    <img src="~/assets/bg-about.png" class="w-100 mt-3"
+                                                        style="max-width: 100%;width:100%">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -101,14 +118,20 @@
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse"
                                 data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum
-                                    has
-                                    been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer
-                                    took a
-                                    galley of type and scrambled it to make a type specimen book.
+                                <div class="accordion-body" style="padding:0 !important;color:unset !important">
+                                    <ol>
+                                        <li>Siaran TV Nasional "Free To Air" Yang Lengkap</li>
+                                        <li>Kualitas Tayangan dan Suara HD (High Definition) </li>
+                                        <li>Ragam Pilihan Exclusive In-House Channel
+                                        </li>
+                                        <li>Siaran Ajang Sepak Bola Premium
+                                        </li>
+                                        <li>Jaringan Dealer & Service Center Yang Tersebar Secara Nasional
+                                        </li>
+                                        <li>Akses Jangkauan Seluruh Indonesia</li>
+                                    </ol>
+                                    <img src="~/assets/hero-about.png" class="w-100 mt-3"
+                                        style="max-width: 100%;object-fit: contain;object-position: top;width:100%">
                                 </div>
                             </div>
                         </div>
@@ -121,14 +144,34 @@
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse"
                                 data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum
-                                    has
-                                    been the industry's standard dummy text ever since the 1500s, when an unknown
-                                    printer
-                                    took a
-                                    galley of type and scrambled it to make a type specimen book.
+                                <div class="accordion-body" style="padding:0 !important;color:unset !important">
+                                    <div class="d-flex align-items-center p-2"
+                                        :style="`background:url('${backgroundImageDesktop2}');background-size:cover;width:100%;min-height:220px`">
+                                        <div class="container">
+                                            <div class="row align-items-center">
+                                                <div class="col-lg-6">                                                    
+                                                    <h5 class="text-white mt-3">Perangkat Platform</h5>
+                                                    <div class="text-white">Menggunakan antena parabola, baik C-BAND,
+                                                        KU-BAND & Receiver Nex
+                                                        untuk mendapatkan gambar HD (High Definition) dan suara jernih.
+                                                    </div>
+                                                    <h5 class="text-white mt-3">Keamanan (CAS)</h5>
+                                                    <div class="text-white">Dalam sistem penyiaran DVB, kami menggunakan
+                                                        peralatan pengacak
+                                                        standar yang mengimplementasikan DVB CSA (Common Scrambling
+                                                        Algorithm) untuk mengacak
+                                                        konten video ke dalam Stream MPEG yang disiarkan melalui
+                                                        satelit.
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 d-flex justify-content-center">
+                                                    <img src="~/assets/hero-about-3.png" class="w-100 mt-3"
+                                                        style="max-width: 100%;">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
@@ -150,23 +193,25 @@
     import Footer from "~/components/Footer.vue"
 </script>
 <style scoped>
-.line-after-text{
-    position: relative
-}
-.line-after-text span{
-    background-color: #fff;
-    padding-right: 15px;
-}
-    .line-after-text::after{
+    .line-after-text {
+        position: relative
+    }
 
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 0.5em;
-  border-top: 3px solid #2C69A7;
-  z-index: -1;
+    .line-after-text span {
+        background-color: #fff;
+        padding-right: 15px;
+    }
+
+    .line-after-text::after {
+
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 0.5em;
+        border-top: 3px solid #2C69A7;
+        z-index: -1;
 
     }
 </style>

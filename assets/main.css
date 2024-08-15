@@ -89,8 +89,15 @@ a {
     .navbar-custom .nav-item a {
         color: #2C69A7 !important;
         font-weight: 500;
+        color: black !important;
+        padding: 15px 0;
+        border-bottom: 1px #ddd solid;
         background-color: #fff !important;
         font-size: 16px;
+    }
+    .navbar-custom .navbar-collapse{
+        height: 91.4vh;
+        overflow: auto;
     }
 }
 
@@ -253,7 +260,8 @@ footer ul li {
     border: 1px #00539B solid;;
     color: #00539B !important;
     padding: 5px 15px;
-    font-size: 15px;
+    width: 130px;
+    font-size: 13px;
     border-radius: 5px;
 }
 
@@ -343,4 +351,37 @@ footer ul li {
 
 .accordion-custom-2 .accordion-body {
     border-bottom: 2px black solid;
+}
+
+.modal{
+    z-index: 99999 !important;
+}
+
+.height-modal-receiver{
+    background-color: #f2f2f2;
+    height:550px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-body{
+    background-color: #fff !important;
+}
+.modal-body-receiver{
+    padding: 0 !important;
+}
+@media(max-width:991px){
+    .modal-body-receiver{
+        padding: 15px !important;
+    }
+    .height-modal-receiver img{
+        width: 100% !important;
+        max-width: 300px !important;
+    }
+    .height-modal-receiver{
+        padding: 15px;
+        background-color: #fff !important;
+        height:unset !important
+    }   
 }
