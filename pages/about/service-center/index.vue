@@ -62,7 +62,7 @@
                                     <div class="fs-5 c-primary fw-bolder pb-2" style="border-bottom: 2px #ddd solid;">
                                         Aneka Elektronik</div>
                                    
-                                        <a class="link-dealer" href="https://www.google.com/maps/@-7.2966944,112.7509539,15z?entry=ttu">
+                                        <a target="_blank" class="link-dealer" href="https://www.google.com/maps/@-7.2966944,112.7509539,15z?entry=ttu">
                                         <div class="d-flex align-items-center mt-3">
                                             <div class="me-2"><i style="font-size:20px" class="bi bi-geo-alt-fill"></i>
 
