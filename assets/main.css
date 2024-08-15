@@ -231,6 +231,8 @@ footer ul li {
     border: 1px #00539B solid;
     width: 100%;
     font-weight: 600;
+    font-size: 18px;
+    text-align: center;
     padding: 15px 10px;
     border-radius: 10px;
     transition: 0.5s;
@@ -359,7 +361,7 @@ footer ul li {
 
 .height-modal-receiver{
     background-color: #f2f2f2;
-    height:550px !important;
+    height:450px !important;
     display: flex;
     align-items: center;
     justify-content: center;

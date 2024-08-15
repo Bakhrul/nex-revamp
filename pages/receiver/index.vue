@@ -143,7 +143,7 @@
         </section>
         <Footer></Footer>
         <div class="modal fade" tabindex="-1" role="dialog" id="modal-receiver">
-            <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-body modal-body-receiver">
                         <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i class="bi bi-x"></i></button>
@@ -153,8 +153,8 @@
                             </div>
                             <div class="col-lg-7">
                                 <div class="p-3">
-                                    <h3 class="text-left pt-2 fw-bold">Nex Parabola | Combo Hitam</h3>
-                                    <div class="text-left pt-1 fs-5 pb-3" style="color:black;">Lebih canggih tampilan
+                                    <h5 class="text-left pt-2 fw-bold">Nex Parabola | Combo Hitam</h5>
+                                    <div class="text-left pt-1 fs-7 pb-3" style="color:black;">Lebih canggih tampilan
                                         baru</div>
                                     <div class="row justify-content-center">
                                         <div class="col-lg-12 mb-3">
@@ -162,7 +162,7 @@
                                                 <div class=" px-3 py-3 rounded d-flex justify-content-center"
                                                     style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
                                                     <img src="~/assets/tokopedia.png"
-                                                        style="height:50px;object-fit: contain;object-fit: center;" />
+                                                        style="height:40px;" />
                                                 </div>
                                             </a>
                                         </div>
@@ -171,7 +171,7 @@
                                                 <div class=" px-3 py-3 rounded d-flex justify-content-center"
                                                     style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
                                                     <img src="~/assets/bukalapak.png"
-                                                        style="height:40px;object-fit: contain;object-fit: center;" />
+                                                        style="height:25px;" />
                                                 </div>
                                             </a>
                                         </div>
@@ -180,7 +180,7 @@
                                                 <div class=" px-3 py-3 rounded d-flex justify-content-center"
                                                     style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
                                                     <img src="~/assets/lazada.jpg"
-                                                        style="height:40px;object-fit: contain;object-fit: center;" />
+                                                        style="height:25px;" />
                                                 </div>
                                             </a>
                                         </div>
@@ -189,7 +189,7 @@
                                                 <div class=" px-3 py-3 rounded d-flex justify-content-center"
                                                     style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
                                                     <img src="~/assets/shopee.svg"
-                                                        style="height:40px;object-fit: contain;object-fit: center;" />
+                                                        style="height:25px;" />
                                                 </div>
                                             </a>
                                         </div>

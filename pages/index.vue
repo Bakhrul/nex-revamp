@@ -147,14 +147,14 @@
                                             <div class="d-flex align-items-center pb-2 mt-2"
                                                 style="border-bottom:1px black solid" v-for="a in 5">
                                                 <div class="text"
-                                                    style="color:#00539B;font-weight:600;font-size:16px;margin-right:10px">
+                                                    style="color:#00539B;font-weight:600;font-size:14px;margin-right:10px">
                                                     Man City</div>
-                                                <img src="~/assets/city.png" style="width:40px;margin-right:10px;">
+                                                <img src="~/assets/city.png" style="width:30px;margin-right:10px;">
                                                 <div class="text"
-                                                    style="color:#00539B;font-weight:600;font-size:16px;margin-right:10px">
+                                                    style="color:#00539B;font-weight:600;font-size:14px;margin-right:10px">
                                                     20:00 WIB</div>
-                                                <img src="~/assets/mu.png" style="width:40px;margin-right:10px;">
-                                                <div class="text" style="color:#00539B;font-weight:600;font-size:16px;">
+                                                <img src="~/assets/mu.png" style="width:30px;margin-right:10px;">
+                                                <div class="text" style="color:#00539B;font-weight:600;font-size:14px;">
                                                     Man United</div>
                                             </div>
                                         </div>
@@ -165,14 +165,14 @@
                                             <div class="d-flex align-items-center pb-2 mt-2"
                                                 style="border-bottom:1px black solid" v-for="a in 5">
                                                 <div class="text"
-                                                    style="color:#00539B;font-weight:600;font-size:16px;margin-right:10px">
+                                                    style="color:#00539B;font-weight:600;font-size:14px;margin-right:10px">
                                                     Man City</div>
-                                                <img src="~/assets/city.png" style="width:40px;margin-right:10px;">
+                                                <img src="~/assets/city.png" style="width:30px;margin-right:10px;">
                                                 <div class="text"
-                                                    style="color:#00539B;font-weight:600;font-size:16px;margin-right:10px">
+                                                    style="color:#00539B;font-weight:600;font-size:14px;margin-right:10px">
                                                     20:00 WIB</div>
-                                                <img src="~/assets/mu.png" style="width:40px;margin-right:10px;">
-                                                <div class="text" style="color:#00539B;font-weight:600;font-size:16px;">
+                                                <img src="~/assets/mu.png" style="width:30px;margin-right:10px;">
+                                                <div class="text" style="color:#00539B;font-weight:600;font-size:14px;">
                                                     Man United</div>
                                             </div>
                                         </div>

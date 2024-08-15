@@ -90,45 +90,39 @@
         </section>
         <Footer></Footer>
         <div class="modal fade" tabindex="-1" role="dialog" id="modal-packet">
-            <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:450px">
                 <div class="modal-content">
-                    <div class="modal-body">
+                    <div class="modal-body rounded">
                         <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i class="bi bi-x"></i></button>
-                        <img src="~/assets/sample-product.jpg" class="w-100" />
-                        <h2 class="fw-bold mt-3">Paket Liga Inggris</h2>
-                        <div style="line-height:2;">Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
-                            an unknown printer took a galley of type and scrambled it to make a type specimen book. It
-                            has survived not only five centuries, but also the leap into electronic typesetting,
-                            remaining essentially unchanged. It was popularised in the 1960s with the release of
-                            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                            software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-                        <div class="row justify-content-center">
-                            <div class="col-lg-5 mb-3">
-                                <a href="javascript:void(0)">
-                                    <div class=" px-3 py-1 rounded" style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/tokopedia.png" class="w-100" style="height:60px;object-fit: contain;object-fit: center;" />
+                        <img src="~/assets/sample-product.jpg" class="w-100 rounded" />
+                        <h5 class="fw-bold mt-3">Paket Liga Inggris</h5>
+                        <div style="line-height:1.5;">Animal Planet, Discovery, BBC Earth, BBC Lifestyle, BBC World News, AXN, ONE, Rock Entertainment, Rock Action, MTV, HGTV, TLC, AFN, Citra Culinary & Travel, & 6 Channel TV Nasional</div>
+                        <div class="row justify-content-center mt-2">
+                            <div class="col-lg-6 mb-3 d-flex justify-content-center">
+                                <a href="javascript:void(0)" class="w-100">
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center" style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
+                                        <img src="~/assets/tokopedia.png"  style="height:40px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-lg-5 mb-3">
-                                <a href="javascript:void(0)">
-                                    <div class=" px-3 py-1 rounded" style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/bukalapak.png" class="w-100" style="height:60px;object-fit: contain;object-fit: center;" />
+                            <div class="col-lg-6 mb-3 d-flex justify-content-center">
+                                <a href="javascript:void(0)" class="w-100">
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center" style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
+                                        <img src="~/assets/bukalapak.png"  style="height:40px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-lg-5 mb-3">
-                                <a href="javascript:void(0)">
-                                    <div class=" px-3 py-1 rounded" style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/lazada.jpg" class="w-100" style="height:60px;object-fit: contain;object-fit: center;" />
+                            <div class="col-lg-6 mb-3 d-flex justify-content-center">
+                                <a href="javascript:void(0)" class="w-100">
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center" style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
+                                        <img src="~/assets/lazada.jpg"  style="height:40px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-lg-5 mb-3">
-                                <a href="javascript:void(0)">
-                                    <div class=" px-3 py-1 rounded" style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/shopee.svg" class="w-100" style="height:60px;object-fit: contain;object-fit: center;" />
+                            <div class="col-lg-6 mb-3 d-flex justify-content-center">
+                                <a href="javascript:void(0)" class="w-100">
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center" style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
+                                        <img src="~/assets/shopee.svg"  style="height:40px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
