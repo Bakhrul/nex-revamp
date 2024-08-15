@@ -2,7 +2,7 @@
     <div>
         <Navbar></Navbar>
         <section style="background:#f2f2f2">
-            <div class="container">
+            <div class="container container-news-detail">
                 <div class="card">
                     <div class="card-body">
                         <div class="row">

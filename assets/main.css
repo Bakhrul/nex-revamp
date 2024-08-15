@@ -384,6 +384,11 @@ footer ul li {
         background-color: #fff !important;
         height:unset !important
     }   
+    .container-news-detail{
+        padding: 0 !important;
+        margin: 0 !important;
+        max-width: 100% !important;
+    }
 }
 
 .btn-close-modal-custom{
