@@ -304,6 +304,14 @@
                 content: `${image.value || logoNex}`
             },
             {
+                name: 'og:image:width',
+                content: '512'
+            },
+            {
+                name: 'og:image:height',
+                content: '512'
+            },
+            {
                 name: 'twitter:card',
                 content: 'summary_large_image'
             },
