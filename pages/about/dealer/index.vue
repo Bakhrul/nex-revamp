@@ -139,7 +139,6 @@
         })
         if (res.status == 200) {
             listCity.value = res.data.data.list;
-
             return res.data.data;
         }
     }
