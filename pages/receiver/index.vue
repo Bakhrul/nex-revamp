@@ -198,7 +198,7 @@
                                             <a :href="url" target="_blank">
                                                 <div class=" px-3 py-3 rounded d-flex justify-content-center"
                                                     style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                                    <img src="~/assets/social-media/shopee.png" style="height:png;" />
+                                                    <img src="~/assets/social-media/shopee.png" style="height:20px;" />
                                                 </div>
                                             </a>
                                         </div>

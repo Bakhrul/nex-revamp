@@ -519,3 +519,13 @@ footer ul li {
         width: 280px !important;
     }
 }
+
+@media(max-width:991px){
+    .product-box img {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        min-height: unset !important;
+        width: 100%;    
+        position: relative;
+    }
+}
