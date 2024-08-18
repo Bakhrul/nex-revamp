@@ -2,17 +2,22 @@
     <div>
         <Navbar></Navbar>
         <div class="show-on-mobile">
-            <img :src="backgroundImageMobile" class="w-100" />
+            <div class="d-flex align-items-center"
+                :style="`background-image:url('${backgroundImageMobile}');background-size:cover;width:100%;background-position:left;padding:30px 0`">
+                <div class="container">
+                    <h6 class="text-white fw-bold">NEX NEWS</h6>
+                </div>
+            </div>
         </div>
         <div class="show-on-desktop">
             <div class="d-flex align-items-center"
-                :style="`background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('${backgroundImageDesktop}');background-size:cover;width:100%;min-height:220px`">
+                :style="`background-image:url('${backgroundImageDesktop}');background-size:cover;width:100%;min-height:220px`">
                 <div class="container">
                     <h1 class="text-white fw-bold">Channel</h1>
                     <div class="text-white">Kami Hadirkan Program Unggulan dengan Pilihan Channel Terlengkap</div>
                 </div>
             </div>
-        </div>
+        </div>     
         <section class="mt-3">
             <div class="container">
                 <div class="row mb-3">
@@ -25,13 +30,15 @@
                                     type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <span>
 
-                                        <span style="font-weight:600;">Rabu, 25 Jul- 24</span>
+                                        <span style="font-weight:600;">{{selectDate}}</span>
                                     </span>
                                 </button>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item"
-                                            style="color:#00539B !important;font-weight:400;font-size: 15px;"
-                                            v-for="a in 10" href="#">Option 1</a></li>
+                                                        style="color:#00539B !important;font-weight:400;font-size: 15px;"
+                                                        v-for="context in listTanggal" href="javascript:void(0)"
+                                                        @click="selectDate = context.trxdatetext; selectDateId = context.trxdate;getSchedule()">{{context.trxdate}}</a>
+                                                </li>
                                 </ul>
                             </div>
                         </div>
@@ -43,13 +50,15 @@
                                     type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <span>
 
-                                        <span style="font-weight:600;">Free to View</span>
+                                        <span style="font-weight:600;">{{selectCategory}}</span>
                                     </span>
                                 </button>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item"
-                                            style="color:#00539B !important;font-weight:400;font-size: 15px;"
-                                            v-for="a in 10" href="#">Option 1</a></li>
+                                                        style="color:#00539B !important;font-weight:400;font-size: 15px;"
+                                                        v-for="context in listKategori" href="javascript:void(0)"
+                                                        @click="selectCategory = context.category; selectCategoryId = context.id;getSchedule()">{{context.category}}</a>
+                                                </li>
                                 </ul>
                             </div>
                         </div>
@@ -61,13 +70,15 @@
                                     type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <span>
 
-                                        <span style="font-weight:600;">Champions TV 1</span>
+                                        <span style="font-weight:600;">{{selectChannel}}</span>
                                     </span>
                                 </button>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item"
-                                            style="color:#00539B !important;font-weight:400;font-size: 15px;"
-                                            v-for="a in 10" href="#">Option 1</a></li>
+                                                        style="color:#00539B !important;font-weight:400;font-size: 15px;"
+                                                        v-for="context in listChannel" href="javascript:void(0)"
+                                                        @click="selectChannel = context.channel; selectChannelId = context.id;getSchedule()">{{context.channel}}</a>
+                                                </li>
                                 </ul>
                             </div>
                         </div>
@@ -79,7 +90,7 @@
             </div>
             <div style="background: #f2f2f2;" class="mt-3 py-5">
                 <div class="container">
-                    <img src="~/assets/logo-channel.png" class="mb-1">
+                    <img :src="imageKompetisi" class="mb-1" v-if="imageKompetisi" style="width:150px;">
                     <div class="table-responsive mt-3">
                         <table class="table table-custom">
                             <thead>
@@ -91,10 +102,10 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr v-for="a in 10">
-                                    <td class="text-center">01:15</td>
-                                    <td class="text-center">The Bussiness</td>
-                                    <td class="text-center">If you need to enter</td>
+                                <tr v-for="a in resultKompetisi">
+                                    <td class="text-center">{{ a.jam }}</td>
+                                    <td class="text-center">{{a.program}}</td>
+                                    <td class="text-center">{{a.sinopsis}}</td>
                                 </tr>
                             </tbody>
 
@@ -108,9 +119,90 @@
 </template>
 
 <script setup>
-    import backgroundImageMobile from "~/assets/mobile/channel.png"
-    import backgroundImageDesktop from "~/assets/sample-banner-10.png"
+    import axios from "axios";
+    import backgroundImageMobile from "~/assets/header/channel-mobile.png"
+    import backgroundImageDesktop from "~/assets/header/channel-desktop.png"
 
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"
+
+    const config = useRuntimeConfig()
+
+    const listTanggal = ref([]);
+    const listKategori = ref([]);
+    const listChannel = ref([]);
+    
+
+    const selectDate = ref('');
+    const selectDateId = ref('');
+
+    const selectCategory = ref('');
+    const selectCategoryId = ref('');
+
+    const selectChannel = ref('');
+    const selectChannelId = ref('');
+
+    const resultKompetisi = ref([]);
+    const imageKompetisi = ref('');
+
+    const {
+        data
+    } = await getSourceChannel()
+
+    async function getSourceChannel() {        
+        let res = await axios.get(config.public.API_URL + 'product/channelsource', {
+            headers: {
+                'WEBCORP-APIKEY': config.public.API_KEY
+            }
+        })
+        if (res.status == 200) {
+            listTanggal.value = res.data.data.channeldate
+            listKategori.value = res.data.data.channelcategory
+            listChannel.value = res.data.data.channel
+
+            if(listTanggal.value.length){
+                selectDateId.value = listTanggal.value[0].trxdate
+                selectDate.value = listTanggal.value[0].trxdatetext
+            }
+
+            if(listKategori.value.length){
+                selectCategoryId.value = listKategori.value[0].id
+                selectCategory.value = listKategori.value[0].category
+            }
+
+            if(listChannel.value.length){
+                selectChannelId.value = listChannel.value[0].id
+                selectChannel.value = listChannel.value[0].channel
+            }
+
+           
+
+            return res.data.data;
+        }
+    }
+
+    onMounted(() => {
+        if(selectCategoryId.value && selectChannelId.value && selectDateId.value){
+                getSchedule()
+            }
+    });
+    async function getSchedule() {
+        resultKompetisi.value = []
+        imageKompetisi.value = ''
+        let res = await axios.get(config.public.API_URL + 'product/channelschedule', {
+            params: {
+                categoryid: selectCategoryId.value,
+                trxdate: selectDateId.value,
+                channelid: selectChannelId.value
+            },
+            headers: {
+                'WEBCORP-APIKEY': config.public.API_KEY
+            }
+        })
+
+        if (res.status == 200) {
+            resultKompetisi.value = res.data.data.list;
+            imageKompetisi.value = res.data.data.imageurl;
+        }
+    }
 </script>

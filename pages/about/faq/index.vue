@@ -3,105 +3,143 @@
         <Navbar></Navbar>
 
         <div class="show-on-mobile">
-            <img :src="backgroundImageMobile" class="w-100" />
+            <div class="d-flex align-items-center"
+                :style="`background-image:url('${backgroundImageMobile}');background-size:cover;width:100%;background-position:left;padding:30px 0`">
+                <div class="container">
+                    <h6 class="text-white fw-bold">FAQ</h6>
+                </div>
+            </div>
             <section class="my-2">
                 <div class="w-100">
                     <div class="accordion accordion-custom" id="accordionExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Apa Saja yang Dibutuhkan untuk Memasang Nex?
-                                </button>
+                                <div class="container">
+                                    <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                                        style="padding:20px 0 !important" data-bs-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        Apa Saja yang Dibutuhkan untuk Memasang Nex?
+                                    </button>
+                                </div>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body" style="color:unset !important;padding:20px !important">
-                                    Untuk memasang TV satelit Nex, kamu memerlukan antena parabola, Nex receiver, serta
-                                    kabel-kabel yang diperlukan untuk menghubungkan antara antena, dekoder, dan
-                                    televisi.
+                                    <div class="container">
+                                        Untuk memasang TV satelit Nex, kamu memerlukan antena parabola, Nex receiver,
+                                        serta
+                                        kabel-kabel yang diperlukan untuk menghubungkan antara antena, dekoder, dan
+                                        televisi.
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Berapa Biaya Langganan Nex?
-                                </button>
+                                <div class="container">
+                                    <button class="accordion-button fw-bold collapsed" type="button"
+                                        data-bs-toggle="collapse" style="padding:20px 0 !important;"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Berapa Biaya Langganan Nex?
+                                    </button>
+                                </div>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body" style="color:unset !important;padding:20px !important">
-                                    Harga paket Nex bisa kamu beli dengan harga mulai dari Rp9.900 sedangkan untuk
-                                    receiver kamu bisa beli dengan harga mulai dari Rp314.000.
+                                    <div class="container">
+                                        Harga paket Nex bisa kamu beli dengan harga mulai dari Rp9.900 sedangkan untuk
+                                        receiver kamu bisa beli dengan harga mulai dari Rp314.000.
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Apakah TV Satelit Nex Membutuhkan Internet?
-                                </button>
+                                <div class="container">
+                                    <button class="accordion-button fw-bold collapsed" type="button"
+                                        data-bs-toggle="collapse" style="padding:20px 0 !important"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Apakah TV Satelit Nex Membutuhkan Internet?
+                                    </button>
+                                </div>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body" style="color:unset !important;padding:20px !important">
-                                    Tidak, TV satelit tidak memerlukan koneksi internet untuk menonton saluran televisi.
+                                    <div class="container">
+                                        Tidak, TV satelit tidak memerlukan koneksi internet untuk menonton saluran
+                                        televisi.
+                                    </div>
                                 </div>
                             </div>
 
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    Bagaimana Jika Saya Mau Aktivasi via Aplikasi Nex?
-                                </button>
+                                <div class="container">
+                                    <button class="accordion-button fw-bold collapsed" type="button"
+                                        data-bs-toggle="collapse" style="padding:20px 0 !important"
+                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        Bagaimana Jika Saya Mau Aktivasi via Aplikasi Nex?
+                                    </button>
+                                </div>
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body" style="color:unset !important;padding:0 !important">
-                                    <ol>
-                                        <li>Download Aplikasi "Nex" di Google Play.</li>
-                                        <li>Klik Menu My Nex.</li>
-                                        <li>Isi data secara lengkap.</li>
-                                        <li>Lalu klik proses.</li>
-                                        <li>Nex Parabola-mu sudah aktif!</li>
-                                    </ol>
+                                    <div class="container">
+                                        <ol>
+                                            <li>Download Aplikasi "Nex" di Google Play.</li>
+                                            <li>Klik Menu My Nex.</li>
+                                            <li>Isi data secara lengkap.</li>
+                                            <li>Lalu klik proses.</li>
+                                            <li>Nex Parabola-mu sudah aktif!</li>
+                                        </ol>
+                                    </div>
                                 </div>
                             </div>
 
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    Bagaimana Jika Saya Mau Perbaikan Instalasi via Aplikasi?
-                                </button>
+                                <div class="container">
+                                    <button class="accordion-button fw-bold collapsed" type="button"
+                                        data-bs-toggle="collapse" style="padding:20px 0 !important"
+                                        data-bs-target="#collapseFive" aria-expanded="false"
+                                        aria-controls="collapseFive">
+                                        Bagaimana Jika Saya Mau Perbaikan Instalasi via Aplikasi?
+                                    </button>
+                                </div>
                             </h2>
                             <div id="collapseFive" class="accordion-collapse collapse"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body" style="color:unset !important;padding:0 !important">
-                                    <ol>
-                                        <li>Download Aplikasi "Nex" di Google Play</li>
-                                        <li>Klik Menu Cari Toko & Teknisi</li>
-                                        <li>Pilih Menu Teknisi</li>
-                                        <li>Lalu Pilih Teknisi Terdekat</li>
-                                        <li>Klik Telepon atau Whatsapp</li>
-                                        <li>Kamu akan langsung terhubung dengan Tim Teknisi</li>
-                                    </ol>
+                                    <div class="container">
+                                        <ol>
+                                            <li>Download Aplikasi "Nex" di Google Play</li>
+                                            <li>Klik Menu Cari Toko & Teknisi</li>
+                                            <li>Pilih Menu Teknisi</li>
+                                            <li>Lalu Pilih Teknisi Terdekat</li>
+                                            <li>Klik Telepon atau Whatsapp</li>
+                                            <li>Kamu akan langsung terhubung dengan Tim Teknisi</li>
+                                        </ol>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseSixMobile" aria-expanded="false"
-                                    aria-controls="collapseSixMobile">
-                                    Payments
-                                </button>
+                                <div class="container">
+                                    <button class="accordion-button fw-bold collapsed" type="button"
+                                        data-bs-toggle="collapse" style="padding:20px 0 !important"
+                                        data-bs-target="#collapseSixMobile" aria-expanded="false"
+                                        aria-controls="collapseSixMobile">
+                                        Payments
+                                    </button>
+                                </div>
                             </h2>
                             <div id="collapseSixMobile" class="accordion-collapse collapse"
                                 data-bs-parent="#accordionExample">
@@ -109,59 +147,75 @@
                                     <div class="accordion accordion-custom" id="accordionExampleS">
                                         <div class="accordion-item">
                                             <h2 class="accordion-header">
-                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" style="background:#f2f2f2 !important"
-                                                    data-bs-target="#collapseOneS" aria-expanded="true"
-                                                    aria-controls="collapseOneS">
-                                                    E-Wallet
-                                                </button>
+                                                <div class="container">
+                                                    <button class="accordion-button fw-bold" type="button"
+                                                        data-bs-toggle="collapse"
+                                                        style="background:#f2f2f2 !important;padding:20px 0 !important;"
+                                                        data-bs-target="#collapseOneS" aria-expanded="true"
+                                                        aria-controls="collapseOneS">
+                                                        E-Wallet
+                                                    </button>
+                                                </div>
                                             </h2>
                                             <div id="collapseOneS" class="accordion-collapse collapse"
                                                 data-bs-parent="#accordionExampleS">
                                                 <div class="accordion-body"
                                                     style="color:unset !important;padding:20px !important">
-                                                    <img src="~/assets/payment/dana.png" class="mb-3" /><br>
-                                                    <img src="~/assets/payment/ovo.png" class="mb-3" /><br>
-                                                    <img src="~/assets/payment/linkaja.png" class="mb-3" /><br>
-                                                    <img src="~/assets/payment/shopeepay.png" class="mb-3" />
+                                                    <div class="container">
+                                                        <img src="~/assets/payment/dana.png" class="mb-3" /><br>
+                                                        <img src="~/assets/payment/ovo.png" class="mb-3" /><br>
+                                                        <img src="~/assets/payment/linkaja.png" class="mb-3" /><br>
+                                                        <img src="~/assets/payment/shopeepay.png" class="mb-3" />
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="accordion-item">
                                             <h2 class="accordion-header">
-                                                <button class="accordion-button" type="button" style="background:#f2f2f2 !important" data-bs-toggle="collapse"
-                                                    data-bs-target="#collapseTwoS" aria-expanded="true"
-                                                    aria-controls="collapseTwoS">
-                                                    Virtual Account
-                                                </button>
+                                                <div class="container">
+                                                    <button class="accordion-button fw-bold" type="button"
+                                                        style="background:#f2f2f2 !important;padding:20px 0 !important"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseTwoS"
+                                                        aria-expanded="true" aria-controls="collapseTwoS">
+                                                        Virtual Account
+                                                    </button>
+                                                </div>
                                             </h2>
                                             <div id="collapseTwoS" class="accordion-collapse collapse"
                                                 data-bs-parent="#accordionExampleS">
                                                 <div class="accordion-body"
                                                     style="color:unset !important;padding:20px !important">
 
-
-                                                    <img src="~/assets/payment/permata.png" class="mb-3" /><br>
-                                                    <img src="~/assets/payment/mandiri.png" class="mb-3" /><br>
-                                                    <img src="~/assets/payment/bni.png" class="mb-3" /><br>
-                                                    <img src="~/assets/payment/bri.png" class="mb-3" /><br>
-                                                    <img src="~/assets/payment/bca.png" class="mb-3" />
+                                                    <div class="container">
+                                                        <img src="~/assets/payment/permata.png" class="mb-3" /><br>
+                                                        <img src="~/assets/payment/mandiri.png" class="mb-3" /><br>
+                                                        <img src="~/assets/payment/bni.png" class="mb-3" /><br>
+                                                        <img src="~/assets/payment/bri.png" class="mb-3" /><br>
+                                                        <img src="~/assets/payment/bca.png" class="mb-3" />
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="accordion-item">
                                             <h2 class="accordion-header">
-                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" style="background:#f2f2f2 !important"
-                                                    data-bs-target="#collapseThreeS" aria-expanded="true"
-                                                    aria-controls="collapseThreeS">
-                                                    Kartu Kredit
-                                                </button>
+                                                <div class="container">
+                                                    <button class="accordion-button fw-bold" type="button"
+                                                        data-bs-toggle="collapse"
+                                                        style="background:#f2f2f2 !important;padding:20px 0 !important"
+                                                        data-bs-target="#collapseThreeS" aria-expanded="true"
+                                                        aria-controls="collapseThreeS">
+                                                        Kartu Kredit
+                                                    </button>
+                                                </div>
                                             </h2>
                                             <div id="collapseThreeS" class="accordion-collapse collapse"
                                                 data-bs-parent="#accordionExampleS">
                                                 <div class="accordion-body"
                                                     style="color:unset !important;padding:20px !important">
-                                                    <img src="~/assets/payment/visa.png" class="mb-3" /><br>
-                                                    <img src="~/assets/payment/mastercard.png" class="mb-3" />
+                                                    <div class="container">
+                                                        <img src="~/assets/payment/visa.png" class="mb-3" /><br>
+                                                        <img src="~/assets/payment/mastercard.png" class="mb-3" />
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -176,7 +230,7 @@
         </div>
         <div class="show-on-desktop">
             <div class="d-flex align-items-center"
-                :style="`background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('${backgroundImageDesktop}');background-size:cover;width:100%;min-height:220px`">
+                :style="`background-image:url('${backgroundImageDesktop}');background-size:cover;width:100%;min-height:220px`">
                 <div class="container">
                     <h1 class="text-white fw-bold">FAQ & PAYMENT</h1>
                     <div class="text-white">Menjawab Pertanyaan Sobat Nex</div>
@@ -193,7 +247,7 @@
                             <div class="accordion accordion-custom accordion-custom-2" id="accordionExample-desktop">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#collapseOned" aria-expanded="true"
                                             style="color:black !important" aria-controls="collapseOned">
                                             Apa Saja yang Dibutuhkan untuk Memasang Nex?
@@ -201,16 +255,18 @@
                                     </h2>
                                     <div id="collapseOned" class="accordion-collapse collapse show"
                                         data-bs-parent="#accordionExample-desktop">
-                                        <div class="accordion-body" style="color:unset !important;padding:20px !important">
-                                    Untuk memasang TV satelit Nex, kamu memerlukan antena parabola, Nex receiver, serta
-                                    kabel-kabel yang diperlukan untuk menghubungkan antara antena, dekoder, dan
-                                    televisi.
-                                </div>
+                                        <div class="accordion-body"
+                                            style="color:unset !important;padding:20px !important">
+                                            Untuk memasang TV satelit Nex, kamu memerlukan antena parabola, Nex
+                                            receiver, serta
+                                            kabel-kabel yang diperlukan untuk menghubungkan antara antena, dekoder, dan
+                                            televisi.
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button"
+                                        <button class="accordion-button fw-bold collapsed" type="button"
                                             style="color:black !important" data-bs-toggle="collapse"
                                             data-bs-target="#collapseTwod" aria-expanded="false"
                                             aria-controls="collapseTwod">
@@ -219,15 +275,17 @@
                                     </h2>
                                     <div id="collapseTwod" class="accordion-collapse collapse"
                                         data-bs-parent="#accordionExample-desktop">
-                                        <div class="accordion-body" style="color:unset !important;padding:20px !important">
-                                    Harga paket Nex bisa kamu beli dengan harga mulai dari Rp9.900 sedangkan untuk
-                                    receiver kamu bisa beli dengan harga mulai dari Rp314.000.
-                                </div>
+                                        <div class="accordion-body"
+                                            style="color:unset !important;padding:20px !important">
+                                            Harga paket Nex bisa kamu beli dengan harga mulai dari Rp9.900 sedangkan
+                                            untuk
+                                            receiver kamu bisa beli dengan harga mulai dari Rp314.000.
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button"
+                                        <button class="accordion-button fw-bold collapsed" type="button"
                                             style="color:black !important" data-bs-toggle="collapse"
                                             data-bs-target="#collapseThreed" aria-expanded="false"
                                             aria-controls="collapseThreed">
@@ -236,15 +294,17 @@
                                     </h2>
                                     <div id="collapseThreed" class="accordion-collapse collapse"
                                         data-bs-parent="#accordionExample-desktop">
-                                        <div class="accordion-body" style="color:unset !important;padding:20px !important">
-                                    Tidak, TV satelit tidak memerlukan koneksi internet untuk menonton saluran televisi.
-                                </div>
+                                        <div class="accordion-body"
+                                            style="color:unset !important;padding:20px !important">
+                                            Tidak, TV satelit tidak memerlukan koneksi internet untuk menonton saluran
+                                            televisi.
+                                        </div>
                                     </div>
 
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button"
+                                        <button class="accordion-button fw-bold collapsed" type="button"
                                             style="color:black !important" data-bs-toggle="collapse"
                                             data-bs-target="#collapseFourd" aria-expanded="false"
                                             aria-controls="collapseFourd">
@@ -254,20 +314,20 @@
                                     <div id="collapseFourd" class="accordion-collapse collapse"
                                         data-bs-parent="#accordionExample-desktop">
                                         <div class="accordion-body" style="color:unset !important;padding:0 !important">
-                                    <ol>
-                                        <li>Download Aplikasi "Nex" di Google Play.</li>
-                                        <li>Klik Menu My Nex.</li>
-                                        <li>Isi data secara lengkap.</li>
-                                        <li>Lalu klik proses.</li>
-                                        <li>Nex Parabola-mu sudah aktif!</li>
-                                    </ol>
-                                </div>
+                                            <ol>
+                                                <li>Download Aplikasi "Nex" di Google Play.</li>
+                                                <li>Klik Menu My Nex.</li>
+                                                <li>Isi data secara lengkap.</li>
+                                                <li>Lalu klik proses.</li>
+                                                <li>Nex Parabola-mu sudah aktif!</li>
+                                            </ol>
+                                        </div>
                                     </div>
 
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button"
+                                        <button class="accordion-button fw-bold collapsed" type="button"
                                             style="color:black !important" data-bs-toggle="collapse"
                                             data-bs-target="#collapseFived" aria-expanded="false"
                                             aria-controls="collapseFived">
@@ -277,22 +337,22 @@
                                     <div id="collapseFived" class="accordion-collapse collapse"
                                         data-bs-parent="#accordionExample-desktop">
                                         <div class="accordion-body" style="color:unset !important;padding:0 !important">
-                                    <ol>
-                                        <li>Download Aplikasi "Nex" di Google Play</li>
-                                        <li>Klik Menu Cari Toko & Teknisi</li>
-                                        <li>Pilih Menu Teknisi</li>
-                                        <li>Lalu Pilih Teknisi Terdekat</li>
-                                        <li>Klik Telepon atau Whatsapp</li>
-                                        <li>Kamu akan langsung terhubung dengan Tim Teknisi</li>
-                                    </ol>
-                                </div>
+                                            <ol>
+                                                <li>Download Aplikasi "Nex" di Google Play</li>
+                                                <li>Klik Menu Cari Toko & Teknisi</li>
+                                                <li>Pilih Menu Teknisi</li>
+                                                <li>Lalu Pilih Teknisi Terdekat</li>
+                                                <li>Klik Telepon atau Whatsapp</li>
+                                                <li>Kamu akan langsung terhubung dengan Tim Teknisi</li>
+                                            </ol>
+                                        </div>
                                     </div>
                                 </div>
 
                             </div>
                         </div>
                     </div>
-                    <h5 class="text-center mt-5">Metode Pembayaran</h5>
+                    <h5 class="text-center mt-5 fw-bold">Metode Pembayaran</h5>
                     <div class="d-flex justify-content-center mt-3">
                         <div style="max-width:700px;width:100%">
                             <div class="row py-3" style="border-bottom: 1px #ddd solid;">
@@ -337,8 +397,8 @@
 </template>
 
 <script setup>
-    import backgroundImageMobile from "~/assets/mobile/faq.png"
-    import backgroundImageDesktop from "~/assets/sample-banner-10.png"
+    import backgroundImageMobile from "~/assets/header/faq-mobile.png"
+    import backgroundImageDesktop from "~/assets/header/faq-desktop.png"
 
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"

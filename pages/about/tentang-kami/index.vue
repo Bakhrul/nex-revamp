@@ -71,16 +71,23 @@
             </div>
         </div>
         <div class="show-on-mobile">
-            <img :src="backgroundImageMobile" class="w-100" />
+            <div class="d-flex align-items-center"
+                :style="`background-image:url('${backgroundImageMobile}');background-size:cover;width:100%;background-position:left;padding:30px 0`">
+                <div class="container">
+                    <h6 class="text-white fw-bold">About NEX</h6>                    
+                </div>
+            </div>
             <section class="my-2">
                 <div class="w-100">
                     <div class="accordion accordion-custom" id="accordionExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                <div class="container">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" style="padding:20px 0 !important"
                                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                     Kenapa Nex
                                 </button>
+                            </div>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show"
                                 data-bs-parent="#accordionExample">
@@ -111,14 +118,17 @@
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                <div class="container">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" style="padding:20px 0 !important;"
                                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                     Keunggulan Nex
                                 </button>
+                            </div>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body" style="padding:0 !important;color:unset !important">
+                                    <div class="container">
                                     <ol>
                                         <li>Siaran TV Nasional "Free To Air" Yang Lengkap</li>
                                         <li>Kualitas Tayangan dan Suara HD (High Definition) </li>
@@ -132,15 +142,18 @@
                                     </ol>
                                     <img src="~/assets/hero-about.png" class="w-100 mt-3"
                                         style="max-width: 100%;object-fit: contain;object-position: top;width:100%">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                <div class="container">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" style="padding:20px 0 !important;"
                                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                     Teknologi Nex
                                 </button>
+                            </div>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse"
                                 data-bs-parent="#accordionExample">
@@ -185,7 +198,7 @@
 </template>
 
 <script setup>
-    import backgroundImageMobile from "~/assets/mobile/about.png"
+    import backgroundImageMobile from "~/assets/header/about-mobile.png"
     import backgroundImageDesktop from "~/assets/header-about.png"
     import backgroundImageDesktop2 from "~/assets/bg-about-3.png"
 

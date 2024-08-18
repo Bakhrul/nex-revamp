@@ -1,19 +1,23 @@
 <template>
     <div>
         <Navbar></Navbar>
-
         <div class="show-on-mobile">
-            <img :src="backgroundImageMobile" class="w-100" />
-            </div>
-            <div class="show-on-desktop">
-        <div class="d-flex align-items-center"
-            :style="`background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('${backgroundImageDesktop}');background-size:cover;width:100%;min-height:220px`">
-            <div class="container">
-                <h1 class="text-white fw-bold">SERVICE CENTER</h1>
-                <div class="text-white">Layanan Perbaikan Nex Hadir di Kotamu!</div>
+            <div class="d-flex align-items-center"
+                :style="`background-image:url('${backgroundImageMobile}');background-size:cover;width:100%;background-position:left;padding:30px 0`">
+                <div class="container">
+                    <h6 class="text-white fw-bold">NEX NEWS</h6>
+                </div>
             </div>
         </div>
-    </div>
+        <div class="show-on-desktop">
+            <div class="d-flex align-items-center"
+                :style="`background-image:url('${backgroundImageDesktop}');background-size:cover;width:100%;min-height:220px`">
+                <div class="container">
+                    <h1 class="text-white fw-bold">Service Center</h1>
+                    <div class="text-white">Layanan perbaikan Nex hadir di kotamu!</div>
+                </div>
+            </div>
+        </div>
         <section class="mt-3">
 
             <div class="container">
@@ -21,20 +25,23 @@
                     <div class="col-lg-6 mb-3">
                         <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle text-left"
-                                style="padding: 5px 15px;color:#00539B !important;border:1px #ddd solid;background:#fff"
+                                style="padding: 10px 15px;color:#00539B !important;border:1px #00539B solid;background:#fff"
                                 type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <svg width="30" height="31" viewBox="0 0 30 31" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M25 5.57275H5V8.07275H25V5.57275ZM26.25 18.0728V15.5728L25 9.32275H5L3.75 15.5728V18.0728H5V25.5728H17.5V18.0728H22.5V25.5728H25V18.0728H26.25ZM15 23.0728H7.5V18.0728H15V23.0728Z"
-                                        fill="#2C69A7" />
-                                </svg>&ensp;
-                                <span style="font-size:15px;color:#6B7280">Semua Kota</span>
+                                <span>
+
+                                    <span style="font-weight:500;">{{selectCity}}</span>
+                                </span>
                             </button>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item"
+                                        style="color:#00539B !important;font-weight:400;font-size: 15px;" href="javascript:void(0)"
+                                        @click="selectCity = 'Semua'; selectCityId = '0';getList()">Semua</a>
+                                </li>
+                                <li><a class="dropdown-item"
                                         style="color:#00539B !important;font-weight:400;font-size: 15px;"
-                                        v-for="a in 10" href="#">Option 1</a></li>
+                                        v-for="context in listCity" href="javascript:void(0)"
+                                        @click="selectCity = context.channel; selectCityId = context.id;getList()">{{context.channel}}</a>
+                                </li>
                             </ul>
                         </div>
 
@@ -48,7 +55,8 @@
                                     fill="#00539B" />
                             </svg>&ensp;
 
-                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                            <input class="form-control" type="text" style="outline:none !important;border:0 !important;"
+                                v-model="search" @keyup.enter="getList" placeholder="Search" aria-label="Search">
                         </form>
                     </div>
                 </div>
@@ -56,23 +64,22 @@
             <div style="background: #f2f2f2;" class="mt-3">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-4 mt-3 mb-3" v-for="a in 9">
+                        <div class="col-lg-4 mt-3 mb-3" v-for="a in result">
                             <div class="card shadow-lg">
                                 <div class="card-body">
                                     <div class="fs-5 c-primary fw-bolder pb-2" style="border-bottom: 2px #ddd solid;">
-                                        Aneka Elektronik</div>
-                                   
-                                        <a target="_blank" class="link-dealer" href="https://www.google.com/maps/@-7.2966944,112.7509539,15z?entry=ttu">
+                                        {{ a.dealer }}</div>
+                                    <a target="_blank" class="link-dealer" :href="a.locationurl">
                                         <div class="d-flex align-items-center mt-3">
                                             <div class="me-2"><i style="font-size:20px" class="bi bi-geo-alt-fill"></i>
 
                                             </div>
-                                            <div>Jl. Endex No. 39 Tg. Pandan Belitung 33411</div>
+                                            <div>{{a.address}}</div>
                                         </div>
                                     </a>
-                               
                                     <div class="d-flex align-items-center mt-3">
-                                        <div class="me-2"><svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                        <div class="me-2">
+                                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink">
                                                 <rect x="0.5" y="0.572784" width="20" height="20"
@@ -89,7 +96,7 @@
                                             </svg>
 
                                         </div>
-                                        <div>+62 819 2972 3078</div>
+                                        <div>{{ a.phone }}</div>
                                     </div>
                                 </div>
                             </div>
@@ -104,25 +111,73 @@
 </template>
 
 <script setup>
-    import backgroundImageMobile from "~/assets/mobile/service-center.png"
-    import backgroundImageDesktop from "~/assets/sample-banner-10.png"
+    import backgroundImageMobile from "~/assets/header/service-center-mobile.png"
+    import backgroundImageDesktop from "~/assets/header/service-center-desktop.png"
 
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"
+    import axios from "axios";
+    const config = useRuntimeConfig()
+
+    const listCity = ref([]);
+    const selectCity = ref('Semua');
+    const selectCityId = ref('0');
+
+    const search = ref('');
+
+    const result = ref([]);
+    const {
+        data
+    } = await getSourceCity()
+
+    async function getSourceCity() {
+        let res = await axios.get(config.public.API_URL + 'about/citydealer', {
+            headers: {
+                'WEBCORP-APIKEY': config.public.API_KEY
+            }
+        })
+        if (res.status == 200) {
+            listCity.value = res.data.data.list;
+            return res.data.data;
+        }
+    }
+
+    onMounted(() => {
+
+        getList()
+
+    });
+
+    async function getList() {
+        result.value = [];
+        let res = await axios.get(config.public.API_URL + 'about/service', {
+            params: {
+                cityid: selectCityId.value,
+                search: search.value
+            },
+            headers: {
+                'WEBCORP-APIKEY': config.public.API_KEY
+            }
+        })
+        if (res.status == 200) {
+            result.value = res.data.data.list;
+            return res.data.data;
+        }
+    }
 </script>
 
-
 <style scoped>
-    .link-dealer{
-        color:black !important;
+    .link-dealer {
+        color: black !important;
         text-decoration: none !important;
     }
-    .link-dealer:hover{
-        font-weight:600;
-        color:blue !important
+
+    .link-dealer:hover {
+        font-weight: 600;
+        color: blue !important
     }
 
-    .link-dealer:hover i{
-        color:blue !important
+    .link-dealer:hover i {
+        color: blue !important
     }
 </style>

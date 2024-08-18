@@ -5,11 +5,11 @@
                     <div class="col-lg-3">
                         <div class="footer-title mb-2">Quick Link </div>
                         <ul>
-                            <li><a href="javascript:void(0)" class="footer-link">Produk</a></li>
-                            <li><a href="javascript:void(0)" class="footer-link">Channel</a></li>
-                            <li><a href="javascript:void(0)" class="footer-link">Promo</a></li>
-                            <li><a href="javascript:void(0)" class="footer-link">Tentang kami</a></li>
-                            <li><a href="javascript:void(0)" class="footer-link">NexNews</a></li>
+                            <li><nuxt-link to="/paket" class="footer-link">Produk</nuxt-link></li>
+                            <li><nuxt-link to="/channel" class="footer-link">Channel</nuxt-link></li>
+                            <li><nuxt-link to="/special-deals" class="footer-link">Promo</nuxt-link></li>
+                            <li><nuxt-link to="/about/tentang-kami" class="footer-link">Tentang kami</nuxt-link></li>
+                            <li><nuxt-link to="/news" class="footer-link">NexNews</nuxt-link></li>
                             <li><a href="javascript:void(0)" class="footer-link">Karir</a></li>
                             <li><a href="javascript:void(0)" class="footer-link">Peta Situs</a></li>
                         </ul>
@@ -18,19 +18,19 @@
                       
                         <div class="footer-title mb-2">Ikuti Kami di </div>
                         <div class="d-flex flex-wrap" style="font-size: 24px">
-                            <div class="me-3"><a href="javascript:void(0);"
+                            <div class="me-3"><a href="https://id-id.facebook.com/groups/180272675720045/"
                                     style="color:black;text-decoration: none !important"><i
                                         class="bi bi-facebook"></i></a></div>
-                            <div class="me-3"><a href="javascript:void(0);"
+                            <div class="me-3"><a href="https://z-p42.www.instagram.com/nexparabola_tv/?hl=da"
                                     style="color:black;text-decoration: none !important"><i
                                         class="bi bi-instagram"></i></a></div>
-                            <div class="me-3"><a href="javascript:void(0);"
+                            <div class="me-3"><a href="https://x.com/nexofficialtv?s=21"
                                     style="color:black;text-decoration: none !important"><i
                                         class="bi bi-twitter"></i></a></div>
-                            <div class="me-3"><a href="javascript:void(0);"
+                            <div class="me-3"><a href="https://www.youtube.com/c/OfficialNexParabolaTV"
                                     style="color:black;text-decoration: none !important"><i
                                         class="bi bi-youtube"></i></a></div>
-                            <div class="me-3"><a href="javascript:void(0);"
+                            <div class="me-3"><a href="https://www.tiktok.com/@nexparabola_tv"
                                     style="color:black;text-decoration: none !important"><i
                                         class="bi bi-tiktok"></i></a></div>
                         </div>
