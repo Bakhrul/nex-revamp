@@ -37,7 +37,7 @@
 
 <script setup>
     import headerImageDesktop1 from "~/assets/static-content/banner/2-detail.png"
-    import logoNex from "~/assets/logo-nex.png";
+    import logoNex from "~/assets/logo-nex-2.png";
 
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"

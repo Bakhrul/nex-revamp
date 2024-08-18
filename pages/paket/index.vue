@@ -737,7 +737,7 @@
 <script setup>
     import backgroundImageMobile from "~/assets/header/paket-mobile.png"
     import backgroundImageDesktop from "~/assets/header/paket-desktop.png"
-    import logoNex from "~/assets/logo-nex.png";
+    import logoNex from "~/assets/logo-nex-2.png";
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"
     const type = ref('semua')

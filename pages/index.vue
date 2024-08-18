@@ -369,7 +369,7 @@
 
     const resultKompetisi = ref([]);
 
-    import logoNex from "~/assets/logo-nex.png";
+    import logoNex from "~/assets/logo-nex-2.png";
     const {
         data
     } = await getHome()

@@ -241,7 +241,7 @@
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"
     const route = useRoute()
-    import logoNex from "~/assets/logo-nex.png";
+    import logoNex from "~/assets/logo-nex-2.png";
     import axios from "axios";
     const config = useRuntimeConfig()
 

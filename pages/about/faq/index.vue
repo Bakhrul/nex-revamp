@@ -399,7 +399,7 @@
 <script setup>
     import backgroundImageMobile from "~/assets/header/faq-mobile.png"
     import backgroundImageDesktop from "~/assets/header/faq-desktop.png"
-    import logoNex from "~/assets/logo-nex.png";
+    import logoNex from "~/assets/logo-nex-2.png";
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"
 
