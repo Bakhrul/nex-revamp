@@ -5,7 +5,7 @@
             <carousel :items-to-show="1" :autoplay="2500" :wrapAround="true">
                 <slide :key="1">
                     <div class="d-flex align-items-center py-5"
-                        :style="`background-image:url('${headerImageDesktop1}');background-size:cover;width:100%;min-height:300px;height:100%;`">
+                        :style="`background-image:url('${headerImageDesktop1}');background-size:100% 100%;width:100%;min-height:300px;height:100%;`">
                         <div class="container">
                             <div style="max-width:500px">
                                 <h1 class="text-start fw-bold pt-5" style="color:#41054F;">Saksikan Premier League Live
@@ -25,7 +25,7 @@
                 </slide>
                 <slide :key="2">
                     <div class="d-flex align-items-center py-5"
-                        :style="`background-image:url('${headerImageDesktop2}');background-size:cover;width:100%;min-height:300px;height:100%;`">
+                        :style="`background-image:url('${headerImageDesktop2}');background-size:100% 100%;width:100%;min-height:300px;height:100%;`">
                         <div class="container">
                             <div style="max-width:500px">
                                 <h1 class="text-start fw-bold pt-5" style="color:#fff;">Update Datamu dan
@@ -43,7 +43,7 @@
                 </slide>
                 <slide :key="3">
                     <div class="d-flex align-items-center py-5"
-                        :style="`background-image:url('${headerImageDesktop3}');background-size:cover;width:100%;min-height:300px;height:100%;`">
+                        :style="`background-image:url('${headerImageDesktop3}');background-size:100% 100%;width:100%;min-height:300px;height:100%;`">
                         <div class="container">
                             <div style="max-width:500px">
                                 <h1 class="text-start fw-bold pt-5" style="color:black;">Receiver</h1>
