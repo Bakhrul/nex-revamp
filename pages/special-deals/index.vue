@@ -201,8 +201,8 @@
                                 <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
                                     <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
                                         style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/social-media/shopee.svg"
-                                            style="height:40px;max-width:100%;" />
+                                        <img src="~/assets/social-media/shopee.png"
+                                            style="height:20px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
@@ -210,7 +210,7 @@
                                 <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
                                     <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
                                         style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/social-media/nex.png" style="height:40px;max-width:100%;" />
+                                        <img src="~/assets/social-media/nex.png" style="height:20px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
@@ -238,8 +238,8 @@
                                 <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
                                     <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
                                         style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/social-media/shopee.svg"
-                                            style="height:40px;max-width:100%;" />
+                                        <img src="~/assets/social-media/shopee.png"
+                                            style="height:20px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
@@ -247,7 +247,7 @@
                                 <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
                                     <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
                                         style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/social-media/nex.png" style="height:40px;max-width:100%;" />
+                                        <img src="~/assets/social-media/nex.png" style="height:20px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
@@ -275,8 +275,8 @@
                                 <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
                                     <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
                                         style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/social-media/shopee.svg"
-                                            style="height:40px;max-width:100%;" />
+                                        <img src="~/assets/social-media/shopee.png"
+                                            style="height:20px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
@@ -284,7 +284,7 @@
                                 <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
                                     <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
                                         style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/social-media/nex.png" style="height:40px;max-width:100%;" />
+                                        <img src="~/assets/social-media/nex.png" style="height:20px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
@@ -311,8 +311,8 @@
                                 <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
                                     <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
                                         style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/social-media/shopee.svg"
-                                            style="height:40px;max-width:100%;" />
+                                        <img src="~/assets/social-media/shopee.png"
+                                            style="height:20px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
@@ -320,7 +320,7 @@
                                 <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
                                     <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
                                         style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/social-media/nex.png" style="height:40px;max-width:100%;" />
+                                        <img src="~/assets/social-media/nex.png" style="height:20px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
@@ -348,8 +348,8 @@
                                 <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
                                     <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
                                         style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/social-media/shopee.svg"
-                                            style="height:40px;max-width:100%;" />
+                                        <img src="~/assets/social-media/shopee.png"
+                                            style="height:20px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
@@ -357,7 +357,7 @@
                                 <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
                                     <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
                                         style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/social-media/nex.png" style="height:40px;max-width:100%;" />
+                                        <img src="~/assets/social-media/nex.png" style="height:20px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
@@ -411,7 +411,7 @@
                                 <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
                                     <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
                                         style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/social-media/nex.png" style="height:40px;max-width:100%;" />
+                                        <img src="~/assets/social-media/nex.png" style="height:20px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
@@ -435,7 +435,7 @@
                                 <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
                                     <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
                                         style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/social-media/nex.png" style="height:40px;max-width:100%;" />
+                                        <img src="~/assets/social-media/nex.png" style="height:20px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
