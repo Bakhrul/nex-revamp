@@ -302,7 +302,7 @@
             },
             {
                 name: 'og:image',
-                content: logoNex
+                content: image.value
             },
             {
                 name: 'og:image:width',
