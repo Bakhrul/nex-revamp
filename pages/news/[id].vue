@@ -91,9 +91,8 @@
                                             <div class="p-3 d-flex justify-content-center footer"
                                                 style="border-top:1px #ddd solid">
                                                 <nuxt-link :to="'/news/' + a.id" class="w-100 p-2 text-center fw-bold"
-                                                    style="border-radius:10px;border:2px #2C69A7 solid;color:#2C69A7 !important"
-                                                   >Baca Sekarang <i
-                                                        style="color:#2C69A7 !important;"
+                                                    style="border-radius:10px;border:2px #2C69A7 solid;color:#2C69A7 !important">
+                                                    Baca Sekarang <i style="color:#2C69A7 !important;"
                                                         class="bi bi-chevron-right"></i></nuxt-link>
                                             </div>
                                         </div>
@@ -291,7 +290,7 @@
             {
                 name: 'ogTitle',
                 content: `${title.value} | Nex Parabola`
-            },            
+            },
             {
                 name: 'description',
                 content: 'Layanan TV Satelit Parabola berlangganan Indonesia. Tonton Premium Live Football dan hiburan tanpa hambatan dengan resolusi HD hingga 4K.'
@@ -303,7 +302,7 @@
             {
                 name: 'og:image',
                 content: `${image.value || logoNex}`
-            },           
+            },
             {
                 name: 'twitter:card',
                 content: 'summary_large_image'
@@ -313,5 +312,5 @@
                 content: '@nexparabola_tv'
             },
         ],
-    }) 
+    })
 </script>
