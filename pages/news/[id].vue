@@ -302,7 +302,7 @@
             },
             {
                 name: 'og:image',
-                content: image.value
+                content: `${image.value || logoNex}`
             },           
             {
                 name: 'twitter:card',
