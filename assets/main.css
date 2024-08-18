@@ -514,3 +514,9 @@ footer ul li {
         font-size: 15px;
     }
 }
+
+@media(max-width:420px){
+    .width-slider-packet{
+        width: 280px !important;
+    }
+}

@@ -11,7 +11,14 @@ export default defineNuxtConfig({
   app: {
 
     head: {
-      link: [                
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+      link: [      
+        {
+          rel: 'icon',
+          type: 'image/x-icon',
+          href: '/logo-nex.png'
+        },             
         {
           rel: 'preconnect',
           href: 'https://fonts.googleapis.com'

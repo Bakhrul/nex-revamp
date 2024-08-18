@@ -112,7 +112,7 @@
                                     </svg>
                                     &ensp;Shopee</a></li>
 
-                            <li><a class="dropdown-item" href="https://m.bukalapak.com/nex-parabola-official">
+                            <li class="d-none"><a class="dropdown-item" href="https://m.bukalapak.com/nex-parabola-official">
                                     <svg width="30" height="31" viewBox="0 0 30 31" fill="none"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <rect y="2.2998" width="30" height="26.087" fill="url(#pattern0_1340_9567)" />

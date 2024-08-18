@@ -201,9 +201,54 @@
     import backgroundImageMobile from "~/assets/header/about-mobile.png"
     import backgroundImageDesktop from "~/assets/header-about.png"
     import backgroundImageDesktop2 from "~/assets/bg-about-3.png"
-
+    import logoNex from "~/assets/logo-nex.png";
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"
+
+    useHead({
+        title: 'Tentang Kami | Nex Parabola',
+        meta: [{
+                name: 'title',
+                content: 'Tentang Kami | Nex Parabola'
+            },
+            {
+                name: 'ogTitle',
+                content: 'Tentang Kami | Nex Parabola'
+            },
+             {
+                name: 'keywords',
+                content: 'apa itu nex parabola'
+            },
+            {
+                name: 'description',
+                content: 'Layanan TV Satelit Parabola berlangganan Indonesia. Tonton Premium Live Football dan hiburan tanpa hambatan dengan resolusi HD hingga 4K.'
+            },
+            {
+                name: 'og:description',
+                content: 'Layanan TV Satelit Parabola berlangganan Indonesia. Tonton Premium Live Football dan hiburan tanpa hambatan dengan resolusi HD hingga 4K.'
+            },
+            {
+                name: 'og:image',
+                content: logoNex
+            },
+            {
+                name: 'og:image:width',
+                content: '512'
+            },
+            {
+                name: 'og:image:height',
+                content: '512'
+            },
+            {
+                name: 'twitter:card',
+                content: 'summary_large_image'
+            },
+            {
+                name: 'twitter:site',
+                content: '@nexparabola_tv'
+            },
+        ],
+    }) 
 </script>
 <style scoped>
     .line-after-text {
@@ -227,4 +272,5 @@
         z-index: -1;
 
     }
+    
 </style>

@@ -368,6 +368,8 @@
     const selectKompetisiDateId = ref('');
 
     const resultKompetisi = ref([]);
+
+    import logoNex from "~/assets/logo-nex.png";
     const {
         data
     } = await getHome()
@@ -375,9 +377,53 @@
         sliderKidsMovie()
         momMovieGallery()
         if (selectKompetisiDateId.value && selectKompetisiId.value) {
-                getJadwalKompetisi()
-            }
+            getJadwalKompetisi()
+        }
     });
+    useHead({
+        title: 'TV Satelit Parabola Berlangganan Indonesia | Nex Parabola',
+        meta: [{
+                name: 'title',
+                content: 'TV Satelit Parabola Berlangganan Indonesia | Nex Parabola'
+            },
+            {
+                name: 'ogTitle',
+                content: 'TV Satelit Parabola Berlangganan Indonesia | Nex Parabola'
+            },
+            {
+                name: 'keywords',
+                content: 'Nex, Nex Parabola, Pay TV, TV Berlangganan'
+            },
+            {
+                name: 'description',
+                content: 'Layanan TV Satelit Parabola berlangganan Indonesia. Tonton Premium Live Football dan hiburan tanpa hambatan dengan resolusi HD hingga 4K.'
+            },
+            {
+                name: 'og:description',
+                content: 'Layanan TV Satelit Parabola berlangganan Indonesia. Tonton Premium Live Football dan hiburan tanpa hambatan dengan resolusi HD hingga 4K.'
+            },
+            {
+                name: 'og:image',
+                content: logoNex
+            },
+            {
+                name: 'og:image:width',
+                content: '512'
+            },
+            {
+                name: 'og:image:height',
+                content: '512'
+            },
+            {
+                name: 'twitter:card',
+                content: 'summary_large_image'
+            },
+            {
+                name: 'twitter:site',
+                content: '@nexparabola_tv'
+            },
+        ],
+    }) 
 
     onBeforeRouteLeave((to, from, next) => {
         if (intervalKidsMovie.value) {
@@ -418,7 +464,7 @@
                 selectKompetisiDate.value = listKompetisiDate.value[0].trxdatetext;
             }
 
-           
+
 
             return res.data.data
         }

@@ -216,7 +216,7 @@
 <script setup>
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"
-
+    import logoNex from "~/assets/logo-nex.png";
     import backgroundImageMobile from "~/assets/header/receiver-mobile.png"
     import backgroundImageDesktop from "~/assets/header/receiver-desktop.png"
 
@@ -263,4 +263,49 @@
         url.value = urlX;
         $("#modal-receiver").modal('show')
     }
+
+    useHead({
+        title: 'Receiver | Nex Parabola',
+        meta: [{
+                name: 'title',
+                content: 'Receiver | Nex Parabola'
+            },
+            {
+                name: 'ogTitle',
+                content: 'Receiver | Nex Parabola'
+            },
+             {
+                name: 'keywords',
+                content: 'receiver nexvidio, nex parabola garuda g1, nex parabola hijau, nex parabola kuning, nex parabola bundling diamond 2 bulan, nex parabola merah, receiver parabola nex video, harga receiver parabola, tv receiver nexvidio, tv nex parabola, receiver nex parabola'
+            },
+            {
+                name: 'description',
+                content: 'Layanan TV Satelit Parabola berlangganan Indonesia. Tonton Premium Live Football dan hiburan tanpa hambatan dengan resolusi HD hingga 4K.'
+            },
+            {
+                name: 'og:description',
+                content: 'Layanan TV Satelit Parabola berlangganan Indonesia. Tonton Premium Live Football dan hiburan tanpa hambatan dengan resolusi HD hingga 4K.'
+            },
+            {
+                name: 'og:image',
+                content: logoNex
+            },
+            {
+                name: 'og:image:width',
+                content: '512'
+            },
+            {
+                name: 'og:image:height',
+                content: '512'
+            },
+            {
+                name: 'twitter:card',
+                content: 'summary_large_image'
+            },
+            {
+                name: 'twitter:site',
+                content: '@nexparabola_tv'
+            },
+        ],
+    }) 
 </script>

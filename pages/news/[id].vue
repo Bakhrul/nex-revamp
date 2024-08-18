@@ -241,7 +241,7 @@
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"
     const route = useRoute()
-
+    import logoNex from "~/assets/logo-nex.png";
     import axios from "axios";
     const config = useRuntimeConfig()
 
@@ -281,4 +281,45 @@
     function openPelangganBaru(type) {
         $("#modal-pelanggan-baru-" + type).modal('show');
     }
+
+    useHead({
+        title: `${title.value} | Nex Parabola`,
+        meta: [{
+                name: 'title',
+                content: `${title.value} | Nex Parabola`
+            },
+            {
+                name: 'ogTitle',
+                content: `${title.value} | Nex Parabola`
+            },            
+            {
+                name: 'description',
+                content: 'Layanan TV Satelit Parabola berlangganan Indonesia. Tonton Premium Live Football dan hiburan tanpa hambatan dengan resolusi HD hingga 4K.'
+            },
+            {
+                name: 'og:description',
+                content: 'Layanan TV Satelit Parabola berlangganan Indonesia. Tonton Premium Live Football dan hiburan tanpa hambatan dengan resolusi HD hingga 4K.'
+            },
+            {
+                name: 'og:image',
+                content: logoNex
+            },
+            {
+                name: 'og:image:width',
+                content: '512'
+            },
+            {
+                name: 'og:image:height',
+                content: '512'
+            },
+            {
+                name: 'twitter:card',
+                content: 'summary_large_image'
+            },
+            {
+                name: 'twitter:site',
+                content: '@nexparabola_tv'
+            },
+        ],
+    }) 
 </script>

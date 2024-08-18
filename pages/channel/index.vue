@@ -5,7 +5,7 @@
             <div class="d-flex align-items-center"
                 :style="`background-image:url('${backgroundImageMobile}');background-size:cover;width:100%;background-position:left;padding:30px 0`">
                 <div class="container">
-                    <h6 class="text-white fw-bold">NEX NEWS</h6>
+                    <h6 class="text-white fw-bold">Channel</h6>
                 </div>
             </div>
         </div>
@@ -37,7 +37,7 @@
                                     <li><a class="dropdown-item"
                                                         style="color:#00539B !important;font-weight:400;font-size: 15px;"
                                                         v-for="context in listTanggal" href="javascript:void(0)"
-                                                        @click="selectDate = context.trxdatetext; selectDateId = context.trxdate;getSchedule()">{{context.trxdate}}</a>
+                                                        @click="selectDate = context.trxdatetext; selectDateId = context.trxdate;getSchedule()">{{context.trxdatetext}}</a>
                                                 </li>
                                 </ul>
                             </div>
@@ -122,7 +122,7 @@
     import axios from "axios";
     import backgroundImageMobile from "~/assets/header/channel-mobile.png"
     import backgroundImageDesktop from "~/assets/header/channel-desktop.png"
-
+    import logoNex from "~/assets/logo-nex.png";
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"
 
@@ -205,4 +205,49 @@
             imageKompetisi.value = res.data.data.imageurl;
         }
     }
+
+    useHead({
+        title: 'Channel | Nex Parabola',
+        meta: [{
+                name: 'title',
+                content: 'Channel | Nex Parabola'
+            },
+            {
+                name: 'ogTitle',
+                content: 'Channel | Nex Parabola'
+            },
+             {
+                name: 'keywords',
+                content: 'siaran piala dunia, siaran tv liga inggris, siaran premier league, channel bola, channel anime'
+            },
+            {
+                name: 'description',
+                content: 'Layanan TV Satelit Parabola berlangganan Indonesia. Tonton Premium Live Football dan hiburan tanpa hambatan dengan resolusi HD hingga 4K.'
+            },
+            {
+                name: 'og:description',
+                content: 'Layanan TV Satelit Parabola berlangganan Indonesia. Tonton Premium Live Football dan hiburan tanpa hambatan dengan resolusi HD hingga 4K.'
+            },
+            {
+                name: 'og:image',
+                content: logoNex
+            },
+            {
+                name: 'og:image:width',
+                content: '512'
+            },
+            {
+                name: 'og:image:height',
+                content: '512'
+            },
+            {
+                name: 'twitter:card',
+                content: 'summary_large_image'
+            },
+            {
+                name: 'twitter:site',
+                content: '@nexparabola_tv'
+            },
+        ],
+    }) 
 </script>

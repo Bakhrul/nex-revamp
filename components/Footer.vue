@@ -46,9 +46,9 @@
                         <img src="~/assets/payment.png" style="max-width:100%">
                         <div class="footer-title mb-2 mt-5" style="color:black !important">Download Apps Nex</div>
                         <div class="d-flex align-items-center">
-                            <img src="~/assets/sample-qr.jpg" class="me-2" style="max-width:100px">
-                            <a href="javascript:void(0)"><img src="~/assets/google-play.png"
-                                    style="max-width:180px"></a>
+                            <img src="~/assets/sample-qr.jpeg" class="me-2" style="max-width:100px">
+                            <a href="https://play.google.com/store/apps/details?id=ezlink.project.nexparabola&pli=1"><img src="~/assets/google-play.jpg"
+                                    style="max-width:180px;width:100%;"></a>
                         </div>
                     </div>
                 </div>

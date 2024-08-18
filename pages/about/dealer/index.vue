@@ -114,7 +114,7 @@
 <script setup>
     import backgroundImageMobile from "~/assets/header/dealer-mobile.png"
     import backgroundImageDesktop from "~/assets/header/dealer-desktop.png"
-
+    import logoNex from "~/assets/logo-nex.png";
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"
     import axios from "axios";
@@ -165,6 +165,51 @@
             return res.data.data;
         }
     }
+
+    useHead({
+        title: 'OFFICIAL STORES | Nex Parabola',
+        meta: [{
+                name: 'title',
+                content: 'OFFICIAL STORES | Nex Parabola'
+            },
+            {
+                name: 'ogTitle',
+                content: 'OFFICIAL STORES | Nex Parabola'
+            },   
+            {
+                name: 'keywords',
+                content: 'official store nex parabola'
+            },       
+            {
+                name: 'description',
+                content: 'Layanan TV Satelit Parabola berlangganan Indonesia. Tonton Premium Live Football dan hiburan tanpa hambatan dengan resolusi HD hingga 4K.'
+            },
+            {
+                name: 'og:description',
+                content: 'Layanan TV Satelit Parabola berlangganan Indonesia. Tonton Premium Live Football dan hiburan tanpa hambatan dengan resolusi HD hingga 4K.'
+            },
+            {
+                name: 'og:image',
+                content: logoNex
+            },
+            {
+                name: 'og:image:width',
+                content: '512'
+            },
+            {
+                name: 'og:image:height',
+                content: '512'
+            },
+            {
+                name: 'twitter:card',
+                content: 'summary_large_image'
+            },
+            {
+                name: 'twitter:site',
+                content: '@nexparabola_tv'
+            },
+        ],
+    }) 
 </script>
 
 <style scoped>

@@ -28,7 +28,7 @@
                 <div class="d-flex justify-content-center">
                     <div class="w-100">
                         <div class="slider-paket-terbatas">
-                            <div class="me-3" style="position: relative;width:330px">
+                            <div class="me-3 width-slider-packet" style="position: relative;width:330px">
                                 <div class="shadow-product w-100 product-box bg-black rounded"
                                     style="border:0 !important">
                                     <img src="~/assets/static-content/promo/paket-terbatas/1.png" />
@@ -47,7 +47,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="me-3" style="position: relative;width: 330px;">
+                            <div class="me-3 width-slider-packet" style="position: relative;width: 330px;">
                                 <div class="shadow-product w-100 product-box bg-black rounded"
                                     style="border:0 !important">
                                     <img src="~/assets/static-content/promo/paket-terbatas/2.png" />
@@ -65,7 +65,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="me-3" style="position: relative;width: 330px;">
+                            <div class="me-3 width-slider-packet" style="position: relative;width: 330px;">
                                 <div class="shadow-product w-100 product-box bg-black rounded"
                                     style="border:0 !important">
                                     <img src="~/assets/static-content/promo/paket-terbatas/3.png" />
@@ -85,7 +85,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="me-3" style="position: relative;width: 330px;">
+                            <div class="me-3 width-slider-packet" style="position: relative;width: 330px;">
                                 <div class="shadow-product w-100 product-box bg-black rounded"
                                     style="border:0 !important">
                                     <img src="~/assets/static-content/promo/paket-terbatas/4.png" />
@@ -105,7 +105,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="me-3" style="position: relative;width: 330px;">
+                            <div class="me-3 width-slider-packet" style="position: relative;width: 330px;">
                                 <div class="shadow-product w-100 product-box bg-black rounded"
                                     style="border:0 !important">
                                     <img src="~/assets/static-content/promo/paket-terbatas/5.png" />
@@ -136,7 +136,7 @@
                 <h5 class="mb-1 fw-bold">Promo Terbaru Lainnya</h5>
                 <div class="mb-3">Pilih sesuai dengan kebutuhan kamu</div>
                 <div class="slider-paket">
-                    <div class="shadow-product product-box bg-white me-3" style="width:330px">
+                    <div class="shadow-product product-box bg-white me-3 width-slider-packet" style="width:330px">
                         <img src="~/assets/static-content/promo/paket-lainnya/1.png" />
                         <div class="p-3 " style="min-height:180px">
                             <div class="d-flex justify-content-between mb-3">
@@ -149,7 +149,7 @@
                                 class="text-center btn bg-primary text-white w-100 p-3">LEBIH LANJUT</a>
                         </div>
                     </div>
-                    <div class="shadow-product product-box bg-white me-3" style="width:330px">
+                    <div class="shadow-product product-box bg-white me-3 width-slider-packet" style="width:330px">
                         <img src="~/assets/static-content/promo/paket-lainnya/2.png" />
                         <div class="p-3 " style="min-height:180px">
                             <div class="d-flex justify-content-between mb-3">
@@ -162,7 +162,7 @@
                                 class="text-center btn bg-primary text-white w-100 p-3">LEBIH LANJUT</a>
                         </div>
                     </div>
-                    <div class="shadow-product product-box bg-white me-3" style="width:330px">
+                    <div class="shadow-product product-box bg-white me-3 width-slider-packet" style="width:330px">
                         <img src="~/assets/static-content/promo/paket-lainnya/3.png" />
                         <div class="p-3 " style="min-height:180px">
                             <div class="d-flex justify-content-between mb-3">
@@ -451,7 +451,7 @@
 <script setup>
     import backgroundImageMobile from "~/assets/header/promo-mobile.png"
     import backgroundImageDesktop from "~/assets/header/promo-desktop.png"
-
+    import logoNex from "~/assets/logo-nex.png";
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"
 
@@ -504,4 +504,49 @@
             nextArrow: "<button type='button' class='slick-next pull-right'><i class='bi bi-arrow-right'></i></button>",
         });
     }
+
+    useHead({
+        title: 'Promo | Nex Parabola',
+        meta: [{
+                name: 'title',
+                content: 'Promo | Nex Parabola'
+            },
+            {
+                name: 'ogTitle',
+                content: 'Promo | Nex Parabola'
+            },
+             {
+                name: 'keywords',
+                content: 'promo nex parabola, receiver nex parabola bundling diamond, nex parabola combo,'
+            },
+            {
+                name: 'description',
+                content: 'Layanan TV Satelit Parabola berlangganan Indonesia. Tonton Premium Live Football dan hiburan tanpa hambatan dengan resolusi HD hingga 4K.'
+            },
+            {
+                name: 'og:description',
+                content: 'Layanan TV Satelit Parabola berlangganan Indonesia. Tonton Premium Live Football dan hiburan tanpa hambatan dengan resolusi HD hingga 4K.'
+            },
+            {
+                name: 'og:image',
+                content: logoNex
+            },
+            {
+                name: 'og:image:width',
+                content: '512'
+            },
+            {
+                name: 'og:image:height',
+                content: '512'
+            },
+            {
+                name: 'twitter:card',
+                content: 'summary_large_image'
+            },
+            {
+                name: 'twitter:site',
+                content: '@nexparabola_tv'
+            },
+        ],
+    }) 
 </script>

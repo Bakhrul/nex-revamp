@@ -49,7 +49,7 @@
             <div class="container">
                 <h5 class="mb-3">Pelanggan Baru</h5>
                 <div class="slider-paket slider-baru">
-                    <div class="me-3" style="width:330px;">
+                    <div class="me-3 width-slider-packet" style="width:330px;">
                         <div class="shadow-product w-100 product-box bg-white">
                             <img src="~/assets/static-content/paket/pelanggan-baru/1.png" />
                             <div class="p-3 " style="min-height:150px">
@@ -68,7 +68,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="me-3" style="width:330px;">
+                    <div class="me-3 width-slider-packet" style="width:330px;">
                         <div class="shadow-product w-100 product-box bg-white">
                             <img src="~/assets/static-content/paket/pelanggan-baru/2.png" />
                             <div class="p-3 " style="min-height:150px">
@@ -87,7 +87,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="me-3" style="width:330px;">
+                    <div class="me-3 width-slider-packet" style="width:330px;">
                         <div class="shadow-product w-100 product-box bg-white">
                             <img src="~/assets/static-content/paket/pelanggan-baru/3.png" />
                             <div class="p-3 " style="min-height:150px">
@@ -113,7 +113,7 @@
             <div class="container">
                 <h5 class="mb-3">Pelanggan Setia</h5>
                 <div class="slider-paket slider-setia">
-                    <div class="me-3" style="width:330px;">
+                    <div class="me-3 width-slider-packet" style="width:330px;">
                         <div class="shadow-product w-100 product-box bg-white">
                             <img src="~/assets/static-content/paket/pelanggan-setia/1.png" />
                             <div class="p-3 " style="min-height:150px">
@@ -132,7 +132,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="me-3" style="width:330px;">
+                    <div class="me-3 width-slider-packet" style="width:330px;">
                         <div class="shadow-product w-100 product-box bg-white">
                             <img src="~/assets/static-content/paket/pelanggan-setia/2.png" />
                             <div class="p-3 " style="min-height:150px">
@@ -152,7 +152,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="me-3" style="width:330px;">
+                    <div class="me-3 width-slider-packet" style="width:330px;">
                         <div class="shadow-product w-100 product-box bg-white">
                             <img src="~/assets/static-content/paket/pelanggan-setia/3.png" />
                             <div class="p-3 " style="min-height:150px">
@@ -171,7 +171,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="me-3" style="width:330px;">
+                    <div class="me-3 width-slider-packet" style="width:330px;">
                         <div class="shadow-product w-100 product-box bg-white">
                             <img src="~/assets/static-content/paket/pelanggan-setia/4.png" />
                             <div class="p-3 " style="min-height:150px">
@@ -190,7 +190,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="me-3" style="width:330px;">
+                    <div class="me-3 width-slider-packet" style="width:330px;">
                         <div class="shadow-product w-100 product-box bg-white">
                             <img src="~/assets/static-content/paket/pelanggan-setia/5.png" />
                             <div class="p-3 " style="min-height:150px">
@@ -209,7 +209,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="me-3" style="width:330px;">
+                    <div class="me-3 width-slider-packet" style="width:330px;">
                         <div class="shadow-product w-100 product-box bg-white">
                             <img src="~/assets/static-content/paket/pelanggan-setia/6.png" />
                             <div class="p-3 " style="min-height:150px">
@@ -228,7 +228,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="me-3" style="width:330px;">
+                    <div class="me-3 width-slider-packet" style="width:330px;">
                         <div class="shadow-product w-100 product-box bg-white">
                             <img src="~/assets/static-content/paket/pelanggan-setia/7.png" />
                             <div class="p-3 " style="min-height:150px">
@@ -247,7 +247,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="me-3" style="width:330px;">
+                    <div class="me-3 width-slider-packet" style="width:330px;">
                         <div class="shadow-product w-100 product-box bg-white">
                             <img src="~/assets/static-content/paket/pelanggan-setia/8.png" />
                             <div class="p-3 " style="min-height:150px">
@@ -737,7 +737,7 @@
 <script setup>
     import backgroundImageMobile from "~/assets/header/paket-mobile.png"
     import backgroundImageDesktop from "~/assets/header/paket-desktop.png"
-
+    import logoNex from "~/assets/logo-nex.png";
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"
     const type = ref('semua')
@@ -782,4 +782,49 @@
             nextArrow: "<button type='button' class='slick-next pull-right'><i class='bi bi-arrow-right' aria-hidden='true'></i></button>",
         });
     }
+
+    useHead({
+        title: 'Paket | Nex Parabola',
+        meta: [{
+                name: 'title',
+                content: 'Paket | Nex Parabola'
+            },
+            {
+                name: 'ogTitle',
+                content: 'Paket | Nex Parabola'
+            },
+             {
+                name: 'keywords',
+                content: 'daftar paket nex parabola, daftar harga paket nex parabola, harga paket nex parabola, paket tv olahraga, paket diamond nex parabola, tv langganan liga inggris, nex parabola paket, paket nex parabola liga 1, paket tv champion, paket liga inggris, langganan piala dunia, langganan liga inggris, satelit nex parabola, paket kids nex parabola, paket basic nex parabola, harga receiver nex parabola'
+            },
+            {
+                name: 'description',
+                content: 'Layanan TV Satelit Parabola berlangganan Indonesia. Tonton Premium Live Football dan hiburan tanpa hambatan dengan resolusi HD hingga 4K.'
+            },
+            {
+                name: 'og:description',
+                content: 'Layanan TV Satelit Parabola berlangganan Indonesia. Tonton Premium Live Football dan hiburan tanpa hambatan dengan resolusi HD hingga 4K.'
+            },
+            {
+                name: 'og:image',
+                content: logoNex
+            },
+            {
+                name: 'og:image:width',
+                content: '512'
+            },
+            {
+                name: 'og:image:height',
+                content: '512'
+            },
+            {
+                name: 'twitter:card',
+                content: 'summary_large_image'
+            },
+            {
+                name: 'twitter:site',
+                content: '@nexparabola_tv'
+            },
+        ],
+    }) 
 </script>

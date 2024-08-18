@@ -9,15 +9,15 @@
                 <img src="~/assets/static-content/banner/1-section.png" class="w-100 mt-5 mb-5">
                 <div class="fw-bold fs-5 text-center">Untuk Membeli Paket Silahkan Kunjungi Marketplace Kami</div>
                 <div class="row justify-content-center mt-2">                 
-                    <div class="col-lg-4 mb-3 d-flex justify-content-center">
+                    <!-- <div class="col-lg-4 mb-3 d-flex justify-content-center">
                         <a href="https://m.bukalapak.com/nex-parabola-official" class="w-100">
                             <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
                                 style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
                                 <img src="~/assets/social-media/bukalapak.png" style="height:40px;max-width:100%;" />
                             </div>
                         </a>
-                    </div>
-                    <div class="col-lg-4 mb-3 d-flex justify-content-center">
+                    </div> -->
+                    <div class="col-lg-6 mb-3 d-flex justify-content-center">
                         <a href="https://shopee.co.id/nexparabola.official" class="w-100">
                             <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
                                 style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
@@ -25,7 +25,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-4 mb-3 d-flex justify-content-center">
+                    <div class="col-lg-6 mb-3 d-flex justify-content-center">
                         <a href="https://belipaket.mynex.id/" class="w-100">
                             <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
                                 style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
@@ -74,7 +74,48 @@
 <script setup>
     import headerImageDesktop1 from "~/assets/static-content/banner/1-detail.png"
 
-
+    import logoNex from "~/assets/logo-nex.png";
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"
+
+    useHead({
+        title: 'Premiere League | Nex Parabola',
+        meta: [{
+                name: 'title',
+                content: 'Premiere League | Nex Parabola'
+            },
+            {
+                name: 'ogTitle',
+                content: 'Premiere League | Nex Parabola'
+            },           
+            {
+                name: 'description',
+                content: 'Layanan TV Satelit Parabola berlangganan Indonesia. Tonton Premium Live Football dan hiburan tanpa hambatan dengan resolusi HD hingga 4K.'
+            },
+            {
+                name: 'og:description',
+                content: 'Layanan TV Satelit Parabola berlangganan Indonesia. Tonton Premium Live Football dan hiburan tanpa hambatan dengan resolusi HD hingga 4K.'
+            },
+            {
+                name: 'og:image',
+                content: logoNex
+            },
+            {
+                name: 'og:image:width',
+                content: '512'
+            },
+            {
+                name: 'og:image:height',
+                content: '512'
+            },
+            {
+                name: 'twitter:card',
+                content: 'summary_large_image'
+            },
+            {
+                name: 'twitter:site',
+                content: '@nexparabola_tv'
+            },
+        ],
+    }) 
 </script>
