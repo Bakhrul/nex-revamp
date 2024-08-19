@@ -38,7 +38,7 @@
                                     <span style="font-weight:500;">{{selectCity}}</span>
                                 </span>
                             </button>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu" style="max-height:300px;overflow: auto;">
                                 <li><a class="dropdown-item"
                                         style="color:#00539B !important;font-weight:400;font-size: 15px;" href="javascript:void(0)"
                                         @click="selectCity = 'Semua'; selectCityId = '0';getList()">Semua</a>
@@ -46,14 +46,14 @@
                                 <li><a class="dropdown-item"
                                         style="color:#00539B !important;font-weight:400;font-size: 15px;"
                                         v-for="context in listCity" href="javascript:void(0)"
-                                        @click="selectCity = context.channel; selectCityId = context.id;getList()">{{context.channel}}</a>
+                                        @click="selectCity = context.city; selectCityId = context.id;getList()">{{context.city}}</a>
                                 </li>
                             </ul>
                         </div>
 
                     </div>
                     <div class="col-lg-6 mb-3 d-flex justify-content-end align-items-center">
-                        <form class="d-flex form-nav" role="search" style="border:1px #ddd solid">
+                        <div class="d-flex form-nav" role="search" style="border:1px #ddd solid">
                             <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -61,9 +61,9 @@
                                     fill="#00539B" />
                             </svg>&ensp;
 
-                            <input class="form-control" type="text" style="outline:none !important;border:0 !important;"
-                                v-model="search" @keyup.enter="getList" placeholder="Search" aria-label="Search">
-                        </form>
+                            <input class="form-control" type="search" style="outline:none !important;border:0 !important;"
+                                v-model="search" @keyup.enter="getList" placeholder="Search">
+                        </div>
                     </div>
                 </div>
             </div>

@@ -145,8 +145,10 @@
                                         </li>
                                         <li>Akses Jangkauan Seluruh Indonesia</li>
                                     </ol>
-                                    <img src="~/assets/hero-about.png" class="w-100 mt-3"
-                                        style="max-width: 100%;object-fit: contain;object-position: top;width:100%">
+                                    <div class="px-3 mb-3">
+                                    <img src="~/assets/hero-about-2.png" class="w-100 mt-3"
+                                        style="width:100%">
+                                    </div>
                                     </div>
                                 </div>
                             </div>
