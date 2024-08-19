@@ -71,12 +71,17 @@
             </div>
         </div>
         <div class="show-on-mobile">
+            <div class="show-on-mobile">
             <div class="d-flex align-items-center"
-                :style="`background-image:url('${backgroundImageMobile}');background-size:100% 100%;width:100%;background-position:left;padding:30px 0;min-height:100px`">
-                <div class="container">
-                    <h6 class="text-white fw-bold">About NEX</h6>                    
+                :style="`background-image:url('${backgroundImageMobile}');background-size:100% 100%;width:100%;position:relative;`">
+                <img :src="backgroundImageMobile" class="w-100" style="visibility: hidden;" />
+                <div class="d-flex align-items-center" style="position:absolute;left:0;top:0;width:100%;height:100%;">
+                    <div class="container" style="padding:15px 15px">
+                        <h6 class="text-white fw-bold">About NEX</h6>
+                    </div>
                 </div>
             </div>
+        </div>
             <section class="my-2">
                 <div class="w-100">
                     <div class="accordion accordion-custom" id="accordionExample">

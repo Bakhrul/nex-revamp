@@ -3,22 +3,29 @@
         <Navbar></Navbar>
         <div class="show-on-mobile">
             <div class="d-flex align-items-center"
-                :style="`background-image:url('${backgroundImageMobile}');background-size:100% 100%;width:100%;background-position:left;padding:30px 0;min-height:100px`">
-                <div class="container">
-                    <h6 class="text-white fw-bold">Receiver</h6>
+                :style="`background-image:url('${backgroundImageMobile}');background-size:100% 100%;width:100%;position:relative;`">
+                <img :src="backgroundImageMobile" class="w-100" style="visibility: hidden;" />
+                <div class="d-flex align-items-center" style="position:absolute;left:0;top:0;width:100%;height:100%;">
+                    <div class="container" style="padding:15px 15px">
+                        <h6 class="text-white fw-bold">Receiver</h6>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="show-on-desktop">
             <div class="d-flex align-items-center"
-                :style="`background-image:url('${backgroundImageDesktop}');background-size:100% 100%;width:100%;min-height:250px`">
-                <div class="container">
-                    <h1 class="text-white fw-bold">RECEIVER</h1>
-                    <div class="text-white">Kami Hadirkan Teknologi Terbaik Untuk<br> Pengalaman Menonton Paling Seru
+                :style="`background-image:url('${backgroundImageDesktop}');background-size:100% 100%;width:100%;position:relative;`">
+                <img :src="backgroundImageDesktop" class="w-100" style="visibility: hidden;" />
+                <div class="d-flex align-items-center" style="position:absolute;left:0;top:0;width:100%;height:100%;">
+                    <div class="container" style="padding:15px 0">
+                        <h1 class="text-white fw-bold">RECEIVER</h1>
+                        <div class="text-white">Kami Hadirkan Teknologi Terbaik Untuk<br> Pengalaman Menonton Paling
+                            Seru
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div>       
         <section class="pt-5 pb-5" style="background-color: #f2f2f2">
 
             <div class="container">
@@ -268,22 +275,22 @@
 
     const link1 = ref(
         'https://shopee.co.id/Nex-Parabola-Type-Biru-i.1311323005.27256686729?sp_atk=69965845-b5f5-448a-b8cb-14a8ef9c3cb4&xptdk=69965845-b5f5-448a-b8cb-14a8ef9c3cb4'
-        );
+    );
     const link2 = ref(
         'https://shopee.co.id/Nex-Parabola-Type-Kuning-i.1311323005.29706687030?sp_atk=c8f63711-47e1-49d5-ac7c-01e8d1ae77b0&xptdk=c8f63711-47e1-49d5-ac7c-01e8d1ae77b0'
-        );
+    );
     const link3 = ref(
         'https://shopee.co.id/Nex-Parabola-Combo-Merah-i.1311323005.29956679529?sp_atk=2a72f991-65ee-4a5c-a171-74c8ce8bf645&xptdk=2a72f991-65ee-4a5c-a171-74c8ce8bf645'
-        );
+    );
     const link4 = ref(
         'https://shopee.co.id/Nex-Parabola-Combo-Kuning-i.1311323005.25884184642?sp_atk=92d00b73-48bd-4948-b7d4-8d6ba3ea81e7&xptdk=92d00b73-48bd-4948-b7d4-8d6ba3ea81e7'
-        );
+    );
     const link5 = ref(
         'https://shopee.co.id/NexVidio-(Android-TV-BOX)-i.1311323005.29856688328?sp_atk=85618a8e-a58b-41f5-a216-b04b6fe5a81b&xptdk=85618a8e-a58b-41f5-a216-b04b6fe5a81b'
-        );
+    );
     const link6 = ref(
         'https://shopee.co.id/Nex-Parabola-Type-Merah-i.1311323005.28456687106?sp_atk=1dd7a912-283f-4642-a85c-9b0af4ebd6fc&xptdk=1dd7a912-283f-4642-a85c-9b0af4ebd6fc'
-        );
+    );
     const url = ref('')
     const type = ref(0)
 

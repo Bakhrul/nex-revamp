@@ -3,19 +3,26 @@
         <Navbar></Navbar>
         <div class="show-on-mobile">
             <div class="d-flex align-items-center"
-                :style="`background-image:url('${backgroundImageMobile}');background-size:100% 100%;width:100%;background-position:left;padding:30px 0;min-height:100px;`">
-                <div class="container">
-                    <h6 class="text-white fw-bold">Promo Receiver & Paket</h6>
+                :style="`background-image:url('${backgroundImageMobile}');background-size:100% 100%;width:100%;position:relative;`">
+                <img :src="backgroundImageMobile" class="w-100" style="visibility: hidden;" />
+                <div class="d-flex align-items-center" style="position:absolute;left:0;top:0;width:100%;height:100%;">
+                    <div class="container" style="padding:15px 15px">
+                        <h6 class="text-white fw-bold">Promo Receiver & Paket</h6>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="show-on-desktop">
             <div class="d-flex align-items-center"
-                :style="`background-image:url('${backgroundImageDesktop}');background-size:100% 100%;width:100%;min-height:250px`">
-                <div class="container">
-                    <h1 class="text-white fw-bold">PROMO RECEIVER & PAKET</h1>
-                    <div class="text-white">Nonton Tayangan Sports & Entertainment<br> Terbaik Makin Seru dengan Promo
-                        Eksklusif!</div>
+                :style="`background-image:url('${backgroundImageDesktop}');background-size:100% 100%;width:100%;position:relative;`">
+                <img :src="backgroundImageDesktop" class="w-100" style="visibility: hidden;" />
+                <div class="d-flex align-items-center" style="position:absolute;left:0;top:0;width:100%;height:100%;">
+                    <div class="container" style="padding:15px 0">
+                        <h1 class="text-white fw-bold">PROMO RECEIVER & PAKET</h1>
+                        <div class="text-white">Nonton Tayangan Sports & Entertainment<br> Terbaik Makin Seru dengan
+                            Promo
+                            Eksklusif!</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -307,7 +314,8 @@
                     </div>
                 </div>
                 <div class="slider-paket show-on-desktop">
-                    <div class="shadow-product product-box rounded-special-deals bg-white me-3 width-slider-packet" style="width:330px">
+                    <div class="shadow-product product-box rounded-special-deals bg-white me-3 width-slider-packet"
+                        style="width:330px">
                         <img src="~/assets/static-content/promo/paket-lainnya/1.png" />
                         <div class="p-3 " style="min-height:180px">
                             <div class="d-flex justify-content-between mb-3">
@@ -320,7 +328,8 @@
                                 class="text-center btn bg-primary text-white w-100 p-3">LEBIH LANJUT</a>
                         </div>
                     </div>
-                    <div class="shadow-product product-box rounded-special-deals bg-white me-3 width-slider-packet" style="width:330px">
+                    <div class="shadow-product product-box rounded-special-deals bg-white me-3 width-slider-packet"
+                        style="width:330px">
                         <img src="~/assets/static-content/promo/paket-lainnya/2.png" />
                         <div class="p-3 " style="min-height:180px">
                             <div class="d-flex justify-content-between mb-3">
@@ -333,7 +342,8 @@
                                 class="text-center btn bg-primary text-white w-100 p-3">LEBIH LANJUT</a>
                         </div>
                     </div>
-                    <div class="shadow-product product-box rounded-special-deals bg-white me-3 width-slider-packet" style="width:330px">
+                    <div class="shadow-product product-box rounded-special-deals bg-white me-3 width-slider-packet"
+                        style="width:330px">
                         <img src="~/assets/static-content/promo/paket-lainnya/3.png" />
                         <div class="p-3 " style="min-height:180px">
                             <div class="d-flex justify-content-between mb-3">

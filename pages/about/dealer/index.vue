@@ -3,21 +3,27 @@
         <Navbar></Navbar>
         <div class="show-on-mobile">
             <div class="d-flex align-items-center"
-                :style="`background-image:url('${backgroundImageMobile}');background-size:100% 100%;width:100%;background-position:left;padding:30px 0;min-height:100px`">
-                <div class="container">
-                    <h6 class="text-white fw-bold">Dealer</h6>
+                :style="`background-image:url('${backgroundImageMobile}');background-size:100% 100%;width:100%;position:relative;`">
+                <img :src="backgroundImageMobile" class="w-100" style="visibility: hidden;" />
+                <div class="d-flex align-items-center" style="position:absolute;left:0;top:0;width:100%;height:100%;">
+                    <div class="container" style="padding:15px 15px">
+                        <h6 class="text-white fw-bold">Dealer</h6>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="show-on-desktop">
             <div class="d-flex align-items-center"
-                :style="`background-image:url('${backgroundImageDesktop}');background-size:100% 100%;width:100%;min-height:250px`">
-                <div class="container">
-                    <h1 class="text-white fw-bold">Dealer</h1>
+                :style="`background-image:url('${backgroundImageDesktop}');background-size:100% 100%;width:100%;position:relative;`">
+                <img :src="backgroundImageDesktop" class="w-100" style="visibility: hidden;" />
+                <div class="d-flex align-items-center" style="position:absolute;left:0;top:0;width:100%;height:100%;">
+                    <div class="container" style="padding:15px 0">
+                        <h1 class="text-white fw-bold">Dealer</h1>
                     <div class="text-white">Temukan Nex di Kotamu!</div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </div>           
         <section class="mt-3">
 
             <div class="container">

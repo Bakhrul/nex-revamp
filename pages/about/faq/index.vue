@@ -1,14 +1,17 @@
 <template>
     <div>
         <Navbar></Navbar>
-
         <div class="show-on-mobile">
             <div class="d-flex align-items-center"
-                :style="`background-image:url('${backgroundImageMobile}');background-size:100% 100%;width:100%;background-position:left;padding:30px 0;min-height:100px;`">
-                <div class="container">
-                    <h6 class="text-white fw-bold">FAQ</h6>
+                :style="`background-image:url('${backgroundImageMobile}');background-size:100% 100%;width:100%;position:relative;`">
+                <img :src="backgroundImageMobile" class="w-100" style="visibility: hidden;" />
+                <div class="d-flex align-items-center" style="position:absolute;left:0;top:0;width:100%;height:100%;">
+                    <div class="container" style="padding:15px 15px">
+                        <h6 class="text-white fw-bold">FAQ</h6>
+                    </div>
                 </div>
             </div>
+
             <section class="my-2">
                 <div class="w-100">
                     <div class="accordion accordion-custom" id="accordionExample">
@@ -230,12 +233,15 @@
         </div>
         <div class="show-on-desktop">
             <div class="d-flex align-items-center"
-                :style="`background-image:url('${backgroundImageDesktop}');background-size:100% 100%;width:100%;min-height:250px`">
-                <div class="container">
-                    <h1 class="text-white fw-bold">FAQ & PAYMENT</h1>
-                    <div class="text-white">Menjawab Pertanyaan Sobat Nex</div>
+                :style="`background-image:url('${backgroundImageDesktop}');background-size:100% 100%;width:100%;position:relative;`">
+                <img :src="backgroundImageDesktop" class="w-100" style="visibility: hidden;" />
+                <div class="d-flex align-items-center" style="position:absolute;left:0;top:0;width:100%;height:100%;">
+                    <div class="container" style="padding:15px 0">
+                        <h1 class="text-white fw-bold">FAQ & PAYMENT</h1>
+                        <div class="text-white">Menjawab Pertanyaan Sobat Nex</div>
+                    </div>
                 </div>
-            </div>
+            </div>          
             <section class="my-5">
 
                 <div class="container">
@@ -412,7 +418,7 @@
             {
                 name: 'ogTitle',
                 content: 'FAQ | Nex Parabola'
-            },          
+            },
             {
                 name: 'description',
                 content: 'Layanan TV Satelit Parabola berlangganan Indonesia. Tonton Premium Live Football dan hiburan tanpa hambatan dengan resolusi HD hingga 4K.'
@@ -442,5 +448,5 @@
                 content: '@nexparabola_tv'
             },
         ],
-    }) 
+    })
 </script>
