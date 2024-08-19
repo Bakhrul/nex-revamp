@@ -16,7 +16,7 @@
                                         & Exclusive</h1>
                                     <div class="text-start fs-5 pt-3" style="color:#37003C;">Berlangganan paket liga
                                         inggris
-                                        dan dukung tim andalan kamu dalam laga bergerngsi secara live selama satu musim
+                                        dan dukung tim andalan kamu dalam laga bergengsi secara live selama satu musim
                                     </div>
                                     <div class="d-flex">
                                         <nuxt-link to="/promo/saksikan-premiere-league-and-live-exclusive"
