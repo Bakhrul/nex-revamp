@@ -38,7 +38,7 @@
                             <img :src="a.image" />
                             <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                 style="min-height:120px">
-                                <div style="overflow: hidden;
+                                <div style="overflow: hidden;line-clamp:2;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;" class="fw-bold fs-5">{{a.title}}</div>

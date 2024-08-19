@@ -20,39 +20,29 @@
         </div>
         <section class="my-3">
             <div class="container">
-
-                <div class="row justify-content-center">
-                    <div class="col-lg-3 mb-3">
-
-                        <div class="packet-filter" style="cursor:pointer" @click="type = 'semua'"
-                            :class="type == 'semua' ? 'active' : ''">SEMUA</div>
-
-                    </div>
-                    <div class="col-lg-3 mb-3">
-
-                        <div class="packet-filter" style="cursor:pointer" @click="type = 'baru'"
-                            :class="type == 'baru' ? 'active' : ''">PELANGGAN BARU</div>
-
-                    </div>
-                    <div class="col-lg-3 mb-3">
-
-                        <div class="packet-filter" style="cursor:pointer" @click="type = 'setia'"
-                            :class="type == 'setia' ? 'active' : ''">PELANGGAN SETIA
+                <div class="d-flex justify-content-center">
+                    <div style="overflow:auto">
+                        <div class="d-flex align-items-center" style="overflow:auto;width:600px">
+                            <div class="packet-filter mb-3 me-3" style="cursor:pointer;width:120px"
+                                @click="type = 'semua'" :class="type == 'semua' ? 'active' : ''">SEMUA</div>
+                            <div class="packet-filter mb-3 me-3" style="cursor:pointer;width:200px !important"
+                                @click="type = 'baru'" :class="type == 'baru' ? 'active' : ''">PELANGGAN BARU</div>
+                            <div class="packet-filter mb-3" style="cursor:pointer;width:200px !important"
+                                @click="type = 'setia'" :class="type == 'setia' ? 'active' : ''">PELANGGAN SETIA
+                            </div>
                         </div>
-
                     </div>
                 </div>
-
             </div>
         </section>
-        <section style="background: #f2f2f2" class="pt-5 pb-5" v-show="type == 'semua' || type == 'baru'">
+        <section class="pt-5 pb-5 bg-section">
             <div class="container">
-                <h5 class="mb-3">Pelanggan Baru</h5>
-                <div class="slider-paket slider-baru">
+                <h5 class="mb-3 fw-bold" v-show="type == 'semua' || type == 'baru'">PELANGGAN BARU</h5>
+                <div class="slider-paket slider-baru mb-5" v-show="type == 'semua' || type == 'baru'">
                     <div class="me-3 width-slider-packet" style="width:330px;">
                         <div class="shadow-product w-100 product-box bg-white">
                             <img src="~/assets/static-content/paket/pelanggan-baru/1.png" />
-                            <div class="p-3 " style="min-height:150px">
+                            <div class="p-3 " style="min-height:180px">
                                 <div class="d-flex justify-content-between mb-3 align-items-center">
                                     <div class="fw-bold fs-6">Basic</div>
                                     <div style="width:120px;">
@@ -71,7 +61,7 @@
                     <div class="me-3 width-slider-packet" style="width:330px;">
                         <div class="shadow-product w-100 product-box bg-white">
                             <img src="~/assets/static-content/paket/pelanggan-baru/2.png" />
-                            <div class="p-3 " style="min-height:150px">
+                            <div class="p-3 " style="min-height:180px">
                                 <div class="d-flex justify-content-between mb-3 align-items-center">
                                     <div class="fw-bold fs-6">KIDS</div>
                                     <div style="width:120px;">
@@ -90,7 +80,7 @@
                     <div class="me-3 width-slider-packet" style="width:330px;">
                         <div class="shadow-product w-100 product-box bg-white">
                             <img src="~/assets/static-content/paket/pelanggan-baru/3.png" />
-                            <div class="p-3 " style="min-height:150px">
+                            <div class="p-3 " style="min-height:180px">
                                 <div class="d-flex justify-content-between mb-3 align-items-center">
                                     <div class="fw-bold fs-6">DIAMOND</div>
                                     <div style="width:120px;">
@@ -107,16 +97,12 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section style="background: #f2f2f2" class="pt-5 pb-5" v-show="type == 'semua' || type == 'setia'">
-            <div class="container">
-                <h5 class="mb-3">Pelanggan Setia</h5>
-                <div class="slider-paket slider-setia">
+                <h5 class="mb-3 fw-bold" v-show="type == 'semua' || type == 'setia'">PELANGGAN SETIA</h5>
+                <div class="slider-paket slider-setia" v-show="type == 'semua' || type == 'setia'">
                     <div class="me-3 width-slider-packet" style="width:330px;">
                         <div class="shadow-product w-100 product-box bg-white">
                             <img src="~/assets/static-content/paket/pelanggan-setia/1.png" />
-                            <div class="p-3 " style="min-height:150px">
+                            <div class="p-3 " style="min-height:180px">
                                 <div class="d-flex justify-content-between mb-3 align-items-center">
                                     <div class="fw-bold fs-6">TIMNAS</div>
                                     <div style="width:120px;">
@@ -135,7 +121,7 @@
                     <div class="me-3 width-slider-packet" style="width:330px;">
                         <div class="shadow-product w-100 product-box bg-white">
                             <img src="~/assets/static-content/paket/pelanggan-setia/2.png" />
-                            <div class="p-3 " style="min-height:150px">
+                            <div class="p-3 " style="min-height:180px">
                                 <div class="d-flex justify-content-between mb-3 align-items-center">
                                     <div class="fw-bold fs-6">LIGA INGGRIS
                                         PPV</div>
@@ -155,7 +141,7 @@
                     <div class="me-3 width-slider-packet" style="width:330px;">
                         <div class="shadow-product w-100 product-box bg-white">
                             <img src="~/assets/static-content/paket/pelanggan-setia/3.png" />
-                            <div class="p-3 " style="min-height:150px">
+                            <div class="p-3 " style="min-height:180px">
                                 <div class="d-flex justify-content-between mb-3 align-items-center">
                                     <div class="fw-bold fs-6">LIGA 1</div>
                                     <div style="width:120px;">
@@ -174,7 +160,7 @@
                     <div class="me-3 width-slider-packet" style="width:330px;">
                         <div class="shadow-product w-100 product-box bg-white">
                             <img src="~/assets/static-content/paket/pelanggan-setia/4.png" />
-                            <div class="p-3 " style="min-height:150px">
+                            <div class="p-3 " style="min-height:180px">
                                 <div class="d-flex justify-content-between mb-3 align-items-center">
                                     <div class="fw-bold fs-6">VOLI</div>
                                     <div style="width:120px;">
@@ -193,7 +179,7 @@
                     <div class="me-3 width-slider-packet" style="width:330px;">
                         <div class="shadow-product w-100 product-box bg-white">
                             <img src="~/assets/static-content/paket/pelanggan-setia/5.png" />
-                            <div class="p-3 " style="min-height:150px">
+                            <div class="p-3 " style="min-height:180px">
                                 <div class="d-flex justify-content-between mb-3 align-items-center">
                                     <div class="fw-bold fs-6">LIGA INDONESIA+ CHAMPIONS</div>
                                     <div style="width:120px;">
@@ -212,7 +198,7 @@
                     <div class="me-3 width-slider-packet" style="width:330px;">
                         <div class="shadow-product w-100 product-box bg-white">
                             <img src="~/assets/static-content/paket/pelanggan-setia/6.png" />
-                            <div class="p-3 " style="min-height:150px">
+                            <div class="p-3 " style="min-height:180px">
                                 <div class="d-flex justify-content-between mb-3 align-items-center">
                                     <div class="fw-bold fs-6">LIGA INGGRIS</div>
                                     <div style="width:120px;">
@@ -231,7 +217,7 @@
                     <div class="me-3 width-slider-packet" style="width:330px;">
                         <div class="shadow-product w-100 product-box bg-white">
                             <img src="~/assets/static-content/paket/pelanggan-setia/7.png" />
-                            <div class="p-3 " style="min-height:150px">
+                            <div class="p-3 " style="min-height:180px">
                                 <div class="d-flex justify-content-between mb-3 align-items-center">
                                     <div class="fw-bold fs-6">LIGA INGGRIS+</div>
                                     <div style="width:120px;">
@@ -250,7 +236,7 @@
                     <div class="me-3 width-slider-packet" style="width:330px;">
                         <div class="shadow-product w-100 product-box bg-white">
                             <img src="~/assets/static-content/paket/pelanggan-setia/8.png" />
-                            <div class="p-3 " style="min-height:150px">
+                            <div class="p-3 " style="min-height:180px">
                                 <div class="d-flex justify-content-between mb-3 align-items-center">
                                     <div class="fw-bold fs-6">PREMIUM SPORTS</div>
                                     <div style="width:120px;">
@@ -793,7 +779,7 @@
                 name: 'ogTitle',
                 content: 'Paket | Nex Parabola'
             },
-             {
+            {
                 name: 'keywords',
                 content: 'daftar paket nex parabola, daftar harga paket nex parabola, harga paket nex parabola, paket tv olahraga, paket diamond nex parabola, tv langganan liga inggris, nex parabola paket, paket nex parabola liga 1, paket tv champion, paket liga inggris, langganan piala dunia, langganan liga inggris, satelit nex parabola, paket kids nex parabola, paket basic nex parabola, harga receiver nex parabola'
             },
@@ -826,5 +812,18 @@
                 content: '@nexparabola_tv'
             },
         ],
-    }) 
+    })
 </script>
+
+<style scoped>
+    .bg-section {
+        background: #f2f2f2;
+        border-top: 1px #ddd solid;
+    }
+
+    @media(max-width:991px) {
+        .bg-section {
+            background: #fff !important;
+        }
+    }
+</style>

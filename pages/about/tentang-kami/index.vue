@@ -106,7 +106,7 @@
                                                         bagi seluruh keluarga di Indonesia.</div>
                                                 </div>
                                                 <div class="col-lg-6 d-flex justify-content-center">
-                                                    <img src="~/assets/bg-about.png" class="w-100 mt-3"
+                                                    <img src="~/assets/bg-about-2.png" class="w-100 mt-3"
                                                         style="max-width: 100%;width:100%">
                                                 </div>
                                             </div>
@@ -178,7 +178,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-6 d-flex justify-content-center">
-                                                    <img src="~/assets/hero-about-3.png" class="w-100 mt-3"
+                                                    <img src="~/assets/bg-about-2.png" class="w-100 mt-3"
                                                         style="max-width: 100%;">
                                                 </div>
                                             </div>

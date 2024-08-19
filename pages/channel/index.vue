@@ -21,61 +21,61 @@
         <section class="mt-3">
             <div class="container">
                 <div class="row mb-3">
-                    <div class="col-lg-12 d-flex flex-wrap justify-content-center">
-                        <div class="me-3 mb-3">
-                            <div class="mb-2 fw-bolder" style="font-size:13px;">Tanggal</div>
+                    <div class="col-lg-12 d-flex justify-content-center">
+                        <div class="pe-2 mb-3">
+                            <div class="mb-2 fw-bolder title-dropdown-channel" style="font-size:13px;">Tanggal</div>
                             <div class="dropdown ">
-                                <button class="btn btn-secondary dropdown-toggle text-left"
+                                <button class="btn btn-secondary dropdown-toggle text-left btn-dropdown-channel"
                                     style="padding: 5px 15px;color:#00539B !important;border:1px #00539B solid;background:#fff"
                                     type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <span>
 
-                                        <span style="font-weight:600;">{{selectDate}}</span>
+                                        <span style="font-weight:bold;">{{selectDate}}</span>
                                     </span>
                                 </button>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item"
-                                                        style="color:#00539B !important;font-weight:400;font-size: 15px;"
+                                                        style="color:#00539B !important;font-weight:400;font-size: 13px;"
                                                         v-for="context in listTanggal" href="javascript:void(0)"
                                                         @click="selectDate = context.trxdatetext; selectDateId = context.trxdate;getSchedule()">{{context.trxdatetext}}</a>
                                                 </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="me-3 mb-3">
-                            <div class="mb-2 fw-bolder" style="font-size:13px;">Kategori</div>
+                        <div class="me-2 mb-3">
+                            <div class="mb-2 fw-bolder title-dropdown-channel" style="font-size:13px;">Kategori</div>
                             <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle text-left"
+                                <button class="btn btn-secondary dropdown-toggle text-left btn-dropdown-channel"
                                     style="padding: 5px 15px;color:#00539B !important;border:1px #00539B solid;background:#fff"
                                     type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <span>
 
-                                        <span style="font-weight:600;">{{selectCategory}}</span>
+                                        <span style="font-weight:bold;">{{selectCategory}}</span>
                                     </span>
                                 </button>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item"
-                                                        style="color:#00539B !important;font-weight:400;font-size: 15px;"
+                                                        style="color:#00539B !important;font-weight:400;font-size: 13px;"
                                                         v-for="context in listKategori" href="javascript:void(0)"
                                                         @click="selectCategory = context.category; selectCategoryId = context.id;getSchedule()">{{context.category}}</a>
                                                 </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="me-3 mb-3">
-                            <div class="mb-2 fw-bolder" style="font-size:13px;">Channel</div>
+                        <div class="me-2 mb-3">
+                            <div class="mb-2 fw-bolder title-dropdown-channel" style="font-size:13px;">Channel</div>
                             <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle text-left"
+                                <button class="btn btn-secondary dropdown-toggle text-left btn-dropdown-channel"
                                     style="padding: 5px 15px;color:#00539B !important;border:1px #00539B solid;background:#fff"
                                     type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <span>
 
-                                        <span style="font-weight:600;">{{selectChannel}}</span>
+                                        <span style="font-weight:bold;">{{selectChannel}}</span>
                                     </span>
                                 </button>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item"
-                                                        style="color:#00539B !important;font-weight:400;font-size: 15px;"
+                                                        style="color:#00539B !important;font-weight:400;font-size: 13px;"
                                                         v-for="context in listChannel" href="javascript:void(0)"
                                                         @click="selectChannel = context.channel; selectChannelId = context.id;getSchedule()">{{context.channel}}</a>
                                                 </li>
@@ -88,9 +88,12 @@
 
 
             </div>
-            <div style="background: #f2f2f2;" class="mt-3 py-5">
+            <div class="mt-3 py-5 bg-section">
                 <div class="container">
-                    <img :src="imageKompetisi" class="mb-1" v-if="imageKompetisi" style="width:150px;">
+                    <img :src="imageKompetisi" class="mb-1 show-on-desktop" v-if="imageKompetisi" style="width:150px;">
+                    <div class="d-flex justify-content-center">
+                        <img :src="imageKompetisi" class="mb-1 show-on-mobile" v-if="imageKompetisi" style="width:150px;">
+                    </div>
                     <div class="table-responsive mt-3">
                         <table class="table table-custom">
                             <thead>
@@ -251,3 +254,25 @@
         ],
     }) 
 </script>
+<style scoped>
+    @media(max-width:991px){
+        .btn-dropdown-channel{
+            font-size:11px !important;
+            padding:5px !important;            
+        }
+        .title-dropdown-channel{
+            font-size:11px !important
+        }
+    }
+
+    .bg-section {
+        background: #f2f2f2;
+        border-top: 1px #ddd solid;
+    }
+
+    @media(max-width:991px) {
+        .bg-section {
+            background: #fff !important;
+        }
+    }
+</style>

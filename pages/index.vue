@@ -152,7 +152,7 @@
                 <div class="row" style="overflow:auto !important;flex-wrap:nowrap">
                     <div class="col-4 mb-3 column-receiver-and-packet">
                         <div class="shadow-product w-100 product-box">
-                            <img src="~/assets/1.png" />
+                            <img src="~/assets/1.png" style="min-height: unset !important;" />
                             <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                 style="min-height:120px">
                                 <div class="fw-bold text-center fs-6">Receiver</div>
@@ -167,7 +167,7 @@
                     </div>
                     <div class="col-4 mb-3 column-receiver-and-packet">
                         <div class="shadow-product w-100 product-box">
-                            <img src="~/assets/2.png" />
+                            <img src="~/assets/2.png" style="min-height: unset !important;" />
                             <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                 style="min-height:120px">
                                 <div class="fw-bold text-center fs-6">Paket Berlangganan</div>
@@ -182,7 +182,7 @@
                     </div>
                     <div class="col-4 mb-3 column-receiver-and-packet">
                         <div class="shadow-product w-100 product-box" style="height:100%">
-                            <img src="~/assets/3.png" />
+                            <img src="~/assets/3.png" style="min-height: unset !important;" />
                             <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                 style="min-height:120px">
                                 <div class="fw-bold text-center fs-6">List Channel & Program</div>

@@ -177,7 +177,7 @@
                                                         style="background:#f2f2f2 !important;padding:20px 0 !important"
                                                         data-bs-toggle="collapse" data-bs-target="#collapseTwoS"
                                                         aria-expanded="true" aria-controls="collapseTwoS">
-                                                        Virtual Account
+                                                        Bank Transfer
                                                     </button>
                                                 </div>
                                             </h2>
@@ -367,7 +367,7 @@
                                 </div>
                             </div>
                             <div class="row py-3" style="border-bottom: 1px #ddd solid;">
-                                <div class="col-lg-3 fw-bold">Virtual Account</div>
+                                <div class="col-lg-3 fw-bold">Bank Transfer</div>
                                 <div class="col-lg-9">
                                     <div class="d-flex flex-wrap">
                                         <img src="~/assets/payment/permata.png" class="me-2" />

@@ -485,20 +485,17 @@ footer ul li {
     box-shadow: 0 1px 3px rgba(17, 24, 39, .09);
 }
 .gallery img{
-    width: 200px !important;
-    height: 300px !important;
+    width: 200px !important;    
 }
 @media(max-width:991px){
     .gallery img{
-        width: 130px !important;
-        height: 200px !important;
+        width: 130px !important;        
     }
 }
 
 @media(max-width:480px){
     .gallery img{
-        width: 100px !important;
-        height: 160px !important;
+        width: 100px !important;        
     }
 }
 .title-section{
@@ -528,4 +525,12 @@ footer ul li {
         width: 100%;    
         position: relative;
     }
+    .packet-filter{
+        font-size: 16px !important;
+        padding: 10px;
+    }
+}
+
+.rounded-special-deals{
+    border-radius: 15px !important;
 }

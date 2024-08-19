@@ -27,8 +27,7 @@
                         <div class="card bg-white shadow-lg" style="border-radius: 20px;">
                             <div class="card-body bg-white p-3" style="border-radius: 20px;">
                                 <div class="d-flex justify-content-center">
-                                    <img :src="receiver1"
-                                        style="width:100%;max-width:200px;height: unset !important" />
+                                    <img :src="receiver1" style="width:100%;max-width:200px;height: unset !important" />
                                 </div>
                                 <h5 class="text-center pt-5 fw-bold">Nex Parabola | Tipe Biru</h5>
                                 <div class="text-center pt-1">Lebih canggih tampilan baru</div>
@@ -47,8 +46,7 @@
                         <div class="card bg-white shadow-lg" style="border-radius: 20px;">
                             <div class="card-body bg-white p-3" style="border-radius: 20px;">
                                 <div class="d-flex justify-content-center">
-                                    <img :src="receiver2"
-                                        style="width:100%;max-width:200px;height: unset !important" />
+                                    <img :src="receiver2" style="width:100%;max-width:200px;height: unset !important" />
                                 </div>
                                 <h5 class="text-center pt-5 fw-bold">Nex Parabola | Tipe Kuning</h5>
                                 <div class="text-center pt-1">Lebih canggih tampilan baru</div>
@@ -68,8 +66,7 @@
                         <div class="card bg-white shadow-lg" style="border-radius: 20px;">
                             <div class="card-body bg-white p-3" style="border-radius: 20px;">
                                 <div class="d-flex justify-content-center">
-                                    <img :src="receiver3"
-                                        style="width:100%;max-width:200px;height: unset !important" />
+                                    <img :src="receiver3" style="width:100%;max-width:200px;height: unset !important" />
                                 </div>
                                 <h5 class="text-center pt-5 fw-bold">Nex Parabola | Combo Merah</h5>
                                 <div class="text-center pt-1">Lebih canggih tampilan baru</div>
@@ -88,8 +85,7 @@
                         <div class="card bg-white shadow-lg" style="border-radius: 20px;">
                             <div class="card-body bg-white p-3" style="border-radius: 20px;">
                                 <div class="d-flex justify-content-center">
-                                    <img :src="receiver4"
-                                        style="width:100%;max-width:200px;height: unset !important" />
+                                    <img :src="receiver4" style="width:100%;max-width:200px;height: unset !important" />
                                 </div>
                                 <h5 class="text-center pt-5 fw-bold">Nex Parabola | Combo Kuning</h5>
                                 <div class="text-center pt-1">Lebih canggih tampilan baru</div>
@@ -108,8 +104,7 @@
                         <div class="card bg-white shadow-lg" style="border-radius: 20px;">
                             <div class="card-body bg-white p-3" style="border-radius: 20px;">
                                 <div class="d-flex justify-content-center">
-                                    <img :src="receiver5"
-                                        style="width:100%;max-width:200px;height: unset !important" />
+                                    <img :src="receiver5" style="width:100%;max-width:200px;height: unset !important" />
                                 </div>
                                 <h5 class="text-center pt-5 fw-bold">Nex Vidio</h5>
                                 <div class="text-center pt-1">Lebih canggih tampilan baru</div>
@@ -128,8 +123,7 @@
                         <div class="card bg-white shadow-lg" style="border-radius: 20px;">
                             <div class="card-body bg-white p-3" style="border-radius: 20px;">
                                 <div class="d-flex justify-content-center">
-                                    <img :src="receiver6"
-                                        style="width:100%;max-width:200px;height: unset !important" />
+                                    <img :src="receiver6" style="width:100%;max-width:200px;height: unset !important" />
                                 </div>
                                 <h5 class="text-center pt-5 fw-bold">Nex Parabola | Combo Merah</h5>
                                 <div class="text-center pt-1">Lebih canggih tampilan baru</div>
@@ -156,20 +150,22 @@
                                 class="bi bi-x"></i></button>
                         <div class="row">
                             <div
-                                class="col-lg-5 px-5 d-flex align-items-center justify-content-center height-modal-receiver">
-                                <img :src="receiver1" class="w-100" v-if="type == 1" />                                
-                                <img :src="receiver2" class="w-100" v-if="type == 2" />                                
-                                <img :src="receiver3" class="w-100" v-if="type == 3" />                                
-                                <img :src="receiver4" class="w-100" v-if="type == 4" />                                
-                                <img :src="receiver5" class="w-100" v-if="type == 5" />                                
-                                <img :src="receiver6" class="w-100" v-if="type == 6" />                                
+                                class="col-lg-5 col-6 px-3 d-flex align-items-center justify-content-center height-modal-receiver">
+                                <img :src="receiver1" class="w-100" v-if="type == 1" />
+                                <img :src="receiver2" class="w-100" v-if="type == 2" />
+                                <img :src="receiver3" class="w-100" v-if="type == 3" />
+                                <img :src="receiver4" class="w-100" v-if="type == 4" />
+                                <img :src="receiver5" class="w-100" v-if="type == 5" />
+                                <img :src="receiver6" class="w-100" v-if="type == 6" />
                             </div>
-                            <div class="col-lg-7">
+                            <div class="col-lg-7 col-6">
                                 <div class="p-3">
-                                    <h5 class="text-left pt-2 fw-bold">{{name}}</h5>
-                                    <div class="text-left pt-1 fs-7 pb-3" style="color:black;">Lebih canggih tampilan
+                                    <h5 class="text-left pt-2 fw-bold show-on-desktop">{{name}}</h5>
+                                    <div class="text-left pt-1 fs-7 pb-3 show-on-desktop" style="color:black;">Lebih
+                                        canggih tampilan
                                         baru</div>
-                                    <div class="row justify-content-center">
+                                    <div class="text-center fs-6">Dapatkan Produk Kami di Ecommerce</div>
+                                    <div class="row justify-content-center show-on-desktop">
                                         <!-- <div class="col-lg-12 mb-3">
                                             <a href="javascript:void(0)">
                                                 <div class=" px-3 py-3 rounded d-flex justify-content-center"
@@ -205,6 +201,42 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-lg-12">
+                                <div class="row justify-content-center show-on-mobile">
+                                    <!-- <div class="col-lg-12 mb-3">
+                                            <a href="javascript:void(0)">
+                                                <div class=" px-3 py-3 rounded d-flex justify-content-center"
+                                                    style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
+                                                    <img src="~/assets/tokopedia.png" style="height:40px;" />
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-12 mb-3">
+                                            <a href="javascript:void(0)">
+                                                <div class=" px-3 py-3 rounded d-flex justify-content-center"
+                                                    style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
+                                                    <img src="~/assets/bukalapak.png" style="height:25px;" />
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-12 mb-3">
+                                            <a href="javascript:void(0)">
+                                                <div class=" px-3 py-3 rounded d-flex justify-content-center"
+                                                    style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
+                                                    <img src="~/assets/lazada.jpg" style="height:25px;" />
+                                                </div>
+                                            </a>
+                                        </div> -->
+                                    <div class="col-lg-12 mb-3">
+                                        <a :href="url" target="_blank">
+                                            <div class=" px-3 py-3 rounded d-flex justify-content-center"
+                                                style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
+                                                <img src="~/assets/social-media/shopee.png" style="height:20px;" />
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -234,29 +266,41 @@
     import receiverFitur5 from "~/assets/static-content/receiver/fitur-5.png";
     import receiverFitur6 from "~/assets/static-content/receiver/fitur-6.png";
 
-    const link1 = ref('https://shopee.co.id/Nex-Parabola-Type-Biru-i.1311323005.27256686729?sp_atk=69965845-b5f5-448a-b8cb-14a8ef9c3cb4&xptdk=69965845-b5f5-448a-b8cb-14a8ef9c3cb4');
-    const link2 = ref('https://shopee.co.id/Nex-Parabola-Type-Kuning-i.1311323005.29706687030?sp_atk=c8f63711-47e1-49d5-ac7c-01e8d1ae77b0&xptdk=c8f63711-47e1-49d5-ac7c-01e8d1ae77b0');
-    const link3 = ref('https://shopee.co.id/Nex-Parabola-Combo-Merah-i.1311323005.29956679529?sp_atk=2a72f991-65ee-4a5c-a171-74c8ce8bf645&xptdk=2a72f991-65ee-4a5c-a171-74c8ce8bf645');
-    const link4 = ref('https://shopee.co.id/Nex-Parabola-Combo-Kuning-i.1311323005.25884184642?sp_atk=92d00b73-48bd-4948-b7d4-8d6ba3ea81e7&xptdk=92d00b73-48bd-4948-b7d4-8d6ba3ea81e7');
-    const link5 = ref('https://shopee.co.id/NexVidio-(Android-TV-BOX)-i.1311323005.29856688328?sp_atk=85618a8e-a58b-41f5-a216-b04b6fe5a81b&xptdk=85618a8e-a58b-41f5-a216-b04b6fe5a81b');
-    const link6 = ref('https://shopee.co.id/Nex-Parabola-Type-Merah-i.1311323005.28456687106?sp_atk=1dd7a912-283f-4642-a85c-9b0af4ebd6fc&xptdk=1dd7a912-283f-4642-a85c-9b0af4ebd6fc');    
+    const link1 = ref(
+        'https://shopee.co.id/Nex-Parabola-Type-Biru-i.1311323005.27256686729?sp_atk=69965845-b5f5-448a-b8cb-14a8ef9c3cb4&xptdk=69965845-b5f5-448a-b8cb-14a8ef9c3cb4'
+        );
+    const link2 = ref(
+        'https://shopee.co.id/Nex-Parabola-Type-Kuning-i.1311323005.29706687030?sp_atk=c8f63711-47e1-49d5-ac7c-01e8d1ae77b0&xptdk=c8f63711-47e1-49d5-ac7c-01e8d1ae77b0'
+        );
+    const link3 = ref(
+        'https://shopee.co.id/Nex-Parabola-Combo-Merah-i.1311323005.29956679529?sp_atk=2a72f991-65ee-4a5c-a171-74c8ce8bf645&xptdk=2a72f991-65ee-4a5c-a171-74c8ce8bf645'
+        );
+    const link4 = ref(
+        'https://shopee.co.id/Nex-Parabola-Combo-Kuning-i.1311323005.25884184642?sp_atk=92d00b73-48bd-4948-b7d4-8d6ba3ea81e7&xptdk=92d00b73-48bd-4948-b7d4-8d6ba3ea81e7'
+        );
+    const link5 = ref(
+        'https://shopee.co.id/NexVidio-(Android-TV-BOX)-i.1311323005.29856688328?sp_atk=85618a8e-a58b-41f5-a216-b04b6fe5a81b&xptdk=85618a8e-a58b-41f5-a216-b04b6fe5a81b'
+        );
+    const link6 = ref(
+        'https://shopee.co.id/Nex-Parabola-Type-Merah-i.1311323005.28456687106?sp_atk=1dd7a912-283f-4642-a85c-9b0af4ebd6fc&xptdk=1dd7a912-283f-4642-a85c-9b0af4ebd6fc'
+        );
     const url = ref('')
     const type = ref(0)
 
     const name = ref('');
 
     function openReceiver(typeX, urlX) {
-        if(typeX == 1){
+        if (typeX == 1) {
             name.value = 'Nex Parabola | Tipe Biru';
-        }else if(typeX == 2){
+        } else if (typeX == 2) {
             name.value = 'Nex Parabola | Tipe Kuning';
-        }else if(typeX == 3){
+        } else if (typeX == 3) {
             name.value = 'Nex Parabola | Combo Merah';
-        }else if(typeX == 4){
+        } else if (typeX == 4) {
             name.value = 'Nex Parabola | Combo Kuning';
-        }else if(typeX == 5){
+        } else if (typeX == 5) {
             name.value = 'Nex Vidio';
-        }else if(typeX == 6){
+        } else if (typeX == 6) {
             name.value = 'Nex Parabola | Combo Merah';
         }
         type.value = typeX
@@ -274,7 +318,7 @@
                 name: 'ogTitle',
                 content: 'Receiver | Nex Parabola'
             },
-             {
+            {
                 name: 'keywords',
                 content: 'receiver nexvidio, nex parabola garuda g1, nex parabola hijau, nex parabola kuning, nex parabola bundling diamond 2 bulan, nex parabola merah, receiver parabola nex video, harga receiver parabola, tv receiver nexvidio, tv nex parabola, receiver nex parabola'
             },
@@ -307,5 +351,5 @@
                 content: '@nexparabola_tv'
             },
         ],
-    }) 
+    })
 </script>
