@@ -44,13 +44,10 @@
                             <img :src="a.image" />
                             <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                 style="min-height:120px">
-                                <div style="overflow: hidden;line-clamp:2;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;" class="fw-bold fs-5">{{a.title}}</div>
+                                <div style="overflow: hidden;line-clamp:2;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;" class="fw-bold fs-5">{{a.title}}</div>
                             </div>
                             <div class="p-3 d-flex justify-content-center footer" style="border-top:1px #ddd solid">
-                                <nuxt-link :to="'/news/' + a.id" class="w-100 p-2 text-center fw-bold"
+                                <nuxt-link :to="'/news/' + a.slug" class="w-100 p-2 text-center fw-bold"
                                     style="border-radius:10px;border:2px #2C69A7 solid;color:#2C69A7 !important"
                                    >Baca Sekarang <i style="color:#2C69A7 !important;"
                                         class="bi bi-chevron-right"></i></nuxt-link>

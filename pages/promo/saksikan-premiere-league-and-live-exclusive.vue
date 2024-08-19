@@ -7,32 +7,21 @@
                 <h4 class="fw-bold text-center">Paket Liga Inggris</h4>
                 <div class="text-center">Liga Inggris Musim 2024/25 LIVE dan Eksklusif di Nex</div>
                 <img src="~/assets/static-content/banner/1-section.png" class="w-100 mt-5 mb-5">
-                <div class="fw-bold fs-5 text-center">Untuk Membeli Paket Silahkan Kunjungi Marketplace Kami</div>
-                <div class="row justify-content-center mt-2">                 
-                    <!-- <div class="col-lg-4 mb-3 d-flex justify-content-center">
-                        <a href="https://m.bukalapak.com/nex-parabola-official" class="w-100">
-                            <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                <img src="~/assets/social-media/bukalapak.png" style="height:40px;max-width:100%;" />
-                            </div>
-                        </a>
-                    </div> -->
-                    <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                        <a href="https://shopee.co.id/nexparabola.official" class="w-100">
-                            <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                <img src="~/assets/social-media/shopee.png" style="height:20px;max-width:100%;" />
+                <div class="fw-bold fs-5 text-center show-on-desktop">Untuk Membeli Paket Silahkan Kunjungi Marketplace Kami</div>
+                <div class="d-flex show-on-desktop justify-content-center mt-3">
+                    <div class="mb-3 d-flex justify-content-center me-3" style="width:150px">
+                        <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
+                            <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                <img src="~/assets/social-media/shopee.png" style="height:23px;max-width:100%;" />
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                        <a href="https://belipaket.mynex.id/" class="w-100">
-                            <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                <div class="d-flex align-items-center">
-                                    <img src="~/assets/social-media/nex.png" style="height:20px;" />
-                                </div>
-                                
+                    <div class="mb-3 d-flex justify-content-center" style="width:180px">
+                        <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
+                            <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                <img src="~/assets/social-media/nex.png" style="height:17px;max-width:100%;" />
                             </div>
                         </a>
                     </div>
@@ -65,6 +54,24 @@
                     Channel yang di dapat:<br>
                     - Nex PPV (Channel ini akan aktif 2 jam sebelum pertandingan)
                 </div>
+                <div class="d-flex show-on-mobile justify-content-center mt-5">
+                    <div class="mb-3 d-flex justify-content-center" style="width:100%">
+                        <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
+                            <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                <img src="~/assets/social-media/shopee.png" style="height:23px;max-width:100%;" />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="mb-3 d-flex justify-content-center" style="width:100%">
+                        <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
+                            <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                <img src="~/assets/social-media/nex.png" style="height:17px;max-width:100%;" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
         <Footer></Footer>
@@ -87,7 +94,7 @@
             {
                 name: 'ogTitle',
                 content: 'Premiere League | Nex Parabola'
-            },           
+            },
             {
                 name: 'description',
                 content: 'Layanan TV Satelit Parabola berlangganan Indonesia. Tonton Premium Live Football dan hiburan tanpa hambatan dengan resolusi HD hingga 4K.'
@@ -117,5 +124,5 @@
                 content: '@nexparabola_tv'
             },
         ],
-    }) 
+    })
 </script>

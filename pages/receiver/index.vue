@@ -171,7 +171,7 @@
                                     <div class="text-left pt-1 fs-7 pb-3 show-on-desktop" style="color:black;">Lebih
                                         canggih tampilan
                                         baru</div>
-                                    <div class="text-center fs-6">Dapatkan Produk Kami di Ecommerce</div>
+                                    <div class="text-center fs-6 show-on-mobile">Dapatkan Produk Kami di Ecommerce</div>
                                     <div class="row justify-content-center show-on-desktop">
                                         <!-- <div class="col-lg-12 mb-3">
                                             <a href="javascript:void(0)">
@@ -199,10 +199,11 @@
                                         </div> -->
                                         <div class="col-lg-12 mb-3">
                                             <a :href="url" target="_blank">
-                                                <div class=" px-3 py-3 rounded d-flex justify-content-center"
-                                                    style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                                    <img src="~/assets/social-media/shopee.png" style="height:20px;" />
-                                                </div>
+                                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                        <img src="~/assets/social-media/shopee.png"
+                                            style="height:25px;max-width:100%;" />
+                                    </div>
                                             </a>
                                         </div>
                                     </div>
@@ -236,10 +237,11 @@
                                         </div> -->
                                     <div class="col-lg-12 mb-3">
                                         <a :href="url" target="_blank">
-                                            <div class=" px-3 py-3 rounded d-flex justify-content-center"
-                                                style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                                <img src="~/assets/social-media/shopee.png" style="height:20px;" />
-                                            </div>
+                                            <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                        style="box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, .09);height:43px">
+                                        <img src="~/assets/social-media/shopee.png"
+                                            style="height:25px;max-width:100%;" />
+                                    </div>
                                         </a>
                                     </div>
                                 </div>

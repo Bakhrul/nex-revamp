@@ -377,21 +377,21 @@
                             Inggris/Diamond/Premium Sport aktif untuk bisa membeli paket ini. 
                             *Paket bisa dibeli mulai tanggal 21 Agustus - 1 September 2024
                             *Channel akan aktif H-2 Jam sebelum pertandingan</div>
-                        <div class="row justify-content-center mt-2">
+                        <div class="row justify-content-center mt-5 px-4">
                             <div class="col-lg-6 mb-3 d-flex justify-content-center">
                                 <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
                                         <img src="~/assets/social-media/shopee.png"
-                                            style="height:20px;max-width:100%;" />
+                                            style="height:23px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
                             <div class="col-lg-6 mb-3 d-flex justify-content-center">
                                 <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/social-media/nex.png" style="height:20px;max-width:100%;" />
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                        <img src="~/assets/social-media/nex.png" style="height:16px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
@@ -414,21 +414,21 @@
                             Beli paket Liga 1 hanya 69rb/30 Hari. 
                             Nikmati pertandingan langsung dan rasakan ketegangan serta kegembiraan sepakbola Indonesia.
                         </div>
-                        <div class="row justify-content-center mt-2">
+                        <div class="row justify-content-center mt-5 px-4">
                             <div class="col-lg-6 mb-3 d-flex justify-content-center">
                                 <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
                                         <img src="~/assets/social-media/shopee.png"
-                                            style="height:20px;max-width:100%;" />
+                                            style="height:23px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
                             <div class="col-lg-6 mb-3 d-flex justify-content-center">
                                 <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/social-media/nex.png" style="height:20px;max-width:100%;" />
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                        <img src="~/assets/social-media/nex.png" style="height:16px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
@@ -451,21 +451,21 @@
                             kejuaraan.
                             Dapatkan paket voli hanya dengan Rp 79.000 untuk 30 hari. Segera aktifkan paket voli-mu
                             sekarang dan saksikan momen-momen epik dari olahraga voli!</div>
-                        <div class="row justify-content-center mt-2">
+                        <div class="row justify-content-center mt-5 px-4">
                             <div class="col-lg-6 mb-3 d-flex justify-content-center">
                                 <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
                                         <img src="~/assets/social-media/shopee.png"
-                                            style="height:20px;max-width:100%;" />
+                                            style="height:23px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
                             <div class="col-lg-6 mb-3 d-flex justify-content-center">
                                 <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/social-media/nex.png" style="height:20px;max-width:100%;" />
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                        <img src="~/assets/social-media/nex.png" style="height:16px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
@@ -487,21 +487,21 @@
                             menonton selama 1 tahun penuh secara GRATIS. Mulai dari film blockbuster, serial TV populer,
                             hingga acara olahraga langsung, semuanya ada di Nex. Jangan lewatkan penawaran spesial ini
                             dan rasakan pengalaman menonton yang luar biasa tanpa biaya tambahan!</div>
-                        <div class="row justify-content-center mt-2">
+                        <div class="row justify-content-center mt-5 px-4">
                             <div class="col-lg-6 mb-3 d-flex justify-content-center">
                                 <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
                                         <img src="~/assets/social-media/shopee.png"
-                                            style="height:20px;max-width:100%;" />
+                                            style="height:23px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
                             <div class="col-lg-6 mb-3 d-flex justify-content-center">
                                 <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/social-media/nex.png" style="height:20px;max-width:100%;" />
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                        <img src="~/assets/social-media/nex.png" style="height:16px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
@@ -524,21 +524,21 @@
                             secara eksklusif. Tidak perlu mengganti TV, cukup hubungkan Nex dan nikmati akses ke ribuan
                             film, serial TV, dan acara favorit kamu. Jadi, jadikan TV-mu lebih seru dengan Nex hari ini!
                         </div>
-                        <div class="row justify-content-center mt-2">
+                        <div class="row justify-content-center mt-5 px-4">
                             <div class="col-lg-6 mb-3 d-flex justify-content-center">
                                 <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
                                         <img src="~/assets/social-media/shopee.png"
-                                            style="height:20px;max-width:100%;" />
+                                            style="height:23px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
                             <div class="col-lg-6 mb-3 d-flex justify-content-center">
                                 <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/social-media/nex.png" style="height:20px;max-width:100%;" />
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                        <img src="~/assets/social-media/nex.png" style="height:16px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
@@ -591,12 +591,12 @@
                             membeli paket Diamond sebelumnya, dengan aktivasi dari tahun 2019 hingga Mei2024. Segera
                             aktifkan paket Diamond kamu dan rasakan pengalaman menonton yang luar biasa dengan Nex!
                         </div>
-                        <div class="row justify-content-center mt-2">
+                        <div class="row justify-content-center mt-5 px-4">               
                             <div class="col-lg-12 mb-3 d-flex justify-content-center">
                                 <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/social-media/nex.png" style="height:20px;max-width:100%;" />
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                        <img src="~/assets/social-media/nex.png" style="height:16px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
@@ -618,12 +618,12 @@
                             secara eksklusif. Tidak perlu mengganti TV, cukup hubungkan Nex dan nikmati akses ke ribuan
                             film, serial TV, dan acara favorit kamu. Jadi, jadikan TV-mu lebih seru dengan Nex hari ini!
                         </div>
-                        <div class="row justify-content-center mt-2">
+                        <div class="row justify-content-center mt-5 px-4">
                             <div class="col-lg-12 mb-3 d-flex justify-content-center">
                                 <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/social-media/nex.png" style="height:20px;max-width:100%;" />
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                        <img src="~/assets/social-media/nex.png" style="height:16px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>

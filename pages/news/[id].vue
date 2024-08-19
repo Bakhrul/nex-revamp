@@ -87,7 +87,7 @@
                                             </div>
                                             <div class="p-3 d-flex justify-content-center footer"
                                                 style="border-top:1px #ddd solid">
-                                                <nuxt-link :to="'/news/' + a.id" class="w-100 p-2 text-center fw-bold"
+                                                <nuxt-link :to="'/news/' + a.slug" class="w-100 p-2 text-center fw-bold"
                                                     style="border-radius:10px;border:2px #2C69A7 solid;color:#2C69A7 !important">
                                                     Baca Sekarang <i style="color:#2C69A7 !important;"
                                                         class="bi bi-chevron-right"></i></nuxt-link>
@@ -122,24 +122,24 @@
                         <div style="line-height:1.5;">Animal Planet, Discovery, BBC Earth, BBC Lifestyle, BBC World
                             News, AXN, ONE, Rock Entertainment, Rock Action, MTV, HGTV, TLC, AFN, Citra Culinary &
                             Travel, & 6 Channel TV Nasional</div>
-                        <div class="row justify-content-center mt-2">
+                            <div class="row justify-content-center mt-5 px-4">
                             <div class="col-lg-6 mb-3 d-flex justify-content-center">
                                 <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
                                         <img src="~/assets/social-media/shopee.png"
-                                            style="height:20px;max-width:100%;" />
+                                            style="height:23px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
                             <div class="col-lg-6 mb-3 d-flex justify-content-center">
                                 <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/social-media/nex.png" style="height:20px;max-width:100%;" />
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                        <img src="~/assets/social-media/nex.png" style="height:16px;max-width:100%;" />
                                     </div>
                                 </a>
-                            </div>
+                            </div>                        
                         </div>
                     </div>
                 </div>
@@ -163,24 +163,24 @@
                         </div>
 
                         <div style="line-height:1.5;">Nickelodeon, Nickelodeon Junior, Dreamworks, Animax</div>
-                        <div class="row justify-content-center mt-2">
+                        <div class="row justify-content-center mt-5 px-4">
                             <div class="col-lg-6 mb-3 d-flex justify-content-center">
                                 <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
                                         <img src="~/assets/social-media/shopee.png"
-                                            style="height:20px;max-width:100%;" />
+                                            style="height:23px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
                             <div class="col-lg-6 mb-3 d-flex justify-content-center">
                                 <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/social-media/nex.png" style="height:20px;max-width:100%;" />
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                        <img src="~/assets/social-media/nex.png" style="height:16px;max-width:100%;" />
                                     </div>
                                 </a>
-                            </div>
+                            </div>                        
                         </div>
                     </div>
                 </div>
@@ -206,24 +206,24 @@
                         <div style="line-height:1.5;">Nex Football (1, 2, 3), Champions TV (1, 2, 3, 5, 6), Voli TV,
                             Dreamworks, Nickelodeon, Nickelodeon Junior, Animax, Animal Planet, Discovery, BBC Earth,
                             BBC Lifestyle, BBC World News, AXN, ONE, Rock Entertainment, & banyak lagi</div>
-                        <div class="row justify-content-center mt-2">
+                            <div class="row justify-content-center mt-5 px-4">
                             <div class="col-lg-6 mb-3 d-flex justify-content-center">
                                 <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
                                         <img src="~/assets/social-media/shopee.png"
-                                            style="height:20px;max-width:100%;" />
+                                            style="height:23px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
                             <div class="col-lg-6 mb-3 d-flex justify-content-center">
                                 <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/social-media/nex.png" style="height:20px;max-width:100%;" />
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                        <img src="~/assets/social-media/nex.png" style="height:16px;max-width:100%;" />
                                     </div>
                                 </a>
-                            </div>
+                            </div>                        
                         </div>
                     </div>
                 </div>
@@ -257,7 +257,7 @@
     async function getDetail() {
         let res = await axios.get(config.public.API_URL + 'news/newsdetail', {
             params: {
-                id: route.params.id
+                slug: route.params.id
             },
             headers: {
                 'WEBCORP-APIKEY': config.public.API_KEY

@@ -23,7 +23,7 @@
                     </div>
                 </div>
             </div>
-        </div>       
+        </div>
         <section class="my-3">
             <div class="container">
                 <div class="d-flex justify-content-center">
@@ -282,21 +282,21 @@
                         <div style="line-height:1.5;">Animal Planet, Discovery, BBC Earth, BBC Lifestyle, BBC World
                             News, AXN, ONE, Rock Entertainment, Rock Action, MTV, HGTV, TLC, AFN, Citra Culinary &
                             Travel, & 6 Channel TV Nasional</div>
-                        <div class="row justify-content-center mt-2">
+                        <div class="row justify-content-center mt-5 px-4">
                             <div class="col-lg-6 mb-3 d-flex justify-content-center">
                                 <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
                                         <img src="~/assets/social-media/shopee.png"
-                                            style="height:20px;max-width:100%;" />
+                                            style="height:23px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
                             <div class="col-lg-6 mb-3 d-flex justify-content-center">
                                 <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/social-media/nex.png" style="height:20px;max-width:100%;" />
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                        <img src="~/assets/social-media/nex.png" style="height:16px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
@@ -323,21 +323,21 @@
                         </div>
 
                         <div style="line-height:1.5;">Nickelodeon, Nickelodeon Junior, Dreamworks, Animax</div>
-                        <div class="row justify-content-center mt-2">
+                        <div class="row justify-content-center mt-5 px-4">
                             <div class="col-lg-6 mb-3 d-flex justify-content-center">
                                 <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
                                         <img src="~/assets/social-media/shopee.png"
-                                            style="height:20px;max-width:100%;" />
+                                            style="height:23px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
                             <div class="col-lg-6 mb-3 d-flex justify-content-center">
                                 <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/social-media/nex.png" style="height:20px;max-width:100%;" />
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                        <img src="~/assets/social-media/nex.png" style="height:16px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
@@ -366,21 +366,21 @@
                         <div style="line-height:1.5;">Nex Football (1, 2, 3), Champions TV (1, 2, 3, 5, 6), Voli TV,
                             Dreamworks, Nickelodeon, Nickelodeon Junior, Animax, Animal Planet, Discovery, BBC Earth,
                             BBC Lifestyle, BBC World News, AXN, ONE, Rock Entertainment, & banyak lagi</div>
-                        <div class="row justify-content-center mt-2">
+                        <div class="row justify-content-center mt-5 px-4">
                             <div class="col-lg-6 mb-3 d-flex justify-content-center">
                                 <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
                                         <img src="~/assets/social-media/shopee.png"
-                                            style="height:20px;max-width:100%;" />
+                                            style="height:23px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
                             <div class="col-lg-6 mb-3 d-flex justify-content-center">
                                 <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/social-media/nex.png" style="height:20px;max-width:100%;" />
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                        <img src="~/assets/social-media/nex.png" style="height:16px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
@@ -409,21 +409,21 @@
                         </div>
 
                         <div style="line-height:1.5;">Nex Sport 4 HD</div>
-                        <div class="row justify-content-center mt-2">
+                        <div class="row justify-content-center mt-5 px-4">
                             <div class="col-lg-6 mb-3 d-flex justify-content-center">
                                 <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
                                         <img src="~/assets/social-media/shopee.png"
-                                            style="height:20px;max-width:100%;" />
+                                            style="height:23px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
                             <div class="col-lg-6 mb-3 d-flex justify-content-center">
                                 <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/social-media/nex.png" style="height:20px;max-width:100%;" />
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                        <img src="~/assets/social-media/nex.png" style="height:16px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
@@ -451,21 +451,21 @@
                         </div>
 
                         <div style="line-height:1.5;">Nex PPV HD</div>
-                        <div class="row justify-content-center mt-2">
+                        <div class="row justify-content-center mt-5 px-4">
                             <div class="col-lg-6 mb-3 d-flex justify-content-center">
                                 <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
                                         <img src="~/assets/social-media/shopee.png"
-                                            style="height:20px;max-width:100%;" />
+                                            style="height:23px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
                             <div class="col-lg-6 mb-3 d-flex justify-content-center">
                                 <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/social-media/nex.png" style="height:20px;max-width:100%;" />
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                        <img src="~/assets/social-media/nex.png" style="height:16px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
@@ -492,21 +492,21 @@
                         </div>
 
                         <div style="line-height:1.5;">Nex PPV HD</div>
-                        <div class="row justify-content-center mt-2">
+                        <div class="row justify-content-center mt-5 px-4">
                             <div class="col-lg-6 mb-3 d-flex justify-content-center">
                                 <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
                                         <img src="~/assets/social-media/shopee.png"
-                                            style="height:20px;max-width:100%;" />
+                                            style="height:23px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
                             <div class="col-lg-6 mb-3 d-flex justify-content-center">
                                 <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/social-media/nex.png" style="height:20px;max-width:100%;" />
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                        <img src="~/assets/social-media/nex.png" style="height:16px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
@@ -533,21 +533,21 @@
                         </div>
 
                         <div style="line-height:1.5;">Nex PPV HD</div>
-                        <div class="row justify-content-center mt-2">
+                        <div class="row justify-content-center mt-5 px-4">
                             <div class="col-lg-6 mb-3 d-flex justify-content-center">
                                 <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
                                         <img src="~/assets/social-media/shopee.png"
-                                            style="height:20px;max-width:100%;" />
+                                            style="height:23px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
                             <div class="col-lg-6 mb-3 d-flex justify-content-center">
                                 <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/social-media/nex.png" style="height:20px;max-width:100%;" />
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                        <img src="~/assets/social-media/nex.png" style="height:16px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
@@ -575,154 +575,152 @@
                         </div>
 
                         <div style="line-height:1.5;">Nex Sport 1 & 2 HD, Champions TV HD 1,2, & 3.</div>
-                        <div class="row justify-content-center mt-2">
+                        <div class="row justify-content-center mt-5 px-4">
                             <div class="col-lg-6 mb-3 d-flex justify-content-center">
                                 <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
                                         <img src="~/assets/social-media/shopee.png"
-                                            style="height:20px;max-width:100%;" />
+                                            style="height:23px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
                             <div class="col-lg-6 mb-3 d-flex justify-content-center">
                                 <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/social-media/nex.png" style="height:20px;max-width:100%;" />
+                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                        <img src="~/assets/social-media/nex.png" style="height:16px;max-width:100%;" />
                                     </div>
                                 </a>
-                            </div>
+                            </div>                        
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="modal fade" tabindex="-1" role="dialog" id="modal-pelanggan-setia-6">
-            <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:450px">
-                <div class="modal-content">
-                    <div class="modal-body rounded">
-                        <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
-                                class="bi bi-x"></i></button>
-                        <img src="~/assets/static-content/paket/pelanggan-setia/6.png" class="w-100 rounded" />
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h5 class="fw-bold mt-3 me-3">LIGA INGGRIS</h5>
-                            <div style="width:140px">
-                                <div class="fw-bold p-1"
-                                    style="width:140px;font-size:11px;text-align:center;border-radius:5px;color:#2C69A7;background:#D5E0E9">
-                                    Mulai dari Rp 169.000
-                                </div>
+    
+    <div class="modal fade" tabindex="-1" role="dialog" id="modal-pelanggan-setia-6">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:450px">
+            <div class="modal-content">
+                <div class="modal-body rounded">
+                    <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
+                            class="bi bi-x"></i></button>
+                    <img src="~/assets/static-content/paket/pelanggan-setia/6.png" class="w-100 rounded" />
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="fw-bold mt-3 me-3">LIGA INGGRIS</h5>
+                        <div style="width:140px">
+                            <div class="fw-bold p-1"
+                                style="width:140px;font-size:11px;text-align:center;border-radius:5px;color:#2C69A7;background:#D5E0E9">
+                                Mulai dari Rp 169.000
                             </div>
                         </div>
+                    </div>
 
-                        <div style="line-height:1.5;"></div>
-                        <div class="row justify-content-center mt-2">
-                            <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                                <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/social-media/shopee.png"
-                                            style="height:20px;max-width:100%;" />
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                                <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/social-media/nex.png" style="height:20px;max-width:100%;" />
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" tabindex="-1" role="dialog" id="modal-pelanggan-setia-7">
-            <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:450px">
-                <div class="modal-content">
-                    <div class="modal-body rounded">
-                        <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
-                                class="bi bi-x"></i></button>
-                        <img src="~/assets/static-content/paket/pelanggan-setia/7.png" class="w-100 rounded" />
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h5 class="fw-bold mt-3 me-3">LIGA INGGRIS+</h5>
-                            <div style="width:140px">
-                                <div class="fw-bold p-1"
-                                    style="width:140px;font-size:11px;text-align:center;border-radius:5px;color:#2C69A7;background:#D5E0E9">
-                                    Mulai dari Rp 2.499.000
+                    <div style="line-height:1.5;"></div>
+                    <div class="row justify-content-center mt-5 px-4">
+                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
+                            <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
+                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                    <img src="~/assets/social-media/shopee.png" style="height:23px;max-width:100%;" />
                                 </div>
-                            </div>
+                            </a>
                         </div>
-
-                        <div style="line-height:1.5;">Champions TV 5, Champions TV 6, Nex PPV</div>
-                        <div class="row justify-content-center mt-2">
-                            <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                                <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/social-media/shopee.png"
-                                            style="height:20px;max-width:100%;" />
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                                <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/social-media/nex.png" style="height:20px;max-width:100%;" />
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" tabindex="-1" role="dialog" id="modal-pelanggan-setia-8">
-            <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:450px">
-                <div class="modal-content">
-                    <div class="modal-body rounded">
-                        <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
-                                class="bi bi-x"></i></button>
-                        <img src="~/assets/static-content/paket/pelanggan-setia/8.png" class="w-100 rounded" />
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h5 class="fw-bold mt-3 me-3">PREMIUM SPORTS</h5>
-                            <div style="width:140px">
-                                <div class="fw-bold p-1"
-                                    style="width:140px;font-size:11px;text-align:center;border-radius:5px;color:#2C69A7;background:#D5E0E9">
-                                    Mulai dari Rp 2.499.000
+                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
+                            <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
+                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                    <img src="~/assets/social-media/nex.png" style="height:16px;max-width:100%;" />
                                 </div>
-                            </div>
-                        </div>
-
-                        <div style="line-height:1.5;">Nex Football, Nex Football 2, Nex Football 3, Champions TV (1, 2,
-                            3, 5, 6) & Voli TV</div>
-                        <div class="row justify-content-center mt-2">
-                            <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                                <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/social-media/shopee.png"
-                                            style="height:20px;max-width:100%;" />
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                                <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center"
-                                        style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                        <img src="~/assets/social-media/nex.png" style="height:20px;max-width:100%;" />
-                                    </div>
-                                </a>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- END PELANGGAN SETIA -->
+    </div>
+    <div class="modal fade" tabindex="-1" role="dialog" id="modal-pelanggan-setia-7">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:450px">
+            <div class="modal-content">
+                <div class="modal-body rounded">
+                    <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
+                            class="bi bi-x"></i></button>
+                    <img src="~/assets/static-content/paket/pelanggan-setia/7.png" class="w-100 rounded" />
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="fw-bold mt-3 me-3">LIGA INGGRIS+</h5>
+                        <div style="width:140px">
+                            <div class="fw-bold p-1"
+                                style="width:140px;font-size:11px;text-align:center;border-radius:5px;color:#2C69A7;background:#D5E0E9">
+                                Mulai dari Rp 2.499.000
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="line-height:1.5;">Champions TV 5, Champions TV 6, Nex PPV</div>
+                    <div class="row justify-content-center mt-5 px-4">
+                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
+                            <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
+                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                    <img src="~/assets/social-media/shopee.png" style="height:23px;max-width:100%;" />
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
+                            <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
+                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                    <img src="~/assets/social-media/nex.png" style="height:16px;max-width:100%;" />
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" tabindex="-1" role="dialog" id="modal-pelanggan-setia-8">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:450px">
+            <div class="modal-content">
+                <div class="modal-body rounded">
+                    <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
+                            class="bi bi-x"></i></button>
+                    <img src="~/assets/static-content/paket/pelanggan-setia/8.png" class="w-100 rounded" />
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="fw-bold mt-3 me-3">PREMIUM SPORTS</h5>
+                        <div style="width:140px">
+                            <div class="fw-bold p-1"
+                                style="width:140px;font-size:11px;text-align:center;border-radius:5px;color:#2C69A7;background:#D5E0E9">
+                                Mulai dari Rp 2.499.000
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="line-height:1.5;">Nex Football, Nex Football 2, Nex Football 3, Champions TV (1, 2,
+                        3, 5, 6) & Voli TV</div>
+                    <div class="row justify-content-center mt-5 px-4">
+                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
+                            <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
+                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                    <img src="~/assets/social-media/shopee.png" style="height:23px;max-width:100%;" />
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
+                            <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
+                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                    <img src="~/assets/social-media/nex.png" style="height:16px;max-width:100%;" />
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END PELANGGAN SETIA -->
     </div>
 </template>
 
