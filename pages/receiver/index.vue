@@ -3,7 +3,7 @@
         <Navbar></Navbar>
         <div class="show-on-mobile">
             <div class="d-flex align-items-center"
-                :style="`background-image:url('${backgroundImageMobile}');background-size:cover;width:100%;background-position:left;padding:30px 0`">
+                :style="`background-image:url('${backgroundImageMobile}');background-size:100% 100%;width:100%;background-position:left;padding:30px 0;min-height:100px`">
                 <div class="container">
                     <h6 class="text-white fw-bold">Receiver</h6>
                 </div>
@@ -11,7 +11,7 @@
         </div>
         <div class="show-on-desktop">
             <div class="d-flex align-items-center"
-                :style="`background-image:url('${backgroundImageDesktop}');background-size:cover;width:100%;min-height:220px`">
+                :style="`background-image:url('${backgroundImageDesktop}');background-size:100% 100%;width:100%;min-height:250px`">
                 <div class="container">
                     <h1 class="text-white fw-bold">RECEIVER</h1>
                     <div class="text-white">Kami Hadirkan Teknologi Terbaik Untuk<br> Pengalaman Menonton Paling Seru

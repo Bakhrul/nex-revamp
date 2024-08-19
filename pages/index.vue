@@ -198,7 +198,7 @@
         </section>
         <section class="py-3">
             <div class="match-box"
-                :style="`background-image:url('${backgroundImage}');background-size: cover;background-repeat:no-repeat;min-height:500px`">
+                :style="`background-image:url('${backgroundImage}');background-size: 100% 100%;background-repeat:no-repeat;min-height:500px`">
                 <div class="container-fluid">
                     <div class="py-3 px-5 group-match">
                         <div class="row">
