@@ -5,18 +5,24 @@
             <carousel :items-to-show="1" :autoplay="2500" :wrapAround="true">
                 <slide :key="1">
                     <div class="d-flex align-items-center py-5"
-                        :style="`background-image:url('${headerImageDesktop1}');background-size:100% 100%;width:100%;min-height:300px;height:100%;`">
-                        <div class="container">
-                            <div style="max-width:500px">
-                                <h1 class="text-start fw-bold pt-5" style="color:#41054F;">Saksikan Premier League Live
-                                    & Exclusive</h1>
-                                <div class="text-start fs-5 pt-3" style="color:#37003C;">Berlangganan paket liga inggris
-                                    dan dukung tim andalan kamu dalam laga bergerngsi secara live selama satu musim
-                                </div>
-                                <div class="d-flex">
-                                    <nuxt-link to="/promo/saksikan-premiere-league-and-live-exclusive"
-                                        class="btn text-white py-2 px-5 fw-bold mt-3 mb-5 fs-5"
-                                        style="background:#37003C;" type="button">Lihat Lebih Lanjut</nuxt-link>
+                        :style="`background-image:url('${headerImageDesktop1}');background-size:100% 100%;width:100%;position:relative;`">
+                        <img :src="headerImageDesktop1" class="w-100" style="visibility: hidden;" />
+                        <div class="d-flex align-items-center"
+                            style="position:absolute;left:0;top:0;width:100%;height:100%;">
+                            <div class="container">
+                                <div style="max-width:500px">
+                                    <h1 class="text-start fw-bold pt-5" style="color:#41054F;">Saksikan Premier League
+                                        Live
+                                        & Exclusive</h1>
+                                    <div class="text-start fs-5 pt-3" style="color:#37003C;">Berlangganan paket liga
+                                        inggris
+                                        dan dukung tim andalan kamu dalam laga bergerngsi secara live selama satu musim
+                                    </div>
+                                    <div class="d-flex">
+                                        <nuxt-link to="/promo/saksikan-premiere-league-and-live-exclusive"
+                                            class="btn text-white py-2 px-5 fw-bold mt-3 mb-5 fs-5"
+                                            style="background:#37003C;" type="button">Lihat Lebih Lanjut</nuxt-link>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -25,16 +31,21 @@
                 </slide>
                 <slide :key="2">
                     <div class="d-flex align-items-center py-5"
-                        :style="`background-image:url('${headerImageDesktop2}');background-size:100% 100%;width:100%;min-height:300px;height:100%;`">
-                        <div class="container">
-                            <div style="max-width:500px">
-                                <h1 class="text-start fw-bold pt-5" style="color:#fff;">Update Datamu dan
-                                    Dapatkan 30 Hari
-                                    Gratis Nonton</h1>
-                                <div class="d-flex">
-                                    <nuxt-link to="/promo/updatedata"
-                                        class="btn text-white py-2 px-5 fw-bold mt-3 mb-5 fs-5"
-                                        style="background:#F3753A;" type="button">Lihat Lebih Lanjut</nuxt-link>
+                        :style="`background-image:url('${headerImageDesktop2}');background-size:100% 100%;width:100%;position:relative;`">
+                        <img :src="headerImageDesktop2" class="w-100" style="visibility: hidden;" />
+                        <div class="d-flex align-items-center"
+                            style="position:absolute;left:0;top:0;width:100%;height:100%;">
+
+                            <div class="container">
+                                <div style="max-width:500px">
+                                    <h1 class="text-start fw-bold pt-5" style="color:#fff;">Update Datamu dan
+                                        Dapatkan 30 Hari
+                                        Gratis Nonton</h1>
+                                    <div class="d-flex">
+                                        <nuxt-link to="/promo/updatedata"
+                                            class="btn text-white py-2 px-5 fw-bold mt-3 mb-5 fs-5"
+                                            style="background:#F3753A;" type="button">Lihat Lebih Lanjut</nuxt-link>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -43,17 +54,23 @@
                 </slide>
                 <slide :key="3">
                     <div class="d-flex align-items-center py-5"
-                        :style="`background-image:url('${headerImageDesktop3}');background-size:100% 100%;width:100%;min-height:300px;height:100%;`">
-                        <div class="container">
-                            <div style="max-width:500px">
-                                <h1 class="text-start fw-bold pt-5" style="color:black;">Receiver</h1>
-                                <div class="text-start fs-5 pt-3" style="color:black;">Dapatkan produk TV Satelit
-                                    terbaik berupa Receiver dan Paket Program Channel Televisi berkualitas untuk
-                                    kebutuhan kamu.
-                                </div>
-                                <div class="d-flex">
-                                    <nuxt-link to="/receiver" class="btn text-white py-2 px-5 fw-bold mt-3 mb-5 fs-5"
-                                        style="background:#F3753A;" type="button">Lihat Lebih Lanjut</nuxt-link>
+                        :style="`background-image:url('${headerImageDesktop3}');background-size:100% 100%;width:100%;position:relative;`">
+                        <img :src="headerImageDesktop3" class="w-100" style="visibility: hidden;" />
+                        <div class="d-flex align-items-center"
+                            style="position:absolute;left:0;top:0;width:100%;height:100%;">
+
+                            <div class="container">
+                                <div style="max-width:500px">
+                                    <h1 class="text-start fw-bold pt-5" style="color:black;">Receiver</h1>
+                                    <div class="text-start fs-5 pt-3" style="color:black;">Dapatkan produk TV Satelit
+                                        terbaik berupa Receiver dan Paket Program Channel Televisi berkualitas untuk
+                                        kebutuhan kamu.
+                                    </div>
+                                    <div class="d-flex">
+                                        <nuxt-link to="/receiver"
+                                            class="btn text-white py-2 px-5 fw-bold mt-3 mb-5 fs-5"
+                                            style="background:#F3753A;" type="button">Lihat Lebih Lanjut</nuxt-link>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -423,7 +440,7 @@
                 content: '@nexparabola_tv'
             },
         ],
-    }) 
+    })
 
     onBeforeRouteLeave((to, from, next) => {
         if (intervalKidsMovie.value) {
