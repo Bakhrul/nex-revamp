@@ -21,8 +21,8 @@
     <nav class="navbar navbar-expand-lg navbar-custom">
         <div class="container">
             <div class="justify-content-between align-items-center w-100 py-2 show-nav-mobile">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" @click="showNav = !showNav"
-                    style="border:0 !important;outline:none !important;padding:0 !important;"
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" @click="toggleNav()"
+                    style="border:0 !important;outline:none !important;padding:0 !important;box-shadow:unset !important;"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <svg v-if="showNav" width="33" height="33" viewBox="0 0 33 33" fill="none"
@@ -259,4 +259,17 @@
 
         next()
     })
+
+    function toggleNav() {
+        setTimeout(() => {
+            if ($("#navbarSupportedContent").hasClass('show')) {
+                console.log('show');
+                showNav.value = true;
+            } else {
+                console.log('hide');
+                showNav.value = false;
+            }
+        }, 400);
+
+    }
 </script>
