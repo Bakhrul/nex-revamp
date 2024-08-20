@@ -21,11 +21,18 @@
     <nav class="navbar navbar-expand-lg navbar-custom">
         <div class="container">
             <div class="justify-content-between align-items-center w-100 py-2 show-nav-mobile">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" @click="showNav = !showNav"
                     style="border:0 !important;outline:none !important;padding:0 !important;"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg v-if="showNav" width="33" height="33" viewBox="0 0 33 33" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.25 24.75L24.6675 8.25M24.75 24.75L8.3325 8.25" stroke="#2A5D9E"
+                            stroke-width="4.16667" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                    <svg v-if="!showNav" width="33" height="33" viewBox="0 0 33 33" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_1911_2447)">
                             <g clip-path="url(#clip1_1911_2447)">
                                 <path
@@ -47,11 +54,14 @@
                 <router-link to="/">
                     <img src="~/assets/logo-nex.png" style="width:80px" />
                 </router-link>
-                <button class="btn btn-sm" style="padding:0 !important;"><svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M19.375 18H18.3875L18.0375 17.6625C19.3048 16.1925 20.0014 14.3159 20 12.375C20 10.768 19.5235 9.19714 18.6307 7.861C17.7379 6.52485 16.469 5.48344 14.9843 4.86848C13.4997 4.25352 11.866 4.09262 10.2899 4.40612C8.7138 4.71963 7.26606 5.49346 6.12976 6.62976C4.99346 7.76606 4.21963 9.2138 3.90612 10.7899C3.59262 12.366 3.75352 13.9997 4.36848 15.4843C4.98344 16.969 6.02485 18.2379 7.361 19.1307C8.69714 20.0235 10.268 20.5 11.875 20.5C13.8875 20.5 15.7375 19.7625 17.1625 18.5375L17.5 18.8875V19.875L23.75 26.1125L25.6125 24.25L19.375 18ZM11.875 18C8.7625 18 6.25 15.4875 6.25 12.375C6.25 9.2625 8.7625 6.75 11.875 6.75C14.9875 6.75 17.5 9.2625 17.5 12.375C17.5 15.4875 14.9875 18 11.875 18Z" fill="#2A5D9E"/>
-</svg>
+                <button class="btn btn-sm" style="padding:0 !important;"><svg width="30" height="31" viewBox="0 0 30 31"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19.375 18H18.3875L18.0375 17.6625C19.3048 16.1925 20.0014 14.3159 20 12.375C20 10.768 19.5235 9.19714 18.6307 7.861C17.7379 6.52485 16.469 5.48344 14.9843 4.86848C13.4997 4.25352 11.866 4.09262 10.2899 4.40612C8.7138 4.71963 7.26606 5.49346 6.12976 6.62976C4.99346 7.76606 4.21963 9.2138 3.90612 10.7899C3.59262 12.366 3.75352 13.9997 4.36848 15.4843C4.98344 16.969 6.02485 18.2379 7.361 19.1307C8.69714 20.0235 10.268 20.5 11.875 20.5C13.8875 20.5 15.7375 19.7625 17.1625 18.5375L17.5 18.8875V19.875L23.75 26.1125L25.6125 24.25L19.375 18ZM11.875 18C8.7625 18 6.25 15.4875 6.25 12.375C6.25 9.2625 8.7625 6.75 11.875 6.75C14.9875 6.75 17.5 9.2625 17.5 12.375C17.5 15.4875 14.9875 18 11.875 18Z"
+                            fill="#2A5D9E" />
+                    </svg>
 
-</button>
+                </button>
             </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
@@ -62,9 +72,10 @@
                         <router-link to="/special-deals" class="nav-link">Special Deals</router-link>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Produk
+                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                            id="btn-dropdown-nav-special-deals" aria-expanded="false">
+                            Produk &ensp;
+                            <i class="icon bi bi-chevron-down icon-dropdown"></i>
                         </a>
                         <ul class="dropdown-menu">
                             <li>
@@ -100,7 +111,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Official Store
+                            Official Store &ensp;<i class="icon bi bi-chevron-down icon-dropdown"></i>
                         </a>
                         <ul class="dropdown-menu">
 
@@ -187,7 +198,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            About
+                            About&ensp;<i class="icon bi bi-chevron-down icon-dropdown"></i>
                         </a>
                         <ul class="dropdown-menu">
                             <li>
@@ -239,6 +250,8 @@
 </template>
 <script setup>
     import backgroundHeaderNav from "~/assets/bg-header.png"
+
+    const showNav = ref(false);
     onBeforeRouteLeave((to, from, next) => {
         if ($(".modal")) {
             $(".modal").modal('hide');
