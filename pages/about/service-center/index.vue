@@ -30,7 +30,7 @@
                 <div class="row">
                     <div class="col-lg-6 mb-3">
                         <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle text-left"
+                            <button class="btn btn-secondary  btn-dropdown-city dropdown-toggle text-left"
                                 style="padding: 10px 15px;color:#00539B !important;border:1px #00539B solid;background:#fff"
                                 type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <span>
@@ -38,7 +38,7 @@
                                     <span style="font-weight:500;">{{selectCity}}</span>
                                 </span>
                             </button>
-                            <ul class="dropdown-menu" style="max-height:300px;overflow: auto;">
+                            <ul class="dropdown-menu dropdown-menu-city" style="max-height:300px;overflow: auto;">
                                 <li><a class="dropdown-item"
                                         style="color:#00539B !important;font-weight:400;font-size: 15px;" href="javascript:void(0)"
                                         @click="selectCity = 'Semua'; selectCityId = '0';getList()">Semua</a>
@@ -52,7 +52,7 @@
                         </div>
 
                     </div>
-                    <div class="col-lg-6 mb-3 d-flex justify-content-end align-items-center">
+                    <div class="col-lg-6 mb-3 d-flex justify-content-end align-items-center show-on-desktop">
                         <div class="d-flex form-nav" role="search" style="border:1px #ddd solid">
                             <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -67,7 +67,7 @@
                     </div>
                 </div>
             </div>
-            <div style="background: #f2f2f2;" class="mt-3">
+            <div class="mt-3 bg-section pt-3">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-4 mt-3 mb-3" v-for="a in result">
@@ -226,5 +226,26 @@
 
     .link-dealer:hover i {
         color: blue !important
+    }
+
+    @media(max-width:991px){
+        .btn-dropdown-city{
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+        .dropdown-menu-city{
+            width:100%;
+        }
+    }
+
+    .bg-section {
+        background: #f2f2f2;
+        border-top: 1px #ddd solid;
+    }
+
+    @media(max-width:991px) {
+        .bg-section {
+            background: #fff !important;
+        }
     }
 </style>

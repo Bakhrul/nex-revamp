@@ -94,7 +94,7 @@
                                 <div class="d-flex justify-content-center">
                                     <img :src="receiver4" style="width:100%;max-width:200px;height: unset !important" />
                                 </div>
-                                <h5 class="text-center pt-5 fw-bold">Nex Parabola | Combo Kuning</h5>
+                                <h5 class="text-center pt-5 fw-bold">Nex Parabola | Combo</h5>
                                 <div class="text-center pt-1">Lebih canggih tampilan baru</div>
                                 <div class="d-flex justify-content-center">
                                     <img class="mt-3" :src="receiverFitur4" />
@@ -132,7 +132,7 @@
                                 <div class="d-flex justify-content-center">
                                     <img :src="receiver6" style="width:100%;max-width:200px;height: unset !important" />
                                 </div>
-                                <h5 class="text-center pt-5 fw-bold">Nex Parabola | Combo Merah</h5>
+                                <h5 class="text-center pt-5 fw-bold">Nex Parabola | Tipe Merah</h5>
                                 <div class="text-center pt-1">Lebih canggih tampilan baru</div>
                                 <div class="d-flex justify-content-center">
                                     <img class="mt-3" :src="receiverFitur6" />
@@ -306,11 +306,11 @@
         } else if (typeX == 3) {
             name.value = 'Nex Parabola | Combo Merah';
         } else if (typeX == 4) {
-            name.value = 'Nex Parabola | Combo Kuning';
+            name.value = 'Nex Parabola | Combo';
         } else if (typeX == 5) {
             name.value = 'Nex Vidio';
         } else if (typeX == 6) {
-            name.value = 'Nex Parabola | Combo Merah';
+            name.value = 'Nex Parabola | Tipe Merah';
         }
         type.value = typeX
         url.value = urlX;
