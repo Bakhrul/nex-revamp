@@ -60,10 +60,10 @@
                     </div>
                     <div class="footer-title mb-2">Butuh Bantuan?</div>
                     <ul style="font-size:16px" class="mb-5">
-                        <li><a href="javascript:void(0)" class="footer-link"> <img src="~/assets/icon/email.png"
+                        <li><a href="mailto:cs@nexparabola.co.id" class="footer-link"> <img src="~/assets/icon/email.png"
                                     style="width:30px" />
                                 &ensp;cs@mynex.co.id</a></li>
-                        <li><a href="javascript:void(0)" class="footer-link"> <img src="~/assets/icon/phone.png"
+                        <li><a href="tel:6281260012700" class="footer-link"> <img src="~/assets/icon/phone.png"
                                     style="width:30px" />
                                 &ensp;+62 81260012700</a></li>
                         <li><a href="javascript:void(0)" class="footer-link"> <img src="~/assets/icon/location.png"
@@ -72,7 +72,7 @@
                     </ul>
                     <div class="show-on-mobile">
                         <div class="footer-title mb-2">Ikuti Kami di </div>
-                        <div class="d-flex flex-wrap mb-5" style="font-size: 24px">
+                        <div class="d-flex flex-wrap mb-3" style="font-size: 24px">
                             <div class="me-2"><a href="https://id-id.facebook.com/groups/180272675720045/"
                                     style="color:black;text-decoration: none !important">
                                     <img src="~/assets/icon/facebook.png" style="width:30px" />
