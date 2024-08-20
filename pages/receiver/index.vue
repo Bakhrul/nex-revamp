@@ -167,12 +167,10 @@
                             </div>
                             <div class="col-lg-7 col-6">
                                 <div class="p-3">
-                                    <h5 class="text-left pt-2 fw-bold show-on-desktop">{{name}}</h5>
-                                    <div class="text-left pt-1 fs-7 pb-3 show-on-desktop" style="color:black;">Lebih
-                                        canggih tampilan
-                                        baru</div>
+                                    <h5 class="text-left pt-5 fw-bold show-on-desktop">{{name}}</h5>
+                                    <div class="text-left pt-1 fs-7 pb-3 show-on-desktop" style="color:black;">Dapatkan Produk Kami di Ecommerce</div>
                                     <div class="text-center fs-6 show-on-mobile">Dapatkan Produk Kami di Ecommerce</div>
-                                    <div class="row justify-content-center show-on-desktop">
+                                    <div class="row justify-content-center show-on-desktop mt-1">
                                         <!-- <div class="col-lg-12 mb-3">
                                             <a href="javascript:void(0)">
                                                 <div class=" px-3 py-3 rounded d-flex justify-content-center"
