@@ -574,4 +574,16 @@ footer ul li {
         margin: 0 !important;
         border: 0 !important;
     }
+
+    .footer-title{
+        font-size: 18px !important;
+        font-weight: bold !important;
+    }
+
+    footer ul{
+        font-size: 14px !important;
+    }
+    footer a img{
+        width: 25px !important;
+    }
 }
