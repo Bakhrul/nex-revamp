@@ -52,7 +52,7 @@
                                 <div class="accordion-body" style="color:unset !important;padding:20px !important">
                                     <div class="container">
                                         Harga paket Nex bisa kamu beli dengan harga mulai dari <b>Rp 19.900</b> sedangkan untuk
-                                        receiver kamu bisa beli dengan harga mulai dari <b>Rp 314.000.</b>
+                                        receiver kamu bisa beli dengan harga mulai dari <b>Rp 314.000</b>.
                                     </div>
                                 </div>
                             </div>
@@ -285,7 +285,7 @@
                                             style="color:unset !important;padding:20px !important">
                                             Harga paket Nex bisa kamu beli dengan harga mulai dari <b>Rp 19.900</b> sedangkan
                                             untuk
-                                            receiver kamu bisa beli dengan harga mulai dari <b>Rp 314.000.</b
+                                            receiver kamu bisa beli dengan harga mulai dari <b>Rp 314.000</b>.
                                         </div>
                                     </div>
                                 </div>
