@@ -51,8 +51,8 @@
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body" style="color:unset !important;padding:20px !important">
                                     <div class="container">
-                                        Harga paket Nex bisa kamu beli dengan harga mulai dari Rp9.900 sedangkan untuk
-                                        receiver kamu bisa beli dengan harga mulai dari Rp314.000.
+                                        Harga paket Nex bisa kamu beli dengan harga mulai dari <b>Rp 19.900</b> sedangkan untuk
+                                        receiver kamu bisa beli dengan harga mulai dari <b>Rp 314.000.</b>
                                     </div>
                                 </div>
                             </div>
@@ -283,9 +283,9 @@
                                         data-bs-parent="#accordionExample-desktop">
                                         <div class="accordion-body"
                                             style="color:unset !important;padding:20px !important">
-                                            Harga paket Nex bisa kamu beli dengan harga mulai dari Rp9.900 sedangkan
+                                            Harga paket Nex bisa kamu beli dengan harga mulai dari <b>Rp 19.900</b> sedangkan
                                             untuk
-                                            receiver kamu bisa beli dengan harga mulai dari Rp314.000.
+                                            receiver kamu bisa beli dengan harga mulai dari <b>>Rp 314.000.</b
                                         </div>
                                     </div>
                                 </div>
