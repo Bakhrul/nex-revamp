@@ -189,7 +189,7 @@
                                 style="min-height:120px">
                                 <div class="fw-bold text-center fs-6">Paket Berlangganan</div>
                                 <div class="text-center">Mulai dari</div>
-                                <div class="fw-bold text-center fs-6">Rp 314.000</div>
+                                <div class="fw-bold text-center fs-6">Rp 19.900</div>
                             </div>
                             <div class="p-3 d-flex justify-content-center footer" style="border-top:1px #ddd solid">
                                 <nuxt-link to="/paket">Beli Sekarang <i style="color:black;"
