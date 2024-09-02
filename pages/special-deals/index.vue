@@ -36,107 +36,19 @@
             <div class="container mt-3">
                 <div class="show-on-mobile">
                     <div class="row">
-                        <div class="col-md-4 col-sm-12 mb-3">
+                        <div class="col-md-4 col-sm-12 mb-3" v-for="(context, index) in listTerbatas">
                             <div style="position: relative;width:100%">
                                 <div class="shadow-product w-100 product-box rounded-special-deals bg-black rounded"
                                     style="border:0 !important">
-                                    <img src="~/assets/static-content/promo/paket-terbatas/1.png" />
+                                    <img :src="context.image" />
                                     <div class="p-3 " style="min-height:150px">
                                         <div class="d-flex justify-content-between mb-3">
-                                            <div class="fw-bold fs-6 text-white">Super Big Match - Manchester United vs
-                                                Liverpool!</div>
+                                            <div class="fw-bold fs-6 text-white">{{context.title}}</div>
                                         </div>
-                                        <div class="text-white">Duel Panas Man United vs Liverpool di Matchweek 3.
-                                            dengan harga 69rb/satu pertandingan. </div>
+                                        <div class="text-white">{{context.note}} </div>
                                     </div>
                                     <div class="py-3 px-3 d-flex justify-content-center footer">
-                                        <a @click="openPacketTerbatas(1)" href="javascript:void(0)"
-                                            style="border-radius: 20px;background:#F3753A;"
-                                            class="text-center btn text-white w-100 p-3">LEBIH LANJUT</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12 mb-3">
-                            <div class="w-100" style="position:relative">
-                                <div class="shadow-product w-100 product-box rounded-special-deals bg-black rounded"
-                                    style="border:0 !important">
-                                    <img src="~/assets/static-content/promo/paket-terbatas/2.png" />
-                                    <div class="p-3 " style="min-height:150px">
-                                        <div class="d-flex justify-content-between mb-3">
-                                            <div class="fw-bold fs-6 text-white">Kejuaraan Liga Indonesia Dimulai!</div>
-                                        </div>
-                                        <div class="text-white">Nikmati pertandingan langsung dan rasakan ketegangan
-                                            serta kegembiraan sepakbola Indonesia.</div>
-                                    </div>
-                                    <div class="py-3 px-3 d-flex justify-content-center footer">
-                                        <a @click="openPacketTerbatas(2)" href="javascript:void(0)"
-                                            style="border-radius: 20px;background:#F3753A;"
-                                            class="text-center btn text-white w-100 p-3">LEBIH LANJUT</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12 mb-3">
-                            <div class="w-100" style="position:relative">
-                                <div class="shadow-product w-100 product-box rounded-special-deals bg-black rounded"
-                                    style="border:0 !important">
-                                    <img src="~/assets/static-content/promo/paket-terbatas/3.png" />
-                                    <div class="p-3 " style="min-height:150px">
-                                        <div class="d-flex justify-content-between mb-3">
-                                            <div class="fw-bold fs-6 text-white">Dukung Timnas Indonesia (Paket Voli)
-                                            </div>
-                                        </div>
-                                        <div class="text-white">Siap menyaksikan aksi-aksi spektakuler dari timnas
-                                            Indonesia di aja terbaik Asia Tenggara?
-                                        </div>
-                                    </div>
-                                    <div class="py-3 px-3 d-flex justify-content-center footer">
-                                        <a @click="openPacketTerbatas(3)" href="javascript:void(0)"
-                                            style="border-radius: 20px;background:#F3753A;"
-                                            class="text-center btn text-white w-100 p-3">LEBIH LANJUT</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12 mb-3">
-                            <div class="w-100" style="position:relative">
-                                <div class="shadow-product w-100 product-box rounded-special-deals bg-black rounded"
-                                    style="border:0 !important">
-                                    <img src="~/assets/static-content/promo/paket-terbatas/4.png" />
-                                    <div class="p-3 " style="min-height:150px">
-                                        <div class="d-flex justify-content-between mb-3">
-                                            <div class="fw-bold fs-6 text-white">Ubah TV Biasa Jadi Smart & Dapat Vidio
-                                                Platinum Gratis</div>
-                                        </div>
-                                        <div class="text-white">Dapatkan gratis paket Vidio Platinum selama 3 bulan
-                                            untuk menikmati berbagai konten premium secara eksklusif.
-                                        </div>
-                                    </div>
-                                    <div class="py-3 px-3 d-flex justify-content-center footer">
-                                        <a @click="openPacketTerbatas(4)" href="javascript:void(0)"
-                                            style="border-radius: 20px;background:#F3753A;"
-                                            class="text-center btn text-white w-100 p-3">LEBIH LANJUT</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12 mb-3">
-                            <div class="w-100" style="position:relative">
-                                <div class="shadow-product w-100 product-box rounded-special-deals bg-black rounded"
-                                    style="border:0 !important">
-                                    <img src="~/assets/static-content/promo/paket-terbatas/5.png" />
-                                    <div class="p-3 " style="min-height:150px">
-                                        <div class="d-flex justify-content-between mb-3">
-                                            <div class="fw-bold fs-6 text-white">Nikmati Hiburan Tanpa Batas selama 1
-                                                Tahun Gratis</div>
-                                        </div>
-                                        <div class="text-white">Jangan lewatkan penawaran spesial ini dan rasakan
-                                            pengalaman menonton yang luar biasa tanpa biaya tambahan!
-                                        </div>
-                                    </div>
-                                    <div class="py-3 px-3 d-flex justify-content-center footer">
-                                        <a @click="openPacketTerbatas(5)" href="javascript:void(0)"
+                                        <a @click="openTerbatas(index)" href="javascript:void(0)"
                                             style="border-radius: 20px;background:#F3753A;"
                                             class="text-center btn text-white w-100 p-3">LEBIH LANJUT</a>
                                     </div>
@@ -148,104 +60,24 @@
                 <div class="d-flex justify-content-center">
                     <div class="w-100 show-on-desktop">
                         <div class="slider-paket-terbatas">
-                            <div class="me-3 width-slider-packet" style="position: relative;width:330px">
+                            <div class="me-3 width-slider-packet" style="position: relative;width:330px"
+                                v-for="(context, index) in listTerbatas">
                                 <div class="shadow-product w-100 product-box rounded-special-deals bg-black rounded"
                                     style="border:0 !important">
-                                    <img src="~/assets/static-content/promo/paket-terbatas/1.png" />
+                                    <img :src="context.image" />
                                     <div class="p-3 " style="min-height:200px">
                                         <div class="d-flex justify-content-between mb-3">
-                                            <div class="fw-bold fs-6 text-white">Super Big Match - Manchester United vs
-                                                Liverpool!</div>
+                                            <div class="fw-bold fs-6 text-white">{{context.title}}</div>
                                         </div>
-                                        <div class="text-white">Duel Panas Man United vs Liverpool di Matchweek 3.
-                                            dengan harga 69rb/satu pertandingan. </div>
+                                        <div class="text-white">{{context.note}} </div>
                                     </div>
                                     <div class="py-3 px-3 d-flex justify-content-center footer">
-                                        <a @click="openPacketTerbatas(1)" href="javascript:void(0)"
+                                        <a @click="openTerbatas(index)" href="javascript:void(0)"
                                             style="border-radius: 20px;background:#F3753A;"
                                             class="text-center btn text-white w-100 p-3">LEBIH LANJUT</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="me-3 width-slider-packet" style="position: relative;width: 330px;">
-                                <div class="shadow-product w-100 product-box rounded-special-deals bg-black rounded"
-                                    style="border:0 !important">
-                                    <img src="~/assets/static-content/promo/paket-terbatas/2.png" />
-                                    <div class="p-3 " style="min-height:200px">
-                                        <div class="d-flex justify-content-between mb-3">
-                                            <div class="fw-bold fs-6 text-white">Kejuaraan Liga Indonesia Dimulai!</div>
-                                        </div>
-                                        <div class="text-white">Nikmati pertandingan langsung dan rasakan ketegangan
-                                            serta kegembiraan sepakbola Indonesia.</div>
-                                    </div>
-                                    <div class="py-3 px-3 d-flex justify-content-center footer">
-                                        <a @click="openPacketTerbatas(2)" href="javascript:void(0)"
-                                            style="border-radius: 20px;background:#F3753A;"
-                                            class="text-center btn text-white w-100 p-3">LEBIH LANJUT</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="me-3 width-slider-packet" style="position: relative;width: 330px;">
-                                <div class="shadow-product w-100 product-box rounded-special-deals bg-black rounded"
-                                    style="border:0 !important">
-                                    <img src="~/assets/static-content/promo/paket-terbatas/3.png" />
-                                    <div class="p-3 " style="min-height:200px">
-                                        <div class="d-flex justify-content-between mb-3">
-                                            <div class="fw-bold fs-6 text-white">Dukung Timnas Indonesia (Paket Voli)
-                                            </div>
-                                        </div>
-                                        <div class="text-white">Siap menyaksikan aksi-aksi spektakuler dari timnas
-                                            Indonesia di aja terbaik Asia Tenggara?
-                                        </div>
-                                    </div>
-                                    <div class="py-3 px-3 d-flex justify-content-center footer">
-                                        <a @click="openPacketTerbatas(3)" href="javascript:void(0)"
-                                            style="border-radius: 20px;background:#F3753A;"
-                                            class="text-center btn text-white w-100 p-3">LEBIH LANJUT</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="me-3 width-slider-packet" style="position: relative;width: 330px;">
-                                <div class="shadow-product w-100 product-box rounded-special-deals bg-black rounded"
-                                    style="border:0 !important">
-                                    <img src="~/assets/static-content/promo/paket-terbatas/4.png" />
-                                    <div class="p-3 " style="min-height:200px">
-                                        <div class="d-flex justify-content-between mb-3">
-                                            <div class="fw-bold fs-6 text-white">Ubah TV Biasa Jadi Smart & Dapat Vidio
-                                                Platinum Gratis</div>
-                                        </div>
-                                        <div class="text-white">Dapatkan gratis paket Vidio Platinum selama 3 bulan
-                                            untuk menikmati berbagai konten premium secara eksklusif.
-                                        </div>
-                                    </div>
-                                    <div class="py-3 px-3 d-flex justify-content-center footer">
-                                        <a @click="openPacketTerbatas(4)" href="javascript:void(0)"
-                                            style="border-radius: 20px;background:#F3753A;"
-                                            class="text-center btn text-white w-100 p-3">LEBIH LANJUT</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="me-3 width-slider-packet" style="position: relative;width: 330px;">
-                                <div class="shadow-product w-100 product-box rounded-special-deals bg-black rounded"
-                                    style="border:0 !important">
-                                    <img src="~/assets/static-content/promo/paket-terbatas/5.png" />
-                                    <div class="p-3 " style="min-height:200px">
-                                        <div class="d-flex justify-content-between mb-3">
-                                            <div class="fw-bold fs-6 text-white">Nikmati Hiburan Tanpa Batas selama 1
-                                                Tahun Gratis</div>
-                                        </div>
-                                        <div class="text-white">Jangan lewatkan penawaran spesial ini dan rasakan
-                                            pengalaman menonton yang luar biasa tanpa biaya tambahan!
-                                        </div>
-                                    </div>
-                                    <div class="py-3 px-3 d-flex justify-content-center footer">
-                                        <a @click="openPacketTerbatas(5)" href="javascript:void(0)"
-                                            style="border-radius: 20px;background:#F3753A;"
-                                            class="text-center btn text-white w-100 p-3">LEBIH LANJUT</a>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
                     </div>
                 </div>
@@ -253,59 +85,23 @@
         </section>
         <section class="pt-5 pb-5 bg-section">
             <div class="container">
-                <h5 class="mb-1 fw-bold show-on-desktop">Promo Terbaru Lainnya</h5>
-                <div class="mb-3 show-on-desktop">Pilih sesuai dengan kebutuhan kamu</div>
+                <h5 class="mb-1 fw-bold title-section show-on-desktop">Promo Terbaru Lainnya</h5>
+                <div class="mb-3 subtitle-section show-on-desktop">Pilih sesuai dengan kebutuhan kamu</div>
                 <h5 class="show-on-mobile text-center">Paket Lainnya</h5>
                 <div class="show-on-mobile">
                     <div class="row">
-                        <div class="col-md-4 col-sm-12 mb-3">
+                        <div class="col-md-4 col-sm-12 mb-3" v-for="(context, index) in listLainnya">
                             <div class="shadow-product product-box rounded-special-deals bg-white w-100">
-                                <img src="~/assets/static-content/promo/paket-lainnya/1.png" />
+                                <img :src="context.image" />
                                 <div class="p-3 " style="min-height:180px">
                                     <div class="d-flex justify-content-between mb-3">
-                                        <div class="fw-bold fs-6">Update Datamu & Dapatkan Paket Basic Gratis!</div>
+                                        <div class="fw-bold fs-6">{{context.title}}</div>
                                     </div>
-                                    <div>Segera update datamu dengan Nex dan nikmati GRATIS paket Basic selama 30 hari!
+                                    <div>{{context.note}}
                                     </div>
                                 </div>
                                 <div class="py-3 px-3 d-flex justify-content-center footer">
-                                    <a @click="openPacketLainnya(1)" href="javascript:void(0)"
-                                        style="border-radius: 20px;"
-                                        class="text-center btn bg-primary text-white w-100 p-3">LEBIH LANJUT</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12 mb-3">
-                            <div class="shadow-product product-box rounded-special-deals bg-white w-100">
-                                <img src="~/assets/static-content/promo/paket-lainnya/2.png" />
-                                <div class="p-3 " style="min-height:180px">
-                                    <div class="d-flex justify-content-between mb-3">
-                                        <div class="fw-bold fs-6">Super Diskon 71% Untuk Paket Diamond</div>
-                                    </div>
-                                    <div>Kejar diskon besar-besaran 71% untuk paket Diamond hanya dengan Rp 50.000!
-                                    </div>
-                                </div>
-                                <div class="py-3 px-3 d-flex justify-content-center footer">
-                                    <a @click="openPacketLainnya(2)" href="javascript:void(0)"
-                                        style="border-radius: 20px;"
-                                        class="text-center btn bg-primary text-white w-100 p-3">LEBIH LANJUT</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12 mb-3">
-                            <div class="shadow-product product-box rounded-special-deals bg-white w-100">
-                                <img src="~/assets/static-content/promo/paket-lainnya/3.png" />
-                                <div class="p-3 " style="min-height:180px">
-                                    <div class="d-flex justify-content-between mb-3">
-                                        <div class="fw-bold fs-6">Ubah TV Biasa Jadi Smart & Dapat Vidio Platinum Gratis
-                                        </div>
-                                    </div>
-                                    <div>Dapatkan kesempatan istimewa dengan Nex! Beli dan aktivasi paket dengan
-                                        membayar hanya
-                                        Rp 50.000 di hari yang sama</div>
-                                </div>
-                                <div class="py-3 px-3 d-flex justify-content-center footer">
-                                    <a @click="openPacketLainnya(3)" href="javascript:void(0)"
+                                    <a @click="openLainnya(index)" href="javascript:void(0)"
                                         style="border-radius: 20px;"
                                         class="text-center btn bg-primary text-white w-100 p-3">LEBIH LANJUT</a>
                                 </div>
@@ -315,45 +111,16 @@
                 </div>
                 <div class="slider-paket show-on-desktop">
                     <div class="shadow-product product-box rounded-special-deals bg-white me-3 width-slider-packet"
-                        style="width:330px">
-                        <img src="~/assets/static-content/promo/paket-lainnya/1.png" />
+                        style="width:330px" v-for="(context, index) in listLainnya">
+                        <img :src="context.image" />
                         <div class="p-3 " style="min-height:180px">
                             <div class="d-flex justify-content-between mb-3">
-                                <div class="fw-bold fs-6">Update Datamu & Dapatkan Paket Basic Gratis!</div>
+                                <div class="fw-bold fs-6">{{context.title}}</div>
                             </div>
-                            <div>Segera update datamu dengan Nex dan nikmati GRATIS paket Basic selama 30 hari!</div>
+                            <div>{{context.note}}</div>
                         </div>
                         <div class="py-3 px-3 d-flex justify-content-center footer">
-                            <a @click="openPacketLainnya(1)" href="javascript:void(0)" style="border-radius: 20px;"
-                                class="text-center btn bg-primary text-white w-100 p-3">LEBIH LANJUT</a>
-                        </div>
-                    </div>
-                    <div class="shadow-product product-box rounded-special-deals bg-white me-3 width-slider-packet"
-                        style="width:330px">
-                        <img src="~/assets/static-content/promo/paket-lainnya/2.png" />
-                        <div class="p-3 " style="min-height:180px">
-                            <div class="d-flex justify-content-between mb-3">
-                                <div class="fw-bold fs-6">Super Diskon 71% Untuk Paket Diamond</div>
-                            </div>
-                            <div>Kejar diskon besar-besaran 71% untuk paket Diamond hanya dengan Rp 50.000!</div>
-                        </div>
-                        <div class="py-3 px-3 d-flex justify-content-center footer">
-                            <a @click="openPacketLainnya(2)" href="javascript:void(0)" style="border-radius: 20px;"
-                                class="text-center btn bg-primary text-white w-100 p-3">LEBIH LANJUT</a>
-                        </div>
-                    </div>
-                    <div class="shadow-product product-box rounded-special-deals bg-white me-3 width-slider-packet"
-                        style="width:330px">
-                        <img src="~/assets/static-content/promo/paket-lainnya/3.png" />
-                        <div class="p-3 " style="min-height:180px">
-                            <div class="d-flex justify-content-between mb-3">
-                                <div class="fw-bold fs-6">Ubah TV Biasa Jadi Smart & Dapat Vidio Platinum Gratis</div>
-                            </div>
-                            <div>Dapatkan kesempatan istimewa dengan Nex! Beli dan aktivasi paket dengan membayar hanya
-                                Rp 50.000 di hari yang sama</div>
-                        </div>
-                        <div class="py-3 px-3 d-flex justify-content-center footer">
-                            <a @click="openPacketLainnya(3)" href="javascript:void(0)" style="border-radius: 20px;"
+                            <a @click="openLainnya(index)" href="javascript:void(0)" style="border-radius: 20px;"
                                 class="text-center btn bg-primary text-white w-100 p-3">LEBIH LANJUT</a>
                         </div>
                     </div>
@@ -363,286 +130,78 @@
         <Footer></Footer>
 
         <!-- modal paket terbatas -->
-        <div class="modal fade" tabindex="-1" role="dialog" id="modal-paket-terbatas-1">
+        <div class="modal fade" tabindex="-1" role="dialog" id="modal-spesial-deals">
             <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:450px">
                 <div class="modal-content">
-                    <div class="modal-body rounded">
+                    <div class="modal-body rounded" v-if="dataDetail">
                         <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
                                 class="bi bi-x"></i></button>
-                        <img src="~/assets/static-content/promo/paket-terbatas/1.png" class="w-100 rounded" />
-                        <h5 class="fw-bold mt-3">Super Big Match - Manchester United vs Liverpool!</h5>
-                        <div style="line-height:1.5;">Duel Panas Man United vs Liverpool di Matchweek 3. Tayang LIVE di
-                            channel Nex PPV dengan harga 69rb/satu pertandingan.  
-                            Kamu tinggal ADD ON Paket Liga Inggris PPV pastikan kamu sudah memiliki Paket Liga
-                            Inggris/Diamond/Premium Sport aktif untuk bisa membeli paket ini. 
-                            *Paket bisa dibeli mulai tanggal 21 Agustus - 1 September 2024
-                            *Channel akan aktif H-2 Jam sebelum pertandingan</div>
+                        <img :src="dataDetail.image" class="w-100 rounded" />
+                        <h5 class="fw-bold mt-3">{{dataDetail.title}}</h5>
+                        <div :class="dataDetail.shadow == 1 ? 'note-shadow' : ''" style="line-height:1.5;" v-html="dataDetail.notedetail"></div>
                         <div class="row justify-content-center mt-5 px-4">
-                            <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                                <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
+                            <div class="col-lg-6 mb-3 d-flex justify-content-center"
+                                v-for="context in dataDetail.ecommerce">
+                                <a :href="context.url" target="_blank" class="w-100">
                                     <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
                                         style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                        <img src="~/assets/social-media/shopee.png"
-                                            style="height:23px;max-width:100%;" />
+                                        <img :src="context.logo" style="height:23px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                                <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                        <img src="~/assets/social-media/nex.png" style="height:16px;max-width:100%;" />
-                                    </div>
-                                </a>
-                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <a v-if="dataDetail.custom == 1" :href="dataDetail.url" target="_blank"
+                                class="text-center btn bg-primary text-white p-3 btn-sm">{{dataDetail.buttontext}}</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="modal fade" tabindex="-1" role="dialog" id="modal-paket-terbatas-2">
-            <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:450px">
-                <div class="modal-content">
-                    <div class="modal-body rounded">
-                        <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
-                                class="bi bi-x"></i></button>
-                        <img src="~/assets/static-content/promo/paket-terbatas/2.png" class="w-100 rounded" />
-                        <h5 class="fw-bold mt-3">Kejuaraan Liga Indonesia Dimulai!</h5>
-                        <div style="line-height:1.5;">18 tim terbaik dari seluruh Indonesia siap bertarung memperebutkan
-                            gelar juara! 
-                            Saksikan setiap pertandingan seru dan momen spektakuler LIVE di Nex.
-                            Beli paket Liga 1 hanya 69rb/30 Hari. 
-                            Nikmati pertandingan langsung dan rasakan ketegangan serta kegembiraan sepakbola Indonesia.
-                        </div>
-                        <div class="row justify-content-center mt-5 px-4">
-                            <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                                <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                        <img src="~/assets/social-media/shopee.png"
-                                            style="height:23px;max-width:100%;" />
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                                <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                        <img src="~/assets/social-media/nex.png" style="height:16px;max-width:100%;" />
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" tabindex="-1" role="dialog" id="modal-paket-terbatas-3">
-            <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:450px">
-                <div class="modal-content">
-                    <div class="modal-body rounded">
-                        <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
-                                class="bi bi-x"></i></button>
-                        <img src="~/assets/static-content/promo/paket-terbatas/3.png" class="w-100 rounded" />
-                        <h5 class="fw-bold mt-3">Dukung Timnas Indonesia</h5>
-                        <div style="line-height:1.5;">SEA V League Voli Asia Tenggara!
-                            Siap menyaksikan aksi-aksi spektakuler dari timnas Indonesia di aja terbaik Asia Tenggara?
-                            Berlangganan paket voli hanya dengan 79rb dan nikmati seluruh pertandingan sepanjang
-                            kejuaraan.
-                            Dapatkan paket voli hanya dengan Rp 79.000 untuk 30 hari. Segera aktifkan paket voli-mu
-                            sekarang dan saksikan momen-momen epik dari olahraga voli!</div>
-                        <div class="row justify-content-center mt-5 px-4">
-                            <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                                <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                        <img src="~/assets/social-media/shopee.png"
-                                            style="height:23px;max-width:100%;" />
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                                <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                        <img src="~/assets/social-media/nex.png" style="height:16px;max-width:100%;" />
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" tabindex="-1" role="dialog" id="modal-paket-terbatas-5">
-            <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:450px">
-                <div class="modal-content">
-                    <div class="modal-body rounded">
-                        <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
-                                class="bi bi-x"></i></button>
-                        <img src="~/assets/static-content/promo/paket-terbatas/5.png" class="w-100 rounded" />
-                        <h5 class="fw-bold mt-3">Nikmati Hiburan Tanpa Batas
-                            selama 1 Tahun Gratis</h5>
-                        <div style="line-height:1.5;">Nikmati hiburan tanpa batas dengan Nex! Dapatkan kesempatan untuk
-                            menonton selama 1 tahun penuh secara GRATIS. Mulai dari film blockbuster, serial TV populer,
-                            hingga acara olahraga langsung, semuanya ada di Nex. Jangan lewatkan penawaran spesial ini
-                            dan rasakan pengalaman menonton yang luar biasa tanpa biaya tambahan!</div>
-                        <div class="row justify-content-center mt-5 px-4">
-                            <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                                <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                        <img src="~/assets/social-media/shopee.png"
-                                            style="height:23px;max-width:100%;" />
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                                <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                        <img src="~/assets/social-media/nex.png" style="height:16px;max-width:100%;" />
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" tabindex="-1" role="dialog" id="modal-paket-terbatas-4">
-            <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:450px">
-                <div class="modal-content">
-                    <div class="modal-body rounded">
-                        <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
-                                class="bi bi-x"></i></button>
-                        <img src="~/assets/static-content/promo/paket-terbatas/4.png" class="w-100 rounded" />
-                        <h5 class="fw-bold mt-3">Ubah TV Biasa Jadi Smart &
-                            Dapat Vidio Platinum Gratis</h5>
-                        <div style="line-height:1.5;">Dengan Nex, ubah TV biasa kamu menjadi smart TV dengan mudah!
-                            Dapatkan gratis paket Vidio Platinum selama 3 bulan untuk menikmati berbagai konten premium
-                            secara eksklusif. Tidak perlu mengganti TV, cukup hubungkan Nex dan nikmati akses ke ribuan
-                            film, serial TV, dan acara favorit kamu. Jadi, jadikan TV-mu lebih seru dengan Nex hari ini!
-                        </div>
-                        <div class="row justify-content-center mt-5 px-4">
-                            <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                                <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                        <img src="~/assets/social-media/shopee.png"
-                                            style="height:23px;max-width:100%;" />
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                                <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                        <img src="~/assets/social-media/nex.png" style="height:16px;max-width:100%;" />
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- end modal terbatas -->
-
-        <!-- start modal lainnya -->
-        <div class="modal fade" tabindex="-1" role="dialog" id="modal-paket-lainnya-1">
-            <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:450px">
-                <div class="modal-content">
-                    <div class="modal-body rounded">
-                        <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
-                                class="bi bi-x"></i></button>
-                        <img src="~/assets/static-content/promo/paket-lainnya/1.png" class="w-100 rounded" />
-                        <h5 class="fw-bold mt-3">Update Datamu & Dapatkan Paket Basic Gratis!</h5>
-                        <div style="line-height:1.5;">Syarat dan Ketentuan:<br>
-                            <ol>
-                                <li>Update data hanya berlaku untuk pelanggan Nex Parabola</li>
-                                <li>Seluruh data yang diisi adalah informasi yang benar</li>
-                                <li>Hadiah berupa Paket Basic 30 Hari dan hanya berlaku 1 kali</li>
-                                <li>Nex Parabola berhak melakukan tindakan-tindakan yang diperlukan seperti pembatalan
-                                    jika ditemukan pelanggaran & berhak mengubah syarat dan ketentuan tanpa
-                                    pemberitahuan</li>
-                                <li>Dengan mengikuti campaign ini pelanggan mengerti dan menyetujui s&k yang berlaku
-                                </li>
-                            </ol>
-                        </div>
-                        <a href="https://register.nexparabola.id/" target="_blank"
-                            class="text-center btn bg-primary text-white w-100 p-3">UPDATE DATAMU SEKARANG</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" tabindex="-1" role="dialog" id="modal-paket-lainnya-2">
-            <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:450px">
-                <div class="modal-content">
-                    <div class="modal-body rounded">
-                        <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
-                                class="bi bi-x"></i></button>
-                        <img src="~/assets/static-content/promo/paket-lainnya/2.png" class="w-100 rounded" />
-                        <h5 class="fw-bold mt-3">Super Diskon 71% Untuk Paket Diamond</h5>
-                        <div style="line-height:1.5;">Kejar diskon besar-besaran 71% untuk paket Diamond hanya dengan Rp
-                            50.000! Dari harga normal Rp 169.000, sekarang kamu bisa menikmati akses eksklusif ke Vidio
-                            Diamond dengan harga terbaik. Tawaran ini berlaku untuk pelanggan baru yang belum pernah
-                            membeli paket Diamond sebelumnya, dengan aktivasi dari tahun 2019 hingga Mei2024. Segera
-                            aktifkan paket Diamond kamu dan rasakan pengalaman menonton yang luar biasa dengan Nex!
-                        </div>
-                        <div class="row justify-content-center mt-5 px-4">               
-                            <div class="col-lg-12 mb-3 d-flex justify-content-center">
-                                <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                        <img src="~/assets/social-media/nex.png" style="height:16px;max-width:100%;" />
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" tabindex="-1" role="dialog" id="modal-paket-lainnya-3">
-            <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:450px">
-                <div class="modal-content">
-                    <div class="modal-body rounded">
-                        <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
-                                class="bi bi-x"></i></button>
-                        <img src="~/assets/static-content/promo/paket-lainnya/3.png" class="w-100 rounded" />
-                        <h5 class="fw-bold mt-3">Ubah TV Biasa Jadi Smart & Dapat Vidio Platinum Gratis</h5>
-                        <div style="line-height:1.5;">Dengan Nex, ubah TV biasa kamu menjadi smart TV dengan mudah!
-                            Dapatkan gratis paket Vidio Platinum selama 3 bulan untuk menikmati berbagai konten premium
-                            secara eksklusif. Tidak perlu mengganti TV, cukup hubungkan Nex dan nikmati akses ke ribuan
-                            film, serial TV, dan acara favorit kamu. Jadi, jadikan TV-mu lebih seru dengan Nex hari ini!
-                        </div>
-                        <div class="row justify-content-center mt-5 px-4">
-                            <div class="col-lg-12 mb-3 d-flex justify-content-center">
-                                <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                        <img src="~/assets/social-media/nex.png" style="height:16px;max-width:100%;" />
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </div>
 </template>
 
 <script setup>
+    import axios from "axios";
     import backgroundImageMobile from "~/assets/header/promo-mobile.png"
     import backgroundImageDesktop from "~/assets/header/promo-desktop.png"
     import logoNex from "~/assets/logo-nex-2.png";
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"
 
+    const config = useRuntimeConfig()
+
+    const listTerbatas = ref([]);
+    const listLainnya = ref([])
+
+    const dataDetail = ref(null);
+
+    const {
+        data
+    } = await getPacket()
+
+    async function getPacket() {
+        let res = await axios.get(config.public.API_URL + 'home/specialdeal', {
+            headers: {
+                'WEBCORP-APIKEY': config.public.API_KEY
+            }
+        })
+        if (res.status == 200) {
+            listTerbatas.value = res.data.data.paketterbatas
+            listLainnya.value = res.data.data.paketlain
+            return res.data.data;
+        }
+    }
+
+    function openLainnya(index) {
+        dataDetail.value = listLainnya.value[index];
+        $("#modal-spesial-deals").modal('show');
+    }
+
+    function openTerbatas(index) {
+        dataDetail.value = listTerbatas.value[index];
+        $("#modal-spesial-deals").modal('show');
+    }
     onMounted(() => {
         initSlider()
         sliderPaket()

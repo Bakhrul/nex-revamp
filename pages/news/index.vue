@@ -30,7 +30,7 @@
                     <div class="news-group d-flex flex-wrap justify-content-center">
 
                         <div style="cursor:pointer" class="news-filter me-3 mb-3" v-for="context in listCategory"
-                            @click="selected = context.id" :class="selected == context.id ? 'active' : ''">
+                            @click="selected = context.id;getNews()" :class="selected == context.id ? 'active' : ''">
                             {{context.category}}</div>
                     </div>
                 </div>
@@ -90,7 +90,12 @@
             listCategory.value = res.data.data.list;
 
             if (listCategory.value.length) {
-                selected.value = listCategory.value[0].id;
+                if(route.query.id){
+                    selected.value = route.query.id;
+                }else{
+                    selected.value = listCategory.value[0].id;
+                }
+                
             }
 
             return res.data.data;

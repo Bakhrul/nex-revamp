@@ -19,9 +19,10 @@
                         </li>
                         <li>
                             <nuxt-link to="/news" class="footer-link">NexNews</nuxt-link>
+                        </li>                        
+                        <li>
+                            <nuxt-link to="/about/term-of-use" class="footer-link">Term Of Use</nuxt-link>
                         </li>
-                        <li><a href="javascript:void(0)" class="footer-link">Karir</a></li>
-                        <li><a href="javascript:void(0)" class="footer-link">Peta Situs</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-5 col-7">
@@ -63,9 +64,16 @@
                         <li><a href="mailto:cs@nexparabola.co.id" class="footer-link"> <img src="~/assets/icon/email.png"
                                     style="width:30px" />
                                 &ensp;cs@mynex.co.id</a></li>
-                        <li><a href="tel:6281260012700" class="footer-link"> <img src="~/assets/icon/phone.png"
+                                <li><a href="https://wa.me/6281260012700" class="footer-link"> <img src="~/assets/icon/whatsapp.png"
                                     style="width:30px" />
                                 &ensp;+62 81260012700</a></li>
+                        <li><div class="footer-link d-flex align-items-start"> <img src="~/assets/icon/phone.png"
+                                    style="width:30px" />
+                                    <div class="ms-2">(021) 8063 7388<br>
+Jam Operasional<br>
+Senin - Minggu<br>
+08:30 - 18:30 </div>
+                                </div></li>
                         <li><a href="javascript:void(0)" class="footer-link"> <img src="~/assets/icon/location.png"
                                     style="width:30px" />
                                 &ensp;PT Mediatama Televisi</a></li>

@@ -25,122 +25,132 @@
                     </div>
                 </div>
             </div>
-        </div>       
-        <section class="pt-5 pb-5" style="background-color: #f2f2f2">
+        </div>
+        <section class="pt-5 pb-5">
 
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 mb-3">
-                        <div class="card bg-white shadow-lg" style="border-radius: 20px;">
-                            <div class="card-body bg-white p-3" style="border-radius: 20px;">
+                        <div class="card bg-white" style="border:0 !important">
+                            <div class="card-body bg-white p-3">
                                 <div class="d-flex justify-content-center">
                                     <img :src="receiver1" style="width:100%;max-width:200px;height: unset !important" />
                                 </div>
-                                <h5 class="text-center pt-5 fw-bold">Nex Parabola | Tipe Biru</h5>
-                                <div class="text-center pt-1">Lebih canggih tampilan baru</div>
+                                <div class="text-center pt-4 fs-6 fw-bold c-primary">Nex Parabola</div>
+                                <div class="text-center pt-2 fs-6 fw-bold c-primary">Tipe Biru</div>
+                                <div class="text-center pt-2">Lebih canggih tampilan baru</div>
+                                <div class="d-flex justify-content-center text-center pt-3 pb-3">
+                                    <a href="javascript:void(0)" @click="openReceiver(1, link1, linkLazada1)"
+                                        style="color:black !important;font-weight:600;"><span
+                                            style="border-bottom:1px #ddd solid">BELI SEKARANG</span>&ensp;<i
+                                            class="bi bi-arrow-right c-primary-custom"></i></a>
+                                </div>
                                 <div class="d-flex justify-content-center">
                                     <img class="mt-3" :src="receiverFitur1" />
                                 </div>
-                                <div class="d-flex justify-content-center mt-5 mb-3">
-                                    <button @click="openReceiver(1, link1)"
-                                        style="background-color: #2C69A7 !important;max-width: 230px;border-radius: 15px;"
-                                        class="btn bg-primary w-100 p-3 text-white">Beli Sekarang</button>
-                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 mb-3">
-                        <div class="card bg-white shadow-lg" style="border-radius: 20px;">
-                            <div class="card-body bg-white p-3" style="border-radius: 20px;">
+                        <div class="card bg-white" style="border:0 !important">
+                            <div class="card-body bg-white p-3">
                                 <div class="d-flex justify-content-center">
                                     <img :src="receiver2" style="width:100%;max-width:200px;height: unset !important" />
                                 </div>
-                                <h5 class="text-center pt-5 fw-bold">Nex Parabola | Tipe Kuning</h5>
-                                <div class="text-center pt-1">Lebih canggih tampilan baru</div>
+                                <div class="text-center pt-4 fs-6 fw-bold c-primary">Nex Parabola</div>
+                                <div class="text-center pt-2 fs-6 fw-bold c-primary">Tipe Kuning</div>
+                                <div class="text-center pt-2">Lebih canggih tampilan baru</div>
+                                <div class="d-flex justify-content-center text-center pt-3 pb-3">
+                                    <a href="javascript:void(0)" @click="openReceiver(2, link2, linkLazada2)"
+                                        style="color:black !important;font-weight:600;"><span
+                                            style="border-bottom:1px #ddd solid">BELI SEKARANG</span>&ensp;<i
+                                            class="bi bi-arrow-right c-primary-custom"></i></a>
+                                </div>
                                 <div class="d-flex justify-content-center">
                                     <img class="mt-3" :src="receiverFitur2" />
                                 </div>
-                                <div class="d-flex justify-content-center mt-5 mb-3"
-                                    style="margin-top:120px !important">
-                                    <button @click="openReceiver(2, link2)"
-                                        style="background-color: #2C69A7 !important;max-width: 230px;border-radius: 15px;"
-                                        class="btn bg-primary w-100 p-3 text-white">Beli Sekarang</button>
-                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 mb-3">
-                        <div class="card bg-white shadow-lg" style="border-radius: 20px;">
-                            <div class="card-body bg-white p-3" style="border-radius: 20px;">
+                        <div class="card bg-white" style="border:0 !important">
+                            <div class="card-body bg-white p-3">
                                 <div class="d-flex justify-content-center">
                                     <img :src="receiver3" style="width:100%;max-width:200px;height: unset !important" />
                                 </div>
-                                <h5 class="text-center pt-5 fw-bold">Nex Parabola | Combo Merah</h5>
-                                <div class="text-center pt-1">Lebih canggih tampilan baru</div>
+                                <div class="text-center pt-4 fs-6 fw-bold c-primary">Nex Parabola</div>
+                                <div class="text-center pt-2 fs-6 fw-bold c-primary">Tipe Merah</div>
+                                <div class="text-center pt-2">Lebih canggih tampilan baru</div>
+                                <div class="d-flex justify-content-center text-center pt-3 pb-3">
+                                    <a href="javascript:void(0)" @click="openReceiver(3, link3, linkLazada3)"
+                                        style="color:black !important;font-weight:600;"><span
+                                            style="border-bottom:1px #ddd solid">BELI SEKARANG</span>&ensp;<i
+                                            class="bi bi-arrow-right c-primary-custom"></i></a>
+                                </div>
                                 <div class="d-flex justify-content-center">
                                     <img class="mt-3" :src="receiverFitur3" />
                                 </div>
-                                <div class="d-flex justify-content-center mt-5 mb-3">
-                                    <button @click="openReceiver(3, link3)"
-                                        style="background-color: #2C69A7 !important;max-width: 230px;border-radius: 15px;"
-                                        class="btn bg-primary w-100 p-3 text-white">Beli Sekarang</button>
-                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 mb-3">
-                        <div class="card bg-white shadow-lg" style="border-radius: 20px;">
-                            <div class="card-body bg-white p-3" style="border-radius: 20px;">
+                        <div class="card bg-white" style="border:0 !important">
+                            <div class="card-body bg-white p-3">
                                 <div class="d-flex justify-content-center">
                                     <img :src="receiver4" style="width:100%;max-width:200px;height: unset !important" />
                                 </div>
-                                <h5 class="text-center pt-5 fw-bold">Nex Parabola | Combo</h5>
-                                <div class="text-center pt-1">Lebih canggih tampilan baru</div>
+                                <div class="text-center pt-4 fs-6 fw-bold c-primary">Nex Parabola</div>
+                                <div class="text-center pt-2 fs-6 fw-bold c-primary">Combo Kuning</div>
+                                <div class="text-center pt-2">Lebih canggih tampilan baru</div>
+                                <div class="d-flex justify-content-center text-center pt-3 pb-3">
+                                    <a href="javascript:void(0)" @click="openReceiver(4, link4, linkLazada4)"
+                                        style="color:black !important;font-weight:600;"><span
+                                            style="border-bottom:1px #ddd solid">BELI SEKARANG</span>&ensp;<i
+                                            class="bi bi-arrow-right c-primary-custom"></i></a>
+                                </div>
                                 <div class="d-flex justify-content-center">
                                     <img class="mt-3" :src="receiverFitur4" />
                                 </div>
-                                <div class="d-flex justify-content-center mt-5 mb-3">
-                                    <button @click="openReceiver(4, link4)"
-                                        style="background-color: #2C69A7 !important;max-width: 230px;border-radius: 15px;"
-                                        class="btn bg-primary w-100 p-3 text-white">Beli Sekarang</button>
-                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 mb-3">
-                        <div class="card bg-white shadow-lg" style="border-radius: 20px;">
-                            <div class="card-body bg-white p-3" style="border-radius: 20px;">
+                        <div class="card bg-white" style="border:0 !important">
+                            <div class="card-body bg-white p-3">
                                 <div class="d-flex justify-content-center">
                                     <img :src="receiver5" style="width:100%;max-width:200px;height: unset !important" />
                                 </div>
-                                <h5 class="text-center pt-5 fw-bold">Nex Vidio</h5>
-                                <div class="text-center pt-1">Lebih canggih tampilan baru</div>
+                                <div class="text-center pt-4 fs-6 fw-bold c-primary">Nex Parabola</div>
+                                <div class="text-center pt-2 fs-6 fw-bold c-primary">Combo Merah</div>
+                                <div class="text-center pt-2">Lebih canggih tampilan baru</div>
+                                <div class="d-flex justify-content-center text-center pt-3 pb-3">
+                                    <a href="javascript:void(0)" @click="openReceiver(5, link5, linkLazada5)"
+                                        style="color:black !important;font-weight:600;"><span
+                                            style="border-bottom:1px #ddd solid">BELI SEKARANG</span>&ensp;<i
+                                            class="bi bi-arrow-right c-primary-custom"></i></a>
+                                </div>
                                 <div class="d-flex justify-content-center">
                                     <img class="mt-3" :src="receiverFitur5" />
-                                </div>
-                                <div class="d-flex justify-content-center mt-5 mb-3">
-                                    <button @click="openReceiver(5,link5)"
-                                        style="background-color: #2C69A7 !important;max-width: 230px;border-radius: 15px;"
-                                        class="btn bg-primary w-100 p-3 text-white">Beli Sekarang</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 mb-3">
-                        <div class="card bg-white shadow-lg" style="border-radius: 20px;">
-                            <div class="card-body bg-white p-3" style="border-radius: 20px;">
+                        <div class="card bg-white" style="border:0 !important">
+                            <div class="card-body bg-white p-3">
                                 <div class="d-flex justify-content-center">
                                     <img :src="receiver6" style="width:100%;max-width:200px;height: unset !important" />
                                 </div>
-                                <h5 class="text-center pt-5 fw-bold">Nex Parabola | Tipe Merah</h5>
-                                <div class="text-center pt-1">Lebih canggih tampilan baru</div>
+                                <div class="text-center pt-4 fs-6 fw-bold c-primary">NexVidio</div>
+                                <div class="text-center pt-4">Lebih canggih tampilan baru</div>
+                                <div class="d-flex justify-content-center text-center pt-4 pb-3">
+                                    <a href="javascript:void(0)" @click="openReceiver(6, link6, '')"
+                                        style="color:black !important;font-weight:600;"><span
+                                            style="border-bottom:1px #ddd solid">BELI SEKARANG</span>&ensp;<i
+                                            class="bi bi-arrow-right c-primary-custom"></i></a>
+                                </div>
                                 <div class="d-flex justify-content-center">
                                     <img class="mt-3" :src="receiverFitur6" />
-                                </div>
-                                <div class="d-flex justify-content-center mt-5 mb-3">
-                                    <button @click="openReceiver(6, link6)"
-                                        style="background-color: #2C69A7 !important;max-width: 230px;border-radius: 15px;"
-                                        class="btn bg-primary w-100 p-3 text-white">Beli Sekarang</button>
                                 </div>
                             </div>
                         </div>
@@ -168,7 +178,8 @@
                             <div class="col-lg-7 col-6">
                                 <div class="p-3">
                                     <h5 class="text-left pt-5 fw-bold show-on-desktop">{{name}}</h5>
-                                    <div class="text-left pt-1 fs-7 pb-3 show-on-desktop" style="color:black;">Dapatkan Produk Kami di Ecommerce</div>
+                                    <div class="text-left pt-1 fs-7 pb-3 show-on-desktop" style="color:black;">Dapatkan
+                                        Produk Kami di Ecommerce</div>
                                     <div class="text-center fs-6 show-on-mobile">Dapatkan Produk Kami di Ecommerce</div>
                                     <div class="row justify-content-center show-on-desktop mt-1">
                                         <!-- <div class="col-lg-12 mb-3">
@@ -195,13 +206,22 @@
                                                 </div>
                                             </a>
                                         </div> -->
+                                        <div class="col-lg-12 mb-3 d-flex justify-content-center" v-if="lazada">
+                                            <a :href="lazada" target="_blank" class="w-100">
+                                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                                    <img src="~/assets/social-media/lazada.jpg"
+                                                        style="height:25px;max-width:100%;" />
+                                                </div>
+                                            </a>
+                                        </div>
                                         <div class="col-lg-12 mb-3">
                                             <a :href="url" target="_blank">
                                                 <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                        <img src="~/assets/social-media/shopee.png"
-                                            style="height:25px;max-width:100%;" />
-                                    </div>
+                                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                                    <img src="~/assets/social-media/shopee.png"
+                                                        style="height:25px;max-width:100%;" />
+                                                </div>
                                             </a>
                                         </div>
                                     </div>
@@ -233,13 +253,22 @@
                                                 </div>
                                             </a>
                                         </div> -->
+                                    <div class="col-lg-12 mb-3 d-flex justify-content-center" v-if="lazada">
+                                        <a :href="lazada" target="_blank" class="w-100">
+                                            <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                                style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                                <img src="~/assets/social-media/lazada.jpg"
+                                                    style="height:25px;max-width:100%;" />
+                                            </div>
+                                        </a>
+                                    </div>
                                     <div class="col-lg-12 mb-3">
                                         <a :href="url" target="_blank">
                                             <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                        style="box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, .09);height:43px">
-                                        <img src="~/assets/social-media/shopee.png"
-                                            style="height:25px;max-width:100%;" />
-                                    </div>
+                                                style="box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, .09);height:43px">
+                                                <img src="~/assets/social-media/shopee.png"
+                                                    style="height:25px;max-width:100%;" />
+                                            </div>
                                         </a>
                                     </div>
                                 </div>
@@ -291,12 +320,29 @@
     const link6 = ref(
         'https://shopee.co.id/Nex-Parabola-Type-Merah-i.1311323005.28456687106?sp_atk=1dd7a912-283f-4642-a85c-9b0af4ebd6fc&xptdk=1dd7a912-283f-4642-a85c-9b0af4ebd6fc'
     );
+
+    const linkLazada1 = ref(
+        'https://www.lazada.co.id/products/i8217008380.html?spm=a1zawh.24863640.table_online_product.13.60aa4edfuWP5zP'
+        )
+    const linkLazada2 = ref(
+        'https://www.lazada.co.id/products/i8217028229.html?spm=a1zawh.24863640.table_online_product.1.60aa4edfuWP5zP'
+        )
+    const linkLazada3 = ref(
+        'https://www.lazada.co.id/products/i8217012416.html?spm=a1zawh.24863640.table_online_product.10.60aa4edfuWP5zP'
+        )
+    const linkLazada4 = ref(
+        'https://www.lazada.co.id/products/i8216962836.html?spm=a1zawh.24863640.table_online_product.16.60aa4edfuWP5zP'
+        )
+    const linkLazada5 = ref(
+        'https://www.lazada.co.id/products/i8216950950.html?spm=a1zawh.24863640.table_online_product.19.60aa4edfuWP5zP'
+        )
     const url = ref('')
+    const lazada = ref('')
     const type = ref(0)
 
     const name = ref('');
 
-    function openReceiver(typeX, urlX) {
+    function openReceiver(typeX, urlX, urlLazada) {
         if (typeX == 1) {
             name.value = 'Nex Parabola | Tipe Biru';
         } else if (typeX == 2) {
@@ -312,6 +358,7 @@
         }
         type.value = typeX
         url.value = urlX;
+        lazada.value = urlLazada
         $("#modal-receiver").modal('show')
     }
 

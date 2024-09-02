@@ -7,7 +7,7 @@
                 <img :src="backgroundImageMobile" class="w-100" style="visibility: hidden;" />
                 <div class="d-flex align-items-center" style="position:absolute;left:0;top:0;width:100%;height:100%;">
                     <div class="container" style="padding:15px 15px">
-                        <h6 class="text-white fw-bold">Service Center</h6>
+                        <h6 class="text-white fw-bold">Teknisi</h6>
                     </div>
                 </div>
             </div>
@@ -18,8 +18,8 @@
                 <img :src="backgroundImageDesktop" class="w-100" style="visibility: hidden;" />
                 <div class="d-flex align-items-center" style="position:absolute;left:0;top:0;width:100%;height:100%;">
                     <div class="container" style="padding:15px 0">
-                        <h1 class="text-white fw-bold">Service Center</h1>
-                        <div class="text-white">Layanan perbaikan Nex hadir di kotamu!</div>
+                        <h1 class="text-white fw-bold">Teknisi</h1>
+                    <div class="text-white">Layanan Perbaikan Nex Hadir di Kotamu!</div>
                     </div>
                 </div>
             </div>
@@ -30,7 +30,7 @@
                 <div class="row">
                     <div class="col-lg-6 mb-3">
                         <div class="dropdown">
-                            <button class="btn btn-secondary  btn-dropdown-city dropdown-toggle text-left"
+                            <button class="btn btn-secondary btn-dropdown-city dropdown-toggle text-left"
                                 style="padding: 10px 15px;color:#00539B !important;border:1px #00539B solid;background:#fff"
                                 type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <span>
@@ -39,20 +39,22 @@
                                 </span>
                             </button>
                             <ul class="dropdown-menu dropdown-menu-city" style="max-height:300px;overflow: auto;">
+                                <li style="padding:15px"><input type="text" class="form-control"  v-model="searchCity" placeholder="Search"></li>
                                 <li><a class="dropdown-item"
-                                        style="color:#00539B !important;font-weight:400;font-size: 15px;" href="javascript:void(0)"
+                                        style="color:#00539B !important;font-weight:400;font-size: 15px;"
+                                        href="javascript:void(0)"
                                         @click="selectCity = 'Semua'; selectCityId = '0';getList()">Semua</a>
                                 </li>
                                 <li><a class="dropdown-item"
                                         style="color:#00539B !important;font-weight:400;font-size: 15px;"
-                                        v-for="context in listCity" href="javascript:void(0)"
+                                        v-for="context in getQueryCity()" href="javascript:void(0)"
                                         @click="selectCity = context.city; selectCityId = context.id;getList()">{{context.city}}</a>
                                 </li>
                             </ul>
                         </div>
 
                     </div>
-                    <div class="col-lg-6 mb-3 d-flex justify-content-end align-items-center show-on-desktop">
+                    <div class="col-lg-6 mb-3 d-flex justify-content-end show-on-desktop align-items-center">
                         <div class="d-flex form-nav" role="search" style="border:1px #ddd solid">
                             <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -62,7 +64,7 @@
                             </svg>&ensp;
 
                             <input class="form-control" type="search" style="outline:none !important;border:0 !important;"
-                                v-model="search" @keyup.enter="getList" placeholder="Search">
+                                v-model="search" @keyup.enter="getList" placeholder="Search" aria-label="Search">
                         </div>
                     </div>
                 </div>
@@ -117,8 +119,8 @@
 </template>
 
 <script setup>
-    import backgroundImageMobile from "~/assets/header/service-center-mobile.png"
-    import backgroundImageDesktop from "~/assets/header/service-center-desktop.png"
+    import backgroundImageMobile from "~/assets/header/teknisi-mobile.png"
+    import backgroundImageDesktop from "~/assets/header/teknisi-desktop.png"
     import logoNex from "~/assets/logo-nex-2.png";
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"
@@ -130,6 +132,7 @@
     const selectCityId = ref('0');
 
     const search = ref('');
+    const searchCity = ref('');
 
     const result = ref([]);
     const {
@@ -137,7 +140,7 @@
     } = await getSourceCity()
 
     async function getSourceCity() {
-        let res = await axios.get(config.public.API_URL + 'about/citydealer', {
+        let res = await axios.get(config.public.API_URL + 'about/cityteknisi', {
             headers: {
                 'WEBCORP-APIKEY': config.public.API_KEY
             }
@@ -156,10 +159,12 @@
 
     async function getList() {
         result.value = [];
-        let res = await axios.get(config.public.API_URL + 'about/service', {
+        let res = await axios.get(config.public.API_URL + 'about/teknisi', {
             params: {
                 cityid: selectCityId.value,
-                search: search.value
+                search: search.value,
+                length:1,
+                page: 1,
             },
             headers: {
                 'WEBCORP-APIKEY': config.public.API_KEY
@@ -171,16 +176,23 @@
         }
     }
 
+    function getQueryCity(){
+        if(searchCity.value){
+            return listCity.value.filter((e) => e.city.toLowerCase().includes(searchCity.value.toLowerCase()))
+        }else{
+            return listCity.value
+        }
+    }
     useHead({
-        title: 'Service Center | Nex Parabola',
+        title: 'Teknisi | Nex Parabola',
         meta: [{
                 name: 'title',
-                content: 'Service Center | Nex Parabola'
+                content: 'Teknisi | Nex Parabola'
             },
             {
                 name: 'ogTitle',
-                content: 'Service Center | Nex Parabola'
-            },          
+                content: 'Teknisi | Nex Parabola'
+            },             
             {
                 name: 'description',
                 content: 'Layanan TV Satelit Parabola berlangganan Indonesia. Tonton Premium Live Football dan hiburan tanpa hambatan dengan resolusi HD hingga 4K.'

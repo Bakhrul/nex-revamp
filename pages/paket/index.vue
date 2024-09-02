@@ -28,14 +28,13 @@
             <div class="container">
                 <div class="d-flex justify-content-center">
                     <div style="overflow:auto">
-                        <div class="d-flex align-items-center" style="overflow:auto;width:600px">
-                            <div class="packet-filter mb-3 me-3" style="cursor:pointer;width:120px"
-                                @click="type = 'semua'" :class="type == 'semua' ? 'active' : ''">SEMUA</div>
-                            <div class="packet-filter mb-3 me-3" style="cursor:pointer;width:200px !important"
-                                @click="type = 'baru'" :class="type == 'baru' ? 'active' : ''">PELANGGAN BARU</div>
-                            <div class="packet-filter mb-3" style="cursor:pointer;width:200px !important"
-                                @click="type = 'setia'" :class="type == 'setia' ? 'active' : ''">PELANGGAN SETIA
-                            </div>
+                        <div class="d-flex align-items-center" style="overflow:auto;width:100%">
+                            <div class="packet-filter mb-3 me-3" style="cursor:pointer;width:200px;font-size:15px"
+                                @click="type = 'all'" :class="type == 'all' ? 'active' : ''">SEMUA</div>
+                            <div class="packet-filter mb-3 me-3"
+                                style="cursor:pointer;width:200px !important;font-size:15px" v-for="context in list"
+                                @click="type = context.id" :class="type == context.id ? 'active' : ''"
+                                v-html="context.category"></div>
                         </div>
                     </div>
                 </div>
@@ -43,260 +42,70 @@
         </section>
         <section class="pt-5 pb-5 bg-section">
             <div class="container">
-                <h5 class="mb-3 fw-bold" v-show="type == 'semua' || type == 'baru'">PELANGGAN BARU</h5>
-                <div class="slider-paket slider-baru mb-5" v-show="type == 'semua' || type == 'baru'">
-                    <div class="me-3 width-slider-packet" style="width:330px;">
-                        <div class="shadow-product w-100 product-box bg-white">
-                            <img src="~/assets/static-content/paket/pelanggan-baru/1.png" />
-                            <div class="p-3 " style="min-height:180px">
-                                <div class="d-flex justify-content-between mb-3 align-items-center">
-                                    <div class="fw-bold fs-6">Basic</div>
-                                    <div style="width:120px;">
-                                        <div class="badge-packet">Pelanggan Baru</div>
+                <template v-for="(category,index) in list">
+                    <h5 class="mb-3 fw-bold" v-show="type == 'all' || type == category.id" v-html="category.category">
+                    </h5>
+                    <div class="slider-paket slider-baru mb-5" :class="`slider-paket-${index}`"
+                        v-show="type == 'all' || type == category.id">
+                        <div class="me-3 width-slider-packet" style="width:330px;"
+                            v-for="(packet, idx) in category.packet">
+                            <div class="shadow-product w-100 product-box bg-white">
+                                <img :src="packet.image" />
+                                <div class="p-3 " style="min-height:210px">
+                                    <div class="d-flex justify-content-between mb-3 align-items-center">
+                                        <div class="fw-bold fs-6">{{packet.name}}</div>
+                                        <div style="width:120px;">
+                                            <div class="badge-packet">{{packet.badge}}</div>
+                                        </div>
+                                    </div>
+                                    <div style="min-height:100px">{{packet.note}}</div>
+                                    <div class="d-flex flex-wrap">
+                                        <template v-for="option in packet.periode">
+                                            <button :class="packet.selectPeriode == option.id ? 'active' : ''"
+                                                class="btn btn-option-packet"
+                                                @click="packet.selectPeriode = option.id;packet.selected = true;packet.selectPrice = option.price;packet.selectEcommerce = option.ecommerce"
+                                                type="button">{{ option.name }}</button>
+                                        </template>
                                     </div>
                                 </div>
-                                <div>Paket favorit pilihan pelanggan setia Nex, dimana 16 Siaran Premium akan hadir
-                                    menemani kamu!</div>
-                            </div>
-                            <div class="py-3 px-5 d-flex justify-content-center footer">
-                                <a @click="openPelangganBaru(1)" href="javascript:void(0)" style="border-radius: 20px;"
-                                    class="text-center btn bg-primary text-white w-100 p-3">BELI SEKARANG</a>
+                                <div class="pb-3 px-3 d-flex justify-content-center footer">
+                                    <button type="button"
+                                        @click="detailPakcet(packet.image,packet.name, packet.selectPrice, packet.noteDetail, packet.selectEcommerce)"
+                                        style="border-radius: 20px;" :disabled="!packet.selected"
+                                        class="text-center btn bg-primary text-white w-100 px-3 py-3">BELI
+                                        SEKARANG</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="me-3 width-slider-packet" style="width:330px;">
-                        <div class="shadow-product w-100 product-box bg-white">
-                            <img src="~/assets/static-content/paket/pelanggan-baru/2.png" />
-                            <div class="p-3 " style="min-height:180px">
-                                <div class="d-flex justify-content-between mb-3 align-items-center">
-                                    <div class="fw-bold fs-6">KIDS</div>
-                                    <div style="width:120px;">
-                                        <div class="badge-packet">Pelanggan Baru</div>
-                                    </div>
-                                </div>
-                                <div>Kumpulan tayangan terbaik dari mancanegara yang seru dan edukatif untuk menemani si
-                                    kecil</div>
-                            </div>
-                            <div class="py-3 px-5 d-flex justify-content-center footer">
-                                <a @click="openPelangganBaru(2)" href="javascript:void(0)" style="border-radius: 20px;"
-                                    class="text-center btn bg-primary text-white w-100 p-3">BELI SEKARANG</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="me-3 width-slider-packet" style="width:330px;">
-                        <div class="shadow-product w-100 product-box bg-white">
-                            <img src="~/assets/static-content/paket/pelanggan-baru/3.png" />
-                            <div class="p-3 " style="min-height:180px">
-                                <div class="d-flex justify-content-between mb-3 align-items-center">
-                                    <div class="fw-bold fs-6">DIAMOND</div>
-                                    <div style="width:120px;">
-                                        <div class="badge-packet">Pelanggan Baru</div>
-                                    </div>
-                                </div>
-                                <div>Paket terbaik dari Nex dimana kami bisa menikmati Kesenangan Tak Terbatas mulai
-                                    dari Olahraga hingga Hiburan</div>
-                            </div>
-                            <div class="py-3 px-5 d-flex justify-content-center footer">
-                                <a @click="openPelangganBaru(3)" href="javascript:void(0)" style="border-radius: 20px;"
-                                    class="text-center btn bg-primary text-white w-100 p-3">BELI SEKARANG</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h5 class="mb-3 fw-bold" v-show="type == 'semua' || type == 'setia'">PELANGGAN SETIA</h5>
-                <div class="slider-paket slider-setia" v-show="type == 'semua' || type == 'setia'">
-                    <div class="me-3 width-slider-packet" style="width:330px;">
-                        <div class="shadow-product w-100 product-box bg-white">
-                            <img src="~/assets/static-content/paket/pelanggan-setia/1.png" />
-                            <div class="p-3 " style="min-height:180px">
-                                <div class="d-flex justify-content-between mb-3 align-items-center">
-                                    <div class="fw-bold fs-6">TIMNAS</div>
-                                    <div style="width:120px;">
-                                        <div class="badge-packet">Pelanggan Setia</div>
-                                    </div>
-                                </div>
-                                <div>Berikan dukungan terbaikmu untuk tim nasional Indonesia di laga-laga paling
-                                    bergengsi!</div>
-                            </div>
-                            <div class="py-3 px-5 d-flex justify-content-center footer">
-                                <a @click="openPelangganSetia(1)" href="javascript:void(0)" style="border-radius: 20px;"
-                                    class="text-center btn bg-primary text-white w-100 p-3">BELI SEKARANG</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="me-3 width-slider-packet" style="width:330px;">
-                        <div class="shadow-product w-100 product-box bg-white">
-                            <img src="~/assets/static-content/paket/pelanggan-setia/2.png" />
-                            <div class="p-3 " style="min-height:180px">
-                                <div class="d-flex justify-content-between mb-3 align-items-center">
-                                    <div class="fw-bold fs-6">LIGA INGGRIS
-                                        PPV</div>
-                                    <div style="width:120px;">
-                                        <div class="badge-packet">Pelanggan Setia</div>
-                                    </div>
-                                </div>
-                                <div>Laga Super Big Match dari 5 tim Arsenal, Chelsea, Liverpool, Manchester City, &
-                                    Manchester United</div>
-                            </div>
-                            <div class="py-3 px-5 d-flex justify-content-center footer">
-                                <a @click="openPelangganSetia(2)" href="javascript:void(0)" style="border-radius: 20px;"
-                                    class="text-center btn bg-primary text-white w-100 p-3">BELI SEKARANG</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="me-3 width-slider-packet" style="width:330px;">
-                        <div class="shadow-product w-100 product-box bg-white">
-                            <img src="~/assets/static-content/paket/pelanggan-setia/3.png" />
-                            <div class="p-3 " style="min-height:180px">
-                                <div class="d-flex justify-content-between mb-3 align-items-center">
-                                    <div class="fw-bold fs-6">LIGA 1</div>
-                                    <div style="width:120px;">
-                                        <div class="badge-packet">Pelanggan Setia</div>
-                                    </div>
-                                </div>
-                                <div>Saksikan klub terbaik Liga Indonesia favoritmu bertanding memperebutkan gelar
-                                    juara!</div>
-                            </div>
-                            <div class="py-3 px-5 d-flex justify-content-center footer">
-                                <a @click="openPelangganSetia(3)" href="javascript:void(0)" style="border-radius: 20px;"
-                                    class="text-center btn bg-primary text-white w-100 p-3">BELI SEKARANG</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="me-3 width-slider-packet" style="width:330px;">
-                        <div class="shadow-product w-100 product-box bg-white">
-                            <img src="~/assets/static-content/paket/pelanggan-setia/4.png" />
-                            <div class="p-3 " style="min-height:180px">
-                                <div class="d-flex justify-content-between mb-3 align-items-center">
-                                    <div class="fw-bold fs-6">VOLI</div>
-                                    <div style="width:120px;">
-                                        <div class="badge-packet">Pelanggan Setia</div>
-                                    </div>
-                                </div>
-                                <div>Nikmati aksi penuh adrenalin dari setiap servis hingga spike yang memukau,
-                                    eksklusif untuk kamu yang suka Voli!</div>
-                            </div>
-                            <div class="py-3 px-5 d-flex justify-content-center footer">
-                                <a @click="openPelangganSetia(4)" href="javascript:void(0)" style="border-radius: 20px;"
-                                    class="text-center btn bg-primary text-white w-100 p-3">BELI SEKARANG</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="me-3 width-slider-packet" style="width:330px;">
-                        <div class="shadow-product w-100 product-box bg-white">
-                            <img src="~/assets/static-content/paket/pelanggan-setia/5.png" />
-                            <div class="p-3 " style="min-height:180px">
-                                <div class="d-flex justify-content-between mb-3 align-items-center">
-                                    <div class="fw-bold fs-6">LIGA INDONESIA+ CHAMPIONS</div>
-                                    <div style="width:120px;">
-                                        <div class="badge-packet">Pelanggan Setia</div>
-                                    </div>
-                                </div>
-                                <div>Nikmati paket juara untuk kamu yang paling olahraga. Olahraga favoritmu dalam satu
-                                    paket!</div>
-                            </div>
-                            <div class="py-3 px-5 d-flex justify-content-center footer">
-                                <a @click="openPelangganSetia(5)" href="javascript:void(0)" style="border-radius: 20px;"
-                                    class="text-center btn bg-primary text-white w-100 p-3">BELI SEKARANG</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="me-3 width-slider-packet" style="width:330px;">
-                        <div class="shadow-product w-100 product-box bg-white">
-                            <img src="~/assets/static-content/paket/pelanggan-setia/6.png" />
-                            <div class="p-3 " style="min-height:180px">
-                                <div class="d-flex justify-content-between mb-3 align-items-center">
-                                    <div class="fw-bold fs-6">LIGA INGGRIS</div>
-                                    <div style="width:120px;">
-                                        <div class="badge-packet">Pelanggan Setia</div>
-                                    </div>
-                                </div>
-                                <div>Jangan sampai ketinggalan pertandingan dari klub-klub terbaik Liga Inggris dalam
-                                    High Definition!</div>
-                            </div>
-                            <div class="py-3 px-5 d-flex justify-content-center footer">
-                                <a @click="openPelangganSetia(6)" href="javascript:void(0)" style="border-radius: 20px;"
-                                    class="text-center btn bg-primary text-white w-100 p-3">BELI SEKARANG</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="me-3 width-slider-packet" style="width:330px;">
-                        <div class="shadow-product w-100 product-box bg-white">
-                            <img src="~/assets/static-content/paket/pelanggan-setia/7.png" />
-                            <div class="p-3 " style="min-height:180px">
-                                <div class="d-flex justify-content-between mb-3 align-items-center">
-                                    <div class="fw-bold fs-6">LIGA INGGRIS+</div>
-                                    <div style="width:120px;">
-                                        <div class="badge-packet">Pelanggan Setia</div>
-                                    </div>
-                                </div>
-                                <div>Paket rekomendasi dimana kamu bisa menyaksikan Super Big Match dan Match Tim Besar,
-                                    dijamin Pasti Tayang!</div>
-                            </div>
-                            <div class="py-3 px-5 d-flex justify-content-center footer">
-                                <a @click="openPelangganSetia(7)" href="javascript:void(0)" style="border-radius: 20px;"
-                                    class="text-center btn bg-primary text-white w-100 p-3">BELI SEKARANG</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="me-3 width-slider-packet" style="width:330px;">
-                        <div class="shadow-product w-100 product-box bg-white">
-                            <img src="~/assets/static-content/paket/pelanggan-setia/8.png" />
-                            <div class="p-3 " style="min-height:180px">
-                                <div class="d-flex justify-content-between mb-3 align-items-center">
-                                    <div class="fw-bold fs-6">PREMIUM SPORTS</div>
-                                    <div style="width:120px;">
-                                        <div class="badge-packet">Pelanggan Setia</div>
-                                    </div>
-                                </div>
-                                <div>Raih sensasi seru lewat tayangan Olahraga Dunia terlengkap & terkini di Premium
-                                    Sports</div>
-                            </div>
-                            <div class="py-3 px-5 d-flex justify-content-center footer">
-                                <a @click="openPelangganSetia(8)" href="javascript:void(0)" style="border-radius: 20px;"
-                                    class="text-center btn bg-primary text-white w-100 p-3">BELI SEKARANG</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </template>
             </div>
         </section>
         <Footer></Footer>
         <!-- START PELANGGAN BARU -->
-        <div class="modal fade" tabindex="-1" role="dialog" id="modal-pelanggan-baru-1">
+        <div class="modal fade" tabindex="-1" role="dialog" id="modal-packet">
             <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:450px">
                 <div class="modal-content">
                     <div class="modal-body rounded">
                         <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
                                 class="bi bi-x"></i></button>
-                        <img src="~/assets/static-content/paket/pelanggan-baru/1.png" class="w-100 rounded" />
+                        <img :src="image" class="w-100 rounded" />
                         <div class="d-flex justify-content-between align-items-center">
-                            <h5 class="fw-bold mt-3 me-3">BASIC</h5>
+                            <h5 class="fw-bold mt-3 me-3">{{name}}</h5>
                             <div style="width:140px">
                                 <div class="fw-bold p-1"
                                     style="width:140px;font-size:11px;text-align:center;border-radius:5px;color:#2C69A7;background:#D5E0E9">
-                                    Mulai dari Rp 19.900
+                                    {{badge}}
                                 </div>
                             </div>
                         </div>
-                        <div style="line-height:1.5;">Animal Planet, Discovery, BBC Earth, BBC Lifestyle, BBC World
-                            News, AXN, ONE, Rock Entertainment, Rock Action, MTV, HGTV, TLC, AFN, Citra Culinary &
-                            Travel, & 6 Channel TV Nasional</div>
+                        <div style="line-height:1.5;" v-html="note"></div>
                         <div class="row justify-content-center mt-5 px-4">
-                            <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                                <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
+                            <div class="col-lg-6 mb-3 d-flex justify-content-center" v-for="context in ecommerce">
+                                <a :href="context.url" target="_blank" class="w-100">
                                     <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
                                         style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                        <img src="~/assets/social-media/shopee.png"
-                                            style="height:23px;max-width:100%;" />
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                                <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                        <img src="~/assets/social-media/nex.png" style="height:16px;max-width:100%;" />
+                                        <img :src="context.logo" style="height:23px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
@@ -305,472 +114,108 @@
                 </div>
             </div>
         </div>
-        <div class="modal fade" tabindex="-1" role="dialog" id="modal-pelanggan-baru-2">
-            <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:450px">
-                <div class="modal-content">
-                    <div class="modal-body rounded">
-                        <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
-                                class="bi bi-x"></i></button>
-                        <img src="~/assets/static-content/paket/pelanggan-baru/2.png" class="w-100 rounded" />
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h5 class="fw-bold mt-3 me-3">KIDS</h5>
-                            <div style="width:140px">
-                                <div class="fw-bold p-1"
-                                    style="width:140px;font-size:11px;text-align:center;border-radius:5px;color:#2C69A7;background:#D5E0E9">
-                                    Mulai dari Rp 19.900
-                                </div>
-                            </div>
-                        </div>
-
-                        <div style="line-height:1.5;">Nickelodeon, Nickelodeon Junior, Dreamworks, Animax</div>
-                        <div class="row justify-content-center mt-5 px-4">
-                            <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                                <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                        <img src="~/assets/social-media/shopee.png"
-                                            style="height:23px;max-width:100%;" />
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                                <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                        <img src="~/assets/social-media/nex.png" style="height:16px;max-width:100%;" />
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" tabindex="-1" role="dialog" id="modal-pelanggan-baru-3">
-            <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:450px">
-                <div class="modal-content">
-                    <div class="modal-body rounded">
-                        <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
-                                class="bi bi-x"></i></button>
-                        <img src="~/assets/static-content/paket/pelanggan-baru/3.png" class="w-100 rounded" />
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h5 class="fw-bold mt-3 me-3">DIAMOND</h5>
-                            <div style="width:140px">
-                                <div class="fw-bold p-1"
-                                    style="width:140px;font-size:11px;text-align:center;border-radius:5px;color:#2C69A7;background:#D5E0E9">
-                                    Mulai dari Rp 239.000
-                                </div>
-                            </div>
-                        </div>
-
-                        <div style="line-height:1.5;">Nex Football (1, 2, 3), Champions TV (1, 2, 3, 5, 6), Voli TV,
-                            Dreamworks, Nickelodeon, Nickelodeon Junior, Animax, Animal Planet, Discovery, BBC Earth,
-                            BBC Lifestyle, BBC World News, AXN, ONE, Rock Entertainment, & banyak lagi</div>
-                        <div class="row justify-content-center mt-5 px-4">
-                            <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                                <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                        <img src="~/assets/social-media/shopee.png"
-                                            style="height:23px;max-width:100%;" />
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                                <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                        <img src="~/assets/social-media/nex.png" style="height:16px;max-width:100%;" />
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- END PELANGGAN BARU -->
-        <!-- START PELANGGAN SETIA -->
-        <div class="modal fade" tabindex="-1" role="dialog" id="modal-pelanggan-setia-1">
-            <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:450px">
-                <div class="modal-content">
-                    <div class="modal-body rounded">
-                        <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
-                                class="bi bi-x"></i></button>
-                        <img src="~/assets/static-content/paket/pelanggan-setia/1.png" class="w-100 rounded" />
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h5 class="fw-bold mt-3 me-3">TIMNAS</h5>
-                            <div style="width:140px">
-                                <div class="fw-bold p-1"
-                                    style="width:140px;font-size:11px;text-align:center;border-radius:5px;color:#2C69A7;background:#D5E0E9">
-                                    Mulai dari Rp 59.000
-                                </div>
-                            </div>
-                        </div>
-
-                        <div style="line-height:1.5;">Nex Sport 4 HD</div>
-                        <div class="row justify-content-center mt-5 px-4">
-                            <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                                <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                        <img src="~/assets/social-media/shopee.png"
-                                            style="height:23px;max-width:100%;" />
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                                <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                        <img src="~/assets/social-media/nex.png" style="height:16px;max-width:100%;" />
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" tabindex="-1" role="dialog" id="modal-pelanggan-setia-2">
-            <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:450px">
-                <div class="modal-content">
-                    <div class="modal-body rounded">
-                        <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
-                                class="bi bi-x"></i></button>
-                        <img src="~/assets/static-content/paket/pelanggan-setia/2.png" class="w-100 rounded" />
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h5 class="fw-bold mt-3 me-3">LIGA INGGRIS
-                                PPV</h5>
-                            <div style="width:140px">
-                                <div class="fw-bold p-1"
-                                    style="width:140px;font-size:11px;text-align:center;border-radius:5px;color:#2C69A7;background:#D5E0E9">
-                                    Mulai dari Rp 69.000
-                                </div>
-                            </div>
-                        </div>
-
-                        <div style="line-height:1.5;">Nex PPV HD</div>
-                        <div class="row justify-content-center mt-5 px-4">
-                            <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                                <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                        <img src="~/assets/social-media/shopee.png"
-                                            style="height:23px;max-width:100%;" />
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                                <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                        <img src="~/assets/social-media/nex.png" style="height:16px;max-width:100%;" />
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" tabindex="-1" role="dialog" id="modal-pelanggan-setia-3">
-            <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:450px">
-                <div class="modal-content">
-                    <div class="modal-body rounded">
-                        <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
-                                class="bi bi-x"></i></button>
-                        <img src="~/assets/static-content/paket/pelanggan-setia/3.png" class="w-100 rounded" />
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h5 class="fw-bold mt-3 me-3">LIGA 1</h5>
-                            <div style="width:140px">
-                                <div class="fw-bold p-1"
-                                    style="width:140px;font-size:11px;text-align:center;border-radius:5px;color:#2C69A7;background:#D5E0E9">
-                                    Mulai dari Rp 69.000
-                                </div>
-                            </div>
-                        </div>
-
-                        <div style="line-height:1.5;">Nex PPV HD</div>
-                        <div class="row justify-content-center mt-5 px-4">
-                            <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                                <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                        <img src="~/assets/social-media/shopee.png"
-                                            style="height:23px;max-width:100%;" />
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                                <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                        <img src="~/assets/social-media/nex.png" style="height:16px;max-width:100%;" />
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" tabindex="-1" role="dialog" id="modal-pelanggan-setia-4">
-            <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:450px">
-                <div class="modal-content">
-                    <div class="modal-body rounded">
-                        <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
-                                class="bi bi-x"></i></button>
-                        <img src="~/assets/static-content/paket/pelanggan-setia/4.png" class="w-100 rounded" />
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h5 class="fw-bold mt-3 me-3">VOLI</h5>
-                            <div style="width:140px">
-                                <div class="fw-bold p-1"
-                                    style="width:140px;font-size:11px;text-align:center;border-radius:5px;color:#2C69A7;background:#D5E0E9">
-                                    Mulai dari Rp 79.000
-                                </div>
-                            </div>
-                        </div>
-
-                        <div style="line-height:1.5;">Nex PPV HD</div>
-                        <div class="row justify-content-center mt-5 px-4">
-                            <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                                <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                        <img src="~/assets/social-media/shopee.png"
-                                            style="height:23px;max-width:100%;" />
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                                <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                        <img src="~/assets/social-media/nex.png" style="height:16px;max-width:100%;" />
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" tabindex="-1" role="dialog" id="modal-pelanggan-setia-5">
-            <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:450px">
-                <div class="modal-content">
-                    <div class="modal-body rounded">
-                        <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
-                                class="bi bi-x"></i></button>
-                        <img src="~/assets/static-content/paket/pelanggan-setia/5.png" class="w-100 rounded" />
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h5 class="fw-bold mt-3 me-3">LIGA INDONESIA+
-                                CHAMPIONS</h5>
-                            <div style="width:140px">
-                                <div class="fw-bold p-1"
-                                    style="width:140px;font-size:11px;text-align:center;border-radius:5px;color:#2C69A7;background:#D5E0E9">
-                                    Mulai dari Rp 99.900
-                                </div>
-                            </div>
-                        </div>
-
-                        <div style="line-height:1.5;">Nex Sport 1 & 2 HD, Champions TV HD 1,2, & 3.</div>
-                        <div class="row justify-content-center mt-5 px-4">
-                            <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                                <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                        <img src="~/assets/social-media/shopee.png"
-                                            style="height:23px;max-width:100%;" />
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                                <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                    <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                        style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                        <img src="~/assets/social-media/nex.png" style="height:16px;max-width:100%;" />
-                                    </div>
-                                </a>
-                            </div>                        
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-    <div class="modal fade" tabindex="-1" role="dialog" id="modal-pelanggan-setia-6">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:450px">
-            <div class="modal-content">
-                <div class="modal-body rounded">
-                    <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
-                            class="bi bi-x"></i></button>
-                    <img src="~/assets/static-content/paket/pelanggan-setia/6.png" class="w-100 rounded" />
-                    <div class="d-flex justify-content-between align-items-center">
-                        <h5 class="fw-bold mt-3 me-3">LIGA INGGRIS</h5>
-                        <div style="width:140px">
-                            <div class="fw-bold p-1"
-                                style="width:140px;font-size:11px;text-align:center;border-radius:5px;color:#2C69A7;background:#D5E0E9">
-                                Mulai dari Rp 169.000
-                            </div>
-                        </div>
-                    </div>
-
-                    <div style="line-height:1.5;"></div>
-                    <div class="row justify-content-center mt-5 px-4">
-                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                            <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
-                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                    <img src="~/assets/social-media/shopee.png" style="height:23px;max-width:100%;" />
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                            <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                    <img src="~/assets/social-media/nex.png" style="height:16px;max-width:100%;" />
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" tabindex="-1" role="dialog" id="modal-pelanggan-setia-7">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:450px">
-            <div class="modal-content">
-                <div class="modal-body rounded">
-                    <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
-                            class="bi bi-x"></i></button>
-                    <img src="~/assets/static-content/paket/pelanggan-setia/7.png" class="w-100 rounded" />
-                    <div class="d-flex justify-content-between align-items-center">
-                        <h5 class="fw-bold mt-3 me-3">LIGA INGGRIS+</h5>
-                        <div style="width:140px">
-                            <div class="fw-bold p-1"
-                                style="width:140px;font-size:11px;text-align:center;border-radius:5px;color:#2C69A7;background:#D5E0E9">
-                                Mulai dari Rp 2.499.000
-                            </div>
-                        </div>
-                    </div>
-
-                    <div style="line-height:1.5;">Champions TV 5, Champions TV 6, Nex PPV</div>
-                    <div class="row justify-content-center mt-5 px-4">
-                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                            <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
-                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                    <img src="~/assets/social-media/shopee.png" style="height:23px;max-width:100%;" />
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                            <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                    <img src="~/assets/social-media/nex.png" style="height:16px;max-width:100%;" />
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" tabindex="-1" role="dialog" id="modal-pelanggan-setia-8">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:450px">
-            <div class="modal-content">
-                <div class="modal-body rounded">
-                    <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
-                            class="bi bi-x"></i></button>
-                    <img src="~/assets/static-content/paket/pelanggan-setia/8.png" class="w-100 rounded" />
-                    <div class="d-flex justify-content-between align-items-center">
-                        <h5 class="fw-bold mt-3 me-3">PREMIUM SPORTS</h5>
-                        <div style="width:140px">
-                            <div class="fw-bold p-1"
-                                style="width:140px;font-size:11px;text-align:center;border-radius:5px;color:#2C69A7;background:#D5E0E9">
-                                Mulai dari Rp 2.499.000
-                            </div>
-                        </div>
-                    </div>
-
-                    <div style="line-height:1.5;">Nex Football, Nex Football 2, Nex Football 3, Champions TV (1, 2,
-                        3, 5, 6) & Voli TV</div>
-                    <div class="row justify-content-center mt-5 px-4">
-                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                            <a href="https://shopee.co.id/nexparabola.official" target="_blank" class="w-100">
-                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                    <img src="~/assets/social-media/shopee.png" style="height:23px;max-width:100%;" />
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                            <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                    <img src="~/assets/social-media/nex.png" style="height:16px;max-width:100%;" />
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- END PELANGGAN SETIA -->
+        <!-- END PELANGGAN SETIA -->
     </div>
 </template>
 
 <script setup>
+    import axios from "axios"
+
     import backgroundImageMobile from "~/assets/header/paket-mobile.png"
     import backgroundImageDesktop from "~/assets/header/paket-desktop.png"
     import logoNex from "~/assets/logo-nex-2.png";
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"
-    const type = ref('semua')
+    const type = ref('all')
+    const list = ref([]);
+    const config = useRuntimeConfig()
 
-    function openPacket() {
-        $("#modal-packet").modal('show');
+    const image = ref('');
+    const name = ref('');
+    const note = ref('');
+    const badge = ref('');
+    const ecommerce = ref([]);
+    const {
+        data
+    } = await getPacket()
+
+    async function getPacket() {
+        let res = await axios.get(config.public.API_URL + 'paket/paket', {
+            headers: {
+                'WEBCORP-APIKEY': config.public.API_KEY
+            }
+        })
+        if (res.status == 200) {
+            console.log(res.data.data)
+            for (let i = 0; i < res.data.data.list.length; i++) {
+                let listPacket = [];
+                for (let x = 0; x < res.data.data.list[i].paket.length; x++) {
+                    let paket = res.data.data.list[i].paket[i]
+                    let listPeriode = [];
+                    if (paket.period) {
+                        for (let p = 0; p < paket.period.length; p++) {
+                            listPeriode.push({
+                                id: paket.period[p].id,
+                                price: paket.period[p].badgedetail,
+                                ecommerce: paket.period[p].ecommerce,
+                                name: paket.period[p].period,
+                            })
+                        }
+                    }
+
+                    listPacket.push({
+                        id: paket.id,
+                        name: paket.paketname,
+                        image: paket.image,
+                        badge: paket.paketbadge,
+                        price: paket.badgedetail,
+                        ecommerce: paket.ecommerce,
+                        periode: listPeriode,
+                        note: paket.note,
+                        noteDetail: paket.notedetail,
+                        selected: listPeriode.length > 0 ? false : true,
+                        selectPeriode: '',
+                        selectPrice: listPeriode.length > 0 ? '' : paket.badgedetail,
+                        selectEcommerce: listPeriode.length > 0 ? [] : paket.ecommerce,
+                    })
+                }
+                list.value.push({
+                    id: res.data.data.list[i].id,
+                    category: res.data.data.list[i].category,
+                    packet: listPacket,
+
+                })
+            }            
+            return res.data.data;
+        }
     }
 
     onMounted(() => {
-        sliderBaru()
-        sliderSetia()
+
+        for (let i = 0; i < list.value.length; i++) {
+            $('.slider-paket-' + i).slick({
+                infinite: false,
+                speed: 300,
+                centerMode: false,
+                dots: false,
+                variableWidth: true,
+                prevArrow: "<button type='button' class='slick-prev pull-left'><i class='bi bi-arrow-left' aria-hidden='true'></i></button>",
+                nextArrow: "<button type='button' class='slick-next pull-right'><i class='bi bi-arrow-right' aria-hidden='true'></i></button>",
+            });
+        }
     });
 
-    function openPelangganBaru(type) {
-        $("#modal-pelanggan-baru-" + type).modal('show');
+    function detailPakcet(imageX, nameX, price, noteX, ecommerceX) {
+        image.value = imageX;
+        name.value = nameX;
+        note.value = noteX;
+        badge.value = price;
+        ecommerce.value = ecommerceX;
+        $("#modal-packet").modal('show');
     }
 
     function openPelangganSetia(type) {
         $("#modal-pelanggan-setia-" + type).modal('show');
-    }
-
-    function sliderBaru() {
-        $('.slider-baru').slick({
-            infinite: false,
-            speed: 300,
-            centerMode: false,
-            dots: false,
-            variableWidth: true,
-            prevArrow: "<button type='button' class='slick-prev pull-left'><i class='bi bi-arrow-left' aria-hidden='true'></i></button>",
-            nextArrow: "<button type='button' class='slick-next pull-right'><i class='bi bi-arrow-right' aria-hidden='true'></i></button>",
-        });
-    }
-
-    function sliderSetia() {
-        $('.slider-setia').slick({
-            infinite: false,
-            speed: 300,
-            centerMode: false,
-            dots: false,
-            variableWidth: true,
-            prevArrow: "<button type='button' class='slick-prev pull-left'><i class='bi bi-arrow-left' aria-hidden='true'></i></button>",
-            nextArrow: "<button type='button' class='slick-next pull-right'><i class='bi bi-arrow-right' aria-hidden='true'></i></button>",
-        });
     }
 
     useHead({

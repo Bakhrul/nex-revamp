@@ -1,7 +1,7 @@
 <template>
     <div>
         <Navbar></Navbar>
-        <div class="show-on-desktop">
+        <!-- <div class="show-on-desktop">
             <carousel :items-to-show="1" :autoplay="2500" :wrapAround="true">
                 <slide :key="1">
                     <div class="d-flex align-items-center py-5"
@@ -152,6 +152,35 @@
                     <pagination />
                 </template>
             </carousel>
+        </div> -->
+        <div class="w-100">
+            <carousel :items-to-show="1" :autoplay="1500" :transition="0" :wrapAround="true">
+                <slide :key="1" style="padding: 0 !important">
+                    <a href="javascript:void(0)" @click="showBanner(1)" class="w-100" style="padding: 0 !important">
+                        <img src="~/assets/static-content/banner/september/1.png" class="w-100" />
+                    </a>
+                </slide>
+                <slide :key="2" style="padding: 0 !important">
+                    <a href="javascript:void(0)" @click="showBanner(2)" class="w-100" style="padding: 0 !important">
+                        <img src="~/assets/static-content/banner/september/2.png" class="w-100" />
+                    </a>
+                </slide>
+                <slide :key="3" style="padding: 0 !important">
+                    <a href="javascript:void(0)" @click="showBanner(3)" class="w-100" style="padding: 0 !important">
+                        <img src="~/assets/static-content/banner/september/3.png" class="w-100" />
+                    </a>
+                </slide>
+                <slide :key="4" style="padding: 0 !important">
+                    <a href="javascript:void(0)" @click="showBanner(4)" class="w-100" style="padding: 0 !important">
+                        <img src="~/assets/static-content/banner/september/4.png" class="w-100" />
+                    </a>
+                </slide>
+
+                <template #addons>
+
+                    <pagination />
+                </template>
+            </carousel>
         </div>
         <section class="py-1 mt-5">
             <div class="container">
@@ -173,12 +202,12 @@
                             <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                 style="min-height:120px">
                                 <div class="fw-bold text-center fs-6">Receiver</div>
-                                <div class="text-center">Mulai dari</div>
-                                <div class="fw-bold text-center fs-6">Rp 314.000</div>
+                                <div class="text-center pt-1">Mulai dari</div>
+                                <div class="fw-bold text-center fs-5 pt-1">Rp 314.000</div>
                             </div>
                             <div class="p-3 d-flex justify-content-center footer" style="border-top:1px #ddd solid">
-                                <nuxt-link to="/receiver">Beli Sekarang <i style="color:black;"
-                                        class="bi bi-chevron-right"></i></nuxt-link>
+                                <nuxt-link style="color:#00529C;font-weight:500;" to="/receiver">Beli Sekarang <i
+                                        style="color:#00529C;" class="bi bi-chevron-right"></i></nuxt-link>
                             </div>
                         </div>
                     </div>
@@ -188,12 +217,12 @@
                             <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                 style="min-height:120px">
                                 <div class="fw-bold text-center fs-6">Paket Berlangganan</div>
-                                <div class="text-center">Mulai dari</div>
-                                <div class="fw-bold text-center fs-6">Rp 19.900</div>
+                                <div class="text-center pt-1">Mulai dari</div>
+                                <div class="fw-bold text-center fs-5 pt-1">Rp 19.900</div>
                             </div>
                             <div class="p-3 d-flex justify-content-center footer" style="border-top:1px #ddd solid">
-                                <nuxt-link to="/paket">Beli Sekarang <i style="color:black;"
-                                        class="bi bi-chevron-right"></i></nuxt-link>
+                                <nuxt-link style="color:#00529C;font-weight:500;" to="/paket">Beli Sekarang <i
+                                        style="color:#00529C;" class="bi bi-chevron-right"></i></nuxt-link>
                             </div>
                         </div>
                     </div>
@@ -202,11 +231,11 @@
                             <img src="~/assets/3.png" style="min-height: unset !important;" />
                             <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                 style="min-height:120px">
-                                <div class="fw-bold text-center fs-6">List Channel & Program</div>
+                                <div class="fw-bold text-center fs-5">List Channel & Program</div>
                             </div>
                             <div class="p-3 d-flex justify-content-center footer" style="border-top:1px #ddd solid">
-                                <nuxt-link to="/channel">Beli Sekarang <i style="color:black;"
-                                        class="bi bi-chevron-right"></i></nuxt-link>
+                                <nuxt-link style="color:#00529C;font-weight:500;" to="/channel">Beli Sekarang <i
+                                        style="color:#00529C;" class="bi bi-chevron-right"></i></nuxt-link>
                             </div>
                         </div>
                     </div>
@@ -346,18 +375,251 @@
         </section>
         <Footer></Footer>
     </div>
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="modal-banner-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:550px">
+            <div class="modal-content">
+                <div class="modal-body rounded">
+                    <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
+                            class="bi bi-x"></i></button>
+                    <img src="~/assets/static-content/banner/september/1.png" class="w-100 rounded" />
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="fw-bold mt-3 me-3">Super Big Match - Manchester City vs Arsenal</h5>
+                    </div>
+                    <div style="line-height:1.5;">Duel Panas Manchester City vs Arsenal di Pekan 5. Tayang LIVE di
+                        channel Nex PPV dengan harga 59rb/satu pertandingan.  
+                        Kamu tinggal ADD ON Paket Liga Inggris PPV pastikan kamu sudah memiliki Paket Liga
+                        Inggris/Diamond/Premium Sport aktif untuk bisa membeli paket ini. 
+                        <br><br>
+                        *Paket bisa dibeli mulai tanggal 9 - 22 September<br>
+                        *Channel akan aktif H-2 Jam sebelum pertandingan</div>
+                    <div class="row justify-content-center mt-5 px-4">
+                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
+                            <a href="https://www.lazada.co.id/shop/nex-parabola-tv/" target="_blank" class="w-100">
+                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                    <img src="~/assets/social-media/lazada.jpg" style="height:23px;max-width:100%;" />
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
+                            <a href="javascript:void(0)" target="_blank" class="w-100">
+                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                    <img src="~/assets/social-media/tokopedia.png"
+                                        style="height:23px;max-width:100%;" />
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
+                            <a href="https://shopee.co.id/nexparabola.official?shopCollection=253318341#product_list"
+                                target="_blank" class="w-100">
+                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                    <img src="~/assets/social-media/shopee.png" style="height:23px;max-width:100%;" />
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
+                            <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
+                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                    <img src="~/assets/social-media/nex.png" style="height:23px;max-width:100%;" />
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="modal-banner-2">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:550px">
+            <div class="modal-content">
+                <div class="modal-body rounded">
+                    <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
+                            class="bi bi-x"></i></button>
+                    <img src="~/assets/static-content/banner/september/2.png" class="w-100 rounded" />
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="fw-bold mt-3 me-3">Siap-siap untuk Aksi Kelas Dunia</h5>
+                    </div>
+                    <div style="line-height:1.5;">Kualifikasi Piala Dunia Zona Amerika Selatan mulai September 2024
+                        dengan 10 negara tangguh seperti Argentina, Brasil, Uruguay, dan banyak lagi. <br>
+                        Saksi bintang-bintang dunia berjuang untuk tempat di Piala Dunia 2026 semuanya bisa kamu nikmati
+                        secara LIVE di Nex! 
+                        Langganan Paket WCQ Conmebol hanya Rp 59.000, aktif sampai 11 September. Jangan lewatkan momen
+                        seru ini, buktikan dukunganmu sekarang!</div>
+                    <div class="row justify-content-center mt-5 px-4">
+                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
+                            <a href="https://www.lazada.co.id/shop/nex-parabola-tv/" target="_blank" class="w-100">
+                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                    <img src="~/assets/social-media/lazada.jpg" style="height:23px;max-width:100%;" />
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
+                            <a href="javascript:void(0)" target="_blank" class="w-100">
+                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                    <img src="~/assets/social-media/tokopedia.png"
+                                        style="height:23px;max-width:100%;" />
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
+                            <a href="https://shopee.co.id/nexparabola.official?shopCollection=253318341#product_list"
+                                target="_blank" class="w-100">
+                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                    <img src="~/assets/social-media/shopee.png" style="height:23px;max-width:100%;" />
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
+                            <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
+                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                    <img src="~/assets/social-media/nex.png" style="height:23px;max-width:100%;" />
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" tabindex="-1" role="dialog" id="modal-banner-3">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:550px">
+            <div class="modal-content">
+                <div class="modal-body rounded">
+                    <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
+                            class="bi bi-x"></i></button>
+                    <img src="~/assets/static-content/banner/september/3.png" class="w-100 rounded" />
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="fw-bold mt-3 me-3">Kualifikasi AFC U20 Asian Cup 2025</h5>
+                    </div>
+                    <div style="line-height:1.5;">Ikuti perjuangan Timnas Indonesia di Kualifikasi AFC U20 Asian Cup
+                        2025! Mereka akan bertarung melawan Yemen, Timor Leste, dan Maldives dalam laga-laga seru yang
+                        penuh semangat. Saksikan setiap detik pertandingannya LIVE di Nex dan dukung Garuda Muda meraih
+                        kemenangan.</div>
+                    <div class="row justify-content-center mt-5 px-4">
+                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
+                            <a href="https://www.lazada.co.id/shop/nex-parabola-tv/" target="_blank" class="w-100">
+                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                    <img src="~/assets/social-media/lazada.jpg" style="height:23px;max-width:100%;" />
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
+                            <a href="javascript:void(0)" target="_blank" class="w-100">
+                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                    <img src="~/assets/social-media/tokopedia.png"
+                                        style="height:23px;max-width:100%;" />
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
+                            <a href="https://shopee.co.id/nexparabola.official?shopCollection=253318341#product_list"
+                                target="_blank" class="w-100">
+                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                    <img src="~/assets/social-media/shopee.png" style="height:23px;max-width:100%;" />
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
+                            <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
+                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                    <img src="~/assets/social-media/nex.png" style="height:23px;max-width:100%;" />
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="modal-banner-4">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:550px">
+            <div class="modal-content">
+                <div class="modal-body rounded">
+                    <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
+                            class="bi bi-x"></i></button>
+                    <img src="~/assets/static-content/banner/september/4.png" class="w-100 rounded" />
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="fw-bold mt-3 me-3">3rd Round Carabao Cup</h5>
+                    </div>
+                    <div style="line-height:1.5;">Nonton Jagoan Indonesia di Carabao Cup!
+                        Aksi keren Nathan Tjoe-A-On, Elkan Baggott, dan Marselino Ferdinan bakal memukau di 3rd Round
+                        EFL Carabao Cup! Jangan sampai ketinggalan. Saksikan pertandingan spektakuler ini LIVE hanya di
+                        Nex!
+                        Langganan Paket Champions sekarang hanya 69rb/30 Hari. 
+                    </div>
+                    <div class="row justify-content-center mt-5 px-4">
+                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
+                            <a href="https://www.lazada.co.id/shop/nex-parabola-tv/" target="_blank" class="w-100">
+                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                    <img src="~/assets/social-media/lazada.jpg" style="height:23px;max-width:100%;" />
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
+                            <a href="javascript:void(0)" target="_blank" class="w-100">
+                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                    <img src="~/assets/social-media/tokopedia.png"
+                                        style="height:23px;max-width:100%;" />
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
+                            <a href="https://shopee.co.id/nexparabola.official?shopCollection=253318341#product_list"
+                                target="_blank" class="w-100">
+                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                    <img src="~/assets/social-media/shopee.png" style="height:23px;max-width:100%;" />
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
+                            <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
+                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                    <img src="~/assets/social-media/nex.png" style="height:23px;max-width:100%;" />
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <a href="https://wa.me/6281260012700" class="cs-floating">
+            <div class="box">Punya pertanyaan?
+                Kami siap untuk
+                membantu anda</div>
+            <img src="~/assets/cs.png">
+        </a>
 </template>
 
 <script setup>
     import axios from "axios"
     import backgroundImage from "~/assets/bg-pertandingan.png"
-    import headerImageDesktop1 from "~/assets/static-content/banner/1.png"
-    import headerImageDesktop2 from "~/assets/static-content/banner/2.png"
-    import headerImageDesktop3 from "~/assets/static-content/banner/3.png"
+    // import headerImageDesktop1 from "~/assets/static-content/banner/1.png"
+    // import headerImageDesktop2 from "~/assets/static-content/banner/2.png"
+    // import headerImageDesktop3 from "~/assets/static-content/banner/3.png"
 
-    import headerImageMobile1 from "~/assets/static-content/banner/1-mobile.png"
-    import headerImageMobile2 from "~/assets/static-content/banner/2-mobile.png"
-    import headerImageMobile3 from "~/assets/static-content/banner/3-mobile.png"
+    // import headerImageMobile1 from "~/assets/static-content/banner/1-mobile.png"
+    // import headerImageMobile2 from "~/assets/static-content/banner/2-mobile.png"
+    // import headerImageMobile3 from "~/assets/static-content/banner/3-mobile.png"
 
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"
@@ -397,6 +659,10 @@
             getJadwalKompetisi()
         }
     });
+
+    function showBanner(id) {
+        $("#modal-banner-" + id).modal('show');
+    }
     useHead({
         title: 'TV Satelit Parabola Berlangganan Indonesia | Nex Parabola',
         meta: [{
