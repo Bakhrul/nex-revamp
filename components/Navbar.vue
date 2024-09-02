@@ -145,7 +145,7 @@
                             </li>
                             <li>
                                 <nuxt-link to="/about/faq" class="dropdown-item">
-                                    ;FAQ</nuxt-link>
+                                    FAQ</nuxt-link>
                             </li>
                             <li>
                                 <nuxt-link to="/about/reseller" class="dropdown-item">
