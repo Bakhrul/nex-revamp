@@ -24,7 +24,7 @@ a {
     padding: 5px 5px;
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 3;
     box-shadow: 0 1px 3px rgba(17, 24, 39, .09);
 }
 
@@ -657,7 +657,7 @@ footer ul li {
     right: 25px;
     display: flex;
     align-items: center;
-    z-index: 99;
+    z-index: 2;
 }
 
 .cs-floating img {
