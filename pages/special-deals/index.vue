@@ -151,7 +151,7 @@
                             </div>
                         </div>
                         <div class="d-flex justify-content-center">
-                            <a v-if="dataDetail.custom == 1" :href="dataDetail.url" target="_blank"
+                            <a v-if="dataDetail.custom == 1 && dataDetail.buttontext && dataDetail.url" :href="dataDetail.url" target="_blank"
                                 class="text-center btn bg-primary text-white p-3 btn-sm">{{dataDetail.buttontext}}</a>
                         </div>
                     </div>

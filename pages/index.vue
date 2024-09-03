@@ -600,14 +600,14 @@
                 </div>
             </div>
         </div>
-        
+
     </div>
     <a href="https://wa.me/6281260012700" class="cs-floating">
-            <div class="box">Punya pertanyaan?
-                Kami siap untuk
-                membantu anda</div>
-            <img src="~/assets/cs.png">
-        </a>
+        <div class="box">Punya pertanyaan?
+            Kami siap untuk
+            membantu anda</div>
+        <img src="~/assets/cs.png">
+    </a>
 </template>
 
 <script setup>
@@ -772,52 +772,62 @@
 
     function sliderKidsMovie() {
         let elGallery = document.getElementById('kids-movie-gallery');
-        let triggerStop = 0;
-        let kanan = true;
-        intervalMom.value = setInterval(() => {
-            if (triggerStop == elGallery.scrollLeft && elGallery.scrollLeft > 0) {
-                if (kanan) {
-                    kanan = false;
+
+        elGallery.scrollTo(elGallery.scrollWidth, 0);
+
+        let kiri = true;
+        let fixedLeft = elGallery.scrollLeft;
+        let trigger = elGallery.scrollLeft;
+        setTimeout(() => {
+
+            intervalMom.value = setInterval(() => {
+
+                if (trigger > 0 && kiri) {
+                    trigger = elGallery.scrollLeft - 1
+
+                    if (trigger == 0) {
+                        kiri = false
+                    }
+                    elGallery.scrollTo(elGallery.scrollLeft - 1, 0);
                 } else {
-                    kanan = true;
+                    trigger = elGallery.scrollLeft + 1
+                    if (trigger == fixedLeft) {
+                        kiri = true
+                    }
+                    elGallery.scrollTo(elGallery.scrollLeft + 1, 0);
                 }
-            } else if (elGallery.scrollLeft < 1) {
-                kanan = true;
-            }
+            }, 15)
+        }, 500);
 
-            triggerStop = elGallery.scrollLeft;
-
-            if (kanan) {
-                elGallery.scrollTo(elGallery.scrollLeft + 1, 0);
-            } else {
-                elGallery.scrollTo(elGallery.scrollLeft - 1, 0);
-            }
-        }, 15);
     }
 
     function momMovieGallery() {
         let elGallery = document.getElementById('mom-movie-gallery');
         let triggerStop = 0;
-        let kanan = true;
-        intervalKidsMovie.value = setInterval(() => {
-            if (triggerStop == elGallery.scrollLeft && elGallery.scrollLeft > 0) {
-                if (kanan) {
-                    kanan = false;
-                } else {
-                    kanan = true;
+        let kiri = true;
+
+        setTimeout(() => {
+            intervalKidsMovie.value = setInterval(() => {
+                if (triggerStop == elGallery.scrollLeft && elGallery.scrollLeft > 0) {
+                    if (kiri) {
+                        kiri = false;
+                    } else {
+                        kiri = true;
+                    }
+                } else if (elGallery.scrollLeft < 1) {
+                    kiri = true;
                 }
-            } else if (elGallery.scrollLeft < 1) {
-                kanan = true;
-            }
 
-            triggerStop = elGallery.scrollLeft;
+                triggerStop = elGallery.scrollLeft;
 
-            if (kanan) {
-                elGallery.scrollTo(elGallery.scrollLeft + 1, 0);
-            } else {
-                elGallery.scrollTo(elGallery.scrollLeft - 1, 0);
-            }
-        }, 15);
+                if (kiri) {
+                    elGallery.scrollTo(elGallery.scrollLeft + 1, 0);
+                } else {
+                    elGallery.scrollTo(elGallery.scrollLeft - 1, 0);
+                }
+            }, 15);
+        }, 500);
+
     }
 </script>
 

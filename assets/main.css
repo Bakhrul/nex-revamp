@@ -717,3 +717,21 @@ button:disabled {
     flex-grow: 0;
 
 }
+
+.receiver-group{
+    display: flex;    
+    justify-content: center;
+}
+
+.receiver-fitur{
+    margin: 3px 5px;
+    width:50px;
+}
+.receiver-fitur .text{
+    font-size: 9px;
+    text-align: center;
+}
+.receiver-fitur img{
+    width: 50px;
+    height: 50px;
+}
