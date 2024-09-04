@@ -784,17 +784,16 @@
 
                 if (trigger > 0 && kiri) {
                     trigger = elGallery.scrollLeft - 1
-
-                    if (trigger == 0) {
-                        kiri = false
-                    }
                     elGallery.scrollTo(elGallery.scrollLeft - 1, 0);
+                    if (trigger < 1) {
+                        kiri = false
+                    }                    
                 } else {
                     trigger = elGallery.scrollLeft + 1
-                    if (trigger == fixedLeft) {
-                        kiri = true
-                    }
                     elGallery.scrollTo(elGallery.scrollLeft + 1, 0);
+                    if (trigger >= fixedLeft) {
+                        kiri = true
+                    }                    
                 }
             }, 15)
         }, 500);
