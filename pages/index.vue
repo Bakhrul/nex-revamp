@@ -733,7 +733,7 @@
             kidTitle.value = res.data.data.kidstitle;
             kidSubtitle.value = res.data.data.kidstitlenote;
             listKid.value = res.data.data.kidsbanner;
-            for(let i = 0; i < 20; i++){
+            for(let i = 0; i < 25; i++){
                 listKid.value = listKid.value.concat(res.data.data.kidsbanner);
                 listFilm.value = listFilm.value.concat(res.data.data.filmbanner);
             }
