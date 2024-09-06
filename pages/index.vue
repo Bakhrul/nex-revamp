@@ -733,6 +733,11 @@
             kidTitle.value = res.data.data.kidstitle;
             kidSubtitle.value = res.data.data.kidstitlenote;
             listKid.value = res.data.data.kidsbanner;
+            for(let i = 0; i < 20; i++){
+                listKid.value = listKid.value.concat(res.data.data.kidsbanner);
+                listFilm.value = listFilm.value.concat(res.data.data.filmbanner);
+            }
+            
 
             listKompetisi.value = res.data.data.kompetisi;
             listKompetisiDate.value = res.data.data.kompetisidate;
@@ -795,7 +800,7 @@
                         kiri = true
                     }                    
                 }
-            }, 15)
+            }, 30)
         }, 500);
 
     }
@@ -804,7 +809,7 @@
         let elGallery = document.getElementById('mom-movie-gallery');
         let triggerStop = 0;
         let kiri = true;
-
+        elGallery.scrollTo(0, 0);
         setTimeout(() => {
             intervalKidsMovie.value = setInterval(() => {
                 if (triggerStop == elGallery.scrollLeft && elGallery.scrollLeft > 0) {
@@ -824,7 +829,7 @@
                 } else {
                     elGallery.scrollTo(elGallery.scrollLeft - 1, 0);
                 }
-            }, 15);
+            }, 30);
         }, 500);
 
     }
