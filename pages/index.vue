@@ -154,7 +154,7 @@
             </carousel>
         </div> -->
         <div class="w-100">
-            <carousel :items-to-show="1" :autoplay="1500" :transition="0" :wrapAround="true">
+            <carousel :items-to-show="1" :autoplay="2500" :transition="0" :wrapAround="true">
                 <slide :key="1" style="padding: 0 !important">
                     <a href="javascript:void(0)" @click="showBanner(1)" class="w-100" style="padding: 0 !important">
                         <img src="~/assets/static-content/banner/september/1.png" class="w-100" />

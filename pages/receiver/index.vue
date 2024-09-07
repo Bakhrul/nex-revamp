@@ -34,7 +34,7 @@
                         <div class="card bg-white" style="border:0 !important">
                             <div class="card-body bg-white p-3">
                                 <div class="d-flex justify-content-center">
-                                    <img :src="receiver1" style="width:100%;max-width:200px;height: unset !important" />
+                                    <img :src="receiver1" style="width:100%;max-width:100%;height: unset !important" />
                                 </div>
                                 <div class="text-center pt-4 fs-6 fw-bold c-primary">Nex Parabola</div>
                                 <div class="text-center pt-2 fs-6 fw-bold c-primary">Tipe Biru</div>
@@ -45,7 +45,7 @@
                                             style="border-bottom:1px #ddd solid">BELI SEKARANG</span>&ensp;<i
                                             class="bi bi-arrow-right c-primary-custom"></i></a>
                                 </div>
-                                <div class="w-100">
+                                <div class="w-100 pt-3" style="border-top:3px black solid !important;">
                                     <div class="receiver-group">
                                         <div class="receiver-fitur">
                                             <img src="~/assets/static-content/receiver/spec.png">
@@ -101,7 +101,7 @@
                         <div class="card bg-white" style="border:0 !important">
                             <div class="card-body bg-white p-3">
                                 <div class="d-flex justify-content-center">
-                                    <img :src="receiver2" style="width:100%;max-width:200px;height: unset !important" />
+                                    <img :src="receiver2" style="width:100%;max-width:100%;height: unset !important" />
                                 </div>
                                 <div class="text-center pt-4 fs-6 fw-bold c-primary">Nex Parabola</div>
                                 <div class="text-center pt-2 fs-6 fw-bold c-primary">Tipe Kuning</div>
@@ -112,7 +112,7 @@
                                             style="border-bottom:1px #ddd solid">BELI SEKARANG</span>&ensp;<i
                                             class="bi bi-arrow-right c-primary-custom"></i></a>
                                 </div>
-                                <div class="w-100">
+                                <div class="w-100 pt-3" style="border-top:3px black solid !important;">
                                     <div class="receiver-group">
                                         <div class="receiver-fitur">
                                             <img src="~/assets/static-content/receiver/spec.png">
@@ -154,7 +154,7 @@
                         <div class="card bg-white" style="border:0 !important">
                             <div class="card-body bg-white p-3">
                                 <div class="d-flex justify-content-center">
-                                    <img :src="receiver3" style="width:100%;max-width:200px;height: unset !important" />
+                                    <img :src="receiver3" style="width:100%;max-width:100%;height: unset !important" />
                                 </div>
                                 <div class="text-center pt-4 fs-6 fw-bold c-primary">Nex Parabola</div>
                                 <div class="text-center pt-2 fs-6 fw-bold c-primary">Tipe Merah</div>
@@ -165,7 +165,7 @@
                                             style="border-bottom:1px #ddd solid">BELI SEKARANG</span>&ensp;<i
                                             class="bi bi-arrow-right c-primary-custom"></i></a>
                                 </div>
-                                <div class="w-100">
+                                <div class="w-100 pt-3" style="border-top:3px black solid !important;">
                                     <div class="receiver-group">
                                         <div class="receiver-fitur">
                                             <img src="~/assets/static-content/receiver/spec.png">
@@ -207,7 +207,7 @@
                         <div class="card bg-white" style="border:0 !important">
                             <div class="card-body bg-white p-3">
                                 <div class="d-flex justify-content-center">
-                                    <img :src="receiver4" style="width:100%;max-width:200px;height: unset !important" />
+                                    <img :src="receiver4" style="width:100%;max-width:100%;height: unset !important" />
                                 </div>
                                 <div class="text-center pt-4 fs-6 fw-bold c-primary">Nex Parabola</div>
                                 <div class="text-center pt-2 fs-6 fw-bold c-primary">Combo Kuning</div>
@@ -218,7 +218,7 @@
                                             style="border-bottom:1px #ddd solid">BELI SEKARANG</span>&ensp;<i
                                             class="bi bi-arrow-right c-primary-custom"></i></a>
                                 </div>
-                                <div class="w-100">
+                                <div class="w-100 pt-3" style="border-top:3px black solid !important;">
                                     <div class="receiver-group">
                                         <div class="receiver-fitur">
                                             <img src="~/assets/static-content/receiver/spec.png">
@@ -267,7 +267,7 @@
                         <div class="card bg-white" style="border:0 !important">
                             <div class="card-body bg-white p-3">
                                 <div class="d-flex justify-content-center">
-                                    <img :src="receiver5" style="width:100%;max-width:200px;height: unset !important" />
+                                    <img :src="receiver5" style="width:100%;max-width:100%;height: unset !important" />
                                 </div>
                                 <div class="text-center pt-4 fs-6 fw-bold c-primary">Nex Parabola</div>
                                 <div class="text-center pt-2 fs-6 fw-bold c-primary">Combo Merah</div>
@@ -278,7 +278,7 @@
                                             style="border-bottom:1px #ddd solid">BELI SEKARANG</span>&ensp;<i
                                             class="bi bi-arrow-right c-primary-custom"></i></a>
                                 </div>
-                                <div class="w-100">
+                                <div class="w-100 pt-3" style="border-top:3px black solid !important;">
                                     <div class="receiver-group">
                                         <div class="receiver-fitur">
                                             <img src="~/assets/static-content/receiver/spec.png">
@@ -341,7 +341,7 @@
                         <div class="card bg-white" style="border:0 !important">
                             <div class="card-body bg-white p-3">
                                 <div class="d-flex justify-content-center">
-                                    <img :src="receiver6" style="width:100%;max-width:200px;height: unset !important" />
+                                    <img :src="receiver6" style="width:100%;max-width:100%;height: unset !important" />
                                 </div>
                                 <div class="text-center pt-4 fs-6 fw-bold c-primary">NexVidio</div>
                                 <div class="text-center pt-4">Lebih canggih tampilan baru</div>
@@ -351,7 +351,7 @@
                                             style="border-bottom:1px #ddd solid">BELI SEKARANG</span>&ensp;<i
                                             class="bi bi-arrow-right c-primary-custom"></i></a>
                                 </div>
-                                <div class="w-100">
+                                <div class="w-100 pt-3" style="border-top:3px black solid !important;">
                                     <div class="receiver-group">
                                         <div class="receiver-fitur">
                                             <img src="~/assets/static-content/receiver/android.png">
@@ -512,32 +512,25 @@
     import receiver3 from "~/assets/static-content/receiver/3.png";
     import receiver4 from "~/assets/static-content/receiver/4.png";
     import receiver5 from "~/assets/static-content/receiver/5.png";
-    import receiver6 from "~/assets/static-content/receiver/6.png";
-
-    import receiverFitur1 from "~/assets/static-content/receiver/fitur-1.png";
-    import receiverFitur2 from "~/assets/static-content/receiver/fitur-2.png";
-    import receiverFitur3 from "~/assets/static-content/receiver/fitur-3.png";
-    import receiverFitur4 from "~/assets/static-content/receiver/fitur-4.png";
-    import receiverFitur5 from "~/assets/static-content/receiver/fitur-5.png";
-    import receiverFitur6 from "~/assets/static-content/receiver/fitur-6.png";
+    import receiver6 from "~/assets/static-content/receiver/6.png";    
 
     const link1 = ref(
-        'https://shopee.co.id/Nex-Parabola-Type-Biru-i.1311323005.27256686729?sp_atk=69965845-b5f5-448a-b8cb-14a8ef9c3cb4&xptdk=69965845-b5f5-448a-b8cb-14a8ef9c3cb4'
+        'https://shopee.co.id/Nex-Parabola-Type-Biru-i.1311323005.27256686729?sp_atk=49f9c6de-7d91-4389-9246-f7b010c9e65d&xptdk=49f9c6de-7d91-4389-9246-f7b010c9e65d'
     );
     const link2 = ref(
-        'https://shopee.co.id/Nex-Parabola-Type-Kuning-i.1311323005.29706687030?sp_atk=c8f63711-47e1-49d5-ac7c-01e8d1ae77b0&xptdk=c8f63711-47e1-49d5-ac7c-01e8d1ae77b0'
+        'https://shopee.co.id/Nex-Parabola-Type-Kuning-i.1311323005.29706687030?sp_atk=2780900d-2745-43fc-bc9b-bf9b48ced708&xptdk=2780900d-2745-43fc-bc9b-bf9b48ced708'
     );
     const link3 = ref(
-        'https://shopee.co.id/Nex-Parabola-Combo-Merah-i.1311323005.29956679529?sp_atk=2a72f991-65ee-4a5c-a171-74c8ce8bf645&xptdk=2a72f991-65ee-4a5c-a171-74c8ce8bf645'
+        'https://shopee.co.id/Nex-Parabola-Type-Merah-i.1311323005.28456687106?sp_atk=cecf93ba-5b96-4596-b614-144d36ebeffd&xptdk=cecf93ba-5b96-4596-b614-144d36ebeffd'
     );
     const link4 = ref(
-        'https://shopee.co.id/Nex-Parabola-Combo-Kuning-i.1311323005.25884184642?sp_atk=92d00b73-48bd-4948-b7d4-8d6ba3ea81e7&xptdk=92d00b73-48bd-4948-b7d4-8d6ba3ea81e7'
+        'https://shopee.co.id/Nex-Parabola-Combo-Kuning-i.1311323005.25884184642?sp_atk=4581e336-2650-445d-8b02-e28fd87e9a98&xptdk=4581e336-2650-445d-8b02-e28fd87e9a98'
     );
     const link5 = ref(
-        'https://shopee.co.id/NexVidio-(Android-TV-BOX)-i.1311323005.29856688328?sp_atk=85618a8e-a58b-41f5-a216-b04b6fe5a81b&xptdk=85618a8e-a58b-41f5-a216-b04b6fe5a81b'
+        'https://shopee.co.id/Nex-Parabola-Combo-Merah-i.1311323005.29956679529?sp_atk=c7d60f9d-9ba1-436e-85fc-d59c4898035d&xptdk=c7d60f9d-9ba1-436e-85fc-d59c4898035d'
     );
     const link6 = ref(
-        'https://shopee.co.id/Nex-Parabola-Type-Merah-i.1311323005.28456687106?sp_atk=1dd7a912-283f-4642-a85c-9b0af4ebd6fc&xptdk=1dd7a912-283f-4642-a85c-9b0af4ebd6fc'
+        'https://shopee.co.id/NexVidio-(Android-TV-BOX)-i.1311323005.29856688328?sp_atk=7c9d8f63-f93c-429b-8937-82b75fb929c5&xptdk=7c9d8f63-f93c-429b-8937-82b75fb929c5'
     );
 
     const linkLazada1 = ref(

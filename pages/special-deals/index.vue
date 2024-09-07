@@ -28,7 +28,7 @@
         </div>
         <section class="py-5" style="background:#232323">
             <div class="container">
-                <h5 class="text-white show-on-desktop">Promo Terbatas</h5>
+                <h5 class="text-white show-on-desktop">Paket Terbatas</h5>
                 <div class="text-white show-on-desktop">Pilih sesuai dengan kebutuhan kamu</div>
                 <h5 class="text-white show-on-mobile text-center">Paket Terbatas</h5>
 
@@ -85,7 +85,7 @@
         </section>
         <section class="pt-5 pb-5 bg-section">
             <div class="container">
-                <h5 class="mb-1 fw-bold title-section show-on-desktop">Promo Terbaru Lainnya</h5>
+                <h5 class="mb-1 fw-bold title-section show-on-desktop">Paket Lainnya</h5>
                 <div class="mb-3 subtitle-section show-on-desktop">Pilih sesuai dengan kebutuhan kamu</div>
                 <h5 class="show-on-mobile text-center">Paket Lainnya</h5>
                 <div class="show-on-mobile">
