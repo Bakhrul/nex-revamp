@@ -703,7 +703,7 @@ footer ul li {
 button:disabled {
     border: 1px #ddd solid !important;
     color: #ddd !important;
-    background-color: transparent !important;
+    background: white !important;
 }
 
 .note-shadow {
@@ -780,4 +780,5 @@ button:disabled {
     outline: none !important;
     box-shadow: unset !important;
     border: 0 !important;
+    background: transparent !important;
 }

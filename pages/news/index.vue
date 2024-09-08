@@ -67,7 +67,7 @@
                     <div class="d-flex flex-wrap justify-content-center align-items-center">
                         <button @click="changePage(page.name)" v-for="page in listPage()" :key="page.name"
                             class="mx-2 mb-3" style="width:18px;height:18px;border-radius: 100px;"
-                            :style="page.name == currentPage ? 'background:#00529C' : 'background:#D5E0E9'"></button>
+                            :style="page.name == currentPage ? 'background:#00529C !important;' : 'background:#D5E0E9 !important;'"></button>
                     </div>
                     <button @click="changePage(currentPage + 1)"
                         :disabled="currentPage >= totalPage() || totalData == 0"><i class="bi bi-chevron-right"
