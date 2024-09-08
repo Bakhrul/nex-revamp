@@ -6,8 +6,8 @@
                 :style="`background-image:url('${backgroundImageMobile}');background-size:100% 100%;width:100%;position:relative;`">
                 <img :src="backgroundImageMobile" class="w-100" style="visibility: hidden;" />
                 <div class="d-flex align-items-center" style="position:absolute;left:0;top:0;width:100%;height:100%;">
-                    <div class="container" style="padding:15px 15px">
-                        <h6 class="text-white fw-bold">Promo Receiver & Paket</h6>
+                    <div class="container" style="padding:15px 25px">
+                        <h6 class="text-white fw-bold" style="max-width:120px;margin-block-end: 0 !important;">Promo Receiver & Paket</h6>
                     </div>
                 </div>
             </div>

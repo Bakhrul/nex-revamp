@@ -110,6 +110,18 @@
                             </div>
                         </div>
                     </div>
+                    <div class="d-flex mt-5 justify-content-center align-items-center pb-5 pagination">
+                    <button class="mb-3" @click="changePage(currentPage - 1)" :disabled="currentPage <= 1 || totalData == 0"><i
+                            class="bi bi-chevron-left" style="font-size:32px;color:#00529C !important"></i></button>
+                    <div class="d-flex flex-wrap justify-content-center align-items-center">
+                        <button @click="changePage(page.name)" v-for="page in listPage()" :key="page.name"
+                            class="mx-2 mb-3" style="width:18px;height:18px;border-radius: 100px;"
+                            :style="page.name == currentPage ? 'background:#00529C' : 'background:#D5E0E9'"></button>
+                    </div>
+                    <button class="mb-3" @click="changePage(currentPage + 1)"
+                        :disabled="currentPage >= totalPage() || totalData == 0"><i class="bi bi-chevron-right"
+                            style="font-size:32px;color:#00529C !important"></i></button>
+                </div>
                 </div>
             </div>
         </section>
@@ -135,6 +147,12 @@
     const searchCity = ref('');
 
     const result = ref([]);
+
+    
+    const currentPage = ref(1);
+    const totalData = ref(0);
+    const perPage = ref(6)
+
     const {
         data
     } = await getSourceCity()
@@ -163,8 +181,8 @@
             params: {
                 cityid: selectCityId.value,
                 search: search.value,
-                length:1,
-                page: 1,
+                length:currentPage.value,
+                page: perPage.value,
             },
             headers: {
                 'WEBCORP-APIKEY': config.public.API_KEY
@@ -172,6 +190,7 @@
         })
         if (res.status == 200) {
             result.value = res.data.data.list;
+            totalData.value = Number(res.data.data.total_data)
             return res.data.data;
         }
     }
@@ -223,6 +242,72 @@
             },
         ],
     }) 
+
+    function totalPage() {
+        return Math.ceil(Number(totalData.value) / Number(perPage.value));
+    }
+
+    function startPage() {
+        if (currentPage.value == 1) {
+            return 1;
+        }
+
+        if (currentPage.value == totalPage()) {
+            return totalPage() - (5 - 1);
+        }
+
+        return Number(currentPage.value) - 1;
+    }
+
+    function listPage() {
+
+        const range = [];
+
+        for (let x = 0; x <= totalPage(); x++) {
+            if (x > 0) {
+                range.push({
+                    name: x,
+                    isDisabled: x === Number(currentPage.value)
+                });
+            }
+        }
+
+        // for (let x = startPage(); x <= Math.min(startPage() + 5 - 1, totalPage()); x++) {
+        //     if (x > 0) {
+        //         range.push({
+        //             name: x,
+        //             isDisabled: x === Number(currentPage.value)
+        //         });
+        //     }
+        // }
+
+
+        // if (range.length == 3 && (Number(currentPage.value) + 1) == totalPage()) {
+        //     if (range[0].name - 1 > 0) {
+        //         range.unshift({
+        //             name: range[0].name - 1,
+        //             isDisabled: false,
+        //         })
+        //     }
+        // }
+
+        // if (range.length == 4 && (Number(currentPage.value) + 1) == totalPage() || (Number(currentPage.value) + 2) ==
+        //     totalPage()) {
+        //     if (range[0].name - 1 > 0) {
+        //         range.unshift({
+        //             name: range[0].name - 1,
+        //             isDisabled: false,
+        //         })
+        //     }
+        // }
+
+        return range;
+    }
+
+    function changePage(page) {
+        currentPage.value = page
+        getList()
+    }
 </script>
 
 <style scoped>

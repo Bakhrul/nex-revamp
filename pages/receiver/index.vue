@@ -31,7 +31,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 mb-3">
-                        <div class="card bg-white" style="border:0 !important">
+                        <div class="card bg-white card-receiver" style="border:0 !important">
                             <div class="card-body bg-white p-3">
                                 <div class="d-flex justify-content-center">
                                     <img :src="receiver1" style="width:100%;max-width:100%;height: unset !important" />
@@ -98,7 +98,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 mb-3">
-                        <div class="card bg-white" style="border:0 !important">
+                        <div class="card bg-white card-receiver" style="border:0 !important">
                             <div class="card-body bg-white p-3">
                                 <div class="d-flex justify-content-center">
                                     <img :src="receiver2" style="width:100%;max-width:100%;height: unset !important" />
@@ -151,7 +151,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 mb-3">
-                        <div class="card bg-white" style="border:0 !important">
+                        <div class="card bg-white card-receiver" style="border:0 !important">
                             <div class="card-body bg-white p-3">
                                 <div class="d-flex justify-content-center">
                                     <img :src="receiver3" style="width:100%;max-width:100%;height: unset !important" />
@@ -204,7 +204,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 mb-3">
-                        <div class="card bg-white" style="border:0 !important">
+                        <div class="card bg-white card-receiver" style="border:0 !important">
                             <div class="card-body bg-white p-3">
                                 <div class="d-flex justify-content-center">
                                     <img :src="receiver4" style="width:100%;max-width:100%;height: unset !important" />
@@ -264,7 +264,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 mb-3">
-                        <div class="card bg-white" style="border:0 !important">
+                        <div class="card bg-white card-receiver" style="border:0 !important">
                             <div class="card-body bg-white p-3">
                                 <div class="d-flex justify-content-center">
                                     <img :src="receiver5" style="width:100%;max-width:100%;height: unset !important" />
@@ -338,7 +338,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 mb-3">
-                        <div class="card bg-white" style="border:0 !important">
+                        <div class="card bg-white card-receiver" style="border:0 !important">
                             <div class="card-body bg-white p-3">
                                 <div class="d-flex justify-content-center">
                                     <img :src="receiver6" style="width:100%;max-width:100%;height: unset !important" />
@@ -386,7 +386,7 @@
                                 class="bi bi-x"></i></button>
                         <div class="row">
                             <div
-                                class="col-lg-5 col-6 px-3 d-flex align-items-center justify-content-center height-modal-receiver">
+                                class="col-lg-5 px-3 d-flex align-items-center justify-content-center height-modal-receiver">
                                 <img :src="receiver1" class="w-100" v-if="type == 1" />
                                 <img :src="receiver2" class="w-100" v-if="type == 2" />
                                 <img :src="receiver3" class="w-100" v-if="type == 3" />
@@ -394,12 +394,12 @@
                                 <img :src="receiver5" class="w-100" v-if="type == 5" />
                                 <img :src="receiver6" class="w-100" v-if="type == 6" />
                             </div>
-                            <div class="col-lg-7 col-6">
+                            <div class="col-lg-7">
                                 <div class="p-3">
                                     <h5 class="text-left pt-5 fw-bold show-on-desktop">{{name}}</h5>
                                     <div class="text-left pt-1 fs-7 pb-3 show-on-desktop" style="color:black;">Dapatkan
                                         Produk Kami di Ecommerce</div>
-                                    <div class="text-center fs-6 show-on-mobile">Dapatkan Produk Kami di Ecommerce</div>
+                                    <div class="text-center fs-7 show-on-mobile">Dapatkan Produk Kami di Ecommerce</div>
                                     <div class="row justify-content-center show-on-desktop mt-1">
                                         <!-- <div class="col-lg-12 mb-3">
                                             <a href="javascript:void(0)">

@@ -153,7 +153,7 @@
                 </template>
             </carousel>
         </div> -->
-        <div class="w-100">
+        <div class="w-100 show-on-desktop">
             <carousel :items-to-show="1" :autoplay="2500" :transition="0" :wrapAround="true">
                 <slide :key="1" style="padding: 0 !important">
                     <a href="javascript:void(0)" @click="showBanner(1)" class="w-100" style="padding: 0 !important">
@@ -182,20 +182,92 @@
                 </template>
             </carousel>
         </div>
+        <div class="w-100 show-on-mobile">
+            <carousel :items-to-show="1" :autoplay="2500" :transition="0" :wrapAround="true">
+                <slide :key="1" style="padding: 0 !important">
+                    <a href="javascript:void(0)" @click="showBanner(1)" class="w-100" style="padding: 0 !important">
+                        <img src="~/assets/static-content/banner/september/1-mobile.png" class="w-100" />
+                    </a>
+                </slide>
+                <slide :key="2" style="padding: 0 !important">
+                    <a href="javascript:void(0)" @click="showBanner(2)" class="w-100" style="padding: 0 !important">
+                        <img src="~/assets/static-content/banner/september/2-mobile.png" class="w-100" />
+                    </a>
+                </slide>
+                <slide :key="3" style="padding: 0 !important">
+                    <a href="javascript:void(0)" @click="showBanner(3)" class="w-100" style="padding: 0 !important">
+                        <img src="~/assets/static-content/banner/september/3-mobile.png" class="w-100" />
+                    </a>
+                </slide>
+                <slide :key="4" style="padding: 0 !important">
+                    <a href="javascript:void(0)" @click="showBanner(4)" class="w-100" style="padding: 0 !important">
+                        <img src="~/assets/static-content/banner/september/4-mobile.png" class="w-100" />
+                    </a>
+                </slide>
+
+                <template #addons>
+
+                    <pagination />
+                </template>
+            </carousel>
+        </div>
         <section class="py-1 mt-5">
             <div class="container">
                 <div class="title-section">Receiver & Paket Berlangganan</div>
                 <div class="d-flex justify-content-between align-items-center">
-                    <div class="me-3">
+                    <div>
 
                         <div class="subtitle-section mb-3">Pilih sesuai dengan kebutuhan kamu</div>
                     </div>
-                    <nuxt-link style="width:100px;font-size:14px !important;" class="show-on-mobile mb-3" to="/paket">
-                        Lihat
-                        Semua
-                    </nuxt-link>
                 </div>
-                <div class="row" style="overflow:auto !important;flex-wrap:nowrap">
+                <div class="w-100 show-on-mobile">
+                    <div class="slider-paket slider-paket-home">
+                        <div class="column-receiver-and-packet me-2">
+                            <div class="shadow-product w-100 product-box">
+                                <img src="~/assets/1.png" style="min-height: unset !important;" />
+                                <div class="p-3 d-flex flex-column justify-content-center align-items-center"
+                                    style="min-height:120px">
+                                    <div class="fw-bold text-center fs-6">Receiver</div>
+                                    <div class="text-center pt-1">Mulai dari</div>
+                                    <div class="fw-bold text-center fs-5 pt-1">Rp 314.000</div>
+                                </div>
+                                <div class="p-3 d-flex justify-content-center footer" style="border-top:1px #ddd solid">
+                                    <nuxt-link style="color:#00529C;font-weight:500;" to="/receiver">Beli Sekarang <i
+                                            style="color:#00529C;" class="bi bi-chevron-right"></i></nuxt-link>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column-receiver-and-packet me-2">
+                            <div class="shadow-product w-100 product-box">
+                                <img src="~/assets/2.png" style="min-height: unset !important;" />
+                                <div class="p-3 d-flex flex-column justify-content-center align-items-center"
+                                    style="min-height:120px">
+                                    <div class="fw-bold text-center fs-6">Paket Berlangganan</div>
+                                    <div class="text-center pt-1">Mulai dari</div>
+                                    <div class="fw-bold text-center fs-5 pt-1">Rp 19.900</div>
+                                </div>
+                                <div class="p-3 d-flex justify-content-center footer" style="border-top:1px #ddd solid">
+                                    <nuxt-link style="color:#00529C;font-weight:500;" to="/paket">Beli Sekarang <i
+                                            style="color:#00529C;" class="bi bi-chevron-right"></i></nuxt-link>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column-receiver-and-packet">
+                            <div class="shadow-product w-100 product-box" style="height:100%">
+                                <img src="~/assets/3.png" style="min-height: unset !important;" />
+                                <div class="p-3 d-flex flex-column justify-content-center align-items-center"
+                                    style="min-height:120px">
+                                    <div class="fw-bold text-center fs-5">List Channel & Program</div>
+                                </div>
+                                <div class="p-3 d-flex justify-content-center footer" style="border-top:1px #ddd solid">
+                                    <nuxt-link style="color:#00529C;font-weight:500;" to="/channel">Beli Sekarang <i
+                                            style="color:#00529C;" class="bi bi-chevron-right"></i></nuxt-link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row show-on-desktop" style="overflow:auto !important;flex-wrap:nowrap">
                     <div class="col-4 mb-3 column-receiver-and-packet">
                         <div class="shadow-product w-100 product-box">
                             <img src="~/assets/1.png" style="min-height: unset !important;" />
@@ -655,10 +727,23 @@
     onMounted(() => {
         sliderKidsMovie()
         momMovieGallery()
+        sliderPacketHome()
         if (selectKompetisiDateId.value && selectKompetisiId.value) {
             getJadwalKompetisi()
         }
     });
+
+    function sliderPacketHome() {
+        $('.slider-paket-home').slick({
+            infinite: false,
+            speed: 300,
+            centerMode: false,
+            dots: false,
+            variableWidth: true,
+            prevArrow: "<button type='button' class='slick-prev pull-left'><i class='bi bi-arrow-left' aria-hidden='true'></i></button>",
+            nextArrow: "<button type='button' class='slick-next pull-right'><i class='bi bi-arrow-right' aria-hidden='true'></i></button>",
+        });
+    }
 
     function showBanner(id) {
         $("#modal-banner-" + id).modal('show');
@@ -733,11 +818,11 @@
             kidTitle.value = res.data.data.kidstitle;
             kidSubtitle.value = res.data.data.kidstitlenote;
             listKid.value = res.data.data.kidsbanner;
-            for(let i = 0; i < 25; i++){
+            for (let i = 0; i < 25; i++) {
                 listKid.value = listKid.value.concat(res.data.data.kidsbanner);
                 listFilm.value = listFilm.value.concat(res.data.data.filmbanner);
             }
-            
+
 
             listKompetisi.value = res.data.data.kompetisi;
             listKompetisiDate.value = res.data.data.kompetisidate;
@@ -792,13 +877,13 @@
                     elGallery.scrollTo(elGallery.scrollLeft - 1, 0);
                     if (trigger < 1) {
                         kiri = false
-                    }                    
+                    }
                 } else {
                     trigger = elGallery.scrollLeft + 1
                     elGallery.scrollTo(elGallery.scrollLeft + 1, 0);
                     if (trigger >= fixedLeft) {
                         kiri = true
-                    }                    
+                    }
                 }
             }, 30)
         }, 500);
@@ -838,7 +923,7 @@
 <style scoped>
     @media(max-width:991px) {
         .column-receiver-and-packet {
-            min-width: 250px
+            width: 210px !important
         }
     }
 

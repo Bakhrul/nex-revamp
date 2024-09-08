@@ -27,6 +27,11 @@
         <section class="mt-3">
             <div class="container">
                 <div class="row mb-3">
+                    <div class="col-lg-12 mb-3 show-on-mobile">
+                        <div class="pb-3" style="border-bottom:2px #ddd solid;font-size:13px !important">
+                        Saksikan tayangan-tayangan berkualitas dan menghibur favorit kamu mulai dari channel lokal hingga internasional tanpa hambatan!
+                    </div>
+                    </div>
                     <div class="col-lg-12 d-flex justify-content-center">
                         <div class="pe-2 mb-3">
                             <div class="mb-2 fw-bolder title-dropdown-channel" style="font-size:13px;">Tanggal</div>
