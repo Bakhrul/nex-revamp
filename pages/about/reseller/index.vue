@@ -42,12 +42,12 @@
                                 <li style="padding:15px"><input type="text" class="form-control"  v-model="searchCity" placeholder="Search"></li>
                                 <li><a class="dropdown-item"
                                         style="color:#00539B !important;font-weight:400;font-size: 15px;" href="javascript:void(0)"
-                                        @click="selectCity = 'Semua'; selectCityId = '0';getList()">Semua</a>
+                                        @click="currentPage = 1; totalData = 0;selectCity = 'Semua'; selectCityId = '0';getList()">Semua</a>
                                 </li>
                                 <li><a class="dropdown-item"
                                         style="color:#00539B !important;font-weight:400;font-size: 15px;"
                                         v-for="context in getQueryCity()" href="javascript:void(0)"
-                                        @click="selectCity = context.city; selectCityId = context.id;getList()">{{context.city}}</a>
+                                        @click="currentPage = 1; totalData = 0;selectCity = context.city; selectCityId = context.id;getList()">{{context.city}}</a>
                                 </li>
                             </ul>
                         </div>
@@ -63,7 +63,7 @@
                             </svg>&ensp;
 
                             <input class="form-control" type="search" style="outline:none !important;border:0 !important;"
-                                v-model="search" @keyup.enter="getList" placeholder="Search">
+                                v-model="search" @keyup.enter="currentPage = 1; totalData = 0;getList" placeholder="Search">
                         </div>
                     </div>
                 </div>

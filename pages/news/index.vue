@@ -30,7 +30,7 @@
                     <div class="news-group d-flex flex-wrap justify-content-center">
 
                         <div style="cursor:pointer" class="news-filter me-3 mb-3" v-for="context in listCategory"
-                            @click="selected = context.id;getNews()" :class="selected == context.id ? 'active' : ''">
+                            @click="selected = context.id;currentPage = 1; totalData = 0;getNews();" :class="selected == context.id ? 'active' : ''">
                             {{context.category}}</div>
                     </div>
                 </div>
