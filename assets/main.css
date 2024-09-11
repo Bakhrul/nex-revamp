@@ -315,71 +315,55 @@ footer ul li {
     padding: 15px 10px;
 }
 
-.slider-paket .slick-prev {
-    color: black;
-    border: 2px black solid;
+.slider-paket .slick-prev {    
     position: absolute;
     right: 45px;
-    border-radius: 100px;
-    width: 28px;
-    height: 28px;
     top: -50px;
-    background: #fff !important;
-    font-weight: bold;
-    font-size: 14px;
+    border: 0 !important;
+    outline: none !important;
+    box-shadow: unset !important;
+    background-color: transparent !important;
 }
 
-.slider-paket .slick-next {
-    color: black;
-    border: 2px black solid !important;
+.slider-paket .slick-next { 
     position: absolute;
     right: 10px;
-    border-radius: 100px;
-    width: 28px;
-    height: 28px;
     top: -50px;
-    font-weight: bold;
-    background: #fff !important;
-    font-size: 14px;
+    border: 0 !important;
+    outline: none !important;
+    box-shadow: unset !important;
+    background-color: transparent !important;
 }
 
-.slider-paket-terbatas .slick-prev {
-    color: #fff;
-    border: 2px #fff solid;
+.slider-paket-terbatas .slick-prev {    
     position: absolute;
-    right: 50px;
-    border-radius: 100px;
-    width: 30px;
-    height: 30px;
+    right: 45px;
     top: -50px;
-    background: transparent;
-    font-weight: bold;
-    font-size: 16px;
+    border: 0 !important;
+    outline: none !important;
+    box-shadow: unset !important;
+    background-color: transparent !important;
 }
 
 .slider-paket-terbatas .slick-next {
-    color: #fff;
-    border: 2px #fff solid !important;
     position: absolute;
     right: 10px;
-    border-radius: 100px;
-    width: 30px;
-    height: 30px;
     top: -50px;
-    font-weight: bold;
-    background: transparent;
-    font-size: 16px;
+    border: 0 !important;
+    outline: none !important;
+    box-shadow: unset !important;
+    background-color: transparent !important;
 }
 
 @media(max-width:991px) {
     .title-match {
         font-size: 17px !important;
-        color: black !important;
+        color: #00529C !important;
     }
 
     .subtitle-match {
         font-size: 15px !important;
-        color: black !important;
+        color: #00529C !important;
     }
 
     .btn-dropdown-match {
@@ -611,20 +595,26 @@ footer ul li {
     }
 
     .navbar-custom .navbar-nav .nav-item a {
-        padding: 15px 20px;
+        padding: 10px 20px;
+        font-size: 14px !important;
+        font-weight: bold !important;
     }
 
     .navbar-custom .nav-item .dropdown-menu a {
         background: #f2f2f2 !important;
         border: 0 !important;
+        font-size: 12px !important;
         color: black !important;
-        font-weight: 600;
+        font-weight: 500 !important;
     }
 
+    .border-bottom-mobile-nav{
+        border-bottom: 2px #ddd solid;
+    }
     .navbar-custom .nav-item .dropdown-toggle .icon-dropdown {
         position: absolute;
         right: 15px;
-        font-size: 24px;
+        font-size: 18px;
         top: 10px;
     }
 
@@ -647,7 +637,7 @@ footer ul li {
     }
 
     footer a img {
-        width: 25px !important;
+        width: 15px !important;
     }
 }
 
@@ -661,27 +651,40 @@ footer ul li {
     position: fixed;
     bottom: 25px;
     right: 25px;
+    color: #00529C !important;
     display: flex;
     align-items: center;
     z-index: 2;
 }
 
 .cs-floating img {
-    margin-left: 20px;
-    width: 50px;
-    height: 50px;
+    margin-left: 15px;
+    width: 92px;
+    height: 92px;
     border-radius: 100px;
 }
 
 .cs-floating .box {
+    border-radius: 17.3244px 17.3244px 0px 17.3244px;
     width: 150px;
     font-size: 13px;
     font-weight: 500;
-    padding: 10px;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    padding: 15px;  
+    width: 180px;
     background-color: #fff;
     box-shadow: 0 1px 3px rgba(17, 24, 39, .09);
+}
+@media(max-width:991px){
+    .cs-floating img {
+        width: 55px;
+        height: 55px;
+    }
+    .cs-floating .box {
+        width: 125px !important;
+        font-size: 10px !important;
+        padding: 10px;
+    }
+    
 }
 
 .btn-option-packet {

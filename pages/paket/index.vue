@@ -150,7 +150,7 @@
             for (let i = 0; i < res.data.data.list.length; i++) {
                 let listPacket = [];
                 for (let x = 0; x < res.data.data.list[i].paket.length; x++) {
-                    let paket = res.data.data.list[i].paket[i]
+                    let paket = res.data.data.list[i].paket[x]
                     let listPeriode = [];
                     if (paket.period) {
                         for (let p = 0; p < paket.period.length; p++) {

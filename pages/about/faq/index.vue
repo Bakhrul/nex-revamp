@@ -153,7 +153,7 @@
                                                 <div class="container">
                                                     <button class="accordion-button fw-bold" type="button"
                                                         data-bs-toggle="collapse"
-                                                        style="background:#f2f2f2 !important;padding:20px 0 !important;"
+                                                        style="background:#f2f2f2 !important;padding:20px 10px !important;"
                                                         data-bs-target="#collapseOneS" aria-expanded="true"
                                                         aria-controls="collapseOneS">
                                                         E-Wallet
@@ -169,6 +169,7 @@
                                                         <img src="~/assets/payment/ovo.png" class="mb-3" /><br>
                                                         <img src="~/assets/payment/linkaja.png" class="mb-3" /><br>
                                                         <img src="~/assets/payment/shopeepay.png" class="mb-3" />
+                                                        <img src="~/assets/payment/gopay.png" class="mb-3" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -177,7 +178,7 @@
                                             <h2 class="accordion-header">
                                                 <div class="container">
                                                     <button class="accordion-button fw-bold" type="button"
-                                                        style="background:#f2f2f2 !important;padding:20px 0 !important"
+                                                        style="background:#f2f2f2 !important;padding:20px 10px !important"
                                                         data-bs-toggle="collapse" data-bs-target="#collapseTwoS"
                                                         aria-expanded="true" aria-controls="collapseTwoS">
                                                         Bank Transfer
@@ -204,7 +205,7 @@
                                                 <div class="container">
                                                     <button class="accordion-button fw-bold" type="button"
                                                         data-bs-toggle="collapse"
-                                                        style="background:#f2f2f2 !important;padding:20px 0 !important"
+                                                        style="background:#f2f2f2 !important;padding:20px 10px !important"
                                                         data-bs-target="#collapseThreeS" aria-expanded="true"
                                                         aria-controls="collapseThreeS">
                                                         Kartu Kredit
@@ -218,6 +219,50 @@
                                                     <div class="container">
                                                         <img src="~/assets/payment/visa.png" class="mb-3" /><br>
                                                         <img src="~/assets/payment/mastercard.png" class="mb-3" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <div class="container">
+                                                    <button class="accordion-button fw-bold" type="button"
+                                                        data-bs-toggle="collapse"
+                                                        style="background:#f2f2f2 !important;padding:20px 10px !important"
+                                                        data-bs-target="#collapseFourS" aria-expanded="true"
+                                                        aria-controls="collapseFourS">
+                                                        QRIS
+                                                    </button>
+                                                </div>
+                                            </h2>
+                                            <div id="collapseFourS" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionExampleS">
+                                                <div class="accordion-body"
+                                                    style="color:unset !important;padding:20px !important">
+                                                    <div class="container">
+                                                        <img src="~/assets/payment/qris.png" class="mb-3" /><br>                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <div class="container">
+                                                    <button class="accordion-button fw-bold" type="button"
+                                                        data-bs-toggle="collapse"
+                                                        style="background:#f2f2f2 !important;padding:20px 10px !important"
+                                                        data-bs-target="#collapseFiveS" aria-expanded="true"
+                                                        aria-controls="collapseFiveS">
+                                                        Pay Later
+                                                    </button>
+                                                </div>
+                                            </h2>
+                                            <div id="collapseFiveS" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionExampleS">
+                                                <div class="accordion-body"
+                                                    style="color:unset !important;padding:20px !important">
+                                                    <div class="container">
+                                                        <img src="~/assets/payment/paylater.png" class="mb-3" /><br>                                                        
                                                     </div>
                                                 </div>
                                             </div>
@@ -369,6 +414,7 @@
                                         <img src="~/assets/payment/ovo.png" class="me-2" />
                                         <img src="~/assets/payment/linkaja.png" class="me-2" />
                                         <img src="~/assets/payment/shopeepay.png" class="me-2" />
+                                        <img src="~/assets/payment/gopay.png" class="me-2" />
                                     </div>
                                 </div>
                             </div>
@@ -390,6 +436,22 @@
                                     <div class="d-flex flex-wrap">
                                         <img src="~/assets/payment/visa.png" class="me-2" />
                                         <img src="~/assets/payment/mastercard.png" class="me-2" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row py-3" style="border-bottom: 1px #ddd solid;">
+                                <div class="col-lg-3 fw-bold">QRIS</div>
+                                <div class="col-lg-9">
+                                    <div class="d-flex flex-wrap">
+                                        <img src="~/assets/payment/qris.png" class="me-2" />                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row py-3" style="border-bottom: 1px #ddd solid;">
+                                <div class="col-lg-3 fw-bold">Pay Later</div>
+                                <div class="col-lg-9">
+                                    <div class="d-flex flex-wrap">
+                                        <img src="~/assets/payment/paylater.png" class="me-2" />                                        
                                     </div>
                                 </div>
                             </div>

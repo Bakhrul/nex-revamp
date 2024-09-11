@@ -7,7 +7,8 @@
                 <img :src="backgroundImageMobile" class="w-100" style="visibility: hidden;" />
                 <div class="d-flex align-items-center" style="position:absolute;left:0;top:0;width:100%;height:100%;">
                     <div class="container" style="padding:15px 25px">
-                        <h6 class="text-white fw-bold" style="max-width:120px;margin-block-end: 0 !important;">Promo Receiver & Paket</h6>
+                        <h6 class="text-white fw-bold" style="max-width:120px;margin-block-end: 0 !important;">Promo
+                            Receiver & Paket</h6>
                     </div>
                 </div>
             </div>
@@ -138,7 +139,8 @@
                                 class="bi bi-x"></i></button>
                         <img :src="dataDetail.image" class="w-100 rounded" />
                         <h5 class="fw-bold mt-3">{{dataDetail.title}}</h5>
-                        <div :class="dataDetail.shadow == 1 ? 'note-shadow' : ''" style="line-height:1.5;" v-html="dataDetail.notedetail"></div>
+                        <div :class="dataDetail.shadow == 1 ? 'note-shadow' : ''" style="line-height:1.5;"
+                            v-html="dataDetail.notedetail"></div>
                         <div class="row justify-content-center mt-5 px-4">
                             <div class="col-lg-6 mb-3 d-flex justify-content-center"
                                 v-for="context in dataDetail.ecommerce">
@@ -151,7 +153,8 @@
                             </div>
                         </div>
                         <div class="d-flex justify-content-center">
-                            <a v-if="dataDetail.custom == 1 && dataDetail.buttontext && dataDetail.url" :href="dataDetail.url" target="_blank"
+                            <a v-if="dataDetail.custom == 1 && dataDetail.buttontext && dataDetail.url"
+                                :href="dataDetail.url" target="_blank"
                                 class="text-center btn bg-primary text-white p-3 btn-sm">{{dataDetail.buttontext}}</a>
                         </div>
                     </div>
@@ -234,8 +237,14 @@
             centerMode: false,
             dots: false,
             variableWidth: true,
-            prevArrow: "<button type='button' class='slick-prev pull-left'><i class='bi bi-arrow-left'></i></button>",
-            nextArrow: "<button type='button' class='slick-next pull-right'><i class='bi bi-arrow-right'></i></button>",
+            prevArrow: `<button type='button' class='slick-prev pull-left'><svg width="30" height="30" viewBox="0 0 54 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M27 18.5732L18 27.5732M18 27.5732L27 36.5732M18 27.5732H36M49.5 27.5732C49.5 39.9997 39.4264 50.0732 27 50.0732C14.5736 50.0732 4.5 39.9997 4.5 27.5732C4.5 15.1468 14.5736 5.07324 27 5.07324C39.4264 5.07324 49.5 15.1468 49.5 27.5732Z" stroke="#F3F3F3" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</button>`,
+            nextArrow: `<button type='button' class='slick-next pull-right'><svg width="30" height="30" viewBox="0 0 54 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M27 36.5732L36 27.5732M36 27.5732L27 18.5732M36 27.5732L18 27.5732M4.5 27.5732C4.5 15.1468 14.5736 5.07324 27 5.07324C39.4264 5.07324 49.5 15.1468 49.5 27.5732C49.5 39.9996 39.4264 50.0732 27 50.0732C14.5736 50.0732 4.5 39.9996 4.5 27.5732Z" stroke="#F3F3F3" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</button>`,
         });
 
     }
@@ -247,8 +256,15 @@
             centerMode: false,
             dots: false,
             variableWidth: true,
-            prevArrow: "<button type='button' class='slick-prev pull-left'><i class='bi bi-arrow-left'></i></button>",
-            nextArrow: "<button type='button' class='slick-next pull-right'><i class='bi bi-arrow-right'></i></button>",
+            prevArrow: `<button type='button' class='slick-prev pull-left'><svg width="30" height="30" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.0002 8.33337L8.8335 12.5M8.8335 12.5L13.0002 16.6667M8.8335 12.5H17.1668M23.4168 12.5C23.4168 18.253 18.7531 22.9167 13.0002 22.9167C7.2472 22.9167 2.5835 18.253 2.5835 12.5C2.5835 6.74707 7.2472 2.08337 13.0002 2.08337C18.7531 2.08337 23.4168 6.74707 23.4168 12.5Z" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</button>`,
+            nextArrow: `<button type='button' class='slick-next pull-right'><svg width="30" height="30" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.9998 16.6666L17.1665 12.5M17.1665 12.5L12.9998 8.33329M17.1665 12.5L8.83317 12.5M2.58317 12.5C2.58317 6.74699 7.24687 2.08329 12.9998 2.08329C18.7528 2.08329 23.4165 6.74699 23.4165 12.5C23.4165 18.2529 18.7528 22.9166 12.9998 22.9166C7.24687 22.9166 2.58317 18.2529 2.58317 12.5Z" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</button>`,
         });
     }
 
@@ -306,6 +322,12 @@
     @media(max-width:991px) {
         .bg-section {
             background: #fff !important;
+        }
+
+        .product-box {
+            max-width: 300px !important;
+            display: block;
+            margin: auto;
         }
     }
 </style>
