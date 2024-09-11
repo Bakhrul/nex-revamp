@@ -317,11 +317,7 @@
                                         <div class="receiver-fitur">
                                             <img src="~/assets/static-content/receiver/8mb.svg">
                                             <div class="text">Flash</div>
-                                        </div>                                                                               
-                                        <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/play.svg">
-                                            <div class="text">Mitube/Youtube/IPTV</div>
-                                        </div>                                                                                    
+                                        </div>                                                                                                                                                                                                        
                                     </div>                                  
                                 </div>
                             </div>
