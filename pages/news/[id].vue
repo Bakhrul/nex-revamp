@@ -125,15 +125,15 @@
                                 class="bi bi-x"></i></button>
                         <img :src="imagePacket" class="w-100 rounded" />
                         <div class="d-flex justify-content-between align-items-center">
-                            <h5 class="fw-bold mt-3 me-3">{{namePacket}}</h5>
-                            <div style="width:140px">
-                                <div class="fw-bold p-1"
-                                    style="width:140px;font-size:11px;text-align:center;border-radius:5px;color:#2C69A7;background:#D5E0E9">
+                            <div class="fs-6 fw-bold mt-3 me-3" style="word-break: break-word">{{namePacket}}</div>
+                            <div style="width:160px" class="d-flex justify-content-end">
+                                <span class="fw-bold py-1 px-2 mt-3"
+                                    style="width:auto;font-size:11px;text-align:center;border-radius:10px;color:#2C69A7;background:#D5E0E9;display: flex;align-items: center;min-height:32px;">
                                     {{badgePacket}}
-                                </div>
+                                </span>
                             </div>
-                        </div>
-                        <div style="line-height:1.5;" v-html="notePacket"></div>
+                        </div>                       
+                        <div style="line-height:1.5;" class="pt-3" v-html="notePacket"></div>
                         <div class="row justify-content-center mt-5 px-4">
                             <div class="col-lg-6 mb-3 d-flex justify-content-center" v-for="context in ecommercePacket">
                                 <a :href="context.url" target="_blank" class="w-100">

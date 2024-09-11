@@ -24,11 +24,11 @@
                 </div>
             </div>
         </div>
-        <section class="my-3">
+        <section class="mt-3">
             <div class="container">
                 <div class="d-flex justify-content-center">
                     <div style="overflow:auto">
-                        <div class="d-flex align-items-center" style="overflow:auto;width:100%">
+                        <div class="d-flex align-items-center pb-3" style="overflow:auto;width:100%">
                             <div class="packet-filter mb-3 me-3" style="cursor:pointer;width:200px;font-size:15px"
                                 @click="type = 'all'" :class="type == 'all' ? 'active' : ''">SEMUA</div>
                             <div class="packet-filter mb-3 me-3"
@@ -91,15 +91,15 @@
                                 class="bi bi-x"></i></button>
                         <img :src="image" class="w-100 rounded" />
                         <div class="d-flex justify-content-between align-items-center">
-                            <h5 class="fw-bold mt-3 me-3">{{name}}</h5>
-                            <div style="width:140px">
-                                <div class="fw-bold p-1"
-                                    style="width:140px;font-size:11px;text-align:center;border-radius:5px;color:#2C69A7;background:#D5E0E9">
+                            <div class="fs-6 fw-bold mt-3 me-3" style="word-break: break-word">{{name}}</div>
+                            <div style="width:160px" class="d-flex justify-content-end">
+                                <span class="fw-bold py-1 px-2 mt-3"
+                                    style="width:auto;font-size:11px;text-align:center;border-radius:10px;color:#2C69A7;background:#D5E0E9;display: flex;align-items: center;min-height:32px;">
                                     {{badge}}
-                                </div>
+                                </span>
                             </div>
                         </div>
-                        <div style="line-height:1.5;" v-html="note"></div>
+                        <div style="line-height:1.5;" class="pt-3" v-html="note"></div>
                         <div class="row justify-content-center mt-5 px-4">
                             <div class="col-lg-6 mb-3 d-flex justify-content-center" v-for="context in ecommerce">
                                 <a :href="context.url" target="_blank" class="w-100">

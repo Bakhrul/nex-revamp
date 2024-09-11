@@ -70,7 +70,7 @@
                     </li>
                     <li class="nav-item nav-item-spesial-deals">
                         <router-link to="/special-deals" class="nav-link">
-                            <img src="~/assets/special-deals.png" class="show-on-desktop" style="width:65px" />
+                            <img src="~/assets/special-deals.svg" class="show-on-desktop" style="width:65px" />
                             <span class="show-on-mobile">Spesial Deals</span>
                         </router-link>
                     </li>
