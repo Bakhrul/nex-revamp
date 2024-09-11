@@ -279,5 +279,12 @@
         z-index: -1;
 
     }
+
+    ol li{
+        padding-top:20px !important
+    }
+    ol li:first-child{
+        padding-top:0 !important
+    }
     
 </style>
