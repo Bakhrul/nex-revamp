@@ -186,7 +186,7 @@ footer ul li {
 .product-box img {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    min-height: 200px;
+    /* min-height: 200px; */
     width: 100%;
     position: relative;
 }
@@ -543,7 +543,9 @@ footer ul li {
         font-size: 12px !important;
     }
 }
-
+.width-slider-packet {
+    width: 310px !important;
+}
 @media(max-width:420px) {
     .width-slider-packet {
         width: 280px !important;
