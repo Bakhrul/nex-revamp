@@ -166,7 +166,7 @@
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body" style="padding:0 !important;color:unset !important">
                                     <div class="d-flex align-items-center p-2"
-                                        :style="`background:url('${backgroundImageDesktop2}');background-size:cover;width:100%;min-height:220px`">
+                                        :style="`background:#00529C !important;width:100%;min-height:220px`">
                                         <div class="container">
                                             <div class="row align-items-center">
                                                 <div class="col-lg-6">                                                    

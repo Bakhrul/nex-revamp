@@ -165,10 +165,10 @@
                                                 <div class="accordion-body"
                                                     style="color:unset !important;padding:20px !important">
                                                     <div class="container">
-                                                        <img src="~/assets/payment/dana.png" class="mb-3" /><br>
+                                                        <img src="~/assets/payment/dana.png" class="mb-3 ms-2" /><br>
                                                         <img src="~/assets/payment/ovo.png" class="mb-3" /><br>
                                                         <img src="~/assets/payment/linkaja.png" class="mb-3" /><br>
-                                                        <img src="~/assets/payment/shopeepay.png" class="mb-3" />
+                                                        <img src="~/assets/payment/shopeepay.png" class="mb-3" /><br>
                                                         <img src="~/assets/payment/gopay.png" class="mb-3" />
                                                     </div>
                                                 </div>
@@ -512,3 +512,11 @@
         ],
     })
 </script>
+<style scoped>    
+    ol li{
+        padding-top:20px !important
+    }
+    ol li:first-child{
+        padding-top:0 !important
+    }
+</style>

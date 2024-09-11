@@ -30,14 +30,14 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 mb-3">
+                    <div class="col-lg-4 col-md-6 mb-3">
                         <div class="card bg-white card-receiver" style="border:0 !important">
                             <div class="card-body bg-white p-3">
                                 <div class="d-flex justify-content-center">
                                     <img :src="receiver1" style="width:100%;max-width:100%;height: unset !important" />
                                 </div>
-                                <div class="text-center pt-4 fs-6 fw-bold c-primary">Nex Parabola</div>
-                                <div class="text-center pt-2 fs-6 fw-bold c-primary">Tipe Biru</div>
+                                <div class="text-center pt-4 fs-6 fw-bold c-primary black-on-mobile">Nex Parabola</div>
+                                <div class="text-center pt-2 fs-6 fw-bold c-primary black-on-mobile">Tipe Biru</div>
                                 <div class="text-center pt-2">Lebih canggih tampilan baru</div>
                                 <div class="d-flex justify-content-center text-center pt-3 pb-3">
                                     <a href="javascript:void(0)" @click="openReceiver(1, link1, linkLazada1)"
@@ -45,66 +45,64 @@
                                             style="border-bottom:1px #ddd solid">BELI SEKARANG</span>&ensp;<i
                                             class="bi bi-arrow-right c-primary-custom"></i></a>
                                 </div>
-                                <div class="w-100 pt-3" style="border-top:3px black solid !important;">
+                                <div class="w-100 pt-3 receiver-fitur-border-top">
                                     <div class="receiver-group">
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/spec.png">
+                                            <img src="~/assets/static-content/receiver/spec.svg">
                                             <div class="text">CS 8001 Chipset</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/wifi.png">
+                                            <img src="~/assets/static-content/receiver/wifi.svg">
                                             <div class="text">WIFI Dongle</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/ota.png">
+                                            <img src="~/assets/static-content/receiver/ota.svg">
                                             <div class="text">Super OTA</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/ui.png">
+                                            <img src="~/assets/static-content/receiver/ui.svg">
                                             <div class="text">Modern UI</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/play.png">
+                                            <img src="~/assets/static-content/receiver/play.svg">
                                             <div class="text">H.264/SD/HD
                                                 Video</div>
                                         </div>
-                                    </div>
-                                    <div class="receiver-group">
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/tv-icon.png">
+                                            <img src="~/assets/static-content/receiver/tv-icon.svg">
                                             <div class="text">TV Icon
                                                 List</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/usb.png">
+                                            <img src="~/assets/static-content/receiver/usb.svg">
                                             <div class="text">2x back
                                                 USB</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/meecast.png">
+                                            <img src="~/assets/static-content/receiver/meecast.svg">
                                             <div class="text">MeeCast</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/512mb.png">
+                                            <img src="~/assets/static-content/receiver/512mb.svg">
                                             <div class="text">Memory</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/8mb.png">
+                                            <img src="~/assets/static-content/receiver/8mb.svg">
                                             <div class="text">RAM</div>
                                         </div>
-                                    </div>
+                                    </div>                                   
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 mb-3">
+                    <div class="col-lg-4 col-md-6 mb-3">
                         <div class="card bg-white card-receiver" style="border:0 !important">
                             <div class="card-body bg-white p-3">
                                 <div class="d-flex justify-content-center">
                                     <img :src="receiver2" style="width:100%;max-width:100%;height: unset !important" />
                                 </div>
-                                <div class="text-center pt-4 fs-6 fw-bold c-primary">Nex Parabola</div>
-                                <div class="text-center pt-2 fs-6 fw-bold c-primary">Tipe Kuning</div>
+                                <div class="text-center pt-4 fs-6 fw-bold c-primary black-on-mobile">Nex Parabola</div>
+                                <div class="text-center pt-2 fs-6 fw-bold c-primary black-on-mobile">Tipe Kuning</div>
                                 <div class="text-center pt-2">Lebih canggih tampilan baru</div>
                                 <div class="d-flex justify-content-center text-center pt-3 pb-3">
                                     <a href="javascript:void(0)" @click="openReceiver(2, link2, linkLazada2)"
@@ -112,52 +110,50 @@
                                             style="border-bottom:1px #ddd solid">BELI SEKARANG</span>&ensp;<i
                                             class="bi bi-arrow-right c-primary-custom"></i></a>
                                 </div>
-                                <div class="w-100 pt-3" style="border-top:3px black solid !important;">
+                                <div class="w-100 pt-3 receiver-fitur-border-top">
                                     <div class="receiver-group">
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/spec.png">
+                                            <img src="~/assets/static-content/receiver/spec.svg">
                                             <div class="text">CS 8001 Chipset</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/512mb.png">
+                                            <img src="~/assets/static-content/receiver/512mb.svg">
                                             <div class="text">Memory</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/8mb.png">
+                                            <img src="~/assets/static-content/receiver/8mb.svg">
                                             <div class="text">Flash</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/play.png">
+                                            <img src="~/assets/static-content/receiver/play.svg">
                                             <div class="text">H.264/MPEG-2/MPEG-4 Video</div>
                                         </div>                                        
-                                    </div>
-                                    <div class="receiver-group">
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/wifi.png">
+                                            <img src="~/assets/static-content/receiver/wifi.svg">
                                             <div class="text">WIFI Dongle</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/ota.png">
+                                            <img src="~/assets/static-content/receiver/ota.svg">
                                             <div class="text">Super OTA</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/usb.png">
+                                            <img src="~/assets/static-content/receiver/usb.svg">
                                             <div class="text">2x back 
                                                 USB</div>
-                                        </div>                                                                               
-                                    </div>
+                                        </div>    
+                                    </div>                                    
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 mb-3">
+                    <div class="col-lg-4 col-md-6 mb-3">
                         <div class="card bg-white card-receiver" style="border:0 !important">
                             <div class="card-body bg-white p-3">
                                 <div class="d-flex justify-content-center">
                                     <img :src="receiver3" style="width:100%;max-width:100%;height: unset !important" />
                                 </div>
-                                <div class="text-center pt-4 fs-6 fw-bold c-primary">Nex Parabola</div>
-                                <div class="text-center pt-2 fs-6 fw-bold c-primary">Tipe Merah</div>
+                                <div class="text-center pt-4 fs-6 fw-bold c-primary black-on-mobile">Nex Parabola</div>
+                                <div class="text-center pt-2 fs-6 fw-bold c-primary black-on-mobile">Tipe Merah</div>
                                 <div class="text-center pt-2">Lebih canggih tampilan baru</div>
                                 <div class="d-flex justify-content-center text-center pt-3 pb-3">
                                     <a href="javascript:void(0)" @click="openReceiver(3, link3, linkLazada3)"
@@ -165,52 +161,50 @@
                                             style="border-bottom:1px #ddd solid">BELI SEKARANG</span>&ensp;<i
                                             class="bi bi-arrow-right c-primary-custom"></i></a>
                                 </div>
-                                <div class="w-100 pt-3" style="border-top:3px black solid !important;">
+                                <div class="w-100 pt-3 receiver-fitur-border-top">
                                     <div class="receiver-group">
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/spec.png">
+                                            <img src="~/assets/static-content/receiver/spec.svg">
                                             <div class="text">CS 8001 Chipset</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/512mb.png">
+                                            <img src="~/assets/static-content/receiver/512mb.svg">
                                             <div class="text">Memory</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/8mb.png">
+                                            <img src="~/assets/static-content/receiver/8mb.svg">
                                             <div class="text">Flash</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/play.png">
+                                            <img src="~/assets/static-content/receiver/play.svg">
                                             <div class="text">H.264/MPEG-2/MPEG-4 Video</div>
-                                        </div>                                        
-                                    </div>
-                                    <div class="receiver-group">
+                                        </div>  
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/wifi.png">
+                                            <img src="~/assets/static-content/receiver/wifi.svg">
                                             <div class="text">WIFI Dongle</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/ota.png">
+                                            <img src="~/assets/static-content/receiver/ota.svg">
                                             <div class="text">Super OTA</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/usb.png">
+                                            <img src="~/assets/static-content/receiver/usb.svg">
                                             <div class="text">2x back 
                                                 USB</div>
-                                        </div>                                                                               
-                                    </div>
+                                        </div>                                             
+                                    </div>                                   
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 mb-3">
+                    <div class="col-lg-4 col-md-6 mb-3">
                         <div class="card bg-white card-receiver" style="border:0 !important">
                             <div class="card-body bg-white p-3">
                                 <div class="d-flex justify-content-center">
                                     <img :src="receiver4" style="width:100%;max-width:100%;height: unset !important" />
                                 </div>
-                                <div class="text-center pt-4 fs-6 fw-bold c-primary">Nex Parabola</div>
-                                <div class="text-center pt-2 fs-6 fw-bold c-primary">Combo Kuning</div>
+                                <div class="text-center pt-4 fs-6 fw-bold c-primary black-on-mobile">Nex Parabola</div>
+                                <div class="text-center pt-2 fs-6 fw-bold c-primary black-on-mobile">Combo Kuning</div>
                                 <div class="text-center pt-2">Lebih canggih tampilan baru</div>
                                 <div class="d-flex justify-content-center text-center pt-3 pb-3">
                                     <a href="javascript:void(0)" @click="openReceiver(4, link4, linkLazada4)"
@@ -218,59 +212,57 @@
                                             style="border-bottom:1px #ddd solid">BELI SEKARANG</span>&ensp;<i
                                             class="bi bi-arrow-right c-primary-custom"></i></a>
                                 </div>
-                                <div class="w-100 pt-3" style="border-top:3px black solid !important;">
+                                <div class="w-100 pt-3 receiver-fitur-border-top">
                                     <div class="receiver-group">
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/spec.png">
+                                            <img src="~/assets/static-content/receiver/spec.svg">
                                             <div class="text">MM230 Chipset</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/wifi.png">
+                                            <img src="~/assets/static-content/receiver/wifi.svg">
                                             <div class="text">MT7601 & RT5370 WIFI Dongle</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/ota.png">
+                                            <img src="~/assets/static-content/receiver/ota.svg">
                                             <div class="text">OTA Support</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/ota.png">
+                                            <img src="~/assets/static-content/receiver/ota.svg">
                                             <div class="text">Super OTA</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/play.png">
+                                            <img src="~/assets/static-content/receiver/play.svg">
                                             <div class="text">H.265 HEVC/H.264/MPEG-5/MPEG-4 Video</div>
-                                        </div>                                        
-                                    </div>
-                                    <div class="receiver-group">
+                                        </div>  
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/play.png">
+                                            <img src="~/assets/static-content/receiver/play.svg">
                                             <div class="text">MPEG-5 Audio</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/usb.png">
+                                            <img src="~/assets/static-content/receiver/usb.svg">
                                             <div class="text">1x Port USB Depan</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/512mb.png">
+                                            <img src="~/assets/static-content/receiver/512mb.svg">
                                             <div class="text">Memory</div>
                                         </div>                                                                               
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/8mb.png">
+                                            <img src="~/assets/static-content/receiver/8mb.svg">
                                             <div class="text">Flash</div>
-                                        </div>                                                                               
-                                    </div>
+                                        </div>                                          
+                                    </div>                                   
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 mb-3">
+                    <div class="col-lg-4 col-md-6 mb-3">
                         <div class="card bg-white card-receiver" style="border:0 !important">
                             <div class="card-body bg-white p-3">
                                 <div class="d-flex justify-content-center">
                                     <img :src="receiver5" style="width:100%;max-width:100%;height: unset !important" />
                                 </div>
-                                <div class="text-center pt-4 fs-6 fw-bold c-primary">Nex Parabola</div>
-                                <div class="text-center pt-2 fs-6 fw-bold c-primary">Combo Merah</div>
+                                <div class="text-center pt-4 fs-6 fw-bold c-primary black-on-mobile">Nex Parabola</div>
+                                <div class="text-center pt-2 fs-6 fw-bold c-primary black-on-mobile">Combo Merah</div>
                                 <div class="text-center pt-2">Lebih canggih tampilan baru</div>
                                 <div class="d-flex justify-content-center text-center pt-3 pb-3">
                                     <a href="javascript:void(0)" @click="openReceiver(5, link5, linkLazada5)"
@@ -278,72 +270,70 @@
                                             style="border-bottom:1px #ddd solid">BELI SEKARANG</span>&ensp;<i
                                             class="bi bi-arrow-right c-primary-custom"></i></a>
                                 </div>
-                                <div class="w-100 pt-3" style="border-top:3px black solid !important;">
+                                <div class="w-100 pt-3 receiver-fitur-border-top">
                                     <div class="receiver-group">
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/spec.png">
+                                            <img src="~/assets/static-content/receiver/spec.svg">
                                             <div class="text">GX 6711
                                                 Chipset</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/wifi.png">
+                                            <img src="~/assets/static-content/receiver/wifi.svg">
                                             <div class="text">MT7601 & RT5370 WIFI Dongle</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/ota.png">
+                                            <img src="~/assets/static-content/receiver/ota.svg">
                                             <div class="text">OTA Support</div>
                                         </div>                                                                               
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/play.png">
+                                            <img src="~/assets/static-content/receiver/play.svg">
                                             <div class="text">H.264/MPEG-4 HD/SD Video</div>
                                         </div>                                                                               
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/play.png">
+                                            <img src="~/assets/static-content/receiver/play.svg">
                                             <div class="text">MPEG-1 Audio</div>
                                         </div>                                                                               
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/play.png">
+                                            <img src="~/assets/static-content/receiver/play.svg">
                                             <div class="text">Mitube/Youtube/IPTV</div>
-                                        </div>                                                                               
-                                    </div>
-                                    <div class="receiver-group">
+                                        </div>  
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/usb.png">
+                                            <img src="~/assets/static-content/receiver/usb.svg">
                                             <div class="text">2x Port USB Depan 
                                                 Belakang</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/meecast.png">
+                                            <img src="~/assets/static-content/receiver/meecast.svg">
                                             <div class="text">MeeCast</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/tv-icon.png">
+                                            <img src="~/assets/static-content/receiver/tv-icon.svg">
                                             <div class="text">Net Update Software</div>
                                         </div>                                                                               
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/512mb.png">
+                                            <img src="~/assets/static-content/receiver/512mb.svg">
                                             <div class="text">Memory</div>
                                         </div>                                                                               
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/8mb.png">
+                                            <img src="~/assets/static-content/receiver/8mb.svg">
                                             <div class="text">Flash</div>
                                         </div>                                                                               
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/play.png">
+                                            <img src="~/assets/static-content/receiver/play.svg">
                                             <div class="text">Mitube/Youtube/IPTV</div>
-                                        </div>                                                                               
-                                    </div>
+                                        </div>                                                                                    
+                                    </div>                                  
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 mb-3">
+                    <div class="col-lg-4 col-md-6 mb-3">
                         <div class="card bg-white card-receiver" style="border:0 !important">
                             <div class="card-body bg-white p-3">
                                 <div class="d-flex justify-content-center">
                                     <img :src="receiver6" style="width:100%;max-width:100%;height: unset !important" />
                                 </div>
-                                <div class="text-center pt-4 fs-6 fw-bold c-primary">NexVidio</div>
+                                <div class="text-center pt-4 fs-6 fw-bold c-primary black-on-mobile">NexVidio</div>
                                 <div class="text-center pt-4">Lebih canggih tampilan baru</div>
                                 <div class="d-flex justify-content-center text-center pt-4 pb-3">
                                     <a href="javascript:void(0)" @click="openReceiver(6, link6, '')"
@@ -351,22 +341,22 @@
                                             style="border-bottom:1px #ddd solid">BELI SEKARANG</span>&ensp;<i
                                             class="bi bi-arrow-right c-primary-custom"></i></a>
                                 </div>
-                                <div class="w-100 pt-3" style="border-top:3px black solid !important;">
+                                <div class="w-100 pt-3 receiver-fitur-border-top">
                                     <div class="receiver-group">
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/android.png">
+                                            <img src="~/assets/static-content/receiver/android.svg">
                                             <div class="text">Android 10 OS</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/play.png">
+                                            <img src="~/assets/static-content/receiver/play.svg">
                                             <div class="text">H.265 HEVC Video | 4K Resolution</div>
                                         </div>                                                                                                              
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/16gb.png">
+                                            <img src="~/assets/static-content/receiver/16gb.svg">
                                             <div class="text">Memory</div>
                                         </div>                                                                               
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/2gb.png">
+                                            <img src="~/assets/static-content/receiver/2gb.svg">
                                             <div class="text">RAM</div>
                                         </div>                                                                                                                                                                                                  
                                     </div>

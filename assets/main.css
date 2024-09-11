@@ -730,51 +730,64 @@ button:disabled {
 .receiver-group {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .receiver-fitur {
-    margin: 3px 5px;
+    margin: 2px 5px;
     width: 50px;
 }
 
 .receiver-fitur .text {
-    font-size: 9px;
+    font-size: 10px;
     text-align: center;
 }
 
 .receiver-fitur img {
     width: 50px;
+    border-radius: 0 !important;
     height: 50px;
 }
 
+.receiver-fitur-border-top{
+    border-top: 3px black solid;
+}
+
 @media(max-width:991px){
+    .receiver-fitur-border-top{
+        padding-top: 5px !important;
+        border-top:1px black solid
+    }
+    .card-receiver i{
+        color: #00529C !important;
+        font-size: 18px;
+    }
+    .card-receiver img{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
     .card-receiver {
         background: #FFFFFF;
         box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px rgba(0, 0, 0, 0.3);
         border-radius: 20px;
+        max-width: 290px;
+        display: block;
+        margin: auto;
     }
     .card-receiver .card-body{
         border-radius: 20px;
+        padding: 0 !important;
     }
     .receiver-group{
+        padding: 10px 5px;
         margin-bottom: 15px !important;
-    }
-    .receiver-fitur{
-        display: flex;
-        flex-direction: column;        
-        align-items: center;
-        width: 40px;
-    }
-    .receiver-fitur img {
-        width: 40px;
-        height: 40px;
-    }
-    
-    .receiver-fitur .text {
-        font-size: 9px;
-        width: 40px;
+    }   
+    .receiver-fitur .text {     
         word-wrap: break-word;
         text-align: center;
+    }
+    .black-on-mobile{
+        color: black !important;
     }
 }
 
