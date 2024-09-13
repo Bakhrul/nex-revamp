@@ -121,8 +121,8 @@
             <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:450px">
                 <div class="modal-content">
                     <div class="modal-body rounded">
-                        <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
-                                class="bi bi-x"></i></button>
+                        <!-- <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
+                                class="bi bi-x"></i></button> -->
                         <img :src="imagePacket" class="w-100 rounded" />
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="fs-6 fw-bold mt-3 me-3" style="word-break: break-word">{{namePacket}}</div>

@@ -73,7 +73,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-4 mt-3 mb-3" v-for="a in result">
-                            <div class="card" style="box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px rgba(0, 0, 0, 0.3);">
+                            <div class="card" style="box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px rgba(0, 0, 0, 0.3);height:100%;">
                                 <div class="card-body">
                                     <div class="fs-5 c-primary fw-bolder pb-2" style="border-bottom: 2px #ddd solid;">
                                         {{ a.dealer }}</div>

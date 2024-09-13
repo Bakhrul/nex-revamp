@@ -355,6 +355,16 @@ footer ul li {
     background-color: transparent !important;
 }
 
+.match-result .title-club {    
+    font-size: 12px !important;
+}
+
+
+.match-result .time {
+    font-size: 12px !important;
+}
+
+
 @media(max-width:991px) {
     .title-match {
         font-size: 17px !important;
@@ -409,7 +419,7 @@ footer ul li {
     .match-result .title-club {
         color: black !important;
         font-weight: 500 !important;
-        font-size: 12px !important;
+        font-size: 11px !important;
     }
 
     .match-result .image-club {
@@ -430,7 +440,7 @@ footer ul li {
         background-color: #fff;
         padding: 5px 10px;
         text-align: center;
-        font-size: 11px !important;
+        font-size: 10px !important;
         color: black !important;
     }
 }
@@ -464,8 +474,7 @@ footer ul li {
 }
 
 .height-modal-receiver {
-    border-right: 1px black solid !important;
-    background-color: #fff;
+    border-right: 1px black solid !important;    
     height: 430px !important;
     display: flex;
     align-items: center;

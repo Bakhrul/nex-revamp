@@ -1,181 +1,13 @@
 <template>
     <div>
         <Navbar></Navbar>
-        <!-- <div class="show-on-desktop">
-            <carousel :items-to-show="1" :autoplay="2500" :wrapAround="true">
-                <slide :key="1">
-                    <div class="d-flex align-items-center py-5"
-                        :style="`background-image:url('${headerImageDesktop1}');background-size:100% 100%;width:100%;position:relative;`">
-                        <img :src="headerImageDesktop1" class="w-100" style="visibility: hidden;" />
-                        <div class="d-flex align-items-center"
-                            style="position:absolute;left:0;top:0;width:100%;height:100%;">
-                            <div class="container">
-                                <div style="max-width:500px">
-                                    <h1 class="text-start fw-bold pt-5" style="color:#41054F;">Saksikan Premier League
-                                        Live
-                                        & Exclusive</h1>
-                                    <div class="text-start fs-5 pt-3" style="color:#37003C;">Berlangganan paket liga
-                                        inggris
-                                        dan dukung tim andalan kamu dalam laga bergengsi secara live selama satu musim
-                                    </div>
-                                    <div class="d-flex">
-                                        <nuxt-link to="/promo/saksikan-premiere-league-and-live-exclusive"
-                                            class="btn text-white py-2 px-5 fw-bold mt-3 mb-5 fs-5"
-                                            style="background:#37003C;" type="button">Lihat Lebih Lanjut</nuxt-link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </slide>
-                <slide :key="2">
-                    <div class="d-flex align-items-center py-5"
-                        :style="`background-image:url('${headerImageDesktop2}');background-size:100% 100%;width:100%;position:relative;`">
-                        <img :src="headerImageDesktop2" class="w-100" style="visibility: hidden;" />
-                        <div class="d-flex align-items-center"
-                            style="position:absolute;left:0;top:0;width:100%;height:100%;">
-
-                            <div class="container">
-                                <div style="max-width:500px">
-                                    <h1 class="text-start fw-bold pt-5" style="color:#fff;">Update Datamu dan
-                                        Dapatkan 30 Hari
-                                        Gratis Nonton</h1>
-                                    <div class="d-flex">
-                                        <nuxt-link to="/promo/updatedata"
-                                            class="btn text-white py-2 px-5 fw-bold mt-3 mb-5 fs-5"
-                                            style="background:#F3753A;" type="button">Lihat Lebih Lanjut</nuxt-link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </slide>
-                <slide :key="3">
-                    <div class="d-flex align-items-center py-5"
-                        :style="`background-image:url('${headerImageDesktop3}');background-size:100% 100%;width:100%;position:relative;`">
-                        <img :src="headerImageDesktop3" class="w-100" style="visibility: hidden;" />
-                        <div class="d-flex align-items-center"
-                            style="position:absolute;left:0;top:0;width:100%;height:100%;">
-
-                            <div class="container">
-                                <div style="max-width:500px">
-                                    <h1 class="text-start fw-bold pt-5" style="color:black;">Receiver</h1>
-                                    <div class="text-start fs-5 pt-3" style="color:black;">Dapatkan produk TV Satelit
-                                        terbaik berupa Receiver dan Paket Program Channel Televisi berkualitas untuk
-                                        kebutuhan kamu.
-                                    </div>
-                                    <div class="d-flex">
-                                        <nuxt-link to="/receiver"
-                                            class="btn text-white py-2 px-5 fw-bold mt-3 mb-5 fs-5"
-                                            style="background:#F3753A;" type="button">Lihat Lebih Lanjut</nuxt-link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </slide>
-
-                <template #addons>
-
-                    <pagination />
-                </template>
-            </carousel>
-        </div>
-        <div class="show-on-mobile">
-            <carousel :items-to-show="1" :autoplay="2500" :wrapAround="true">
-                <slide :key="1">
-                    <div class="d-flex align-items-center py-3 header-mobile"
-                        :style="`background-image:url('${headerImageMobile1}');width:100%;height:100%;`">
-                        <div class="container">
-                            <div style="max-width:100%">
-                                <h5 class="text-center fw-bold pt-5" style="color:#41054F;">Saksikan Premier League LIVE
-                                    & Eksklusif</h5>
-                                <div class="text-center fs-7 pt-2" style="color:#37003C;">Langganan Paket Liga Inggris
-                                    dan dukung tim andalan kamu dalam laga bergengsi
-                                </div>
-                                <div class="d-flex justify-content-center">
-                                    <nuxt-link to="/promo/saksikan-premiere-league-and-live-exclusive"
-                                        class="btn text-white py-2 px-5 fw-bold mt-3 fs-6" style="background:#2C69A7;"
-                                        type="button">Lihat Lebih Lanjut <i class="bi bi-chevron-right"></i></nuxt-link>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </slide>
-                <slide :key="2">
-                    <div class="d-flex align-items-center py-3 header-mobile"
-                        :style="`background-image:url('${headerImageMobile2}');width:100%;height:100%;`">
-                        <div class="container">
-                            <div style="max-width:100%">
-                                <h5 class="text-center fw-bold pt-5" style="color:#41054F;">Update Data Mu Sekarang!
-                                </h5>
-                                <div class="text-center fs-7 pt-2" style="color:#37003C;">Dan Dapatkan GRATIS 30 Hari
-                                    Nonton
-                                </div>
-                                <div class="d-flex justify-content-center">
-                                    <nuxt-link to="/promo/updatedata" class="btn text-white py-2 px-5 fw-bold mt-3 fs-6"
-                                        style="background:#2C69A7;" type="button">Lihat Lebih Lanjut <i
-                                            class="bi bi-chevron-right"></i></nuxt-link>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </slide>
-                <slide :key="3">
-                    <div class="d-flex align-items-center py-3 header-mobile"
-                        :style="`background-image:url('${headerImageMobile3}');width:100%;height:100%;`">
-                        <div class="container">
-                            <div style="max-width:100%">
-                                <h5 class="text-center fw-bold pt-5" style="color:#41054F;">Nikmati Hiburan Tanpa Batas
-                                </h5>
-                                <div class="text-center fs-7 pt-2" style="color:#37003C;">Dapatkan produk TV Satelit
-                                    terbaik berupa Receiver dan Paket Program Channel Televisi berkualitas untuk
-                                    kebutuhan kamu.
-                                </div>
-                                <div class="d-flex justify-content-center">
-                                    <nuxt-link to="/receiver" class="btn text-white py-2 px-5 fw-bold mt-3 fs-6"
-                                        style="background:#2C69A7;" type="button">Lihat Lebih Lanjut <i
-                                            class="bi bi-chevron-right"></i></nuxt-link>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </slide>
-                <template #addons>
-
-                    <pagination />
-                </template>
-            </carousel>
-        </div> -->
         <div class="w-100 show-on-desktop">
             <carousel :items-to-show="1" :autoplay="2500" :transition="0" :wrapAround="true">
-                <slide :key="1" style="padding: 0 !important">
-                    <a href="javascript:void(0)" @click="showBanner(1)" class="w-100" style="padding: 0 !important">
-                        <img src="~/assets/static-content/banner/september/1.png" class="w-100" />
+                <slide v-for="(context, index) in listBanner" :key="index" style="padding: 0 !important">
+                    <a href="javascript:void(0)" @click="showBanner(index)" class="w-100" style="padding: 0 !important">
+                        <img :src="context.imagedesktop" class="w-100" />
                     </a>
                 </slide>
-                <slide :key="2" style="padding: 0 !important">
-                    <a href="javascript:void(0)" @click="showBanner(2)" class="w-100" style="padding: 0 !important">
-                        <img src="~/assets/static-content/banner/september/2.png" class="w-100" />
-                    </a>
-                </slide>
-                <slide :key="3" style="padding: 0 !important">
-                    <a href="javascript:void(0)" @click="showBanner(3)" class="w-100" style="padding: 0 !important">
-                        <img src="~/assets/static-content/banner/september/3.png" class="w-100" />
-                    </a>
-                </slide>
-                <slide :key="4" style="padding: 0 !important">
-                    <a href="javascript:void(0)" @click="showBanner(4)" class="w-100" style="padding: 0 !important">
-                        <img src="~/assets/static-content/banner/september/4.png" class="w-100" />
-                    </a>
-                </slide>
-
                 <template #addons>
 
                     <pagination />
@@ -184,27 +16,11 @@
         </div>
         <div class="w-100 show-on-mobile">
             <carousel :items-to-show="1" :autoplay="2500" :transition="0" :wrapAround="true">
-                <slide :key="1" style="padding: 0 !important">
-                    <a href="javascript:void(0)" @click="showBanner(1)" class="w-100" style="padding: 0 !important">
-                        <img src="~/assets/static-content/banner/september/1-mobile.png" class="w-100" />
+                <slide v-for="(context, index) in listBanner" :key="index" style="padding: 0 !important">
+                    <a href="javascript:void(0)" @click="showBanner(index)" class="w-100" style="padding: 0 !important">
+                        <img :src="context.imagemobile" class="w-100" />
                     </a>
                 </slide>
-                <slide :key="2" style="padding: 0 !important">
-                    <a href="javascript:void(0)" @click="showBanner(2)" class="w-100" style="padding: 0 !important">
-                        <img src="~/assets/static-content/banner/september/2-mobile.png" class="w-100" />
-                    </a>
-                </slide>
-                <slide :key="3" style="padding: 0 !important">
-                    <a href="javascript:void(0)" @click="showBanner(3)" class="w-100" style="padding: 0 !important">
-                        <img src="~/assets/static-content/banner/september/3-mobile.png" class="w-100" />
-                    </a>
-                </slide>
-                <slide :key="4" style="padding: 0 !important">
-                    <a href="javascript:void(0)" @click="showBanner(4)" class="w-100" style="padding: 0 !important">
-                        <img src="~/assets/static-content/banner/september/4-mobile.png" class="w-100" />
-                    </a>
-                </slide>
-
                 <template #addons>
 
                     <pagination />
@@ -390,19 +206,23 @@
                                             <div class="d-flex align-items-center pb-2 mt-2 match-result-element"
                                                 style="border-bottom:1px black solid"
                                                 v-for="schedule in context.schedule">
-                                                <div class="text title-club"
-                                                    style="color:#00539B;font-weight:600;font-size:14px;margin-right:10px;text-align:right;">
-                                                    {{ schedule.club1 }}</div>
-                                                <img :src="schedule.logo1" class="image-club"
-                                                    style="width:30px;margin-right:10px;">
-                                                <div class="text time"
-                                                    style="color:#00539B;font-weight:600;font-size:14px;margin-right:10px">
+                                                <div class="d-flex justify-content-end" style="width:43%;">
+                                                    <div class="text title-club text-right"
+                                                        style="color:#00539B;font-weight:600;font-size:14px;padding-right:10px;text-align:right;">
+                                                        {{ schedule.club1 }}</div>
+                                                    <img :src="schedule.logo1" class="image-club" style="width:25px;">
+                                                </div>
+                                                <div class="text time text-center"
+                                                    style="color:#00539B;font-weight:600;font-size:14px;width:14%">
                                                     {{ schedule.jam }}</div>
-                                                <img :src="schedule.logo2" class="image-club"
-                                                    style="width:30px;margin-right:10px;text-align:left">
-                                                <div class="text title-club"
-                                                    style="color:#00539B;font-weight:600;font-size:14px;">
-                                                    {{schedule.club2}}</div>
+                                                <div class="d-flex justify-content-start"
+                                                    style="width:43%;padding-left:10px;">
+                                                    <img :src="schedule.logo2" class="image-club"
+                                                        style="width:25px;margin-right:10px;text-align:left">
+                                                    <div class="text title-club"
+                                                        style="color:#00539B;font-weight:600;font-size:14px;">
+                                                        {{schedule.club2}}</div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -505,193 +325,48 @@
             </div>
         </div>
     </div>
-
-    <div class="modal fade" tabindex="-1" role="dialog" id="modal-banner-2">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:550px">
-            <div class="modal-content">
-                <div class="modal-body rounded">
-                    <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
-                            class="bi bi-x"></i></button>
-                    <img src="~/assets/static-content/banner/september/2.png" class="w-100 rounded" />
-                    <div class="d-flex justify-content-between align-items-center">
-                        <h5 class="fw-bold mt-3 me-3">Siap-siap untuk Aksi Kelas Dunia</h5>
-                    </div>
-                    <div style="line-height:1.5;">Kualifikasi Piala Dunia Zona Amerika Selatan mulai September 2024
-                        dengan 10 negara tangguh seperti Argentina, Brasil, Uruguay, dan banyak lagi. <br>
-                        Saksi bintang-bintang dunia berjuang untuk tempat di Piala Dunia 2026 semuanya bisa kamu nikmati
-                        secara LIVE di Nex! 
-                        Langganan Paket WCQ Conmebol hanya Rp 59.000, aktif sampai 11 September. Jangan lewatkan momen
-                        seru ini, buktikan dukunganmu sekarang!</div>
-                    <div class="row justify-content-center mt-5 px-4">
-                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                            <a href="https://www.lazada.co.id/shop/nex-parabola-tv/" target="_blank" class="w-100">
-                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                    <img src="~/assets/social-media/lazada.jpg" style="height:23px;max-width:100%;" />
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                            <a href="javascript:void(0)" target="_blank" class="w-100">
-                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                    <img src="~/assets/social-media/tokopedia.png"
-                                        style="height:23px;max-width:100%;" />
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                            <a href="https://shopee.co.id/nexparabola.official?shopCollection=253318341#product_list"
-                                target="_blank" class="w-100">
-                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                    <img src="~/assets/social-media/shopee.png" style="height:23px;max-width:100%;" />
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                            <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                    <img src="~/assets/social-media/nex.png" style="height:23px;max-width:100%;" />
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" tabindex="-1" role="dialog" id="modal-banner-3">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:550px">
-            <div class="modal-content">
-                <div class="modal-body rounded">
-                    <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
-                            class="bi bi-x"></i></button>
-                    <img src="~/assets/static-content/banner/september/3.png" class="w-100 rounded" />
-                    <div class="d-flex justify-content-between align-items-center">
-                        <h5 class="fw-bold mt-3 me-3">Kualifikasi AFC U20 Asian Cup 2025</h5>
-                    </div>
-                    <div style="line-height:1.5;">Ikuti perjuangan Timnas Indonesia di Kualifikasi AFC U20 Asian Cup
-                        2025! Mereka akan bertarung melawan Yemen, Timor Leste, dan Maldives dalam laga-laga seru yang
-                        penuh semangat. Saksikan setiap detik pertandingannya LIVE di Nex dan dukung Garuda Muda meraih
-                        kemenangan.</div>
-                    <div class="row justify-content-center mt-5 px-4">
-                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                            <a href="https://www.lazada.co.id/shop/nex-parabola-tv/" target="_blank" class="w-100">
-                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                    <img src="~/assets/social-media/lazada.jpg" style="height:23px;max-width:100%;" />
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                            <a href="javascript:void(0)" target="_blank" class="w-100">
-                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                    <img src="~/assets/social-media/tokopedia.png"
-                                        style="height:23px;max-width:100%;" />
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                            <a href="https://shopee.co.id/nexparabola.official?shopCollection=253318341#product_list"
-                                target="_blank" class="w-100">
-                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                    <img src="~/assets/social-media/shopee.png" style="height:23px;max-width:100%;" />
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                            <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                    <img src="~/assets/social-media/nex.png" style="height:23px;max-width:100%;" />
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" tabindex="-1" role="dialog" id="modal-banner-4">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:550px">
-            <div class="modal-content">
-                <div class="modal-body rounded">
-                    <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
-                            class="bi bi-x"></i></button>
-                    <img src="~/assets/static-content/banner/september/4.png" class="w-100 rounded" />
-                    <div class="d-flex justify-content-between align-items-center">
-                        <h5 class="fw-bold mt-3 me-3">3rd Round Carabao Cup</h5>
-                    </div>
-                    <div style="line-height:1.5;">Nonton Jagoan Indonesia di Carabao Cup!
-                        Aksi keren Nathan Tjoe-A-On, Elkan Baggott, dan Marselino Ferdinan bakal memukau di 3rd Round
-                        EFL Carabao Cup! Jangan sampai ketinggalan. Saksikan pertandingan spektakuler ini LIVE hanya di
-                        Nex!
-                        Langganan Paket Champions sekarang hanya 69rb/30 Hari. 
-                    </div>
-                    <div class="row justify-content-center mt-5 px-4">
-                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                            <a href="https://www.lazada.co.id/shop/nex-parabola-tv/" target="_blank" class="w-100">
-                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                    <img src="~/assets/social-media/lazada.jpg" style="height:23px;max-width:100%;" />
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                            <a href="javascript:void(0)" target="_blank" class="w-100">
-                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                    <img src="~/assets/social-media/tokopedia.png"
-                                        style="height:23px;max-width:100%;" />
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                            <a href="https://shopee.co.id/nexparabola.official?shopCollection=253318341#product_list"
-                                target="_blank" class="w-100">
-                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                    <img src="~/assets/social-media/shopee.png" style="height:23px;max-width:100%;" />
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                            <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                    <img src="~/assets/social-media/nex.png" style="height:23px;max-width:100%;" />
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
     <a href="https://wa.me/6281260012700" class="cs-floating">
         <div class="box">Punya pertanyaan?
             Kami siap untuk
             membantu anda</div>
         <img src="~/assets/cs.png">
     </a>
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="modal-banner">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:450px">
+            <div class="modal-content">
+                <div class="modal-body rounded" v-if="dataBanner">
+                    <!-- <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
+                            class="bi bi-x"></i></button> -->
+                    <img :src="dataBanner.imagedesktop" class="w-100 rounded" />
+                    <h5 class="fw-bold mt-3">{{dataBanner.title}}</h5>
+                    <div :class="dataBanner.shadow == 1 ? 'note-shadow' : ''" style="line-height:1.5;"
+                        v-html="dataBanner.notedetail"></div>
+                    <div class="row justify-content-center mt-5 px-4">
+                        <div class="col-lg-6 mb-3 d-flex justify-content-center"
+                            v-for="context in dataBanner.ecommerce">
+                            <a :href="context.url" target="_blank" class="w-100">
+                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                    <img :src="context.logo" style="height:23px;max-width:100%;" />
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a v-if="dataBanner.custom == 1 && dataBanner.buttontext && dataBanner.url"
+                            :href="dataBanner.url" target="_blank"
+                            class="text-center btn bg-primary text-white p-3 btn-sm">{{dataBanner.buttontext}}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script setup>
     import axios from "axios"
     import backgroundImage from "~/assets/bg-pertandingan.png"
-    // import headerImageDesktop1 from "~/assets/static-content/banner/1.png"
-    // import headerImageDesktop2 from "~/assets/static-content/banner/2.png"
-    // import headerImageDesktop3 from "~/assets/static-content/banner/3.png"
-
-    // import headerImageMobile1 from "~/assets/static-content/banner/1-mobile.png"
-    // import headerImageMobile2 from "~/assets/static-content/banner/2-mobile.png"
-    // import headerImageMobile3 from "~/assets/static-content/banner/3-mobile.png"
 
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"
@@ -719,6 +394,10 @@
     const selectKompetisiDateId = ref('');
 
     const resultKompetisi = ref([]);
+
+    const listBanner = ref([]);
+
+    const dataBanner = ref(null);
 
     import logoNex from "~/assets/logo-nex-2.png";
     const {
@@ -752,8 +431,9 @@
         });
     }
 
-    function showBanner(id) {
-        $("#modal-banner-" + id).modal('show');
+    function showBanner(index) {
+        dataBanner.value = listBanner.value[index]
+        $("#modal-banner").modal('show');
     }
     useHead({
         title: 'TV Satelit Parabola Berlangganan Indonesia | Nex Parabola',
@@ -824,6 +504,7 @@
             listFilm.value = res.data.data.filmbanner;
             kidTitle.value = res.data.data.kidstitle;
             kidSubtitle.value = res.data.data.kidstitlenote;
+            listBanner.value = res.data.data.topbanner;
             listKid.value = res.data.data.kidsbanner;
             for (let i = 0; i < 25; i++) {
                 listKid.value = listKid.value.concat(res.data.data.kidsbanner);
@@ -932,10 +613,12 @@
         .column-receiver-and-packet {
             width: 190px !important
         }
-        .column-receiver-and-packet .fs-6{
+
+        .column-receiver-and-packet .fs-6 {
             font-size: 15px !important;
         }
-        .column-receiver-and-packet .fs-5{
+
+        .column-receiver-and-packet .fs-5 {
             font-size: 16px !important
         }
     }

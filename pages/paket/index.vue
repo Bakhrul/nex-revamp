@@ -52,8 +52,8 @@
                             <div class="shadow-product w-100 product-box bg-white">
                                 <img :src="packet.image" />
                                 <div class="p-3 " style="min-height:210px">
-                                    <div class="d-flex justify-content-between mb-3 align-items-center">
-                                        <div class="fw-bold fs-6">{{packet.name}}</div>
+                                    <div class="d-flex justify-content-between mb-3 align-items-start">
+                                        <div class="fw-bold fs-6 pe-2">{{packet.name}}</div>
                                         <div style="width:120px;">
                                             <div class="badge-packet">{{packet.badge}}</div>
                                         </div>
@@ -87,11 +87,11 @@
             <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:450px">
                 <div class="modal-content">
                     <div class="modal-body rounded">
-                        <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
-                                class="bi bi-x"></i></button>
+                        <!-- <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
+                                class="bi bi-x"></i></button> -->
                         <img :src="image" class="w-100 rounded" />
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="fs-6 fw-bold mt-3 me-3" style="word-break: break-word">{{name}}</div>
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div class="fs-6 fw-bold mt-3 pe-3" style="word-break: break-word">{{name}}</div>
                             <div style="width:160px" class="d-flex justify-content-end">
                                 <span class="fw-bold py-1 px-2 mt-3"
                                     style="width:auto;font-size:11px;text-align:center;border-radius:10px;color:#2C69A7;background:#D5E0E9;display: flex;align-items: center;min-height:32px;">

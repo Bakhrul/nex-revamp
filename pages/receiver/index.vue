@@ -40,7 +40,7 @@
                                 <div class="text-center pt-2 fs-6 fw-bold c-primary black-on-mobile">Tipe Biru</div>
                                 <div class="text-center pt-2">Lebih canggih tampilan baru</div>
                                 <div class="d-flex justify-content-center text-center pt-3 pb-3">
-                                    <a href="javascript:void(0)" @click="openReceiver(1, link1, linkLazada1)"
+                                    <a href="javascript:void(0)" @click="openReceiver(1, link1, linkLazada1, linkTiktok1)"
                                         style="color:black !important;font-weight:600;"><span
                                             style="border-bottom:1px #ddd solid">BELI SEKARANG</span>&ensp;<i
                                             class="bi bi-arrow-right c-primary-custom"></i></a>
@@ -105,7 +105,7 @@
                                 <div class="text-center pt-2 fs-6 fw-bold c-primary black-on-mobile">Tipe Kuning</div>
                                 <div class="text-center pt-2">Lebih canggih tampilan baru</div>
                                 <div class="d-flex justify-content-center text-center pt-3 pb-3">
-                                    <a href="javascript:void(0)" @click="openReceiver(2, link2, linkLazada2)"
+                                    <a href="javascript:void(0)" @click="openReceiver(2, link2, linkLazada2, linkTiktok2)"
                                         style="color:black !important;font-weight:600;"><span
                                             style="border-bottom:1px #ddd solid">BELI SEKARANG</span>&ensp;<i
                                             class="bi bi-arrow-right c-primary-custom"></i></a>
@@ -156,7 +156,7 @@
                                 <div class="text-center pt-2 fs-6 fw-bold c-primary black-on-mobile">Tipe Merah</div>
                                 <div class="text-center pt-2">Lebih canggih tampilan baru</div>
                                 <div class="d-flex justify-content-center text-center pt-3 pb-3">
-                                    <a href="javascript:void(0)" @click="openReceiver(3, link3, linkLazada3)"
+                                    <a href="javascript:void(0)" @click="openReceiver(3, link3, linkLazada3, linkTiktok3)"
                                         style="color:black !important;font-weight:600;"><span
                                             style="border-bottom:1px #ddd solid">BELI SEKARANG</span>&ensp;<i
                                             class="bi bi-arrow-right c-primary-custom"></i></a>
@@ -207,7 +207,7 @@
                                 <div class="text-center pt-2 fs-6 fw-bold c-primary black-on-mobile">Combo Kuning</div>
                                 <div class="text-center pt-2">Lebih canggih tampilan baru</div>
                                 <div class="d-flex justify-content-center text-center pt-3 pb-3">
-                                    <a href="javascript:void(0)" @click="openReceiver(4, link4, linkLazada4)"
+                                    <a href="javascript:void(0)" @click="openReceiver(4, link4, linkLazada4, linkTiktok4)"
                                         style="color:black !important;font-weight:600;"><span
                                             style="border-bottom:1px #ddd solid">BELI SEKARANG</span>&ensp;<i
                                             class="bi bi-arrow-right c-primary-custom"></i></a>
@@ -265,7 +265,7 @@
                                 <div class="text-center pt-2 fs-6 fw-bold c-primary black-on-mobile">Combo Merah</div>
                                 <div class="text-center pt-2">Lebih canggih tampilan baru</div>
                                 <div class="d-flex justify-content-center text-center pt-3 pb-3">
-                                    <a href="javascript:void(0)" @click="openReceiver(5, link5, linkLazada5)"
+                                    <a href="javascript:void(0)" @click="openReceiver(5, link5, linkLazada5, linkTiktok5)"
                                         style="color:black !important;font-weight:600;"><span
                                             style="border-bottom:1px #ddd solid">BELI SEKARANG</span>&ensp;<i
                                             class="bi bi-arrow-right c-primary-custom"></i></a>
@@ -332,7 +332,7 @@
                                 <div class="text-center pt-4 fs-6 fw-bold c-primary black-on-mobile">NexVidio</div>
                                 <div class="text-center pt-4">Lebih canggih tampilan baru</div>
                                 <div class="d-flex justify-content-center text-center pt-4 pb-3">
-                                    <a href="javascript:void(0)" @click="openReceiver(6, link6, '')"
+                                    <a href="javascript:void(0)" @click="openReceiver(6, link6, linkLazada6, linkTiktok6)"
                                         style="color:black !important;font-weight:600;"><span
                                             style="border-bottom:1px #ddd solid">BELI SEKARANG</span>&ensp;<i
                                             class="bi bi-arrow-right c-primary-custom"></i></a>
@@ -365,14 +365,14 @@
         </section>
         <Footer></Footer>
         <div class="modal fade" tabindex="-1" role="dialog" id="modal-receiver">
-            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-body modal-body-receiver">
-                        <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
-                                class="bi bi-x"></i></button>
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="border-radius:20px;">
+                <div class="modal-content" style="border-radius:20px;">
+                    <div class="modal-body modal-body-receiver" style="border-radius:20px;">
+                        <!-- <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
+                                class="bi bi-x"></i></button> -->
                         <div class="row">
                             <div
-                                class="col-lg-5 px-3 d-flex align-items-center justify-content-center height-modal-receiver">
+                                class="col-lg-6 px-3 d-flex align-items-center justify-content-center height-modal-receiver">
                                 <img :src="receiver1" class="w-100" v-if="type == 1" />
                                 <img :src="receiver2" class="w-100" v-if="type == 2" />
                                 <img :src="receiver3" class="w-100" v-if="type == 3" />
@@ -380,9 +380,9 @@
                                 <img :src="receiver5" class="w-100" v-if="type == 5" />
                                 <img :src="receiver6" class="w-100" v-if="type == 6" />
                             </div>
-                            <div class="col-lg-7">
+                            <div class="col-lg-6">
                                 <div class="p-3">
-                                    <h5 class="text-left pt-5 fw-bold show-on-desktop">{{name}}</h5>
+                                    <h4 class="text-left pt-5 fw-bold show-on-desktop" v-html="name"></h4>
                                     <div class="text-left pt-1 fs-7 pb-3 show-on-desktop" style="color:black;">Dapatkan
                                         Produk Kami di Ecommerce</div>
                                     <div class="text-center fs-7 show-on-mobile">Dapatkan Produk Kami di Ecommerce</div>
@@ -416,6 +416,15 @@
                                                 <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
                                                     style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
                                                     <img src="~/assets/social-media/lazada.jpg"
+                                                        style="height:25px;max-width:100%;" />
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-12 mb-3 d-flex justify-content-center" v-if="tiktok">
+                                            <a :href="tiktok" target="_blank" class="w-100">
+                                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                                    <img src="~/assets/social-media/tiktok.png"
                                                         style="height:25px;max-width:100%;" />
                                                 </div>
                                             </a>
@@ -463,6 +472,15 @@
                                             <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
                                                 style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
                                                 <img src="~/assets/social-media/lazada.jpg"
+                                                    style="height:25px;max-width:100%;" />
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-12 mb-3 d-flex justify-content-center" v-if="tiktok">
+                                        <a :href="tiktok" target="_blank" class="w-100">
+                                            <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                                style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                                <img src="~/assets/social-media/tiktok.png"
                                                     style="height:25px;max-width:100%;" />
                                             </div>
                                         </a>
@@ -534,29 +552,57 @@
     const linkLazada5 = ref(
         'https://www.lazada.co.id/products/i8216950950.html?spm=a1zawh.24863640.table_online_product.19.60aa4edfuWP5zP'
     )
+
+    const linkLazada6 = ref(
+        'https://www.lazada.co.id/products/i8216998054.html?spm=a1zawh.24863640.table_online_product.36.74f54edfbhSsbz'
+    )
+
+
+    const linkTiktok1 = ref(
+        'https://shop-id.tokopedia.com/view/product/1729793296418178982'
+    )
+    const linkTiktok2 = ref(
+        'https://shop-id.tokopedia.com/view/product/1729798791918159782'
+    )
+    const linkTiktok3 = ref(
+        'https://shop-id.tokopedia.com/view/product/1729798927669430182'
+    )
+    const linkTiktok4 = ref(
+        'https://shop-id.tokopedia.com/view/product/1729798791918159782'
+    )
+    const linkTiktok5 = ref(
+        'https://shop-id.tokopedia.com/view/product/1729798854601967526'
+    )
+
+    const linkTiktok6 = ref(
+        'https://shop-id.tokopedia.com/view/product/1729798966886041510?region=ID&locale=id-ID'
+    )
+
     const url = ref('')
     const lazada = ref('')
+    const tiktok = ref('')
     const type = ref(0)
 
     const name = ref('');
 
-    function openReceiver(typeX, urlX, urlLazada) {
+    function openReceiver(typeX, urlX, urlLazada, urlTiktok) {
         if (typeX == 1) {
-            name.value = 'Nex Parabola | Tipe Biru';
+            name.value = 'Nex Parabola<br> <span style="font-size:20px">Tipe Biru</span>';
         } else if (typeX == 2) {
-            name.value = 'Nex Parabola | Tipe Kuning';
+            name.value = 'Nex Parabola<br> <span style="font-size:20px">Tipe Kuning</span>';
         } else if (typeX == 3) {
-            name.value = 'Nex Parabola | Tipe Merah';
+            name.value = 'Nex Parabola<br> <span style="font-size:20px">Tipe Merah</span>';
         } else if (typeX == 4) {
-            name.value = 'Nex Parabola | Combo Kuning';
+            name.value = 'Nex Parabola<br> <span style="font-size:20px">Combo Kuning</span>';
         } else if (typeX == 5) {
-            name.value = 'Nex Parabola | Combo Merah';
+            name.value = 'Nex Parabola<br> <span style="font-size:20px">Combo Merah</span>';
         } else if (typeX == 6) {
             name.value = 'NexVidio';
         }
         type.value = typeX
         url.value = urlX;
         lazada.value = urlLazada
+        tiktok.value = urlTiktok
         $("#modal-receiver").modal('show')
     }
 
