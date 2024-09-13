@@ -210,7 +210,7 @@
                                                     <div class="text title-club text-right"
                                                         style="color:#00539B;font-weight:600;font-size:14px;padding-right:10px;text-align:right;">
                                                         {{ schedule.club1 }}</div>
-                                                    <img :src="schedule.logo1" class="image-club" style="width:25px;">
+                                                    <img :src="schedule.logo1" class="image-club" style="width:25px;margin-right:10px">
                                                 </div>
                                                 <div class="text time text-center"
                                                     style="color:#00539B;font-weight:600;font-size:14px;width:14%">
