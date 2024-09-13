@@ -126,7 +126,7 @@
                         <img :src="imagePacket" class="w-100 rounded" />
                         <div class="d-flex justify-content-between align-items-start">
                             <div class="fs-6 fw-bold mt-3 pe-3" style="word-break: break-word">{{namePacket}}</div>
-                            <div style="width:160px" class="d-flex justify-content-end">
+                            <div style="width:160px" class="d-flex justify-content-end" v-if="badgePacket">
                                 <span class="fw-bold py-1 px-2 mt-3"
                                     style="width:auto;font-size:11px;text-align:center;border-radius:10px;color:#2C69A7;background:#D5E0E9;display: flex;align-items: center;min-height:32px;">
                                     {{badgePacket}}

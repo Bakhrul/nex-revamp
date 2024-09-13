@@ -587,15 +587,15 @@
 
     function openReceiver(typeX, urlX, urlLazada, urlTiktok) {
         if (typeX == 1) {
-            name.value = 'Nex Parabola<br> <span style="font-size:20px">Tipe Biru</span>';
+            name.value = 'Nex Parabola<br>Tipe Biru';
         } else if (typeX == 2) {
-            name.value = 'Nex Parabola<br> <span style="font-size:20px">Tipe Kuning</span>';
+            name.value = 'Nex Parabola<br>Tipe Kuning';
         } else if (typeX == 3) {
-            name.value = 'Nex Parabola<br> <span style="font-size:20px">Tipe Merah</span>';
+            name.value = 'Nex Parabola<br>Tipe Merah';
         } else if (typeX == 4) {
-            name.value = 'Nex Parabola<br> <span style="font-size:20px">Combo Kuning</span>';
+            name.value = 'Nex Parabola<br>Combo Kuning';
         } else if (typeX == 5) {
-            name.value = 'Nex Parabola<br> <span style="font-size:20px">Combo Merah</span>';
+            name.value = 'Nex Parabola<br>Combo Merah';
         } else if (typeX == 6) {
             name.value = 'NexVidio';
         }
