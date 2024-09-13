@@ -43,8 +43,8 @@
         <section class="pt-5 pb-5 bg-section">
             <div class="container">
                 <template v-for="(category,index) in list">
-                    <h5 class="mb-3 fw-bold" v-show="type == 'all' || type == category.id" v-html="category.category">
-                    </h5>
+                    <h4 class="mb-3 fw-bold c-primary" v-show="type == 'all' || type == category.id" v-html="category.category">
+                    </h4>
                     <div class="slider-paket slider-baru mb-5" :class="`slider-paket-${index}`"
                         v-show="type == 'all' || type == category.id">
                         <div class="me-3 width-slider-packet" style="width:330px;"
