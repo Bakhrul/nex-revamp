@@ -206,16 +206,16 @@
                                             <div class="d-flex align-items-center pb-2 mt-2 match-result-element"
                                                 style="border-bottom:1px black solid"
                                                 v-for="schedule in context.schedule">
-                                                <div class="d-flex justify-content-end" style="width:43%;">
+                                                <div class="d-flex justify-content-end align-items-center" style="width:43%;">
                                                     <div class="text title-club text-right"
                                                         style="color:#00539B;font-weight:600;font-size:14px;padding-right:10px;text-align:right;">
                                                         {{ schedule.club1 }}</div>
                                                     <img :src="schedule.logo1" class="image-club" style="width:25px;margin-right:10px">
                                                 </div>
-                                                <div class="text time text-center"
+                                                <div class="text time text-center "
                                                     style="color:#00539B;font-weight:600;font-size:14px;width:14%">
                                                     {{ schedule.jam }}</div>
-                                                <div class="d-flex justify-content-start"
+                                                <div class="d-flex justify-content-start align-items-center"
                                                     style="width:43%;padding-left:10px;">
                                                     <img :src="schedule.logo2" class="image-club"
                                                         style="width:25px;margin-right:10px;text-align:left">
