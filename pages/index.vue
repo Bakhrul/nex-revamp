@@ -333,7 +333,7 @@
     </a>
 
     <div class="modal fade" tabindex="-1" role="dialog" id="modal-banner">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:500px">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:600px">
             <div class="modal-content">
                 <div class="modal-body rounded" v-if="dataBanner">
                     <!-- <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
