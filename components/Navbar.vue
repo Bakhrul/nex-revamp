@@ -110,15 +110,15 @@
                                     Bukalapak</nuxt-link>
                             </li> -->
                             <li>
-                                <a href="https://www.lazada.co.id/shop/nex-parabola-tv/" class="dropdown-item">
+                                <a target="_blank" href="https://www.lazada.co.id/shop/nex-parabola-tv/" class="dropdown-item">
                                     Lazada</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="https://vt.tiktok.com/ZS2UYDxwK/?page=Mall"> Tiktok
+                                <a target="_blank" class="dropdown-item" href="https://vt.tiktok.com/ZS2UYDxwK/?page=Mall"> Tiktok
                                     Shop</a>
                             </li>
                             <li>
-                                <a href="https://shopee.co.id/nexparabola.official" class="dropdown-item">
+                                <a target="_blank" href="https://shopee.co.id/nexparabola.official" class="dropdown-item">
                                     Shopee</a>
                             </li>
                         </ul>

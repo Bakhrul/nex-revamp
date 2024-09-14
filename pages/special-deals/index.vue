@@ -135,8 +135,8 @@
             <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:450px">
                 <div class="modal-content">
                     <div class="modal-body rounded" v-if="dataDetail">
-                        <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
-                                class="bi bi-x"></i></button>
+                        <!-- <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
+                                class="bi bi-x"></i></button> -->
                         <img :src="dataDetail.image" class="w-100 rounded" />
                         <h5 class="fw-bold mt-3">{{dataDetail.title}}</h5>
                         <div :class="dataDetail.shadow == 1 ? 'note-shadow' : ''" style="line-height:1.5;"

@@ -15,10 +15,10 @@
                                 <div class="mb-5" v-html="content"></div>
                             </div>
                             <div class="col-lg-4 show-on-desktop">
-                                <div style="border-bottom: 1px #ddd solid;font-weight:bold"
+                                <div style="border-bottom: 3px #a5a1a1 solid;font-weight:bold;max-width:250px;display: block;margin:auto;"
                                     class="pb-3 fs-4 mb-3 mt-5 text-center">Klik Untuk
                                     Cek Paket<br> NEX Parabola</div>
-                                <div class="me-3 width-slider-packet" style="width:330px;"
+                                <div class="me-3 width-slider-packet" style="max-width:320px;display: block;margin:auto"
                                     v-for="(packet, idx) in listPacket">
                                     <div class="shadow-product mb-3 w-100 product-box bg-white">
                                         <img :src="packet.image" />
@@ -83,7 +83,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-12 mt-5">
-                                <div class="title-section-news">Artikel Terkait</div>
+                                <div class="title-section-news">Artikel Lainnya</div>
                                 <div class="slider-news slider-paket">
                                     <div class="width-slider-news mb-3" v-for="a in other">
                                         <div class="shadow-product w-100 product-box">
