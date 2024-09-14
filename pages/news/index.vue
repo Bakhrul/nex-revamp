@@ -1,4 +1,4 @@
-<template>
+<template :key="route.fullPath">
     <div>
         <Navbar></Navbar>
         <div class="show-on-mobile">
@@ -29,9 +29,11 @@
                 <div class="w-100" style="overflow: auto;">
                     <div class="news-group d-flex flex-wrap justify-content-center">
 
-                        <div style="cursor:pointer" class="news-filter me-3 mb-3" v-for="context in listCategory"
-                            @click="selected = context.id;currentPage = 1; totalData = 0;getNews();" :class="selected == context.id ? 'active' : ''">
-                            {{context.category}}</div>
+                        <nuxt-link :to="'/news?id=' + context.id" style="cursor:pointer" class="news-filter me-3 mb-3"
+                            v-for="context in listCategory"
+                            @click="selected = context.id;currentPage = 1; totalData = 0;getNews();"
+                            :class="selected == context.id ? 'active' : ''">
+                            {{context.category}}</nuxt-link>
                     </div>
                 </div>
             </div>
@@ -85,9 +87,12 @@
     import logoNex from "~/assets/logo-nex-2.png";
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"
+    const route = useRoute()
+    definePageMeta({
+        key: route => route.fullPath
+    })
 
     const selected = ref('');
-    const route = useRoute()
 
     import axios from "axios";
     const config = useRuntimeConfig()

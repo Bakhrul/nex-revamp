@@ -16,8 +16,8 @@
                             </div>
                             <div class="col-lg-4 show-on-desktop">
                                 <div style="border-bottom: 1px #ddd solid;font-weight:bold"
-                                    class="pb-3 fs-4 mt-5 text-center">Klik Untuk
-                                    Cek Paket NEX Parabola</div>
+                                    class="pb-3 fs-4 mb-3 mt-5 text-center">Klik Untuk
+                                    Cek Paket<br> NEX Parabola</div>
                                 <div class="me-3 width-slider-packet" style="width:330px;"
                                     v-for="(packet, idx) in listPacket">
                                     <div class="shadow-product mb-3 w-100 product-box bg-white">
@@ -52,7 +52,8 @@
                             <div class="col-lg-12 mt-5 show-on-mobile">
                                 <div class="title-section-news">Klik Untuk Cek Paket Nex Parabola</div>
                                 <div class="slider-news slider-paket">
-                                    <div class="shadow-product width-slider-news mb-3 product-box bg-white" v-for="(packet, idx) in listPacket">
+                                    <div class="shadow-product width-slider-news mb-3 product-box bg-white"
+                                        v-for="(packet, idx) in listPacket">
                                         <img :src="packet.image" />
                                         <div class="p-3 " style="min-height:210px">
                                             <div class="d-flex justify-content-between mb-3 align-items-start">
@@ -132,7 +133,7 @@
                                     {{badgePacket}}
                                 </span>
                             </div>
-                        </div>                       
+                        </div>
                         <div style="line-height:1.5;" class="pt-3" v-html="notePacket"></div>
                         <div class="row justify-content-center mt-5 px-4">
                             <div class="col-lg-6 mb-3 d-flex justify-content-center" v-for="context in ecommercePacket">
@@ -158,6 +159,11 @@
     const route = useRoute()
     import logoNex from "~/assets/logo-nex-2.png";
     import axios from "axios";
+
+    definePageMeta({
+        key: route => route.fullPath
+    })
+
     const config = useRuntimeConfig()
 
     const title = ref('');
@@ -173,6 +179,10 @@
     const notePacket = ref('');
     const badgePacket = ref('');
     const ecommercePacket = ref([]);
+
+    const metaTitle = ref('');
+    const metaDesc = ref('');
+    const metaKeyword = ref('');
 
     const {
         data
@@ -196,6 +206,9 @@
             content.value = res.data.data.content;
             category.value = res.data.data.category;
             other.value = res.data.data.othernews;
+            metaTitle.value = res.data.data.metatitle ? res.data.data.metatitle : res.data.data.metetitle;
+            metaDesc.value = res.data.data.metadesc;
+            metaKeyword.value = res.data.data.metakeyword;
             for (let i = 0; i < res.data.data.paket.length; i++) {
                 let paket = res.data.data.paket[i];
 
@@ -241,22 +254,26 @@
     }
 
     useHead({
-        title: `${title.value} | Nex Parabola`,
+        title: `${title.value}`,
         meta: [{
                 name: 'title',
-                content: `${title.value} | Nex Parabola`
+                content: `${metaTitle.value}`
             },
             {
                 name: 'ogTitle',
-                content: `${title.value} | Nex Parabola`
+                content: `${metaTitle.value}`
             },
             {
                 name: 'description',
-                content: 'Layanan TV Satelit Parabola berlangganan Indonesia. Tonton Premium Live Football dan hiburan tanpa hambatan dengan resolusi HD hingga 4K.'
+                content: `${metaDesc.value}`
             },
             {
                 name: 'og:description',
-                content: 'Layanan TV Satelit Parabola berlangganan Indonesia. Tonton Premium Live Football dan hiburan tanpa hambatan dengan resolusi HD hingga 4K.'
+                content: `${metaDesc.value}`
+            },
+            {
+                name: 'keywords',
+                content: `${metaKeyword.value}`
             },
             {
                 name: 'og:image',
@@ -326,16 +343,18 @@
         width: 280px;
         margin-right: 10px
     }
-    .title-section-news{
-        font-size:18px !important;
+
+    .title-section-news {
+        font-size: 24px !important;
         font-weight: bold;
-        position:relative;
+        position: relative;
         top: -20px;
     }
-    @media(max-width:991px){
-        .title-section-news{
+
+    @media(max-width:991px) {
+        .title-section-news {
             top: -25px;
-            font-size:13px !important
+            font-size: 13px !important
         }
     }
 </style>
