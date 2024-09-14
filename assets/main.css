@@ -315,7 +315,7 @@ footer ul li {
     padding: 15px 10px;
 }
 
-.slider-paket .slick-prev {    
+.slider-paket .slick-prev {
     position: absolute;
     right: 45px;
     top: -50px;
@@ -325,7 +325,7 @@ footer ul li {
     background-color: transparent !important;
 }
 
-.slider-paket .slick-next { 
+.slider-paket .slick-next {
     position: absolute;
     right: 10px;
     top: -50px;
@@ -335,7 +335,7 @@ footer ul li {
     background-color: transparent !important;
 }
 
-.slider-paket-terbatas .slick-prev {    
+.slider-paket-terbatas .slick-prev {
     position: absolute;
     right: 45px;
     top: -50px;
@@ -355,7 +355,7 @@ footer ul li {
     background-color: transparent !important;
 }
 
-.match-result .title-club {    
+.match-result .title-club {
     font-size: 12px !important;
 }
 
@@ -474,7 +474,7 @@ footer ul li {
 }
 
 .height-modal-receiver {
-    border-right: 1px black solid !important;    
+    border-right: 1px black solid !important;
     height: 430px !important;
     display: flex;
     align-items: center;
@@ -504,7 +504,7 @@ footer ul li {
         background-color: #fff !important;
         height: unset !important;
         border: 0 !important;
-    }  
+    }
 }
 
 .btn-close-modal-custom {
@@ -552,9 +552,11 @@ footer ul li {
         font-size: 12px !important;
     }
 }
+
 .width-slider-packet {
     width: 310px !important;
 }
+
 @media(max-width:420px) {
     .width-slider-packet {
         width: 280px !important;
@@ -576,7 +578,7 @@ footer ul li {
         min-width: 110px;
         margin-right: 10px !important;
         margin-bottom: 0 !important;
-    }    
+    }
 }
 
 .rounded-special-deals {
@@ -619,9 +621,10 @@ footer ul li {
         font-weight: 500 !important;
     }
 
-    .border-bottom-mobile-nav{
+    .border-bottom-mobile-nav {
         border-bottom: 2px #ddd solid;
     }
+
     .navbar-custom .nav-item .dropdown-toggle .icon-dropdown {
         position: absolute;
         right: 15px;
@@ -680,22 +683,24 @@ footer ul li {
     width: 150px;
     font-size: 13px;
     font-weight: 500;
-    padding: 15px;  
+    padding: 15px;
     width: 180px;
     background-color: #fff;
     box-shadow: 0 1px 3px rgba(17, 24, 39, .09);
 }
-@media(max-width:991px){
+
+@media(max-width:991px) {
     .cs-floating img {
         width: 55px;
         height: 55px;
     }
+
     .cs-floating .box {
         width: 125px !important;
         font-size: 10px !important;
         padding: 10px;
     }
-    
+
 }
 
 .btn-option-packet {
@@ -736,6 +741,18 @@ button:disabled {
     order: 2;
     flex-grow: 0;
 
+    overflow-y: scroll;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+
+}
+
+.note-shadow::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    display: none;
+    height: 0;
 }
 
 .receiver-group {
@@ -760,23 +777,26 @@ button:disabled {
     height: 50px;
 }
 
-.receiver-fitur-border-top{
+.receiver-fitur-border-top {
     border-top: 3px black solid;
 }
 
-@media(max-width:991px){
-    .receiver-fitur-border-top{
+@media(max-width:991px) {
+    .receiver-fitur-border-top {
         padding-top: 5px !important;
-        border-top:1px black solid
+        border-top: 1px black solid
     }
-    .card-receiver i{
+
+    .card-receiver i {
         color: #00529C !important;
         font-size: 18px;
     }
-    .card-receiver img{
+
+    .card-receiver img {
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
     }
+
     .card-receiver {
         background: #FFFFFF;
         box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px rgba(0, 0, 0, 0.3);
@@ -785,25 +805,29 @@ button:disabled {
         display: block;
         margin: auto;
     }
-    .card-receiver .card-body{
+
+    .card-receiver .card-body {
         border-radius: 20px;
         padding: 0 !important;
     }
-    .receiver-group{
+
+    .receiver-group {
         padding: 10px 5px;
         margin-bottom: 15px !important;
-    }   
-    .receiver-fitur .text {     
+    }
+
+    .receiver-fitur .text {
         word-wrap: break-word;
         text-align: center;
     }
-    .black-on-mobile{
+
+    .black-on-mobile {
         color: black !important;
     }
 }
 
 
-.pagination button{
+.pagination button {
     outline: none !important;
     box-shadow: unset !important;
     border: 0 !important;

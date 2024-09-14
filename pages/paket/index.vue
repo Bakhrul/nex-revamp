@@ -84,7 +84,7 @@
         <Footer></Footer>
         <!-- START PELANGGAN BARU -->
         <div class="modal fade" tabindex="-1" role="dialog" id="modal-packet">
-            <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:450px">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:500px">
                 <div class="modal-content">
                     <div class="modal-body rounded">
                         <!-- <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
