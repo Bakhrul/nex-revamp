@@ -18,7 +18,7 @@
                                 <div style="border-bottom: 3px #a5a1a1 solid;font-weight:bold;max-width:250px;display: block;margin:auto;"
                                     class="pb-3 fs-4 mb-3 mt-5 text-center">Klik Untuk
                                     Cek Paket<br> NEX Parabola</div>
-                                <div class="me-3 width-slider-packet" style="max-width:320px;display: block;margin:auto"
+                                <div class="w-100" style="max-width:300px;display: block;margin:auto"
                                     v-for="(packet, idx) in listPacket">
                                     <div class="shadow-product mb-3 w-100 product-box bg-white">
                                         <img :src="packet.image" />
