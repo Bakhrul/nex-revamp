@@ -29,10 +29,9 @@
                 <div class="w-100" style="overflow: auto;">
                     <div class="news-group d-flex flex-wrap justify-content-center">
 
-                        <nuxt-link :to="'/news?id=' + context.id" style="cursor:pointer" class="news-filter me-3 mb-3"
-                            v-for="context in listCategory"
-                            @click="selected = context.id;currentPage = 1; totalData = 0;getNews();"
-                            :class="selected == context.id ? 'active' : ''">
+                        <nuxt-link :to="'/nexnews/' + context.slug" style="cursor:pointer" class="news-filter me-3 mb-3"
+                            v-for="context in listCategory"                            
+                            :class="selected == context.slug ? 'active' : ''">
                             {{context.category}}</nuxt-link>
                     </div>
                 </div>
@@ -55,7 +54,7 @@
                                     class="fw-bold fs-5">{{a.title}}</div>
                             </div>
                             <div class="p-3 d-flex justify-content-center footer" style="border-top:1px black solid">
-                                <nuxt-link :to="'/news/' + a.slug" class="w-100 text-center fw-bold"
+                                <nuxt-link :to="`/nexnews/${a.slugcategory}/${a.slug}`" class="w-100 text-center fw-bold"
                                     style="border-radius:10px;color:#2C69A7 !important">Baca Sekarang <i
                                         style="color:#2C69A7 !important;" class="bi bi-chevron-right"></i></nuxt-link>
                             </div>
@@ -86,8 +85,7 @@
     import backgroundImageDesktop from "~/assets/header/news-desktop.png"
     import logoNex from "~/assets/logo-nex-2.png";
     import Navbar from "~/components/Navbar.vue"
-    import Footer from "~/components/Footer.vue"
-    const route = useRoute()
+    import Footer from "~/components/Footer.vue"    
     definePageMeta({
         key: route => route.fullPath
     })
@@ -117,12 +115,7 @@
             listCategory.value = res.data.data.list;
 
             if (listCategory.value.length) {
-                if (route.query.id) {
-                    selected.value = route.query.id;
-                } else {
-                    selected.value = listCategory.value[0].id;
-                }
-
+                selected.value = listCategory.value[0].slug;
             }
 
             return res.data.data;
@@ -142,7 +135,7 @@
             params: {
                 page: currentPage.value,
                 length: perPage.value,
-                categoryid: selected.value
+                slug: selected.value
             },
             headers: {
                 'WEBCORP-APIKEY': config.public.API_KEY

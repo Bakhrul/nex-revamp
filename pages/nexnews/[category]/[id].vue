@@ -102,7 +102,7 @@
                                             </div>
                                             <div class="p-3 d-flex justify-content-center footer"
                                                 style="border-top:1px black solid">
-                                                <nuxt-link :to="'/news/' + a.slug" class="w-100 text-center fw-bold"
+                                                <nuxt-link :to="`/nexnews/${a.slugcategory}/${a.slug}`" class="w-100 text-center fw-bold"
                                                     style="border-radius:10px;color:#2C69A7 !important">Baca Sekarang <i
                                                         style="color:#2C69A7 !important;"
                                                         class="bi bi-chevron-right"></i></nuxt-link>

@@ -131,7 +131,7 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li v-for="context in listCategory">
-                                <nuxt-link class="dropdown-item" :to="`/news?id=${context.id}`">{{context.category}}
+                                <nuxt-link class="dropdown-item" :to="`/nexnews/${context.slug}`">{{context.category}}
                                 </nuxt-link>
                             </li>
                         </ul>
