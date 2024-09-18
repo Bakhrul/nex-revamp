@@ -141,7 +141,7 @@
     
     const currentPage = ref(1);
     const totalData = ref(0);
-    const perPage = ref(6)
+    const perPage = ref(15)
 
     const {
         data
@@ -171,8 +171,8 @@
             params: {
                 cityid: selectCityId.value,
                 search: search.value,
-                length:currentPage.value,
-                page: perPage.value,
+                length:perPage.value,
+                page: currentPage.value,
             },
             headers: {
                 'WEBCORP-APIKEY': config.public.API_KEY

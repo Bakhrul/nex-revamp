@@ -18,7 +18,7 @@
                             <nuxt-link to="/about/tentang-kami" class="footer-link">Tentang kami</nuxt-link>
                         </li>
                         <li>
-                            <nuxt-link to="/news" class="footer-link">NexNews</nuxt-link>
+                            <nuxt-link to="/nexnews" class="footer-link">NexNews</nuxt-link>
                         </li>                        
                         <li>
                             <nuxt-link to="/about/term-of-use" class="footer-link">Term Of Use</nuxt-link>
