@@ -114,7 +114,7 @@
                                     Lazada</a>
                             </li>
                             <li>
-                                <a target="_blank" class="dropdown-item" href="https://vt.tiktok.com/ZS2UYDxwK/?page=Mall"> Tiktok
+                                <a target="_blank" class="dropdown-item" href="https://www.tiktok.com/@nexofficialtv"> Tiktok
                                     Shop</a>
                             </li>
                             <li>

@@ -777,6 +777,7 @@ button:disabled {
 
 .receiver-fitur-border-top {
     border-top: 3px black solid;
+    padding-bottom: 10px;
 }
 
 @media(max-width:991px) {
@@ -810,13 +811,14 @@ button:disabled {
     }
 
     .receiver-group {
-        padding: 10px 5px;
-        margin-bottom: 15px !important;
+        padding:0 5px;
+        
     }
 
     .receiver-fitur .text {
         word-wrap: break-word;
         text-align: center;
+        font-size: 7px;
     }
 
     .black-on-mobile {
