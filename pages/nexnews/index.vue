@@ -30,15 +30,18 @@
                     <div class="news-group d-flex flex-wrap justify-content-center">
 
                         <nuxt-link :to="'/nexnews/' + context.slug" style="cursor:pointer" class="news-filter me-3 mb-3"
-                            v-for="context in listCategory"                            
-                            :class="selected == context.slug ? 'active' : ''">
+                            v-for="context in listCategory" :class="selected == context.slug ? 'active' : ''">
                             {{context.category}}</nuxt-link>
                     </div>
                 </div>
             </div>
         </section>
-        <section style="background: #f2f2f2;" class="pt-5">
+        <section style="background: #f2f2f2;" class="pt-5" id="news-section">
             <div class="container">
+                <div class="d-flex justify-content-center mt-3 mb-3" v-if="pageStatus == 'data-load'">
+                    <div class="spinner-border text-primary" style="width:50px;height:50px;" role="status">
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-lg-4 mb-5" v-for="a in listNews">
                         <div class="shadow-product w-100 product-box bg-white">
@@ -54,7 +57,8 @@
                                     class="fw-bold fs-5">{{a.title}}</div>
                             </div>
                             <div class="p-3 d-flex justify-content-center footer" style="border-top:1px black solid">
-                                <nuxt-link :to="`/nexnews/${a.slugcategory}/${a.slug}`" class="w-100 text-center fw-bold"
+                                <nuxt-link :to="`/nexnews/${a.slugcategory}/${a.slug}`"
+                                    class="w-100 text-center fw-bold"
                                     style="border-radius:10px;color:#2C69A7 !important">Baca Sekarang <i
                                         style="color:#2C69A7 !important;" class="bi bi-chevron-right"></i></nuxt-link>
                             </div>
@@ -62,17 +66,29 @@
                     </div>
                 </div>
 
-                <div class="d-flex justify-content-center align-items-center pb-5 pagination">
-                    <button @click="changePage(currentPage - 1)" :disabled="currentPage <= 1 || totalData == 0"><i
-                            class="bi bi-chevron-left" style="font-size:32px;color:#00529C !important"></i></button>
-                    <div class="d-flex flex-wrap justify-content-center align-items-center">
-                        <button @click="changePage(page.name)" v-for="page in listPage()" :key="page.name"
-                            class="mx-2 mb-3" style="width:18px;height:18px;border-radius: 100px;"
-                            :style="page.name == currentPage ? 'background:#00529C !important;' : 'background:#D5E0E9 !important;'"></button>
-                    </div>
-                    <button @click="changePage(currentPage + 1)"
-                        :disabled="currentPage >= totalPage() || totalData == 0"><i class="bi bi-chevron-right"
-                            style="font-size:32px;color:#00529C !important"></i></button>
+                <div class="w-100 d-flex justify-content-center" v-if="listPage().length">
+                    <ul class="custom-vue-datatable-pagination">
+                        <li>
+                            <button type="button" class="btn-prev-next-datatable" @click="changePage(currentPage - 1)"
+                                :disabled="currentPage <= 1">
+                                <i class="bi bi-chevron-left"></i>
+                            </button>
+                        </li>
+
+                        <li v-for="page in listPage()" :key="page.name">
+                            <button type="button" :class="currentPage == page.name ? 'active' : ''"
+                                @click="changePage(page.name)" :disabled="currentPage == page.name">
+                                {{ page.name }}
+                            </button>
+                        </li>
+
+                        <li>
+                            <button type="button" class="btn-prev-next-datatable" @click="changePage(currentPage + 1)"
+                                :disabled="currentPage >= totalPage()">
+                                <i class="bi bi-chevron-right"></i>
+                            </button>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -85,7 +101,8 @@
     import backgroundImageDesktop from "~/assets/header/news-desktop.png"
     import logoNex from "~/assets/logo-nex-2.png";
     import Navbar from "~/components/Navbar.vue"
-    import Footer from "~/components/Footer.vue"    
+    import Footer from "~/components/Footer.vue"
+    const route = useRoute()
     definePageMeta({
         key: route => route.fullPath
     })
@@ -101,6 +118,8 @@
     const currentPage = ref(1);
     const totalData = ref(0);
     const perPage = ref(3)
+
+    const pageStatus = ref('');
     const {
         data
     } = await getCategory()
@@ -131,6 +150,7 @@
 
     async function getNews() {
         listNews.value = [];
+        pageStatus.value = 'data-load'
         let res = await axios.get(config.public.API_URL + 'news/news', {
             params: {
                 page: currentPage.value,
@@ -141,6 +161,7 @@
                 'WEBCORP-APIKEY': config.public.API_KEY
             }
         })
+         pageStatus.value = 'standby'
         if (res.status == 200) {
             listNews.value = res.data.data.list;
             totalData.value = Number(res.data.data.total_data)
@@ -209,7 +230,8 @@
 
         const range = [];
 
-        for (let x = 0; x <= totalPage(); x++) {
+
+        for (let x = startPage(); x <= Math.min(startPage() + 5 - 1, totalPage()); x++) {
             if (x > 0) {
                 range.push({
                     name: x,
@@ -218,40 +240,32 @@
             }
         }
 
-        // for (let x = startPage(); x <= Math.min(startPage() + 5 - 1, totalPage()); x++) {
-        //     if (x > 0) {
-        //         range.push({
-        //             name: x,
-        //             isDisabled: x === Number(currentPage.value)
-        //         });
-        //     }
-        // }
 
+        if (range.length == 3 && (Number(currentPage.value) + 1) == totalPage()) {
+            if (range[0].name - 1 > 0) {
+                range.unshift({
+                    name: range[0].name - 1,
+                    isDisabled: false,
+                })
+            }
+        }
 
-        // if (range.length == 3 && (Number(currentPage.value) + 1) == totalPage()) {
-        //     if (range[0].name - 1 > 0) {
-        //         range.unshift({
-        //             name: range[0].name - 1,
-        //             isDisabled: false,
-        //         })
-        //     }
-        // }
-
-        // if (range.length == 4 && (Number(currentPage.value) + 1) == totalPage() || (Number(currentPage.value) + 2) ==
-        //     totalPage()) {
-        //     if (range[0].name - 1 > 0) {
-        //         range.unshift({
-        //             name: range[0].name - 1,
-        //             isDisabled: false,
-        //         })
-        //     }
-        // }
+        if (range.length == 4 && (Number(currentPage.value) + 1) == totalPage() || (Number(currentPage.value) + 2) ==
+            totalPage()) {
+            if (range[0].name - 1 > 0) {
+                range.unshift({
+                    name: range[0].name - 1,
+                    isDisabled: false,
+                })
+            }
+        }
 
         return range;
     }
 
     function changePage(page) {
         currentPage.value = page
+        document.getElementById("news-section").scrollIntoView();
         getNews()
     }
 </script>

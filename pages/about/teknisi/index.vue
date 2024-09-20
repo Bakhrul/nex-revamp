@@ -19,18 +19,19 @@
                 <div class="d-flex align-items-center" style="position:absolute;left:0;top:0;width:100%;height:100%;">
                     <div class="container" style="padding:15px 0">
                         <h1 class="text-white fw-bold">Teknisi</h1>
-                    <div class="text-white">Layanan Perbaikan Nex Hadir di Kotamu!</div>
+                        <div class="text-white">Layanan Perbaikan Nex Hadir di Kotamu!</div>
                     </div>
                 </div>
             </div>
-        </div>           
+        </div>
         <section class="mt-3">
 
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 mb-3">
                         <div class="dropdown">
-                            <button class="btn btn-secondary btn-dropdown-city dropdown-toggle text-left" @click="searchCity = ''"
+                            <button class="btn btn-secondary btn-dropdown-city dropdown-toggle text-left"
+                                @click="searchCity = ''"
                                 style="padding: 10px 15px;color:#00539B !important;border:1px #00539B solid;background:#fff"
                                 type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <span>
@@ -39,7 +40,8 @@
                                 </span>
                             </button>
                             <ul class="dropdown-menu dropdown-menu-city" style="max-height:300px;overflow: auto;">
-                                <li style="padding:15px"><input type="text" class="form-control"  v-model="searchCity" placeholder="Search"></li>
+                                <li style="padding:15px"><input type="text" class="form-control" v-model="searchCity"
+                                        placeholder="Search"></li>
                                 <li><a class="dropdown-item"
                                         style="color:#00539B !important;font-weight:400;font-size: 15px;"
                                         href="javascript:void(0)"
@@ -63,17 +65,24 @@
                                     fill="#00539B" />
                             </svg>&ensp;
 
-                            <input class="form-control" type="search" style="outline:none !important;border:0 !important;"
-                                v-model="search" @keyup.enter="selectCity = 'Semua'; selectCityId = '0';currentPage = 1; totalData = 0;getList()" placeholder="Search" aria-label="Search">
+                            <input class="form-control" type="search"
+                                style="outline:none !important;border:0 !important;" v-model="search"
+                                @keyup.enter="selectCity = 'Semua'; selectCityId = '0';currentPage = 1; totalData = 0;getList()"
+                                placeholder="Search" aria-label="Search">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="mt-3 bg-section pt-3">
+            <div class="mt-3 bg-section pt-3" id="teknisi-section">
                 <div class="container">
+                    <div class="d-flex justify-content-center mt-3 mb-3" v-if="pageStatus == 'data-load'">
+                    <div class="spinner-border text-primary" style="width:50px;height:50px;" role="status">
+                    </div>
+                </div>
                     <div class="row">
                         <div class="col-lg-4 mt-3 mb-3" v-for="a in result">
-                            <div class="card" style="box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px rgba(0, 0, 0, 0.3);height:100%;">
+                            <div class="card"
+                                style="box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px rgba(0, 0, 0, 0.3);height:100%;">
                                 <div class="card-body">
                                     <div class="fs-5 c-primary fw-bolder pb-2" style="border-bottom: 2px #ddd solid;">
                                         {{ a.dealer }}</div>
@@ -87,10 +96,13 @@
                                     </a>
                                     <div class="d-flex align-items-center mt-3">
                                         <div class="me-2">
-                                            
-<svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M23.7046 19.6634L20.5889 19.3077C19.8406 19.2218 19.1046 19.4794 18.5772 20.0069L16.3201 22.2639C12.8486 20.4975 10.0028 17.6639 8.23636 14.1802L10.5057 11.9109C11.0332 11.3834 11.2908 10.6474 11.2049 9.89912L10.8492 6.80792C10.702 5.56899 9.6593 4.63672 8.4081 4.63672H6.28596C4.89983 4.63672 3.74676 5.78979 3.83263 7.17592C4.48276 17.6517 12.8609 26.0175 23.3244 26.6677C24.7105 26.7535 25.8636 25.6005 25.8636 24.2143V22.0922C25.8758 20.8533 24.9436 19.8106 23.7046 19.6634Z" fill="black"/>
-</svg>
+
+                                            <svg width="30" height="31" viewBox="0 0 30 31" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M23.7046 19.6634L20.5889 19.3077C19.8406 19.2218 19.1046 19.4794 18.5772 20.0069L16.3201 22.2639C12.8486 20.4975 10.0028 17.6639 8.23636 14.1802L10.5057 11.9109C11.0332 11.3834 11.2908 10.6474 11.2049 9.89912L10.8492 6.80792C10.702 5.56899 9.6593 4.63672 8.4081 4.63672H6.28596C4.89983 4.63672 3.74676 5.78979 3.83263 7.17592C4.48276 17.6517 12.8609 26.0175 23.3244 26.6677C24.7105 26.7535 25.8636 25.6005 25.8636 24.2143V22.0922C25.8758 20.8533 24.9436 19.8106 23.7046 19.6634Z"
+                                                    fill="black" />
+                                            </svg>
 
 
                                         </div>
@@ -100,18 +112,30 @@
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex mt-5 justify-content-center align-items-center pb-5 pagination">
-                    <button class="mb-3" @click="changePage(currentPage - 1)" :disabled="currentPage <= 1 || totalData == 0"><i
-                            class="bi bi-chevron-left" style="font-size:32px;color:#00529C !important"></i></button>
-                    <div class="d-flex flex-wrap justify-content-center align-items-center">
-                        <button @click="changePage(page.name)" v-for="page in listPage()" :key="page.name"
-                            class="mx-2 mb-3" style="width:18px;height:18px;border-radius: 100px;"
-                            :style="page.name == currentPage ? 'background:#00529C !important;' : 'background:#D5E0E9 !important;'"></button>
+                    <div class="w-100 d-flex justify-content-center mt-5" v-if="listPage().length">
+                        <ul class="custom-vue-datatable-pagination">
+                            <li>
+                                <button type="button" class="btn-prev-next-datatable"
+                                    @click="changePage(currentPage - 1)" :disabled="currentPage <= 1">
+                                    <i class="bi bi-chevron-left"></i>
+                                </button>
+                            </li>
+
+                            <li v-for="page in listPage()" :key="page.name">
+                                <button type="button" :class="currentPage == page.name ? 'active' : ''"
+                                    @click="changePage(page.name)" :disabled="currentPage == page.name">
+                                    {{ page.name }}
+                                </button>
+                            </li>
+
+                            <li>
+                                <button type="button" class="btn-prev-next-datatable"
+                                    @click="changePage(currentPage + 1)" :disabled="currentPage >= totalPage()">
+                                    <i class="bi bi-chevron-right"></i>
+                                </button>
+                            </li>
+                        </ul>
                     </div>
-                    <button class="mb-3" @click="changePage(currentPage + 1)"
-                        :disabled="currentPage >= totalPage() || totalData == 0"><i class="bi bi-chevron-right"
-                            style="font-size:32px;color:#00529C !important"></i></button>
-                </div>
                 </div>
             </div>
         </section>
@@ -138,10 +162,12 @@
 
     const result = ref([]);
 
-    
+
     const currentPage = ref(1);
     const totalData = ref(0);
     const perPage = ref(15)
+
+    const pageStatus = ref('');
 
     const {
         data
@@ -167,17 +193,19 @@
 
     async function getList() {
         result.value = [];
+         pageStatus.value = 'data-load'
         let res = await axios.get(config.public.API_URL + 'about/teknisi', {
             params: {
                 cityid: selectCityId.value,
                 search: search.value,
-                length:perPage.value,
+                length: perPage.value,
                 page: currentPage.value,
             },
             headers: {
                 'WEBCORP-APIKEY': config.public.API_KEY
             }
         })
+         pageStatus.value = 'standby'
         if (res.status == 200) {
             result.value = res.data.data.list;
             totalData.value = Number(res.data.data.total_data)
@@ -185,10 +213,10 @@
         }
     }
 
-    function getQueryCity(){
-        if(searchCity.value){
+    function getQueryCity() {
+        if (searchCity.value) {
             return listCity.value.filter((e) => e.city.toLowerCase().includes(searchCity.value.toLowerCase()))
-        }else{
+        } else {
             return listCity.value
         }
     }
@@ -201,7 +229,7 @@
             {
                 name: 'ogTitle',
                 content: 'Teknisi | Nex Parabola'
-            },             
+            },
             {
                 name: 'description',
                 content: 'Layanan TV Satelit Parabola berlangganan Indonesia. Tonton Premium Live Football dan hiburan tanpa hambatan dengan resolusi HD hingga 4K.'
@@ -231,7 +259,7 @@
                 content: '@nexparabola_tv'
             },
         ],
-    }) 
+    })
 
     function totalPage() {
         return Math.ceil(Number(totalData.value) / Number(perPage.value));
@@ -251,9 +279,9 @@
 
     function listPage() {
 
-        const range = [];
+        const range = [];       
 
-        for (let x = 0; x <= totalPage(); x++) {
+        for (let x = startPage(); x <= Math.min(startPage() + 5 - 1, totalPage()); x++) {
             if (x > 0) {
                 range.push({
                     name: x,
@@ -262,46 +290,38 @@
             }
         }
 
-        // for (let x = startPage(); x <= Math.min(startPage() + 5 - 1, totalPage()); x++) {
-        //     if (x > 0) {
-        //         range.push({
-        //             name: x,
-        //             isDisabled: x === Number(currentPage.value)
-        //         });
-        //     }
-        // }
 
+        if (range.length == 3 && (Number(currentPage.value) + 1) == totalPage()) {
+            if (range[0].name - 1 > 0) {
+                range.unshift({
+                    name: range[0].name - 1,
+                    isDisabled: false,
+                })
+            }
+        }
 
-        // if (range.length == 3 && (Number(currentPage.value) + 1) == totalPage()) {
-        //     if (range[0].name - 1 > 0) {
-        //         range.unshift({
-        //             name: range[0].name - 1,
-        //             isDisabled: false,
-        //         })
-        //     }
-        // }
-
-        // if (range.length == 4 && (Number(currentPage.value) + 1) == totalPage() || (Number(currentPage.value) + 2) ==
-        //     totalPage()) {
-        //     if (range[0].name - 1 > 0) {
-        //         range.unshift({
-        //             name: range[0].name - 1,
-        //             isDisabled: false,
-        //         })
-        //     }
-        // }
+        if (range.length == 4 && (Number(currentPage.value) + 1) == totalPage() || (Number(currentPage.value) + 2) ==
+            totalPage()) {
+            if (range[0].name - 1 > 0) {
+                range.unshift({
+                    name: range[0].name - 1,
+                    isDisabled: false,
+                })
+            }
+        }
 
         return range;
     }
 
     function changePage(page) {
         currentPage.value = page
+        result.value = []
+        document.getElementById("teknisi-section").scrollIntoView();
         getList()
     }
 </script>
 
 <style scoped>
-
     .link-dealer {
         color: black !important;
         text-decoration: none !important;
@@ -316,13 +336,14 @@
         color: blue !important
     }
 
-    @media(max-width:991px){
-        .btn-dropdown-city{
+    @media(max-width:991px) {
+        .btn-dropdown-city {
             width: 100% !important;
             max-width: 100% !important;
         }
-        .dropdown-menu-city{
-            width:100%;
+
+        .dropdown-menu-city {
+            width: 100%;
         }
     }
 
