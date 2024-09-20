@@ -841,25 +841,25 @@ button:disabled {
     flex-wrap: wrap;
     list-style-type: none;
     padding-bottom: 15px;
+    padding-left: 0 !important;
   }
-
    .custom-vue-datatable-pagination button {
     padding: 5px;
     background-color: #fff !important;
     border: 0 !important;
-    width: 40px;
+    width: 32px;
     display: flex;
-    font-size:15px;
+    font-size:12px;
     align-items: center;
     justify-content: center;
     margin: 5px;
-    height: 40px;
+    height: 32px;
   }
 
    .custom-vue-datatable-pagination button.btn-prev-next-datatable {
     background: #fff !important;
     border-radius: 8px !important;
-    font-size: 15px;
+    font-size: 12px;
     color: black !important;
   }
 
