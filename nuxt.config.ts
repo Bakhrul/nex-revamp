@@ -43,7 +43,11 @@ export default defineNuxtConfig({
         {
           rel: 'stylesheet',
           href:'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css'
-        }
+        },
+        {
+          rel: 'stylesheet',
+          href:'/main.css?v=1.0.0'
+        },
       ],
       script: [{
           src: "https://code.jquery.com/jquery-3.6.0.min.js",          
@@ -56,8 +60,7 @@ export default defineNuxtConfig({
         },    
       ],
     },
-  },
-  css: ['~/assets/main.css'],
+  },  
   modules: [
     'vue3-carousel-nuxt'
   ],

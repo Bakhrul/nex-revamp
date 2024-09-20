@@ -40,7 +40,8 @@
                                 <div class="text-center pt-2 fs-6 fw-bold c-primary black-on-mobile">Tipe Biru</div>
                                 <div class="text-center pt-2">Lebih canggih tampilan baru</div>
                                 <div class="d-flex justify-content-center text-center pt-3 pb-3">
-                                    <a href="javascript:void(0)" @click="openReceiver(1, link1, linkLazada1, linkTiktok1)"
+                                    <a href="javascript:void(0)"
+                                        @click="openReceiver(1, link1, linkLazada1, linkTiktok1)"
                                         style="color:black !important;font-weight:600;"><span
                                             style="border-bottom:1px #ddd solid">BELI SEKARANG</span>&ensp;<i
                                             class="bi bi-arrow-right c-primary-custom"></i></a>
@@ -68,6 +69,8 @@
                                             <div class="text">H.264/SD/HD
                                                 Video</div>
                                         </div>
+                                    </div>
+                                    <div class="receiver-group">
                                         <div class="receiver-fitur">
                                             <img src="~/assets/static-content/receiver/tv-icon.svg">
                                             <div class="text">TV Icon
@@ -90,7 +93,7 @@
                                             <img src="~/assets/static-content/receiver/8mb.svg">
                                             <div class="text">RAM</div>
                                         </div>
-                                    </div>                                   
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -105,7 +108,8 @@
                                 <div class="text-center pt-2 fs-6 fw-bold c-primary black-on-mobile">Tipe Kuning</div>
                                 <div class="text-center pt-2">Lebih canggih tampilan baru</div>
                                 <div class="d-flex justify-content-center text-center pt-3 pb-3">
-                                    <a href="javascript:void(0)" @click="openReceiver(2, link2, linkLazada2, linkTiktok2)"
+                                    <a href="javascript:void(0)"
+                                        @click="openReceiver(2, link2, linkLazada2, linkTiktok2)"
                                         style="color:black !important;font-weight:600;"><span
                                             style="border-bottom:1px #ddd solid">BELI SEKARANG</span>&ensp;<i
                                             class="bi bi-arrow-right c-primary-custom"></i></a>
@@ -127,7 +131,9 @@
                                         <div class="receiver-fitur">
                                             <img src="~/assets/static-content/receiver/play.svg">
                                             <div class="text">H.264/MPEG-2/MPEG-4 Video</div>
-                                        </div>                                        
+                                        </div>
+                                    </div>
+                                    <div class="receiver-group">
                                         <div class="receiver-fitur">
                                             <img src="~/assets/static-content/receiver/wifi.svg">
                                             <div class="text">WIFI Dongle</div>
@@ -138,10 +144,10 @@
                                         </div>
                                         <div class="receiver-fitur">
                                             <img src="~/assets/static-content/receiver/usb.svg">
-                                            <div class="text">2x back 
+                                            <div class="text">2x back
                                                 USB</div>
-                                        </div>    
-                                    </div>                                    
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -156,7 +162,8 @@
                                 <div class="text-center pt-2 fs-6 fw-bold c-primary black-on-mobile">Tipe Merah</div>
                                 <div class="text-center pt-2">Lebih canggih tampilan baru</div>
                                 <div class="d-flex justify-content-center text-center pt-3 pb-3">
-                                    <a href="javascript:void(0)" @click="openReceiver(3, link3, linkLazada3, linkTiktok3)"
+                                    <a href="javascript:void(0)"
+                                        @click="openReceiver(3, link3, linkLazada3, linkTiktok3)"
                                         style="color:black !important;font-weight:600;"><span
                                             style="border-bottom:1px #ddd solid">BELI SEKARANG</span>&ensp;<i
                                             class="bi bi-arrow-right c-primary-custom"></i></a>
@@ -178,7 +185,9 @@
                                         <div class="receiver-fitur">
                                             <img src="~/assets/static-content/receiver/play.svg">
                                             <div class="text">H.264/MPEG-2/MPEG-4 Video</div>
-                                        </div>  
+                                        </div>                                      
+                                    </div>
+                                    <div class="receiver-group">
                                         <div class="receiver-fitur">
                                             <img src="~/assets/static-content/receiver/wifi.svg">
                                             <div class="text">WIFI Dongle</div>
@@ -189,10 +198,10 @@
                                         </div>
                                         <div class="receiver-fitur">
                                             <img src="~/assets/static-content/receiver/usb.svg">
-                                            <div class="text">2x back 
+                                            <div class="text">2x back
                                                 USB</div>
-                                        </div>                                             
-                                    </div>                                   
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -207,7 +216,8 @@
                                 <div class="text-center pt-2 fs-6 fw-bold c-primary black-on-mobile">Combo Kuning</div>
                                 <div class="text-center pt-2">Lebih canggih tampilan baru</div>
                                 <div class="d-flex justify-content-center text-center pt-3 pb-3">
-                                    <a href="javascript:void(0)" @click="openReceiver(4, link4, linkLazada4, linkTiktok4)"
+                                    <a href="javascript:void(0)"
+                                        @click="openReceiver(4, link4, linkLazada4, linkTiktok4)"
                                         style="color:black !important;font-weight:600;"><span
                                             style="border-bottom:1px #ddd solid">BELI SEKARANG</span>&ensp;<i
                                             class="bi bi-arrow-right c-primary-custom"></i></a>
@@ -233,7 +243,9 @@
                                         <div class="receiver-fitur">
                                             <img src="~/assets/static-content/receiver/play.svg">
                                             <div class="text">H.265 HEVC/H.264/MPEG-5/MPEG-4 Video</div>
-                                        </div>  
+                                        </div>                                      
+                                    </div>
+                                    <div class="receiver-group">
                                         <div class="receiver-fitur">
                                             <img src="~/assets/static-content/receiver/play.svg">
                                             <div class="text">MPEG-5 Audio</div>
@@ -245,12 +257,12 @@
                                         <div class="receiver-fitur">
                                             <img src="~/assets/static-content/receiver/512mb.svg">
                                             <div class="text">Memory</div>
-                                        </div>                                                                               
+                                        </div>
                                         <div class="receiver-fitur">
                                             <img src="~/assets/static-content/receiver/8mb.svg">
                                             <div class="text">Flash</div>
-                                        </div>                                          
-                                    </div>                                   
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -265,7 +277,8 @@
                                 <div class="text-center pt-2 fs-6 fw-bold c-primary black-on-mobile">Combo Merah</div>
                                 <div class="text-center pt-2">Lebih canggih tampilan baru</div>
                                 <div class="d-flex justify-content-center text-center pt-3 pb-3">
-                                    <a href="javascript:void(0)" @click="openReceiver(5, link5, linkLazada5, linkTiktok5)"
+                                    <a href="javascript:void(0)"
+                                        @click="openReceiver(5, link5, linkLazada5, linkTiktok5)"
                                         style="color:black !important;font-weight:600;"><span
                                             style="border-bottom:1px #ddd solid">BELI SEKARANG</span>&ensp;<i
                                             class="bi bi-arrow-right c-primary-custom"></i></a>
@@ -284,22 +297,24 @@
                                         <div class="receiver-fitur">
                                             <img src="~/assets/static-content/receiver/ota.svg">
                                             <div class="text">OTA Support</div>
-                                        </div>                                                                               
+                                        </div>
                                         <div class="receiver-fitur">
                                             <img src="~/assets/static-content/receiver/play.svg">
                                             <div class="text">H.264/MPEG-4 HD/SD Video</div>
-                                        </div>                                                                               
+                                        </div>
                                         <div class="receiver-fitur">
                                             <img src="~/assets/static-content/receiver/play.svg">
                                             <div class="text">MPEG-1 Audio</div>
-                                        </div>                                                                               
+                                        </div>
                                         <div class="receiver-fitur">
                                             <img src="~/assets/static-content/receiver/play.svg">
                                             <div class="text">Mitube/Youtube/IPTV</div>
-                                        </div>  
+                                        </div>                                       
+                                    </div>
+                                    <div class="receiver-group">
                                         <div class="receiver-fitur">
                                             <img src="~/assets/static-content/receiver/usb.svg">
-                                            <div class="text">2x Port USB Depan 
+                                            <div class="text">2x Port USB Depan
                                                 Belakang</div>
                                         </div>
                                         <div class="receiver-fitur">
@@ -309,16 +324,16 @@
                                         <div class="receiver-fitur">
                                             <img src="~/assets/static-content/receiver/tv-icon.svg">
                                             <div class="text">Net Update Software</div>
-                                        </div>                                                                               
+                                        </div>
                                         <div class="receiver-fitur">
                                             <img src="~/assets/static-content/receiver/512mb.svg">
                                             <div class="text">Memory</div>
-                                        </div>                                                                               
+                                        </div>
                                         <div class="receiver-fitur">
                                             <img src="~/assets/static-content/receiver/8mb.svg">
                                             <div class="text">Flash</div>
-                                        </div>                                                                                                                                                                                                        
-                                    </div>                                  
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -332,7 +347,8 @@
                                 <div class="text-center pt-4 fs-6 fw-bold c-primary black-on-mobile">NexVidio</div>
                                 <div class="text-center pt-4">Lebih canggih tampilan baru</div>
                                 <div class="d-flex justify-content-center text-center pt-4 pb-3">
-                                    <a href="javascript:void(0)" @click="openReceiver(6, link6, linkLazada6, linkTiktok6)"
+                                    <a href="javascript:void(0)"
+                                        @click="openReceiver(6, link6, linkLazada6, linkTiktok6)"
                                         style="color:black !important;font-weight:600;"><span
                                             style="border-bottom:1px #ddd solid">BELI SEKARANG</span>&ensp;<i
                                             class="bi bi-arrow-right c-primary-custom"></i></a>
@@ -346,15 +362,15 @@
                                         <div class="receiver-fitur">
                                             <img src="~/assets/static-content/receiver/play.svg">
                                             <div class="text">H.265 HEVC Video | 4K Resolution</div>
-                                        </div>                                                                                                              
+                                        </div>
                                         <div class="receiver-fitur">
                                             <img src="~/assets/static-content/receiver/16gb.svg">
                                             <div class="text">Memory</div>
-                                        </div>                                                                               
+                                        </div>
                                         <div class="receiver-fitur">
                                             <img src="~/assets/static-content/receiver/2gb.svg">
                                             <div class="text">RAM</div>
-                                        </div>                                                                                                                                                                                                  
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -516,7 +532,7 @@
     import receiver3 from "~/assets/static-content/receiver/3.png";
     import receiver4 from "~/assets/static-content/receiver/4.png";
     import receiver5 from "~/assets/static-content/receiver/5.png";
-    import receiver6 from "~/assets/static-content/receiver/6.png";    
+    import receiver6 from "~/assets/static-content/receiver/6.png";
 
     const link1 = ref(
         'https://shopee.co.id/Nex-Parabola-Type-Biru-i.1311323005.27256686729?sp_atk=49f9c6de-7d91-4389-9246-f7b010c9e65d&xptdk=49f9c6de-7d91-4389-9246-f7b010c9e65d'

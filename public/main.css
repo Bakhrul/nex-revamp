@@ -757,24 +757,22 @@ button:disabled {
 
 .receiver-group {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: center;    
 }
 
 .receiver-fitur {
-    margin: 2px 3px;
-    width: 50px;
+    padding: 2px 3px;
+    width: 16.6%;
 }
 
 .receiver-fitur .text {
-    font-size: 10px;
+    font-size: 9px;
     text-align: center;
 }
 
 .receiver-fitur img {
-    width: 50px;
-    border-radius: 0 !important;
-    height: 50px;
+    width: 100%;
+    border-radius: 0 !important;    
 }
 
 .receiver-fitur-border-top {

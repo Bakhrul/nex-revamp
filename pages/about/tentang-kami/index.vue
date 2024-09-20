@@ -3,7 +3,7 @@
         <Navbar></Navbar>
         <div class="show-on-desktop">
             <div class="d-flex align-items-center p-5"
-                :style="`background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('${backgroundImageDesktop}');background-size:cover;width:100%;min-height:250px`">
+                :style="`background:linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),url('${backgroundImageDesktop}');background-size:cover;width:100%;min-height:250px`">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-6">
