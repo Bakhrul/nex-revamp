@@ -102,23 +102,24 @@
                             <i class="icon bi bi-chevron-down icon-dropdown"></i>
                         </a>
                         <ul class="dropdown-menu">
-                            <!-- <li>
-                                <nuxt-link class="dropdown-item" to="/receiver">Tokopedia</nuxt-link>
+                            <li v-if="tokopedia">
+                                <a target="_blank" :href="tokopedia" class="dropdown-item">
+                                    Tokopedia</a>
                             </li>
-                            <li>
-                                <nuxt-link class="dropdown-item" to="/paket">
-                                    Bukalapak</nuxt-link>
-                            </li> -->
-                            <li>
-                                <a target="_blank" href="https://www.lazada.co.id/shop/nex-parabola-tv/" class="dropdown-item">
+                            <li v-if="bukalapak">
+                                <a target="_blank" :href="bukalapak" class="dropdown-item">
+                                    Bukalapak</a>
+                            </li>
+                            <li v-if="lazada">
+                                <a target="_blank" :href="lazada" class="dropdown-item">
                                     Lazada</a>
                             </li>
-                            <li>
-                                <a target="_blank" class="dropdown-item" href="https://www.tiktok.com/@nexofficialtv"> Tiktok
+                            <li v-if="tiktok">
+                                <a target="_blank" class="dropdown-item" :href="tiktok"> Tiktok
                                     Shop</a>
                             </li>
-                            <li>
-                                <a target="_blank" href="https://shopee.co.id/nexparabola.official" class="dropdown-item">
+                            <li v-if="shopee">
+                                <a target="_blank" :href="shopee" class="dropdown-item">
                                     Shopee</a>
                             </li>
                         </ul>
@@ -178,21 +179,33 @@
 
     const listCategory = ref([])
 
-    onMounted(() => {
-        getCategory()
+    const tokopedia = ref('');
+    const bukalapak = ref('');
+    const lazada = ref('');
+    const shopee = ref('');
+    const tiktok = ref('');
 
-    });
-    async function getCategory() {
-        let res = await axios.get(config.public.API_URL + 'news/newscategory', {
+    const {
+        data
+    } = await websiteConfig()
+
+    async function websiteConfig() {   
+
+        let resHome = await axios.get(config.public.API_URL + 'home/websiteconfig', {
             headers: {
                 'WEBCORP-APIKEY': config.public.API_KEY
             }
         })
-        if (res.status == 200) {
-            listCategory.value = res.data.data.list;
+        if (resHome.status == 200) {
+            listCategory.value = resHome.data.data.list; 
 
-            return res.data.data;
-        }
+            tokopedia.value =resHome.data.data.tokopedia
+            bukalapak.value =resHome.data.data.bukalapak
+            lazada.value =resHome.data.data.lazada
+            shopee.value =resHome.data.data.shopee
+            tiktok.value =resHome.data.data.tiktok            
+            return true;           
+        }      
     }
 
     onBeforeRouteLeave((to, from, next) => {
@@ -205,11 +218,9 @@
 
     function toggleNav() {
         setTimeout(() => {
-            if ($("#navbarSupportedContent").hasClass('show')) {
-                console.log('show');
+            if ($("#navbarSupportedContent").hasClass('show')) {                
                 showNav.value = true;
-            } else {
-                console.log('hide');
+            } else {                
                 showNav.value = false;
             }
         }, 400);
