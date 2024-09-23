@@ -29,23 +29,23 @@
         </div>
         <section class="py-1 mt-5">
             <div class="container">
-                <div class="title-section">Receiver & Paket Berlangganan</div>
+                <div class="title-section">{{titleHightlight}}</div>
                 <div class="d-flex justify-content-between align-items-center">
                     <div>
 
-                        <div class="subtitle-section mb-3 pt-2">Pilih sesuai dengan kebutuhan kamu</div>
+                        <div class="subtitle-section mb-3 pt-2">{{ subTitleHightlight }}</div>
                     </div>
                 </div>
                 <div class="w-100 show-on-mobile">
                     <div class="slider-paket slider-paket-home">
                         <div class="column-receiver-and-packet me-2">
                             <div class="shadow-product w-100 product-box">
-                                <img src="~/assets/home/receiver.png" style="min-height: unset !important;" />
+                                <img :src="hightlightBannerProduct1" style="min-height: unset !important;" />
                                 <div class="p-3 d-flex flex-column justify-content-center align-items-center"
-                                    style="min-height:120px">
-                                    <div class="fw-bold text-center fs-6">Receiver</div>
-                                    <div class="text-center pt-1">Mulai dari</div>
-                                    <div class="fw-bold text-center fs-5 pt-1">Rp 314.000</div>
+                                    style="min-height:130px">
+                                    <div class="fw-bold text-center fs-6" v-if="hightlightNote1Product1">{{hightlightNote1Product1}}</div>
+                                    <div class="text-center pt-1" v-if="hightlightNote2Product1">{{ hightlightNote2Product1 }}</div>
+                                    <div class="fw-bold text-center fs-5 pt-1" v-if="hightlightNote3Product1">{{hightlightNote3Product1}}</div>
                                 </div>
                                 <div class="p-3 d-flex justify-content-center footer" style="border-top:1px #ddd solid">
                                     <nuxt-link style="color:#00529C;font-weight:500;" to="/receiver">Beli Sekarang <i
@@ -55,29 +55,33 @@
                         </div>
                         <div class="column-receiver-and-packet me-2">
                             <div class="shadow-product w-100 product-box">
-                                <img src="~/assets/home/paket.png" style="min-height: unset !important;" />
+                                <img :src="hightlightBannerProduct2" style="min-height: unset !important;" />
                                 <div class="p-3 d-flex flex-column justify-content-center align-items-center"
-                                    style="min-height:120px">
-                                    <div class="fw-bold text-center fs-6">Paket Berlangganan</div>
-                                    <div class="text-center pt-1">Mulai dari</div>
-                                    <div class="fw-bold text-center fs-5 pt-1">Rp 19.900</div>
+                                    style="min-height:130px">
+                                    <div class="fw-bold text-center fs-6" v-if="hightlightNote1Product2">{{hightlightNote1Product2}}</div>
+                                    <div class="text-center pt-1" v-if="hightlightNote2Product2">{{ hightlightNote2Product2 }}</div>
+                                    <div class="fw-bold text-center fs-5 pt-1" v-if="hightlightNote3Product2">{{hightlightNote3Product2}}</div>
                                 </div>
                                 <div class="p-3 d-flex justify-content-center footer" style="border-top:1px #ddd solid">
-                                    <nuxt-link style="color:#00529C;font-weight:500;" to="/paket">Beli Sekarang <i
-                                            style="color:#00529C;" class="bi bi-chevron-right"></i></nuxt-link>
+                                    <a style="color:#00529C;font-weight:500;"
+                                        :href="hightlightUrlProduct2">{{hightlightCtaProduct2}} <i
+                                            style="color:#00529C;" class="bi bi-chevron-right"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="column-receiver-and-packet">
-                            <div class="shadow-product w-100 product-box" style="height:100%">
-                                <img src="~/assets/home/channel.png" style="min-height: unset !important;" />
+                            <div class="shadow-product w-100 product-box">
+                                <img :src="hightlightBannerProduct3" style="min-height: unset !important;" />
                                 <div class="p-3 d-flex flex-column justify-content-center align-items-center"
-                                    style="min-height:120px">
-                                    <div class="fw-bold text-center fs-5">List Channel & Program</div>
+                                    style="min-height:130px">
+                                    <div class="fw-bold text-center fs-6" v-if="hightlightNote1Product3">{{hightlightNote1Product3}}</div>
+                                    <div class="text-center pt-1" v-if="hightlightNote2Product3">{{ hightlightNote2Product3 }}</div>
+                                    <div class="fw-bold text-center fs-5 pt-1" v-if="hightlightNote3Product3">{{hightlightNote3Product3}}</div>
                                 </div>
                                 <div class="p-3 d-flex justify-content-center footer" style="border-top:1px #ddd solid">
-                                    <nuxt-link style="color:#00529C;font-weight:500;" to="/channel">Beli Sekarang <i
-                                            style="color:#00529C;" class="bi bi-chevron-right"></i></nuxt-link>
+                                    <a style="color:#00529C;font-weight:500;"
+                                        :href="hightlightUrlProduct3">{{hightlightCtaProduct3}} <i
+                                            style="color:#00529C;" class="bi bi-chevron-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -86,44 +90,49 @@
                 <div class="row show-on-desktop" style="overflow:auto !important;flex-wrap:nowrap">
                     <div class="col-4 mb-3 column-receiver-and-packet">
                         <div class="shadow-product w-100 product-box">
-                            <img src="~/assets/home/receiver.png" style="min-height: unset !important;" />
+                            <img :src="hightlightBannerProduct1" style="min-height: unset !important;" />
                             <div class="p-3 d-flex flex-column justify-content-center align-items-center"
-                                style="min-height:120px">
-                                <div class="fw-bold text-center fs-6">Receiver</div>
-                                <div class="text-center pt-1">Mulai dari</div>
-                                <div class="fw-bold text-center fs-5 pt-1">Rp 314.000</div>
+                                style="min-height:130px">
+                                <div class="fw-bold text-center fs-6" v-if="hightlightNote1Product1">{{hightlightNote1Product1}}</div>
+                                    <div class="text-center pt-1" v-if="hightlightNote2Product1">{{ hightlightNote2Product1 }}</div>
+                                    <div class="fw-bold text-center fs-5 pt-1" v-if="hightlightNote3Product1">{{hightlightNote3Product1}}</div>
                             </div>
                             <div class="p-3 d-flex justify-content-center footer" style="border-top:1px #ddd solid">
-                                <nuxt-link style="color:#00529C;font-weight:500;" to="/receiver">Beli Sekarang <i
-                                        style="color:#00529C;" class="bi bi-chevron-right"></i></nuxt-link>
+                                <a style="color:#00529C;font-weight:500;"
+                                    :href="hightlightUrlProduct1">{{hightlightCtaProduct1}} <i style="color:#00529C;"
+                                        class="bi bi-chevron-right"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-4 mb-3 column-receiver-and-packet">
                         <div class="shadow-product w-100 product-box">
-                            <img src="~/assets/home/paket.png" style="min-height: unset !important;" />
+                            <img :src="hightlightBannerProduct2" style="min-height: unset !important;" />
                             <div class="p-3 d-flex flex-column justify-content-center align-items-center"
-                                style="min-height:120px">
-                                <div class="fw-bold text-center fs-6">Paket Berlangganan</div>
-                                <div class="text-center pt-1">Mulai dari</div>
-                                <div class="fw-bold text-center fs-5 pt-1">Rp 19.900</div>
+                                style="min-height:130px">
+                                <div class="fw-bold text-center fs-6" v-if="hightlightNote1Product2">{{hightlightNote1Product2}}</div>
+                                    <div class="text-center pt-1" v-if="hightlightNote2Product2">{{ hightlightNote2Product2 }}</div>
+                                    <div class="fw-bold text-center fs-5 pt-1" v-if="hightlightNote3Product2">{{hightlightNote3Product2}}</div>
                             </div>
                             <div class="p-3 d-flex justify-content-center footer" style="border-top:1px #ddd solid">
-                                <nuxt-link style="color:#00529C;font-weight:500;" to="/paket">Beli Sekarang <i
-                                        style="color:#00529C;" class="bi bi-chevron-right"></i></nuxt-link>
+                                <a style="color:#00529C;font-weight:500;"
+                                    :href="hightlightUrlProduct2">{{hightlightCtaProduct2}} <i style="color:#00529C;"
+                                        class="bi bi-chevron-right"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-4 mb-3 column-receiver-and-packet">
-                        <div class="shadow-product w-100 product-box" style="height:100%">
-                            <img src="~/assets/home/channel.png" style="min-height: unset !important;" />
+                        <div class="shadow-product w-100 product-box">
+                            <img :src="hightlightBannerProduct3" style="min-height: unset !important;" />
                             <div class="p-3 d-flex flex-column justify-content-center align-items-center"
-                                style="min-height:120px">
-                                <div class="fw-bold text-center fs-5">List Channel & Program</div>
+                                style="min-height:130px">
+                                <div class="fw-bold text-center fs-6" v-if="hightlightNote1Product3">{{hightlightNote1Product3}}</div>
+                                    <div class="text-center pt-1" v-if="hightlightNote2Product3">{{ hightlightNote2Product3 }}</div>
+                                    <div class="fw-bold text-center fs-5 pt-1" v-if="hightlightNote3Product3">{{hightlightNote3Product3}}</div>
                             </div>
                             <div class="p-3 d-flex justify-content-center footer" style="border-top:1px #ddd solid">
-                                <nuxt-link style="color:#00529C;font-weight:500;" to="/channel">Beli Sekarang <i
-                                        style="color:#00529C;" class="bi bi-chevron-right"></i></nuxt-link>
+                                <a style="color:#00529C;font-weight:500;"
+                                    :href="hightlightUrlProduct3">{{hightlightCtaProduct3}} <i style="color:#00529C;"
+                                        class="bi bi-chevron-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -195,7 +204,7 @@
                             </div>
                         </div>
                         <div class="row d-flex justify-content-end">
-                            <div class="col-lg-8">
+                            <div class="col-lg-8" v-if="resultKompetisi.length">
                                 <div class="w-100 bg-white p-3 match-result-group" style="border-radius:10px">
 
                                     <div class="row match-result">
@@ -206,11 +215,13 @@
                                             <div class="d-flex align-items-center pb-2 mt-2 match-result-element"
                                                 style="border-bottom:1px black solid"
                                                 v-for="schedule in context.schedule">
-                                                <div class="d-flex justify-content-end align-items-center" style="width:43%;">
+                                                <div class="d-flex justify-content-end align-items-center"
+                                                    style="width:43%;">
                                                     <div class="text title-club text-right"
                                                         style="color:#00539B;font-weight:600;font-size:14px;padding-right:10px;text-align:right;">
                                                         {{ schedule.club1 }}</div>
-                                                    <img :src="schedule.logo1" class="image-club" style="width:25px;margin-right:10px">
+                                                    <img :src="schedule.logo1" class="image-club"
+                                                        style="width:25px;margin-right:10px">
                                                 </div>
                                                 <div class="text time text-center "
                                                     style="color:#00539B;font-weight:600;font-size:14px;width:14%">
@@ -266,7 +277,7 @@
             </div>
         </section>
         <Footer></Footer>
-    </div>    
+    </div>
     <a href="https://wa.me/6281260012700" class="cs-floating">
         <div class="box">Punya pertanyaan?
             Kami siap untuk
@@ -342,6 +353,30 @@
     const dataBanner = ref(null);
 
     import logoNex from "~/assets/logo-nex-2.png";
+
+    const titleHightlight = ref('')
+    const subTitleHightlight = ref('');
+
+    const hightlightBannerProduct1 = ref('');
+    const hightlightNote1Product1 = ref('');
+    const hightlightNote2Product1 = ref('');
+    const hightlightNote3Product1 = ref('');
+    const hightlightUrlProduct1 = ref('');
+    const hightlightCtaProduct1 = ref('');
+
+    const hightlightBannerProduct2 = ref('');
+    const hightlightNote1Product2 = ref('');
+    const hightlightNote2Product2 = ref('');
+    const hightlightNote3Product2 = ref('');
+    const hightlightUrlProduct2 = ref('');
+    const hightlightCtaProduct2 = ref('');
+
+    const hightlightBannerProduct3 = ref('');
+    const hightlightNote1Product3 = ref('');
+    const hightlightNote2Product3 = ref('');
+    const hightlightNote3Product3 = ref('');
+    const hightlightUrlProduct3 = ref('');
+    const hightlightCtaProduct3 = ref('');
     const {
         data
     } = await getHome()
@@ -466,6 +501,32 @@
                 selectKompetisiDateId.value = listKompetisiDate.value[0].trxdate;
                 selectKompetisiDate.value = listKompetisiDate.value[0].trxdatetext;
             }
+
+
+            titleHightlight.value = res.data.data.hptitle
+            subTitleHightlight.value = res.data.data.hpsubtitle;
+
+            hightlightBannerProduct1.value = res.data.data.hpbanner1;
+            hightlightNote1Product1.value = res.data.data.hpnote1top;
+            hightlightNote2Product1.value = res.data.data.hpnote1center;
+            hightlightNote3Product1.value = res.data.data.hpnote1bottom;
+            hightlightUrlProduct1.value = res.data.data.hpurl1;
+            hightlightCtaProduct1.value = res.data.data.hpcta1;
+
+            hightlightBannerProduct2.value = res.data.data.hpbanner2;
+            hightlightNote1Product2.value = res.data.data.hpnote2top;
+            hightlightNote2Product2.value = res.data.data.hpnote2center;
+            hightlightNote3Product2.value = res.data.data.hpnote2bottom;
+            hightlightUrlProduct2.value = res.data.data.hpurl2;
+            hightlightCtaProduct2.value = res.data.data.hpcta2;
+
+
+            hightlightBannerProduct3.value = res.data.data.hpbanner3;
+            hightlightNote1Product3.value = res.data.data.hpnote3top;
+            hightlightNote2Product3.value = res.data.data.hpnote3center;
+            hightlightNote3Product3.value = res.data.data.hpnote3bottom;
+            hightlightUrlProduct3.value = res.data.data.hpurl3;
+            hightlightCtaProduct3.value = res.data.data.hpcta3;
 
 
 

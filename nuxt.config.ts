@@ -18,7 +18,7 @@ export default defineNuxtConfig({
         {
           rel: 'icon',
           type: 'image/x-icon',
-          href: '/logo-nex-2.png'
+          href: '/icon.png'
         },             
         {
           rel: 'preconnect',
