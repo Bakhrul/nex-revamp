@@ -325,8 +325,8 @@
 </template>
 
 <script setup>
-    import backgroundImageMobile from "~/assets/header/terms-mobile.png"
-    import backgroundImageDesktop from "~/assets/header/terms-desktop.png"
+    import backgroundImageMobile from "~/assets/header/terms.png"
+    import backgroundImageDesktop from "~/assets/header/terms.png"
     import logoNex from "~/assets/logo-nex-2.png";
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"

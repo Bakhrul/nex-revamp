@@ -145,8 +145,8 @@
 </template>
 
 <script setup>
-    import backgroundImageMobile from "~/assets/header/teknisi-mobile.png"
-    import backgroundImageDesktop from "~/assets/header/teknisi-desktop.png"
+    import backgroundImageMobile from "~/assets/header/teknisi.png"
+    import backgroundImageDesktop from "~/assets/header/teknisi.png"
     import logoNex from "~/assets/logo-nex-2.png";
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"

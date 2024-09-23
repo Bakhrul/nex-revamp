@@ -40,7 +40,7 @@
                     <div class="slider-paket slider-paket-home">
                         <div class="column-receiver-and-packet me-2">
                             <div class="shadow-product w-100 product-box">
-                                <img src="~/assets/1.png" style="min-height: unset !important;" />
+                                <img src="~/assets/home/receiver.png" style="min-height: unset !important;" />
                                 <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                     style="min-height:120px">
                                     <div class="fw-bold text-center fs-6">Receiver</div>
@@ -55,7 +55,7 @@
                         </div>
                         <div class="column-receiver-and-packet me-2">
                             <div class="shadow-product w-100 product-box">
-                                <img src="~/assets/2.png" style="min-height: unset !important;" />
+                                <img src="~/assets/home/paket.png" style="min-height: unset !important;" />
                                 <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                     style="min-height:120px">
                                     <div class="fw-bold text-center fs-6">Paket Berlangganan</div>
@@ -70,7 +70,7 @@
                         </div>
                         <div class="column-receiver-and-packet">
                             <div class="shadow-product w-100 product-box" style="height:100%">
-                                <img src="~/assets/3.png" style="min-height: unset !important;" />
+                                <img src="~/assets/home/channel.png" style="min-height: unset !important;" />
                                 <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                     style="min-height:120px">
                                     <div class="fw-bold text-center fs-5">List Channel & Program</div>
@@ -86,7 +86,7 @@
                 <div class="row show-on-desktop" style="overflow:auto !important;flex-wrap:nowrap">
                     <div class="col-4 mb-3 column-receiver-and-packet">
                         <div class="shadow-product w-100 product-box">
-                            <img src="~/assets/1.png" style="min-height: unset !important;" />
+                            <img src="~/assets/home/receiver.png" style="min-height: unset !important;" />
                             <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                 style="min-height:120px">
                                 <div class="fw-bold text-center fs-6">Receiver</div>
@@ -101,7 +101,7 @@
                     </div>
                     <div class="col-4 mb-3 column-receiver-and-packet">
                         <div class="shadow-product w-100 product-box">
-                            <img src="~/assets/2.png" style="min-height: unset !important;" />
+                            <img src="~/assets/home/paket.png" style="min-height: unset !important;" />
                             <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                 style="min-height:120px">
                                 <div class="fw-bold text-center fs-6">Paket Berlangganan</div>
@@ -116,7 +116,7 @@
                     </div>
                     <div class="col-4 mb-3 column-receiver-and-packet">
                         <div class="shadow-product w-100 product-box" style="height:100%">
-                            <img src="~/assets/3.png" style="min-height: unset !important;" />
+                            <img src="~/assets/home/channel.png" style="min-height: unset !important;" />
                             <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                 style="min-height:120px">
                                 <div class="fw-bold text-center fs-5">List Channel & Program</div>
@@ -196,7 +196,7 @@
                         </div>
                         <div class="row d-flex justify-content-end">
                             <div class="col-lg-8">
-                                <div class="w-100 bg-white p-3" style="border-radius:10px">
+                                <div class="w-100 bg-white p-3 match-result-group" style="border-radius:10px">
 
                                     <div class="row match-result">
                                         <div class="col-lg-6" v-for="context in resultKompetisi">
@@ -266,65 +266,7 @@
             </div>
         </section>
         <Footer></Footer>
-    </div>
-
-    <div class="modal fade" tabindex="-1" role="dialog" id="modal-banner-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width:550px">
-            <div class="modal-content">
-                <div class="modal-body rounded">
-                    <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
-                            class="bi bi-x"></i></button>
-                    <img src="~/assets/static-content/banner/september/1.png" class="w-100 rounded" />
-                    <div class="d-flex justify-content-between align-items-center">
-                        <h5 class="fw-bold mt-3 me-3">Super Big Match - Manchester City vs Arsenal</h5>
-                    </div>
-                    <div style="line-height:1.5;">Duel Panas Manchester City vs Arsenal di Pekan 5. Tayang LIVE di
-                        channel Nex PPV dengan harga 59rb/satu pertandingan.  
-                        Kamu tinggal ADD ON Paket Liga Inggris PPV pastikan kamu sudah memiliki Paket Liga
-                        Inggris/Diamond/Premium Sport aktif untuk bisa membeli paket ini. 
-                        <br><br>
-                        *Paket bisa dibeli mulai tanggal 9 - 22 September<br>
-                        *Channel akan aktif H-2 Jam sebelum pertandingan</div>
-                    <div class="row justify-content-center mt-5 px-4">
-                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                            <a href="https://www.lazada.co.id/shop/nex-parabola-tv/" target="_blank" class="w-100">
-                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                    <img src="~/assets/social-media/lazada.jpg" style="height:23px;max-width:100%;" />
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                            <a href="javascript:void(0)" target="_blank" class="w-100">
-                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                    <img src="~/assets/social-media/tokopedia.png"
-                                        style="height:23px;max-width:100%;" />
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                            <a href="https://shopee.co.id/nexparabola.official?shopCollection=253318341#product_list"
-                                target="_blank" class="w-100">
-                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                    <img src="~/assets/social-media/shopee.png" style="height:23px;max-width:100%;" />
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 mb-3 d-flex justify-content-center">
-                            <a href="https://belipaket.mynex.id/" target="_blank" class="w-100">
-                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                    <img src="~/assets/social-media/nex.png" style="height:23px;max-width:100%;" />
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    </div>    
     <a href="https://wa.me/6281260012700" class="cs-floating">
         <div class="box">Punya pertanyaan?
             Kami siap untuk

@@ -166,6 +166,8 @@
 
     const config = useRuntimeConfig()
 
+    const router = useRouter()
+
     const title = ref('');
     const date = ref('');
     const image = ref('');
@@ -200,6 +202,12 @@
             }
         })
         if (res.status == 200) {
+            if(!res.data.success){
+                router.replace({
+                    path: '/nexnews'
+                })
+                return false;
+            }
             title.value = res.data.data.title;
             date.value = res.data.data.trxdate;
             image.value = res.data.data.image;

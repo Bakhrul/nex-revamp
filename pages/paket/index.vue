@@ -121,8 +121,8 @@
 <script setup>
     import axios from "axios"
 
-    import backgroundImageMobile from "~/assets/header/paket-mobile.png"
-    import backgroundImageDesktop from "~/assets/header/paket-desktop.png"
+    import backgroundImageMobile from "~/assets/header/paket.png"
+    import backgroundImageDesktop from "~/assets/header/paket.png"
     import logoNex from "~/assets/logo-nex-2.png";
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"
