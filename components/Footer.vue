@@ -72,7 +72,9 @@
                                     <div class="ms-2">(021) 8063 7388<br>
 Jam Operasional<br>
 Senin - Minggu<br>
-07:00 - 23:00 </div>
+07:00 - 23:00<br>
+Kecuali Hari Libur Nasional
+</div>
                                 </div></a></li>
                         <li><a href="javascript:void(0)" class="footer-link"> <img src="~/assets/icon/location.svg"
                                     style="width:29px" />
