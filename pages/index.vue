@@ -48,8 +48,9 @@
                                     <div class="fw-bold text-center fs-5 pt-1" v-if="hightlightNote3Product1">{{hightlightNote3Product1}}</div>
                                 </div>
                                 <div class="p-3 d-flex justify-content-center footer" style="border-top:1px #ddd solid">
-                                    <nuxt-link style="color:#00529C;font-weight:500;" to="/receiver">Beli Sekarang <i
-                                            style="color:#00529C;" class="bi bi-chevron-right"></i></nuxt-link>
+                                    <a style="color:#00529C;font-weight:500;"
+                                    :href="hightlightUrlProduct1">{{hightlightCtaProduct1}} <i style="color:#00529C;"
+                                        class="bi bi-chevron-right"></i></a>
                                 </div>
                             </div>
                         </div>
