@@ -21,6 +21,9 @@
                     fans
                     Spurs yang nyari trofi Premier League, kamu juga udah nyari halaman ini, tapi tetap nggak ketemu.
                 </div>
+                <div class="d-flex justify-content-center mt-3">
+                    <nuxt-link to="/" class="btn text-white" style="background:#00529C !important">Ke Beranda</nuxt-link>
+                </div>
                 <div class="footer-404 mt-5">
                     <div class="row">
                         <div class="col-6 text-white pt-3 pb-3">PT Mediatama Televisi</div>
@@ -227,7 +230,7 @@
 
 <style scoped>
     .wrapper-500 {
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
         width: 100%;
@@ -267,12 +270,11 @@
     }
 
     .wrapper-404 {
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        min-height: 100vh;
-
+        min-height: 100vh;        
         background: linear-gradient(180deg, #00529C 0%, #000000 100%);
     }
 
