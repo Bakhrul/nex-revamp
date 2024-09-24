@@ -100,7 +100,7 @@ Kecuali Hari Libur Nasional
                                 </a>
                             </div>
 
-                            <div class="me-2"><a href="https://www.tiktok.com/@nexparabola_tv"
+                            <div class="me-2"><a href="https://www.tiktok.com/@nexofficialtv"
                                     style="color:black;text-decoration: none !important">
                                     <img src="~/assets/icon/tiktok.svg" style="width:29px" />
                                 </a>
