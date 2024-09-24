@@ -557,7 +557,7 @@
         'https://www.lazada.co.id/products/i8217008380.html?spm=a1zawh.24863640.table_online_product.13.60aa4edfuWP5zP'
     )
     const linkLazada2 = ref(
-        'https://www.lazada.co.id/products/i8217028229.html?spm=a1zawh.24863640.table_online_product.1.60aa4edfuWP5zP'
+        'https://www.lazada.co.id/products/i8217004628.html?spm=a1zawh.24863640.table_online_product.29.24814edf1AMcnx'
     )
     const linkLazada3 = ref(
         'https://www.lazada.co.id/products/i8217012416.html?spm=a1zawh.24863640.table_online_product.10.60aa4edfuWP5zP'
