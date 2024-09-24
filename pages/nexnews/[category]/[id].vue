@@ -50,7 +50,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-12 mt-5 show-on-mobile">
-                                <div class="title-section-news">Klik Untuk Cek Paket Nex Parabola</div>
+                                <div class="title-section-news">Klik Untuk Cek Paket Nex</div>
                                 <div class="slider-news slider-paket">
                                     <div class="shadow-product width-slider-news mb-3 product-box bg-white"
                                         v-for="(packet, idx) in listPacket">

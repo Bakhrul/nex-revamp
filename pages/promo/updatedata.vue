@@ -43,14 +43,14 @@
     import Footer from "~/components/Footer.vue"
 
     useHead({
-        title: 'Update Data | Nex Parabola',
+        title: 'Update Data | Nex',
         meta: [{
                 name: 'title',
-                content: 'Update Data | Nex Parabola'
+                content: 'Update Data | Nex'
             },
             {
                 name: 'ogTitle',
-                content: 'Update Data | Nex Parabola'
+                content: 'Update Data | Nex'
             },           
             {
                 name: 'description',

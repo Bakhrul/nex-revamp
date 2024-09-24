@@ -221,14 +221,14 @@
         }
     }
     useHead({
-        title: 'Teknisi | Nex Parabola',
+        title: 'Teknisi | Nex',
         meta: [{
                 name: 'title',
-                content: 'Teknisi | Nex Parabola'
+                content: 'Teknisi | Nex'
             },
             {
                 name: 'ogTitle',
-                content: 'Teknisi | Nex Parabola'
+                content: 'Teknisi | Nex'
             },
             {
                 name: 'description',

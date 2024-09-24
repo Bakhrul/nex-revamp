@@ -221,14 +221,14 @@
     }
 
     useHead({
-        title: 'Reseller | Nex Parabola',
+        title: 'Reseller | Nex',
         meta: [{
                 name: 'title',
-                content: 'Reseller | Nex Parabola'
+                content: 'Reseller | Nex'
             },
             {
                 name: 'ogTitle',
-                content: 'Reseller | Nex Parabola'
+                content: 'Reseller | Nex'
             },
             {
                 name: 'keywords',

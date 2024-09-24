@@ -623,14 +623,14 @@
     }
 
     useHead({
-        title: 'Receiver | Nex Parabola',
+        title: 'Receiver | Nex',
         meta: [{
                 name: 'title',
-                content: 'Receiver | Nex Parabola'
+                content: 'Receiver | Nex'
             },
             {
                 name: 'ogTitle',
-                content: 'Receiver | Nex Parabola'
+                content: 'Receiver | Nex'
             },
             {
                 name: 'keywords',

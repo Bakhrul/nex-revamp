@@ -414,14 +414,14 @@
         $("#modal-banner").modal('show');
     }
     useHead({
-        title: 'TV Satelit Parabola Berlangganan Indonesia | Nex Parabola',
+        title: 'TV Satelit Parabola Berlangganan Indonesia | Nex',
         meta: [{
                 name: 'title',
-                content: 'TV Satelit Parabola Berlangganan Indonesia | Nex Parabola'
+                content: 'TV Satelit Parabola Berlangganan Indonesia | Nex'
             },
             {
                 name: 'ogTitle',
-                content: 'TV Satelit Parabola Berlangganan Indonesia | Nex Parabola'
+                content: 'TV Satelit Parabola Berlangganan Indonesia | Nex'
             },
             {
                 name: 'keywords',

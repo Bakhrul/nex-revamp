@@ -331,14 +331,14 @@
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"
     useHead({
-        title: 'Syarat dan Ketentuan | Nex Parabola',
+        title: 'Syarat dan Ketentuan | Nex',
         meta: [{
                 name: 'title',
-                content: 'Syarat dan Ketentuan | Nex Parabola'
+                content: 'Syarat dan Ketentuan | Nex'
             },
             {
                 name: 'ogTitle',
-                content: 'Syarat dan Ketentuan | Nex Parabola'
+                content: 'Syarat dan Ketentuan | Nex'
             },
             {
                 name: 'description',

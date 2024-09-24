@@ -221,14 +221,14 @@
     }
 
     useHead({
-        title: 'Channel | Nex Parabola',
+        title: 'Channel | Nex',
         meta: [{
                 name: 'title',
-                content: 'Channel | Nex Parabola'
+                content: 'Channel | Nex'
             },
             {
                 name: 'ogTitle',
-                content: 'Channel | Nex Parabola'
+                content: 'Channel | Nex'
             },
              {
                 name: 'keywords',

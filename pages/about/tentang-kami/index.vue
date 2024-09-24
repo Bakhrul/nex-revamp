@@ -213,14 +213,14 @@
     import Footer from "~/components/Footer.vue"
 
     useHead({
-        title: 'Tentang Kami | Nex Parabola',
+        title: 'Tentang Kami | Nex',
         meta: [{
                 name: 'title',
-                content: 'Tentang Kami | Nex Parabola'
+                content: 'Tentang Kami | Nex'
             },
             {
                 name: 'ogTitle',
-                content: 'Tentang Kami | Nex Parabola'
+                content: 'Tentang Kami | Nex'
             },
              {
                 name: 'keywords',

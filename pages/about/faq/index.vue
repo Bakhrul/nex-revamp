@@ -99,7 +99,7 @@
                                             <li>Klik Menu My Nex.</li>
                                             <li>Isi data secara lengkap.</li>
                                             <li>Lalu klik proses.</li>
-                                            <li>Nex Parabola-mu sudah aktif!</li>
+                                            <li>Nex-mu sudah aktif!</li>
                                         </ol>
                                     </div>
                                 </div>
@@ -370,7 +370,7 @@
                                                 <li>Klik Menu My Nex.</li>
                                                 <li>Isi data secara lengkap.</li>
                                                 <li>Lalu klik proses.</li>
-                                                <li>Nex Parabola-mu sudah aktif!</li>
+                                                <li>Nex-mu sudah aktif!</li>
                                             </ol>
                                         </div>
                                     </div>
@@ -472,14 +472,14 @@
     import Footer from "~/components/Footer.vue"
 
     useHead({
-        title: 'FAQ | Nex Parabola',
+        title: 'FAQ | Nex',
         meta: [{
                 name: 'title',
-                content: 'FAQ | Nex Parabola'
+                content: 'FAQ | Nex'
             },
             {
                 name: 'ogTitle',
-                content: 'FAQ | Nex Parabola'
+                content: 'FAQ | Nex'
             },
             {
                 name: 'description',

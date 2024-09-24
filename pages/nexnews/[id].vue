@@ -176,14 +176,14 @@
     }
 
     useHead({
-        title: 'News | Nex Parabola',
+        title: 'News | Nex',
         meta: [{
                 name: 'title',
-                content: 'News | Nex Parabola'
+                content: 'News | Nex'
             },
             {
                 name: 'ogTitle',
-                content: 'News | Nex Parabola'
+                content: 'News | Nex'
             },
             {
                 name: 'description',

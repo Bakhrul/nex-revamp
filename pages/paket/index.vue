@@ -226,14 +226,14 @@
     }
 
     useHead({
-        title: 'Paket | Nex Parabola',
+        title: 'Paket | Nex',
         meta: [{
                 name: 'title',
-                content: 'Paket | Nex Parabola'
+                content: 'Paket | Nex'
             },
             {
                 name: 'ogTitle',
-                content: 'Paket | Nex Parabola'
+                content: 'Paket | Nex'
             },
             {
                 name: 'keywords',

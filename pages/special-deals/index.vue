@@ -269,14 +269,14 @@
     }
 
     useHead({
-        title: 'Promo | Nex Parabola',
+        title: 'Promo | Nex',
         meta: [{
                 name: 'title',
-                content: 'Promo | Nex Parabola'
+                content: 'Promo | Nex'
             },
             {
                 name: 'ogTitle',
-                content: 'Promo | Nex Parabola'
+                content: 'Promo | Nex'
             },
             {
                 name: 'keywords',
