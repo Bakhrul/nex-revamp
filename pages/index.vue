@@ -487,15 +487,7 @@
         next()
 
     })
-    onMounted(() => {
-        gtm.trackEvent({
-            event: 'HOME',
-            category: 'page',
-            action: 'view',
-            label: 'Home',
-            value: 1,
-            noninteraction: true,
-        })
+    onMounted(() => {        
     })
     async function getHome() {
         let res = await axios.get(config.public.API_URL + 'home/home', {
