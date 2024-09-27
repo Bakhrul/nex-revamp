@@ -43,14 +43,17 @@
                                 <img :src="hightlightBannerProduct1" style="min-height: unset !important;" />
                                 <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                     style="min-height:130px">
-                                    <div class="fw-bold text-center fs-6" v-if="hightlightNote1Product1">{{hightlightNote1Product1}}</div>
-                                    <div class="text-center pt-1" v-if="hightlightNote2Product1">{{ hightlightNote2Product1 }}</div>
-                                    <div class="fw-bold text-center fs-5 pt-1" v-if="hightlightNote3Product1">{{hightlightNote3Product1}}</div>
+                                    <div class="fw-bold text-center fs-6" v-if="hightlightNote1Product1">
+                                        {{hightlightNote1Product1}}</div>
+                                    <div class="text-center pt-1" v-if="hightlightNote2Product1">
+                                        {{ hightlightNote2Product1 }}</div>
+                                    <div class="fw-bold text-center fs-5 pt-1" v-if="hightlightNote3Product1">
+                                        {{hightlightNote3Product1}}</div>
                                 </div>
                                 <div class="p-3 d-flex justify-content-center footer" style="border-top:1px #ddd solid">
                                     <a style="color:#00529C;font-weight:500;"
-                                    :href="hightlightUrlProduct1">{{hightlightCtaProduct1}} <i style="color:#00529C;"
-                                        class="bi bi-chevron-right"></i></a>
+                                        :href="hightlightUrlProduct1">{{hightlightCtaProduct1}} <i
+                                            style="color:#00529C;" class="bi bi-chevron-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -59,9 +62,12 @@
                                 <img :src="hightlightBannerProduct2" style="min-height: unset !important;" />
                                 <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                     style="min-height:130px">
-                                    <div class="fw-bold text-center fs-6" v-if="hightlightNote1Product2">{{hightlightNote1Product2}}</div>
-                                    <div class="text-center pt-1" v-if="hightlightNote2Product2">{{ hightlightNote2Product2 }}</div>
-                                    <div class="fw-bold text-center fs-5 pt-1" v-if="hightlightNote3Product2">{{hightlightNote3Product2}}</div>
+                                    <div class="fw-bold text-center fs-6" v-if="hightlightNote1Product2">
+                                        {{hightlightNote1Product2}}</div>
+                                    <div class="text-center pt-1" v-if="hightlightNote2Product2">
+                                        {{ hightlightNote2Product2 }}</div>
+                                    <div class="fw-bold text-center fs-5 pt-1" v-if="hightlightNote3Product2">
+                                        {{hightlightNote3Product2}}</div>
                                 </div>
                                 <div class="p-3 d-flex justify-content-center footer" style="border-top:1px #ddd solid">
                                     <a style="color:#00529C;font-weight:500;"
@@ -75,9 +81,12 @@
                                 <img :src="hightlightBannerProduct3" style="min-height: unset !important;" />
                                 <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                     style="min-height:130px">
-                                    <div class="fw-bold text-center fs-6" v-if="hightlightNote1Product3">{{hightlightNote1Product3}}</div>
-                                    <div class="text-center pt-1" v-if="hightlightNote2Product3">{{ hightlightNote2Product3 }}</div>
-                                    <div class="fw-bold text-center fs-5 pt-1" v-if="hightlightNote3Product3">{{hightlightNote3Product3}}</div>
+                                    <div class="fw-bold text-center fs-6" v-if="hightlightNote1Product3">
+                                        {{hightlightNote1Product3}}</div>
+                                    <div class="text-center pt-1" v-if="hightlightNote2Product3">
+                                        {{ hightlightNote2Product3 }}</div>
+                                    <div class="fw-bold text-center fs-5 pt-1" v-if="hightlightNote3Product3">
+                                        {{hightlightNote3Product3}}</div>
                                 </div>
                                 <div class="p-3 d-flex justify-content-center footer" style="border-top:1px #ddd solid">
                                     <a style="color:#00529C;font-weight:500;"
@@ -94,9 +103,12 @@
                             <img :src="hightlightBannerProduct1" style="min-height: unset !important;" />
                             <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                 style="min-height:130px">
-                                <div class="fw-bold text-center fs-6" v-if="hightlightNote1Product1">{{hightlightNote1Product1}}</div>
-                                    <div class="text-center pt-1" v-if="hightlightNote2Product1">{{ hightlightNote2Product1 }}</div>
-                                    <div class="fw-bold text-center fs-5 pt-1" v-if="hightlightNote3Product1">{{hightlightNote3Product1}}</div>
+                                <div class="fw-bold text-center fs-6" v-if="hightlightNote1Product1">
+                                    {{hightlightNote1Product1}}</div>
+                                <div class="text-center pt-1" v-if="hightlightNote2Product1">
+                                    {{ hightlightNote2Product1 }}</div>
+                                <div class="fw-bold text-center fs-5 pt-1" v-if="hightlightNote3Product1">
+                                    {{hightlightNote3Product1}}</div>
                             </div>
                             <div class="p-3 d-flex justify-content-center footer" style="border-top:1px #ddd solid">
                                 <a style="color:#00529C;font-weight:500;"
@@ -110,9 +122,12 @@
                             <img :src="hightlightBannerProduct2" style="min-height: unset !important;" />
                             <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                 style="min-height:130px">
-                                <div class="fw-bold text-center fs-6" v-if="hightlightNote1Product2">{{hightlightNote1Product2}}</div>
-                                    <div class="text-center pt-1" v-if="hightlightNote2Product2">{{ hightlightNote2Product2 }}</div>
-                                    <div class="fw-bold text-center fs-5 pt-1" v-if="hightlightNote3Product2">{{hightlightNote3Product2}}</div>
+                                <div class="fw-bold text-center fs-6" v-if="hightlightNote1Product2">
+                                    {{hightlightNote1Product2}}</div>
+                                <div class="text-center pt-1" v-if="hightlightNote2Product2">
+                                    {{ hightlightNote2Product2 }}</div>
+                                <div class="fw-bold text-center fs-5 pt-1" v-if="hightlightNote3Product2">
+                                    {{hightlightNote3Product2}}</div>
                             </div>
                             <div class="p-3 d-flex justify-content-center footer" style="border-top:1px #ddd solid">
                                 <a style="color:#00529C;font-weight:500;"
@@ -126,9 +141,12 @@
                             <img :src="hightlightBannerProduct3" style="min-height: unset !important;" />
                             <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                 style="min-height:130px">
-                                <div class="fw-bold text-center fs-6" v-if="hightlightNote1Product3">{{hightlightNote1Product3}}</div>
-                                    <div class="text-center pt-1" v-if="hightlightNote2Product3">{{ hightlightNote2Product3 }}</div>
-                                    <div class="fw-bold text-center fs-5 pt-1" v-if="hightlightNote3Product3">{{hightlightNote3Product3}}</div>
+                                <div class="fw-bold text-center fs-6" v-if="hightlightNote1Product3">
+                                    {{hightlightNote1Product3}}</div>
+                                <div class="text-center pt-1" v-if="hightlightNote2Product3">
+                                    {{ hightlightNote2Product3 }}</div>
+                                <div class="fw-bold text-center fs-5 pt-1" v-if="hightlightNote3Product3">
+                                    {{hightlightNote3Product3}}</div>
                             </div>
                             <div class="p-3 d-flex justify-content-center footer" style="border-top:1px #ddd solid">
                                 <a style="color:#00529C;font-weight:500;"
@@ -326,6 +344,7 @@
     import Footer from "~/components/Footer.vue"
 
     const config = useRuntimeConfig()
+    const gtm = useGtm() // auto-imported by the module
 
     const intervalKidsMovie = ref(null);
     const intervalMom = ref(null);
@@ -468,7 +487,16 @@
         next()
 
     })
-
+    onMounted(() => {
+        gtm.trackEvent({
+            event: 'event name',
+            category: 'category',
+            action: 'click',
+            label: 'My custom component trigger',
+            value: 5000,
+            noninteraction: false,
+        })
+    })
     async function getHome() {
         let res = await axios.get(config.public.API_URL + 'home/home', {
             headers: {
