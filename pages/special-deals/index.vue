@@ -206,6 +206,14 @@
         $("#modal-spesial-deals").modal('show');
     }
     onMounted(() => {
+        gtm.trackEvent({
+            event: 'PAGE',
+            category: 'page',
+            action: 'view',
+            label: 'Spesial Deals',
+            value: 1,
+            noninteraction: true,
+        })
         initSlider()
         sliderPaket()
     });

@@ -489,12 +489,12 @@
     })
     onMounted(() => {
         gtm.trackEvent({
-            event: 'event name',
-            category: 'category',
-            action: 'click',
-            label: 'My custom component trigger',
-            value: 5000,
-            noninteraction: false,
+            event: 'HOME',
+            category: 'page',
+            action: 'view',
+            label: 'Home',
+            value: 1,
+            noninteraction: true,
         })
     })
     async function getHome() {
