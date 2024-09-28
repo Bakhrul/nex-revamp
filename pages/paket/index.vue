@@ -43,7 +43,8 @@
         <section class="pt-5 pb-5 bg-section">
             <div class="container">
                 <template v-for="(category,index) in list">
-                    <h4 class="mb-3 fw-bold c-primary" v-show="type == 'all' || type == category.id" v-html="category.category">
+                    <h4 class="mb-3 fw-bold c-primary" v-show="type == 'all' || type == category.id"
+                        v-html="category.category">
                     </h4>
                     <div class="slider-paket slider-baru mb-5" :class="`slider-paket-${index}`"
                         v-show="type == 'all' || type == category.id">
@@ -70,7 +71,7 @@
                                 </div>
                                 <div class="pb-3 px-3 d-flex justify-content-center footer">
                                     <button type="button"
-                                        @click="detailPakcet(packet.image,packet.name, packet.selectPrice, packet.noteDetail, packet.selectEcommerce)"
+                                        @click="detailPakcet(packet.id,packet.image,packet.name, packet.selectPrice, packet.noteDetail, packet.selectEcommerce)"
                                         style="border-radius: 20px;" :disabled="!packet.selected"
                                         class="text-center btn bg-primary text-white w-100 px-3 py-3">BELI
                                         SEKARANG</button>
@@ -102,7 +103,8 @@
                         <div style="line-height:1.5;" class="pt-3" v-html="note"></div>
                         <div class="row justify-content-center mt-5 px-4">
                             <div class="col-lg-6 mb-3 d-flex justify-content-center" v-for="context in ecommerce">
-                                <a :href="context.url" target="_blank" class="w-100">
+                                <a :href="context.url" target="_blank" class="w-100"
+                                    @click="$ctaPacket(id, context.id)">
                                     <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
                                         style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
                                         <img :src="context.logo" style="height:23px;max-width:100%;" />
@@ -129,8 +131,12 @@
     const type = ref('all')
     const list = ref([]);
     const config = useRuntimeConfig()
+    const {
+        $ctaPacket
+    } = useNuxtApp()
 
     const image = ref('');
+    const id = ref('');
     const name = ref('');
     const note = ref('');
     const badge = ref('');
@@ -146,7 +152,6 @@
             }
         })
         if (res.status == 200) {
-            console.log(res.data.data)
             for (let i = 0; i < res.data.data.list.length; i++) {
                 let listPacket = [];
                 for (let x = 0; x < res.data.data.list[i].paket.length; x++) {
@@ -185,7 +190,7 @@
                     packet: listPacket,
 
                 })
-            }            
+            }
             return res.data.data;
         }
     }
@@ -203,7 +208,7 @@
 <path d="M13.0002 8.33337L8.8335 12.5M8.8335 12.5L13.0002 16.6667M8.8335 12.5H17.1668M23.4168 12.5C23.4168 18.253 18.7531 22.9167 13.0002 22.9167C7.2472 22.9167 2.5835 18.253 2.5835 12.5C2.5835 6.74707 7.2472 2.08337 13.0002 2.08337C18.7531 2.08337 23.4168 6.74707 23.4168 12.5Z" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </button>`,
-            nextArrow: `<button type='button' class='slick-next pull-right'><svg width="30" height="30" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                nextArrow: `<button type='button' class='slick-next pull-right'><svg width="30" height="30" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.9998 16.6666L17.1665 12.5M17.1665 12.5L12.9998 8.33329M17.1665 12.5L8.83317 12.5M2.58317 12.5C2.58317 6.74699 7.24687 2.08329 12.9998 2.08329C18.7528 2.08329 23.4165 6.74699 23.4165 12.5C23.4165 18.2529 18.7528 22.9166 12.9998 22.9166C7.24687 22.9166 2.58317 18.2529 2.58317 12.5Z" stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 
@@ -212,18 +217,20 @@
         }
     });
 
-    function detailPakcet(imageX, nameX, price, noteX, ecommerceX) {
+    function detailPakcet(idX, imageX, nameX, price, noteX, ecommerceX) {
         image.value = imageX;
         name.value = nameX;
         note.value = noteX;
         badge.value = price;
+        id.value = idX;
         ecommerce.value = ecommerceX;
+
         $("#modal-packet").modal('show');
+
+        $ctaPacket(idX, '');
     }
 
-    function openPelangganSetia(type) {
-        $("#modal-pelanggan-setia-" + type).modal('show');
-    }
+
 
     useHead({
         title: 'Paket | Nex',

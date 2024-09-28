@@ -185,7 +185,7 @@
                                         <div class="receiver-fitur">
                                             <img src="~/assets/static-content/receiver/play.svg">
                                             <div class="text">H.264/MPEG-2/MPEG-4 Video</div>
-                                        </div>                                      
+                                        </div>
                                     </div>
                                     <div class="receiver-group">
                                         <div class="receiver-fitur">
@@ -243,7 +243,7 @@
                                         <div class="receiver-fitur">
                                             <img src="~/assets/static-content/receiver/play.svg">
                                             <div class="text">H.265 HEVC/H.264/MPEG-5/MPEG-4 Video</div>
-                                        </div>                                      
+                                        </div>
                                     </div>
                                     <div class="receiver-group">
                                         <div class="receiver-fitur">
@@ -309,7 +309,7 @@
                                         <div class="receiver-fitur">
                                             <img src="~/assets/static-content/receiver/play.svg">
                                             <div class="text">Mitube/Youtube/IPTV</div>
-                                        </div>                                       
+                                        </div>
                                     </div>
                                     <div class="receiver-group">
                                         <div class="receiver-fitur">
@@ -428,7 +428,7 @@
                                             </a>
                                         </div> -->
                                         <div class="col-lg-12 mb-3 d-flex justify-content-center" v-if="lazada">
-                                            <a :href="lazada" target="_blank" class="w-100">
+                                            <a :href="lazada" target="_blank" class="w-100" @click="$ctaReceiver(id,'LAZADA')">
                                                 <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
                                                     style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
                                                     <img src="~/assets/social-media/lazada.jpg"
@@ -437,7 +437,7 @@
                                             </a>
                                         </div>
                                         <div class="col-lg-12 mb-3 d-flex justify-content-center" v-if="tiktok">
-                                            <a :href="tiktok" target="_blank" class="w-100">
+                                            <a :href="tiktok" target="_blank" class="w-100" @click="$ctaReceiver(id,'TIKTOK')">
                                                 <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
                                                     style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
                                                     <img src="~/assets/social-media/tiktok.png"
@@ -446,9 +446,9 @@
                                             </a>
                                         </div>
                                         <div class="col-lg-12 mb-3">
-                                            <a :href="url" target="_blank">
+                                            <a :href="url" target="_blank" @click="$ctaReceiver(id,'SHOPEE')">
                                                 <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                                    style="box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, .09);height:43px">
                                                     <img src="~/assets/social-media/shopee.png"
                                                         style="height:25px;max-width:100%;" />
                                                 </div>
@@ -458,8 +458,9 @@
                                 </div>
                             </div>
                             <div class="col-lg-12">
-                                <div class="row justify-content-center show-on-mobile">
-                                    <!-- <div class="col-lg-12 mb-3">
+                                <div class="show-on-mobile">
+                                    <div class="row justify-content-center">
+                                        <!-- <div class="col-lg-12 mb-3">
                                             <a href="javascript:void(0)">
                                                 <div class=" px-3 py-3 rounded d-flex justify-content-center"
                                                     style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
@@ -483,32 +484,33 @@
                                                 </div>
                                             </a>
                                         </div> -->
-                                    <div class="col-lg-12 mb-3 d-flex justify-content-center" v-if="lazada">
-                                        <a :href="lazada" target="_blank" class="w-100">
-                                            <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                                style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                                <img src="~/assets/social-media/lazada.jpg"
-                                                    style="height:25px;max-width:100%;" />
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-12 mb-3 d-flex justify-content-center" v-if="tiktok">
-                                        <a :href="tiktok" target="_blank" class="w-100">
-                                            <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                                style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                                <img src="~/assets/social-media/tiktok.png"
-                                                    style="height:25px;max-width:100%;" />
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-12 mb-3">
-                                        <a :href="url" target="_blank">
-                                            <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
-                                                style="box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, .09);height:43px">
-                                                <img src="~/assets/social-media/shopee.png"
-                                                    style="height:25px;max-width:100%;" />
-                                            </div>
-                                        </a>
+                                        <div class="col-lg-12 mb-3 d-flex justify-content-center" v-if="lazada">
+                                            <a :href="lazada" target="_blank" class="w-100" @click="$ctaReceiver(id,'LAZADA')">
+                                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                                    <img src="~/assets/social-media/lazada.jpg"
+                                                        style="height:25px;max-width:100%;" />
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-12 mb-3 d-flex justify-content-center" v-if="tiktok">
+                                            <a :href="tiktok" target="_blank" class="w-100" @click="$ctaReceiver(id,'TIKTOK')">
+                                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                                    style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
+                                                    <img src="~/assets/social-media/tiktok.png"
+                                                        style="height:25px;max-width:100%;" />
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-12 mb-3">
+                                            <a :href="url" target="_blank" @click="$ctaReceiver(id,'SHOPEE')">
+                                                <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
+                                                    style="box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, .09);height:43px">
+                                                    <img src="~/assets/social-media/shopee.png"
+                                                        style="height:25px;max-width:100%;" />
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -533,7 +535,7 @@
     import receiver4 from "~/assets/static-content/receiver/4.png";
     import receiver5 from "~/assets/static-content/receiver/5.png";
     import receiver6 from "~/assets/static-content/receiver/6.png";
-
+    const { $ctaReceiver } = useNuxtApp()
     const link1 = ref(
         'https://shopee.co.id/Nex-Parabola-Type-Biru-i.1311323005.27256686729?sp_atk=49f9c6de-7d91-4389-9246-f7b010c9e65d&xptdk=49f9c6de-7d91-4389-9246-f7b010c9e65d'
     );
@@ -598,28 +600,37 @@
     const lazada = ref('')
     const tiktok = ref('')
     const type = ref(0)
+    const id = ref('')
 
     const name = ref('');
 
     function openReceiver(typeX, urlX, urlLazada, urlTiktok) {
         if (typeX == 1) {
             name.value = 'Nex Parabola<br>Tipe Biru';
+            id.value = 'TIPEBIRU'
         } else if (typeX == 2) {
             name.value = 'Nex Parabola<br>Tipe Kuning';
+            id.value = 'TIPEKUNING'
         } else if (typeX == 3) {
             name.value = 'Nex Parabola<br>Tipe Merah';
+            id.value = 'TIPEMERAH'
         } else if (typeX == 4) {
             name.value = 'Nex Parabola<br>Combo Kuning';
+            id.value = 'COMBOKUNING'
         } else if (typeX == 5) {
             name.value = 'Nex Parabola<br>Combo Merah';
+            id.value = 'COMBOMERAH'
         } else if (typeX == 6) {
             name.value = 'NexVidio';
+            id.value = 'NEXVIDIO'
         }
         type.value = typeX
         url.value = urlX;
         lazada.value = urlLazada
-        tiktok.value = urlTiktok
+        tiktok.value = urlTiktok        
         $("#modal-receiver").modal('show')
+
+        $ctaReceiver(id.value, '');
     }
 
     useHead({

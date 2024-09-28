@@ -37,7 +37,7 @@
             <div class="container mt-3">
                 <div class="show-on-mobile">
                     <div class="row">
-                        <div class="col-md-4 col-sm-12 mb-3" v-for="(context, index) in listTerbatas">
+                        <div class="col-md-4 col-sm-12 mb-3" v-for="(context, index) in listTerbatas" :key="index">
                             <div style="position: relative;width:100%">
                                 <div class="shadow-product w-100 product-box rounded-special-deals bg-black rounded"
                                     style="border:0 !important">
@@ -62,7 +62,7 @@
                     <div class="w-100 show-on-desktop">
                         <div class="slider-paket-terbatas">
                             <div class="me-3 width-slider-packet" style="position: relative;width:330px"
-                                v-for="(context, index) in listTerbatas">
+                                v-for="(context, index) in listTerbatas" :key="index">
                                 <div class="shadow-product w-100 product-box rounded-special-deals bg-black rounded"
                                     style="border:0 !important">
                                     <img :src="context.image" />
@@ -91,7 +91,7 @@
                 <h5 class="show-on-mobile text-center">Paket Lainnya</h5>
                 <div class="show-on-mobile">
                     <div class="row">
-                        <div class="col-md-4 col-sm-12 mb-3" v-for="(context, index) in listLainnya">
+                        <div class="col-md-4 col-sm-12 mb-3" v-for="(context, index) in listLainnya" :key="index">
                             <div class="shadow-product product-box rounded-special-deals bg-white w-100">
                                 <img :src="context.image" />
                                 <div class="p-3 " style="min-height:180px">
@@ -112,7 +112,7 @@
                 </div>
                 <div class="slider-paket show-on-desktop">
                     <div class="shadow-product product-box rounded-special-deals bg-white me-3 width-slider-packet"
-                        style="width:330px" v-for="(context, index) in listLainnya">
+                        style="width:330px" v-for="(context, index) in listLainnya" :key="index">
                         <img :src="context.image" />
                         <div class="p-3 " style="min-height:180px">
                             <div class="d-flex justify-content-between mb-3">
@@ -144,7 +144,7 @@
                         <div class="row justify-content-center mt-5 px-4">
                             <div class="col-lg-6 mb-3 d-flex justify-content-center"
                                 v-for="context in dataDetail.ecommerce">
-                                <a :href="context.url" target="_blank" class="w-100">
+                                <a :href="context.url" target="_blank" class="w-100" @click="$ctaSpecialDeals(dataDetail.id, context.id)"> 
                                     <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
                                         style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
                                         <img :src="context.logo" style="height:23px;max-width:100%;" />
@@ -154,7 +154,7 @@
                         </div>
                         <div class="d-flex justify-content-center">
                             <a v-if="dataDetail.custom == 1 && dataDetail.buttontext && dataDetail.url"
-                                :href="dataDetail.url" target="_blank"
+                                :href="dataDetail.url" target="_blank" @click="$ctaSpecialDeals(dataDetail.id, 'CUSTOM')"
                                 class="text-center btn bg-primary text-white p-3 btn-sm">{{dataDetail.buttontext}}</a>
                         </div>
                     </div>
@@ -173,6 +173,7 @@
     import Footer from "~/components/Footer.vue"
 
     const config = useRuntimeConfig()
+    const { $ctaSpecialDeals } = useNuxtApp()
 
     const listTerbatas = ref([]);
     const listLainnya = ref([])
@@ -199,11 +200,15 @@
     function openLainnya(index) {
         dataDetail.value = listLainnya.value[index];
         $("#modal-spesial-deals").modal('show');
+
+        $ctaSpecialDeals(dataDetail.value.id, '')
     }
 
     function openTerbatas(index) {
         dataDetail.value = listTerbatas.value[index];
         $("#modal-spesial-deals").modal('show');
+
+        $ctaSpecialDeals(dataDetail.value.id, '')
     }
     onMounted(() => {    
         initSlider()

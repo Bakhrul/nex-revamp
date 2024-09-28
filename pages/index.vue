@@ -317,7 +317,7 @@
                     <div class="row justify-content-center mt-5 px-4">
                         <div class="col-lg-6 mb-3 d-flex justify-content-center"
                             v-for="context in dataBanner.ecommerce">
-                            <a :href="context.url" target="_blank" class="w-100">
+                            <a :href="context.url" target="_blank" class="w-100" @click="$ctaBanner(dataBanner.id, context.id)">
                                 <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
                                     style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
                                     <img :src="context.logo" style="height:23px;max-width:100%;" />
@@ -344,7 +344,8 @@
     import Footer from "~/components/Footer.vue"
 
     const config = useRuntimeConfig()
-    const gtm = useGtm() // auto-imported by the module
+    const { $ctaBanner } = useNuxtApp()
+
 
     const intervalKidsMovie = ref(null);
     const intervalMom = ref(null);
@@ -400,7 +401,7 @@
     const {
         data
     } = await getHome()
-    onMounted(() => {
+    onMounted(() => {        
         sliderKidsMovie()
         momMovieGallery()
         sliderPacketHome()
@@ -431,6 +432,8 @@
     function showBanner(index) {
         dataBanner.value = listBanner.value[index]
         $("#modal-banner").modal('show');
+
+        $ctaBanner(listBanner.value[index].id,'');
     }
     useHead({
         title: 'TV Satelit Parabola Berlangganan Indonesia | Nex',

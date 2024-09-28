@@ -17,7 +17,7 @@
                             <div class="col-lg-4 show-on-desktop">
                                 <div style="border-bottom: 3px #a5a1a1 solid;font-weight:bold;max-width:250px;display: block;margin:auto;"
                                     class="pb-3 fs-4 mb-3 mt-5 text-center">Klik Untuk
-                                    Cek Paket<br> NEX</div>
+                                    Cek Paket<br> Nex</div>
                                 <div class="w-100" style="max-width:300px;display: block;margin:auto"
                                     v-for="(packet, idx) in listPacket">
                                     <div class="shadow-product mb-3 w-100 product-box bg-white">
@@ -41,7 +41,7 @@
                                         </div>
                                         <div class="pb-3 px-3 d-flex justify-content-center footer">
                                             <button type="button"
-                                                @click="detailPakcet(packet.image,packet.name, packet.selectPrice, packet.noteDetail, packet.selectEcommerce)"
+                                                @click="detailPakcet(packet.id,packet.image,packet.name, packet.selectPrice, packet.noteDetail, packet.selectEcommerce)"
                                                 style="border-radius: 20px;" :disabled="!packet.selected"
                                                 class="text-center btn bg-primary text-white w-100 px-3 py-3">BELI
                                                 SEKARANG</button>
@@ -74,7 +74,7 @@
                                         </div>
                                         <div class="pb-3 px-3 d-flex justify-content-center footer">
                                             <button type="button"
-                                                @click="detailPakcet(packet.image,packet.name, packet.selectPrice, packet.noteDetail, packet.selectEcommerce)"
+                                                @click="detailPakcet(packet.id,packet.image,packet.name, packet.selectPrice, packet.noteDetail, packet.selectEcommerce)"
                                                 style="border-radius: 20px;" :disabled="!packet.selected"
                                                 class="text-center btn bg-primary text-white w-100 px-3 py-3">BELI
                                                 SEKARANG</button>
@@ -102,7 +102,8 @@
                                             </div>
                                             <div class="p-3 d-flex justify-content-center footer"
                                                 style="border-top:1px black solid">
-                                                <nuxt-link :to="`/nexnews/${a.slugcategory}/${a.slug}`" class="w-100 text-center fw-bold"
+                                                <nuxt-link :to="`/nexnews/${a.slugcategory}/${a.slug}`"
+                                                    class="w-100 text-center fw-bold"
                                                     style="border-radius:10px;color:#2C69A7 !important">Baca Sekarang <i
                                                         style="color:#2C69A7 !important;"
                                                         class="bi bi-chevron-right"></i></nuxt-link>
@@ -137,7 +138,8 @@
                         <div style="line-height:1.5;" class="pt-3" v-html="notePacket"></div>
                         <div class="row justify-content-center mt-5 px-4">
                             <div class="col-lg-6 mb-3 d-flex justify-content-center" v-for="context in ecommercePacket">
-                                <a :href="context.url" target="_blank" class="w-100">
+                                <a :href="context.url" target="_blank" class="w-100"
+                                    @click="$ctaPacket(idPacket, context.id)">
                                     <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
                                         style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
                                         <img :src="context.logo" style="height:23px;max-width:100%;" />
@@ -165,7 +167,9 @@
     })
 
     const config = useRuntimeConfig()
-
+    const {
+        $ctaPacket
+    } = useNuxtApp()
     const router = useRouter()
 
     const title = ref('');
@@ -176,6 +180,7 @@
     const other = ref([]);
 
     const listPacket = ref([]);
+    const idPacket = ref('');
     const imagePacket = ref('');
     const namePacket = ref('');
     const notePacket = ref('');
@@ -202,7 +207,7 @@
             }
         })
         if (res.status == 200) {
-            if(!res.data.success){
+            if (!res.data.success) {
                 router.replace({
                     path: '/nexnews'
                 })
@@ -252,13 +257,15 @@
         }
     }
 
-    function detailPakcet(imageX, nameX, price, noteX, ecommerceX) {
+    function detailPakcet(idX, imageX, nameX, price, noteX, ecommerceX) {
         imagePacket.value = imageX;
         namePacket.value = nameX;
         notePacket.value = noteX;
         badgePacket.value = price;
         ecommercePacket.value = ecommerceX;
+        idPacket.value = idX;
         $("#modal-packet").modal('show');
+        $ctaPacket(idPacket.value, '');
     }
 
     useHead({
