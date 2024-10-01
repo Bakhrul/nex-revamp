@@ -338,7 +338,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mb-3">
+                    <!-- <div class="col-lg-4 col-md-6 mb-3">
                         <div class="card bg-white card-receiver" style="border:0 !important">
                             <div class="card-body bg-white p-3">
                                 <div class="d-flex justify-content-center">
@@ -375,7 +375,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
