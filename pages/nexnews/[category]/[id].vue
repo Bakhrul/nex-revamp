@@ -317,7 +317,7 @@
 
 
         $('.slider-news').slick({
-            infinite: false,
+            infinite: true,
             speed: 300,
             centerMode: false,
             dots: false,
@@ -334,7 +334,7 @@
         });
 
         $('.slider-news-paket').slick({
-            infinite: false,
+            infinite: true,
             speed: 300,
             centerMode: false,
             dots: false,

@@ -237,7 +237,7 @@
     function initSlider() {
 
         $('.slider-paket-terbatas').slick({
-            infinite: false,
+            infinite: true,
             speed: 300,
             centerMode: false,
             dots: false,
@@ -256,7 +256,7 @@
 
     function sliderPaket() {
         $('.slider-paket').slick({
-            infinite: false,
+            infinite: true,
             speed: 300,
             centerMode: false,
             dots: false,

@@ -199,7 +199,7 @@
 
         for (let i = 0; i < list.value.length; i++) {
             $('.slider-paket-' + i).slick({
-                infinite: false,
+                infinite: true,
                 speed: 300,
                 centerMode: false,
                 dots: false,
