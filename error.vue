@@ -1,5 +1,5 @@
 <template>
-    <template v-if="error.statusCode  == 404">
+    <template v-if="error?.statusCode  == 404">
         <div class="wrapper-404">
             <div
                 :style="`background:linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.9)),url('${backgroundHeaderNav}');background-size: cover;background-repeat:no-repeat;width:100%;z-index:9999`">
