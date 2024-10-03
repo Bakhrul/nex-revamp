@@ -12,8 +12,7 @@
   },
   "dependencies": {
     "axios": "^1.7.4",
-    "nuxt": "^3.12.3",
-    "nuxt-start": "^2.18.1",
+    "nuxt": "^3.12.3",    
     "swiper": "^11.1.4",
     "vue": "latest",
     "vue3-carousel-nuxt": "^1.1.1"
