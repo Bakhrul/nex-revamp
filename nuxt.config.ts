@@ -41,7 +41,7 @@ export default defineNuxtConfig({
           rel: 'icon',
           type: 'image/png',
           sizes: "any",
-          href: '/icon.png'
+          href: 'http://mynex.learning-bakhrul.my.id/icon.png'
         },             
         {
           rel: 'preconnect',
