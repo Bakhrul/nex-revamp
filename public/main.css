@@ -400,12 +400,15 @@ footer ul li {
         background: #fff !important;
         min-height: unset !important;
     }
-    .match-result-group{
+
+    .match-result-group {
         padding: 0 0 !important;
     }
-    .group-match .dropdown-item{
+
+    .group-match .dropdown-item {
         font-size: 13px !important;
     }
+
     .group-match .subtitle-section {
         font-size: 12px !important;
     }
@@ -755,7 +758,8 @@ button:disabled {
 
 }
 
-.note-shadow::-webkit-scrollbar { /* WebKit */
+.note-shadow::-webkit-scrollbar {
+    /* WebKit */
     width: 0;
     display: none;
     height: 0;
@@ -763,7 +767,7 @@ button:disabled {
 
 .receiver-group {
     display: flex;
-    justify-content: center;    
+    justify-content: center;
 }
 
 .receiver-fitur {
@@ -778,7 +782,7 @@ button:disabled {
 
 .receiver-fitur img {
     width: 100%;
-    border-radius: 0 !important;    
+    border-radius: 0 !important;
 }
 
 .receiver-fitur-border-top {
@@ -817,8 +821,8 @@ button:disabled {
     }
 
     .receiver-group {
-        padding:0 5px;
-        
+        padding: 0 5px;
+
     }
 
     .receiver-fitur .text {
@@ -842,39 +846,109 @@ button:disabled {
 
 
 
- .custom-vue-datatable-pagination {
+.custom-vue-datatable-pagination {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
     padding-bottom: 15px;
     padding-left: 0 !important;
-  }
-   .custom-vue-datatable-pagination button {
+}
+
+.custom-vue-datatable-pagination button {
     padding: 5px;
     background-color: #fff !important;
     border: 0 !important;
     width: 32px;
     display: flex;
-    font-size:12px;
+    font-size: 12px;
     align-items: center;
     justify-content: center;
     margin: 5px;
     height: 32px;
-  }
+}
 
-   .custom-vue-datatable-pagination button.btn-prev-next-datatable {
+.custom-vue-datatable-pagination button.btn-prev-next-datatable {
     background: #fff !important;
     border-radius: 8px !important;
     font-size: 12px;
     color: black !important;
-  }
+}
 
-   .custom-vue-datatable-pagination button.active {
+.custom-vue-datatable-pagination button.active {
     background: #00539a !important;
     border-radius: 8px;
     color: #fff !important;
-  }
+}
 
-  /* .ql-align-center{
+/* .ql-align-center{
     text-align: center;
   } */
+.popup-box {
+    max-height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 9999999999;
+    left: 0 !important;
+    z-index: 9999;
+}
+
+.popup-home {
+    background-color: rgb(0, 0, 0, 0.7);
+    width: 100%;    
+    top: 0;
+    padding: 20px;
+    position: relative;
+    top: 100%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+
+.popup-home .link {
+    padding: 10px 15px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(25, 23, 88, 0.2) 100%), #00E8DA;
+    box-shadow: 0px 12px 20px 8px rgba(0, 0, 0, 0.15), 0px 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 8.95349px;
+    text-decoration: none !important;
+    color: #fff !important;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    font-style: italic;
+
+}
+
+
+
+.popup-home img {
+    margin-bottom: 20px;
+    max-width: 100% !important;
+    max-height: 460px;
+    cursor: pointer;
+}
+
+.popup-home.hidden {    
+    height: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
+    transition: all .3s ease-out;
+}
+
+.popup-home.active {    
+    height: 100vh !important;
+    transition: all .3s ease-out;
+}
+@media(max-width:991px) {
+    .popup-home{
+        padding: 10px !important;
+    }
+    .popup-home .link {
+        font-size: 14px !important;
+    }
+    .popup-home img {
+        max-height: 400px !important;
+    }
+}

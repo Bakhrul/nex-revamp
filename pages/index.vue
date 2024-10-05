@@ -1,5 +1,15 @@
 <template>
     <div>
+        <div class="popup-box" v-if="hasPopUpImage">
+            <div class="popup-home" :class="showPopUpImage ? 'active' : 'hidden'" @click="closePopUp">
+                <div>
+                    <div class="w-100 d-flex justify-content-center"><img @click.stop="redirectPopUp()"
+                            :src="popUpImage" style="max-width:100%"></div>
+                    <div class="d-flex justify-content-center"><a class="link" @click.stop="redirectPopUp()"
+                            href="javascript:void(0)">{{textPopUpImage}}</a></div>
+                </div>
+            </div>
+        </div>
         <Navbar></Navbar>
         <div class="w-100 show-on-desktop">
             <carousel :items-to-show="1" :autoplay="2500" :transition="0" :wrapAround="true">
@@ -317,7 +327,8 @@
                     <div class="row justify-content-center mt-5 px-4">
                         <div class="col-lg-6 mb-3 d-flex justify-content-center"
                             v-for="context in dataBanner.ecommerce">
-                            <a :href="context.url" target="_blank" class="w-100" @click="$ctaBanner(dataBanner.id, context.id)">
+                            <a :href="context.url" target="_blank" class="w-100"
+                                @click="$ctaBanner(dataBanner.id, context.id)">
                                 <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
                                     style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
                                     <img :src="context.logo" style="height:23px;max-width:100%;" />
@@ -344,7 +355,9 @@
     import Footer from "~/components/Footer.vue"
 
     const config = useRuntimeConfig()
-    const { $ctaBanner } = useNuxtApp()
+    const {
+        $ctaBanner
+    } = useNuxtApp()
 
 
     const intervalKidsMovie = ref(null);
@@ -398,10 +411,16 @@
     const hightlightNote3Product3 = ref('');
     const hightlightUrlProduct3 = ref('');
     const hightlightCtaProduct3 = ref('');
+
+    const popUpImage = ref('');
+    const hasPopUpImage = ref(false);
+    const linkPopUpImage = ref('');
+    const textPopUpImage = ref('');
+    const showPopUpImage = ref(false);
     const {
         data
     } = await getHome()
-    onMounted(() => {        
+    onMounted(() => {
         sliderKidsMovie()
         momMovieGallery()
         sliderPacketHome()
@@ -433,7 +452,7 @@
         dataBanner.value = listBanner.value[index]
         $("#modal-banner").modal('show');
 
-        $ctaBanner(listBanner.value[index].id,'');
+        $ctaBanner(listBanner.value[index].id, '');
     }
     useHead({
         title: 'TV Satelit Parabola Berlangganan Indonesia | Nex',
@@ -490,8 +509,28 @@
         next()
 
     })
-    onMounted(() => {        
+    onMounted(() => {
+        setTimeout(() => {
+            if(hasPopUpImage.value){
+                showPopUpImage.value = true;
+            }
+            
+        }, 1500);
     })
+
+    function redirectPopUp() {
+        window.open(linkPopUpImage.value,'_blank')
+        setTimeout(() => {
+            showPopUpImage.value = false;    
+        }, 500);
+        
+        
+    }
+
+    function closePopUp() {
+        showPopUpImage.value = false;        
+        
+    }
     async function getHome() {
         let res = await axios.get(config.public.API_URL + 'home/home', {
             headers: {
@@ -551,6 +590,14 @@
             hightlightNote3Product3.value = res.data.data.hpnote3bottom;
             hightlightUrlProduct3.value = res.data.data.hpurl3;
             hightlightCtaProduct3.value = res.data.data.hpcta3;
+
+        
+                hasPopUpImage.value = res.data.data.popupbannertext ? true : false;
+
+            popUpImage.value = res.data.data.popupbannerimg;
+
+            linkPopUpImage.value = res.data.data.popupbannerurl;
+            textPopUpImage.value = res.data.data.popupbannertext;
 
 
 
