@@ -515,7 +515,7 @@
                 showPopUpImage.value = true;
             }
             
-        }, 1500);
+        }, 1000);
     })
 
     function redirectPopUp() {
