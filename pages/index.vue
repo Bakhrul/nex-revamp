@@ -519,7 +519,7 @@
     })
 
     function redirectPopUp() {
-        window.open(linkPopUpImage.value,'_blank')
+        window.location.href = linkPopUpImage.value
         setTimeout(() => {
             showPopUpImage.value = false;    
         }, 500);
