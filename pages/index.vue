@@ -15,7 +15,7 @@
             <carousel :items-to-show="1" :autoplay="2500" :transition="0" :wrapAround="true">
                 <slide v-for="(context, index) in listBanner" :key="index" style="padding: 0 !important">
                     <a href="javascript:void(0)" @click="showBanner(index)" class="w-100" style="padding: 0 !important">
-                        <img :src="context.imagedesktop" class="w-100" />
+                        <NuxtImg loading="lazy" :src="context.imagedesktop" class="w-100" />
                     </a>
                 </slide>
                 <template #addons>
@@ -28,7 +28,7 @@
             <carousel :items-to-show="1" :autoplay="2500" :transition="0" :wrapAround="true">
                 <slide v-for="(context, index) in listBanner" :key="index" style="padding: 0 !important">
                     <a href="javascript:void(0)" @click="showBanner(index)" class="w-100" style="padding: 0 !important">
-                        <img :src="context.imagemobile" class="w-100" />
+                        <NuxtImg loading="lazy" :src="context.imagemobile" class="w-100" />
                     </a>
                 </slide>
                 <template #addons>
