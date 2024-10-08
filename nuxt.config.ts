@@ -87,7 +87,8 @@ export default defineNuxtConfig({
   },  
   modules: [
     'vue3-carousel-nuxt',
-    '@zadigetvoltaire/nuxt-gtm'
+    '@zadigetvoltaire/nuxt-gtm',
+    '@nuxt/image'
   ],
   plugins:['~/plugins/cta']
 

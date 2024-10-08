@@ -50,7 +50,7 @@
                     <div class="slider-paket slider-paket-home">
                         <div class="column-receiver-and-packet me-2">
                             <div class="shadow-product w-100 product-box">
-                                <img :src="hightlightBannerProduct1" style="min-height: unset !important;" />
+                                <NuxtImg loading="lazy" :src="hightlightBannerProduct1" style="min-height: unset !important;" />
                                 <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                     style="min-height:130px">
                                     <div class="fw-bold text-center fs-6" v-if="hightlightNote1Product1">
@@ -69,7 +69,7 @@
                         </div>
                         <div class="column-receiver-and-packet me-2">
                             <div class="shadow-product w-100 product-box">
-                                <img :src="hightlightBannerProduct2" style="min-height: unset !important;" />
+                                <NuxtImg loading="lazy" :src="hightlightBannerProduct2" style="min-height: unset !important;" />
                                 <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                     style="min-height:130px">
                                     <div class="fw-bold text-center fs-6" v-if="hightlightNote1Product2">
@@ -88,7 +88,7 @@
                         </div>
                         <div class="column-receiver-and-packet">
                             <div class="shadow-product w-100 product-box">
-                                <img :src="hightlightBannerProduct3" style="min-height: unset !important;" />
+                                <NuxtImg loading="lazy" :src="hightlightBannerProduct3" style="min-height: unset !important;" />
                                 <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                     style="min-height:130px">
                                     <div class="fw-bold text-center fs-6" v-if="hightlightNote1Product3">
@@ -110,7 +110,7 @@
                 <div class="row show-on-desktop" style="overflow:auto !important;flex-wrap:nowrap">
                     <div class="col-4 mb-3 column-receiver-and-packet">
                         <div class="shadow-product w-100 product-box">
-                            <img :src="hightlightBannerProduct1" style="min-height: unset !important;" />
+                            <NuxtImg loading="lazy" :src="hightlightBannerProduct1" style="min-height: unset !important;" />
                             <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                 style="min-height:130px">
                                 <div class="fw-bold text-center fs-6" v-if="hightlightNote1Product1">
@@ -129,7 +129,7 @@
                     </div>
                     <div class="col-4 mb-3 column-receiver-and-packet">
                         <div class="shadow-product w-100 product-box">
-                            <img :src="hightlightBannerProduct2" style="min-height: unset !important;" />
+                            <NuxtImg loading="lazy" :src="hightlightBannerProduct2" style="min-height: unset !important;" />
                             <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                 style="min-height:130px">
                                 <div class="fw-bold text-center fs-6" v-if="hightlightNote1Product2">
@@ -148,7 +148,7 @@
                     </div>
                     <div class="col-4 mb-3 column-receiver-and-packet">
                         <div class="shadow-product w-100 product-box">
-                            <img :src="hightlightBannerProduct3" style="min-height: unset !important;" />
+                            <NuxtImg loading="lazy" :src="hightlightBannerProduct3" style="min-height: unset !important;" />
                             <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                 style="min-height:130px">
                                 <div class="fw-bold text-center fs-6" v-if="hightlightNote1Product3">
@@ -285,7 +285,7 @@
                 <div class="wrap-gallery d-flex py-3" id="mom-movie-gallery"
                     style="background-color:white; overflow-x: auto; width:100%;">
                     <div class="gallery" v-for="context in listFilm">
-                        <img :src="context.imageurl" style="margin-right:10px;border-radius: 10px;" />
+                        <NuxtImg loading="lazy" :src="context.imageurl" style="margin-right:10px;border-radius: 10px;" />
                     </div>
                 </div>
             </div>
@@ -300,7 +300,7 @@
                 <div class="wrap-gallery d-flex py-3" id="kids-movie-gallery"
                     style="background-color:white; overflow-x: auto; width:100%;">
                     <div class="gallery" v-for="context in listKid">
-                        <img :src="context.imageurl" style="margin-right:10px;border-radius: 10px;" />
+                        <NuxtImg loading="lazy" :src="context.imageurl" style="margin-right:10px;border-radius: 10px;" />
                     </div>
                 </div>
             </div>
