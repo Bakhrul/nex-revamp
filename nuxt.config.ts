@@ -90,6 +90,6 @@ export default defineNuxtConfig({
     '@zadigetvoltaire/nuxt-gtm',
     '@nuxt/image'
   ],
-  plugins:['~/plugins/cta']
+  plugins:['~/plugins/cta',{src: '~/plugins/vue-lazyload', mode: 'all'}]
 
 })
