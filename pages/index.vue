@@ -50,7 +50,9 @@
                     <div class="slider-paket slider-paket-home">
                         <div class="column-receiver-and-packet me-2">
                             <div class="shadow-product w-100 product-box">
-                                <img v-lazy="hightlightBannerProduct1" style="min-height: unset !important;" />
+                                <ClientOnly>
+                                    <img v-lazy="hightlightBannerProduct1" style="min-height: unset !important;" />
+                                </ClientOnly>
                                 <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                     style="min-height:130px">
                                     <div class="fw-bold text-center fs-6" v-if="hightlightNote1Product1">
@@ -69,7 +71,9 @@
                         </div>
                         <div class="column-receiver-and-packet me-2">
                             <div class="shadow-product w-100 product-box">
-                                <img v-lazy="hightlightBannerProduct2" style="min-height: unset !important;" />
+                                <ClientOnly>
+                                    <img v-lazy="hightlightBannerProduct2" style="min-height: unset !important;" />
+                                </ClientOnly>
                                 <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                     style="min-height:130px">
                                     <div class="fw-bold text-center fs-6" v-if="hightlightNote1Product2">
@@ -88,7 +92,9 @@
                         </div>
                         <div class="column-receiver-and-packet">
                             <div class="shadow-product w-100 product-box">
-                                <img v-lazy="hightlightBannerProduct3" style="min-height: unset !important;" />
+                                <ClientOnly>
+                                    <img v-lazy="hightlightBannerProduct3" style="min-height: unset !important;" />
+                                </ClientOnly>
                                 <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                     style="min-height:130px">
                                     <div class="fw-bold text-center fs-6" v-if="hightlightNote1Product3">
@@ -110,7 +116,9 @@
                 <div class="row show-on-desktop" style="overflow:auto !important;flex-wrap:nowrap">
                     <div class="col-4 mb-3 column-receiver-and-packet">
                         <div class="shadow-product w-100 product-box">
-                            <img v-lazy="hightlightBannerProduct1" style="min-height: unset !important;" />
+                            <ClientOnly>
+                                <img v-lazy="hightlightBannerProduct1" style="min-height: unset !important;" />
+                            </ClientOnly>
                             <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                 style="min-height:130px">
                                 <div class="fw-bold text-center fs-6" v-if="hightlightNote1Product1">
@@ -129,7 +137,9 @@
                     </div>
                     <div class="col-4 mb-3 column-receiver-and-packet">
                         <div class="shadow-product w-100 product-box">
-                            <img v-lazy="hightlightBannerProduct2" style="min-height: unset !important;" />
+                            <ClientOnly>
+                                <img v-lazy="hightlightBannerProduct2" style="min-height: unset !important;" />
+                            </ClientOnly>
                             <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                 style="min-height:130px">
                                 <div class="fw-bold text-center fs-6" v-if="hightlightNote1Product2">
@@ -148,7 +158,9 @@
                     </div>
                     <div class="col-4 mb-3 column-receiver-and-packet">
                         <div class="shadow-product w-100 product-box">
-                            <img v-lazy="hightlightBannerProduct3" style="min-height: unset !important;" />
+                            <ClientOnly>
+                                <img v-lazy="hightlightBannerProduct3" style="min-height: unset !important;" />
+                            </ClientOnly>
                             <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                 style="min-height:130px">
                                 <div class="fw-bold text-center fs-6" v-if="hightlightNote1Product3">
@@ -249,16 +261,20 @@
                                                     <div class="text title-club text-right"
                                                         style="color:#00539B;font-weight:600;font-size:14px;padding-right:10px;text-align:right;">
                                                         {{ schedule.club1 }}</div>
-                                                    <img v-lazy="schedule.logo1" class="image-club"
-                                                        style="width:25px;margin-right:10px">
+                                                    <ClientOnly>
+                                                        <img v-lazy="schedule.logo1" class="image-club"
+                                                            style="width:25px;margin-right:10px">
+                                                    </ClientOnly>
                                                 </div>
                                                 <div class="text time text-center "
                                                     style="color:#00539B;font-weight:600;font-size:14px;width:14%">
                                                     {{ schedule.jam }}</div>
                                                 <div class="d-flex justify-content-start align-items-center"
                                                     style="width:43%;padding-left:10px;">
-                                                    <img v-lazy="schedule.logo2" class="image-club"
-                                                        style="width:25px;margin-right:10px;text-align:left">
+                                                    <ClientOnly>
+                                                        <img v-lazy="schedule.logo2" class="image-club"
+                                                            style="width:25px;margin-right:10px;text-align:left">
+                                                    </ClientOnly>
                                                     <div class="text title-club"
                                                         style="color:#00539B;font-weight:600;font-size:14px;">
                                                         {{schedule.club2}}</div>
@@ -284,8 +300,10 @@
             <div class="container">
                 <div class="wrap-gallery d-flex py-3" id="mom-movie-gallery"
                     style="background-color:white; overflow-x: auto; width:100%;">
-                    <div class="gallery" v-for="context in listFilm">                        
-                        <img v-lazy="context.imageurl" style="margin-right:10px;border-radius: 10px;" />                        
+                    <div class="gallery" v-for="context in listFilm">
+                        <ClientOnly>
+                            <img v-lazy="context.imageurl" style="margin-right:10px;border-radius: 10px;" />
+                        </ClientOnly>
                     </div>
                 </div>
             </div>
@@ -299,8 +317,10 @@
             <div class="container">
                 <div class="wrap-gallery d-flex py-3" id="kids-movie-gallery"
                     style="background-color:white; overflow-x: auto; width:100%;">
-                    <div class="gallery" v-for="context in listKid">                        
-                        <img v-lazy="context.imageurl" style="margin-right:10px;border-radius: 10px;" />                        
+                    <div class="gallery" v-for="context in listKid">
+                        <ClientOnly>
+                            <img v-lazy="context.imageurl" style="margin-right:10px;border-radius: 10px;" />
+                        </ClientOnly>
                     </div>
                 </div>
             </div>
@@ -421,14 +441,14 @@
         data
     } = await getHome()
     onMounted(() => {
-       
+
         sliderPacketHome()
         if (selectKompetisiDateId.value && selectKompetisiId.value) {
             getJadwalKompetisi()
         }
 
         setTimeout(() => {
-            if(hasPopUpImage.value){
+            if (hasPopUpImage.value) {
                 showPopUpImage.value = true;
             }
             sliderKidsMovie()
@@ -515,20 +535,20 @@
         }
         next()
 
-    })   
+    })
 
     function redirectPopUp() {
         window.location.href = linkPopUpImage.value
         setTimeout(() => {
-            showPopUpImage.value = false;    
+            showPopUpImage.value = false;
         }, 500);
-        
-        
+
+
     }
 
     function closePopUp() {
-        showPopUpImage.value = false;        
-        
+        showPopUpImage.value = false;
+
     }
     async function getHome() {
         let res = await axios.get(config.public.API_URL + 'home/home', {
@@ -590,8 +610,8 @@
             hightlightUrlProduct3.value = res.data.data.hpurl3;
             hightlightCtaProduct3.value = res.data.data.hpcta3;
 
-        
-                hasPopUpImage.value = res.data.data.popupbannertext ? true : false;
+
+            hasPopUpImage.value = res.data.data.popupbannertext ? true : false;
 
             popUpImage.value = res.data.data.popupbannerimg;
 
