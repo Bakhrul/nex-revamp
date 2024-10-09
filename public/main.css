@@ -921,7 +921,15 @@ button:disabled {
 
 }
 
-
+.c-pointer{
+    cursor: pointer;
+}
+.pointer{
+    cursor: pointer;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
 
 .popup-home img {
     margin-bottom: 20px;

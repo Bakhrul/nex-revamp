@@ -14,9 +14,11 @@
         <div class="w-100 show-on-desktop">
             <carousel :items-to-show="1" :autoplay="2500" :transition="0" :wrapAround="true">
                 <slide v-for="(context, index) in listBanner" :key="index" style="padding: 0 !important">
-                    <a href="javascript:void(0)" @click="showBanner(index)" class="w-100" style="padding: 0 !important">
-                        <img :src="context.imagedesktop" class="w-100" />
-                    </a>
+                    <div class="c-pointer pointer cursor-pointer w-100" @click="showBanner(index)" style="padding: 0 !important">
+                        
+                            <img :src="context.imagedesktop" :alt="`banner-desktop-${index}`" class="w-100" />
+                        
+                    </div>
                 </slide>
                 <template #addons>
 
@@ -27,9 +29,10 @@
         <div class="w-100 show-on-mobile">
             <carousel :items-to-show="1" :autoplay="2500" :transition="0" :wrapAround="true">
                 <slide v-for="(context, index) in listBanner" :key="index" style="padding: 0 !important">
-                    <a href="javascript:void(0)" @click="showBanner(index)" class="w-100" style="padding: 0 !important">
-                        <img :src="context.imagemobile" class="w-100" />
-                    </a>
+                    <div class="c-pointer pointer cursor-pointer w-100" @click="showBanner(index)" style="padding: 0 !important">
+                        
+                            <img :src="context.imagemobile" :alt="`banner-mobile-${index}`" class="w-100" />                        
+                    </div>
                 </slide>
                 <template #addons>
 
@@ -51,7 +54,7 @@
                         <div class="column-receiver-and-packet me-2">
                             <div class="shadow-product w-100 product-box">
                                 <ClientOnly>
-                                    <img v-lazy="hightlightBannerProduct1" style="min-height: unset !important;" />
+                                    <img v-lazy="hightlightBannerProduct1" :alt="hightlightNote1Product1" style="min-height: unset !important;" />
                                 </ClientOnly>
                                 <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                     style="min-height:130px">
@@ -72,7 +75,7 @@
                         <div class="column-receiver-and-packet me-2">
                             <div class="shadow-product w-100 product-box">
                                 <ClientOnly>
-                                    <img v-lazy="hightlightBannerProduct2" style="min-height: unset !important;" />
+                                    <img v-lazy="hightlightBannerProduct2" :alt="hightlightNote1Product2" style="min-height: unset !important;" />
                                 </ClientOnly>
                                 <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                     style="min-height:130px">
@@ -93,7 +96,7 @@
                         <div class="column-receiver-and-packet">
                             <div class="shadow-product w-100 product-box">
                                 <ClientOnly>
-                                    <img v-lazy="hightlightBannerProduct3" style="min-height: unset !important;" />
+                                    <img v-lazy="hightlightBannerProduct3" :alt="hightlightNote1Product3" style="min-height: unset !important;" />
                                 </ClientOnly>
                                 <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                     style="min-height:130px">
@@ -117,7 +120,7 @@
                     <div class="col-4 mb-3 column-receiver-and-packet">
                         <div class="shadow-product w-100 product-box">
                             <ClientOnly>
-                                <img v-lazy="hightlightBannerProduct1" style="min-height: unset !important;" />
+                                <img v-lazy="hightlightBannerProduct1" :alt="hightlightNote1Product1" style="min-height: unset !important;" />
                             </ClientOnly>
                             <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                 style="min-height:130px">
@@ -138,7 +141,7 @@
                     <div class="col-4 mb-3 column-receiver-and-packet">
                         <div class="shadow-product w-100 product-box">
                             <ClientOnly>
-                                <img v-lazy="hightlightBannerProduct2" style="min-height: unset !important;" />
+                                <img v-lazy="hightlightBannerProduct2" :alt="hightlightNote1Product2" style="min-height: unset !important;" />
                             </ClientOnly>
                             <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                 style="min-height:130px">
@@ -159,7 +162,7 @@
                     <div class="col-4 mb-3 column-receiver-and-packet">
                         <div class="shadow-product w-100 product-box">
                             <ClientOnly>
-                                <img v-lazy="hightlightBannerProduct3" style="min-height: unset !important;" />
+                                <img v-lazy="hightlightBannerProduct3" :alt="hightlightNote1Product3" style="min-height: unset !important;" />
                             </ClientOnly>
                             <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                 style="min-height:130px">
@@ -181,8 +184,7 @@
             </div>
         </section>
         <section class="py-3">
-            <div class="match-box"
-                :style="`background-image:url('${backgroundImage}');background-size: 100% 100%;background-repeat:no-repeat;min-height:500px`">
+            <div class="match-box" :style="`background-image:url('${backgroundImage}');background-size: 100% 100%;background-repeat:no-repeat;min-height:500px`">
                 <div class="container-fluid">
                     <div class="py-3 px-5 group-match">
                         <div class="row">
@@ -211,10 +213,10 @@
                                                 </span>
                                             </button>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item"
+                                                <li><div class="dropdown-item c-pointer"
                                                         style="color:#00539B !important;font-weight:400;font-size: 15px;"
-                                                        v-for="context in listKompetisi" href="javascript:void(0)"
-                                                        @click="selectKompetisi = context.kompetisi; selectKompetisiId = context.id;getJadwalKompetisi()">{{context.kompetisi}}</a>
+                                                        v-for="context in listKompetisi"
+                                                        @click="selectKompetisi = context.kompetisi; selectKompetisiId = context.id;getJadwalKompetisi()">{{context.kompetisi}}</div>
                                                 </li>
                                             </ul>
                                         </div>
@@ -262,7 +264,7 @@
                                                         style="color:#00539B;font-weight:600;font-size:14px;padding-right:10px;text-align:right;">
                                                         {{ schedule.club1 }}</div>
                                                     <ClientOnly>
-                                                        <img v-lazy="schedule.logo1" class="image-club"
+                                                        <img v-lazy="schedule.logo1" :alt="schedule.club1" class="image-club"
                                                             style="width:25px;margin-right:10px">
                                                     </ClientOnly>
                                                 </div>
@@ -272,7 +274,7 @@
                                                 <div class="d-flex justify-content-start align-items-center"
                                                     style="width:43%;padding-left:10px;">
                                                     <ClientOnly>
-                                                        <img v-lazy="schedule.logo2" class="image-club"
+                                                        <img v-lazy="schedule.logo2" :alt="schedule.club2" class="image-club"
                                                             style="width:25px;margin-right:10px;text-align:left">
                                                     </ClientOnly>
                                                     <div class="text title-club"
@@ -302,7 +304,7 @@
                     style="background-color:white; overflow-x: auto; width:100%;">
                     <div class="gallery" v-for="context in listFilm">
                         <ClientOnly>
-                            <img v-lazy="context.imageurl" style="margin-right:10px;border-radius: 10px;" />
+                            <img v-lazy="context.imageurl" :alt="`${filmTitle}-${index}`" style="margin-right:10px;border-radius: 10px;" />
                         </ClientOnly>
                     </div>
                 </div>
@@ -319,7 +321,7 @@
                     style="background-color:white; overflow-x: auto; width:100%;">
                     <div class="gallery" v-for="context in listKid">
                         <ClientOnly>
-                            <img v-lazy="context.imageurl" style="margin-right:10px;border-radius: 10px;" />
+                            <img v-lazy="context.imageurl" :alt="`${kidTitle}-${index}`" style="margin-right:10px;border-radius: 10px;" />
                         </ClientOnly>
                     </div>
                 </div>
@@ -331,7 +333,7 @@
         <div class="box">Punya pertanyaan?
             Kami siap untuk
             membantu anda</div>
-        <img src="~/assets/cs.png">
+        <img src="~/assets/cs.png" alt="cs">
     </a>
 
     <div class="modal fade" tabindex="-1" role="dialog" id="modal-banner">
@@ -340,7 +342,7 @@
                 <div class="modal-body rounded" v-if="dataBanner">
                     <!-- <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
                             class="bi bi-x"></i></button> -->
-                    <img :src="dataBanner.imagedesktop" class="w-100 rounded" />
+                    <img :src="dataBanner.imagedesktop" :alt="dataBanner.title" class="w-100 rounded" />
                     <h5 class="fw-bold mt-3">{{dataBanner.title}}</h5>
                     <div :class="dataBanner.shadow == 1 ? 'note-shadow' : ''" style="line-height:1.5;"
                         v-html="dataBanner.notedetail"></div>
@@ -351,7 +353,7 @@
                                 @click="$ctaBanner(dataBanner.id, context.id)">
                                 <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
                                     style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                    <img :src="context.logo" style="height:23px;max-width:100%;" />
+                                    <img :alt="'ecommerce'" :src="context.logo" style="height:23px;max-width:100%;" />
                                 </div>
                             </a>
                         </div>
