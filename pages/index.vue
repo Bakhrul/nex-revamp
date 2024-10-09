@@ -3,10 +3,10 @@
         <div class="popup-box" v-if="hasPopUpImage">
             <div class="popup-home" :class="showPopUpImage ? 'active' : 'hidden'" @click="closePopUp">
                 <div>
-                    <div class="w-100 d-flex justify-content-center"><img @click.stop="redirectPopUp()"
+                    <div class="w-100 d-flex justify-content-center"><img alt="promo"
                             :src="popUpImage" style="max-width:100%"></div>
-                    <div class="d-flex justify-content-center"><a class="link" @click.stop="redirectPopUp()"
-                            href="javascript:void(0)">{{textPopUpImage}}</a></div>
+                    <div class="d-flex justify-content-center"><a class="link" @click.stop=""
+                            :href="linkPopUpImage">{{textPopUpImage}}</a></div>
                 </div>
             </div>
         </div>
@@ -234,10 +234,10 @@
                                                 </span>
                                             </button>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item"
+                                                <li><div class="dropdown-item c-pointer"
                                                         style="color:#00539B !important;font-weight:400;font-size: 15px;"
-                                                        v-for="context in listKompetisiDate" href="javascript:void(0)"
-                                                        @click="selectKompetisiDate = context.trxdatetext; selectKompetisiDateId = context.trxdate;getJadwalKompetisi()">{{context.trxdatetext}}</a>
+                                                        v-for="context in listKompetisiDate"
+                                                        @click="selectKompetisiDate = context.trxdatetext; selectKompetisiDateId = context.trxdate;getJadwalKompetisi()">{{context.trxdatetext}}</div>
                                                 </li>
                                             </ul>
                                         </div>

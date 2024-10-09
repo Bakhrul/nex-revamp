@@ -61,11 +61,11 @@
                     </div>
                     <div class="footer-title mb-2">Butuh Bantuan?</div>
                     <ul style="font-size:16px" class="mb-1">
-                        <li><a href="mailto:cs@nexparabola.co.id" class="footer-link"> <img
+                        <li><a href="mailto:cs@nexparabola.co.id" class="footer-link"> <img alt="email"
                                     src="~/assets/icon/email.svg" style="width:29px" />
                                 &ensp;cs@mynex.co.id</a></li>
                         <li><a href="https://wa.me/6281260012700" class="footer-link"> <img
-                                    src="~/assets/icon/whatsapp.svg" style="width:29px" />
+                                    src="~/assets/icon/whatsapp.svg" alt="whatsapp" style="width:29px" />
                                 &ensp;+62 81260012700</a></li>
                         <li><a href="tel:02180637388">
                                 <div class="footer-link d-flex align-items-start"> <img src="~/assets/icon/phone.svg" alt="phone"
