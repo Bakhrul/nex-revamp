@@ -15,6 +15,7 @@
     "axios": "^1.7.4",
     "nuxt": "^3.12.3",
     "swiper": "^11.1.4",
+    "vite-svg-loader": "^5.1.0",
     "vue": "latest",
     "vue-lazyload": "^3.0.0",
     "vue3-carousel-nuxt": "^1.1.1"
