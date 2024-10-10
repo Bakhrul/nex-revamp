@@ -3,8 +3,8 @@
         <div class="popup-box" v-if="hasPopUpImage">
             <div class="popup-home" :class="showPopUpImage ? 'active' : 'hidden'" @click="closePopUp">
                 <div>
-                    <div class="w-100 d-flex justify-content-center"><img alt="promo"
-                            :src="popUpImage" style="max-width:100%"></div>
+                    <div class="w-100 d-flex justify-content-center"><NuxtImg format="webp" alt="promo"
+                            :src="popUpImage" style="max-width:100%"/></div>
                     <div class="d-flex justify-content-center"><a class="link" @click.stop=""
                             :href="linkPopUpImage">{{textPopUpImage}}</a></div>
                 </div>
@@ -16,7 +16,7 @@
                 <slide v-for="(context, index) in listBanner" :key="index" style="padding: 0 !important">
                     <div class="c-pointer pointer cursor-pointer w-100" @click="showBanner(index)" style="padding: 0 !important">
                         
-                            <img :src="context.imagedesktop" :alt="`banner-desktop-${index}`" class="w-100" />
+                            <NuxtImg format="webp" :src="context.imagedesktop" :alt="`banner-desktop-${index}`" class="w-100" />
                         
                     </div>
                 </slide>
@@ -31,7 +31,7 @@
                 <slide v-for="(context, index) in listBanner" :key="index" style="padding: 0 !important">
                     <div class="c-pointer pointer cursor-pointer w-100" @click="showBanner(index)" style="padding: 0 !important">
                         
-                            <img :src="context.imagemobile" :alt="`banner-mobile-${index}`" class="w-100" />                        
+                            <NuxtImg format="webp" :src="context.imagemobile" :alt="`banner-mobile-${index}`" class="w-100" />                        
                     </div>
                 </slide>
                 <template #addons>
@@ -53,9 +53,9 @@
                     <div class="slider-paket slider-paket-home">
                         <div class="column-receiver-and-packet me-2">
                             <div class="shadow-product w-100 product-box">
-                                <ClientOnly>
-                                    <img v-lazy="hightlightBannerProduct1" :alt="hightlightNote1Product1" style="min-height: unset !important;" />
-                                </ClientOnly>
+                                
+                                    <NuxtImg format="webp" :src="hightlightBannerProduct1" :alt="hightlightNote1Product1" style="min-height: unset !important;" />
+                                
                                 <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                     style="min-height:130px">
                                     <div class="fw-bold text-center fs-6" v-if="hightlightNote1Product1">
@@ -73,10 +73,8 @@
                             </div>
                         </div>
                         <div class="column-receiver-and-packet me-2">
-                            <div class="shadow-product w-100 product-box">
-                                <ClientOnly>
-                                    <img v-lazy="hightlightBannerProduct2" :alt="hightlightNote1Product2" style="min-height: unset !important;" />
-                                </ClientOnly>
+                            <div class="shadow-product w-100 product-box">                            
+                                <NuxtImg format="webp" :src="hightlightBannerProduct2" :alt="hightlightNote1Product2" style="min-height: unset !important;" />                                
                                 <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                     style="min-height:130px">
                                     <div class="fw-bold text-center fs-6" v-if="hightlightNote1Product2">
@@ -96,7 +94,7 @@
                         <div class="column-receiver-and-packet">
                             <div class="shadow-product w-100 product-box">
                                 <ClientOnly>
-                                    <img v-lazy="hightlightBannerProduct3" :alt="hightlightNote1Product3" style="min-height: unset !important;" />
+                                    <NuxtImg format="webp" :src="hightlightBannerProduct3" :alt="hightlightNote1Product3" style="min-height: unset !important;" />
                                 </ClientOnly>
                                 <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                     style="min-height:130px">
@@ -118,10 +116,8 @@
                 </div>
                 <div class="row show-on-desktop" style="overflow:auto !important;flex-wrap:nowrap">
                     <div class="col-4 mb-3 column-receiver-and-packet">
-                        <div class="shadow-product w-100 product-box">
-                            <ClientOnly>
-                                <img v-lazy="hightlightBannerProduct1" :alt="hightlightNote1Product1" style="min-height: unset !important;" />
-                            </ClientOnly>
+                        <div class="shadow-product w-100 product-box">                            
+                            <NuxtImg format="webp" :src="hightlightBannerProduct1" :alt="hightlightNote1Product1" style="min-height: unset !important;" />                            
                             <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                 style="min-height:130px">
                                 <div class="fw-bold text-center fs-6" v-if="hightlightNote1Product1">
@@ -139,10 +135,8 @@
                         </div>
                     </div>
                     <div class="col-4 mb-3 column-receiver-and-packet">
-                        <div class="shadow-product w-100 product-box">
-                            <ClientOnly>
-                                <img v-lazy="hightlightBannerProduct2" :alt="hightlightNote1Product2" style="min-height: unset !important;" />
-                            </ClientOnly>
+                        <div class="shadow-product w-100 product-box">                            
+                            <NuxtImg format="webp" :src="hightlightBannerProduct2" :alt="hightlightNote1Product2" style="min-height: unset !important;" />                            
                             <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                 style="min-height:130px">
                                 <div class="fw-bold text-center fs-6" v-if="hightlightNote1Product2">
@@ -160,10 +154,8 @@
                         </div>
                     </div>
                     <div class="col-4 mb-3 column-receiver-and-packet">
-                        <div class="shadow-product w-100 product-box">
-                            <ClientOnly>
-                                <img v-lazy="hightlightBannerProduct3" :alt="hightlightNote1Product3" style="min-height: unset !important;" />
-                            </ClientOnly>
+                        <div class="shadow-product w-100 product-box">                            
+                            <NuxtImg format="webp" :src="hightlightBannerProduct3" :alt="hightlightNote1Product3" style="min-height: unset !important;" />                            
                             <div class="p-3 d-flex flex-column justify-content-center align-items-center"
                                 style="min-height:130px">
                                 <div class="fw-bold text-center fs-6" v-if="hightlightNote1Product3">
@@ -236,7 +228,8 @@
                                             <ul class="dropdown-menu">
                                                 <li><div class="dropdown-item c-pointer"
                                                         style="color:#00539B !important;font-weight:400;font-size: 15px;"
-                                                        v-for="context in listKompetisiDate"
+                                                        v-for="(context, index) in listKompetisiDate"
+                                                        :key="index"
                                                         @click="selectKompetisiDate = context.trxdatetext; selectKompetisiDateId = context.trxdate;getJadwalKompetisi()">{{context.trxdatetext}}</div>
                                                 </li>
                                             </ul>
@@ -253,30 +246,25 @@
                                     <div class="row match-result">
                                         <div class="col-lg-6" v-for="context in resultKompetisi">
                                             <div class="w-100">
-                                                <img :src="context.logo" class="mt-3" style="width:100px !important">
+                                                <NuxtImg format="webp" :src="context.logo" class="mt-3" style="width:100px !important"/>
                                             </div>
                                             <div class="d-flex align-items-center pb-2 mt-2 match-result-element"
                                                 style="border-bottom:1px black solid"
-                                                v-for="schedule in context.schedule">
+                                                v-for="(schedule, index) in context.schedule"
+                                                :key="index">
                                                 <div class="d-flex justify-content-end align-items-center"
                                                     style="width:43%;">
                                                     <div class="text title-club text-right"
                                                         style="color:#00539B;font-weight:600;font-size:14px;padding-right:10px;text-align:right;">
-                                                        {{ schedule.club1 }}</div>
-                                                    <ClientOnly>
-                                                        <img v-lazy="schedule.logo1" :alt="schedule.club1" class="image-club"
-                                                            style="width:25px;margin-right:10px">
-                                                    </ClientOnly>
+                                                        {{ schedule.club1 }}</div>                                                    
+                                                        <NuxtImg format="webp" :src="schedule.logo1" :alt="schedule.club1" class="image-club" style="width:25px;margin-right:10px"/>                                                    
                                                 </div>
                                                 <div class="text time text-center "
                                                     style="color:#00539B;font-weight:600;font-size:14px;width:14%">
                                                     {{ schedule.jam }}</div>
                                                 <div class="d-flex justify-content-start align-items-center"
-                                                    style="width:43%;padding-left:10px;">
-                                                    <ClientOnly>
-                                                        <img v-lazy="schedule.logo2" :alt="schedule.club2" class="image-club"
-                                                            style="width:25px;margin-right:10px;text-align:left">
-                                                    </ClientOnly>
+                                                    style="width:43%;padding-left:10px;">                                                    
+                                                    <NuxtImg format="webp" :src="schedule.logo2" :alt="schedule.club2" class="image-club" style="width:25px;margin-right:10px;text-align:left"/>                                                    
                                                     <div class="text title-club"
                                                         style="color:#00539B;font-weight:600;font-size:14px;">
                                                         {{schedule.club2}}</div>
@@ -302,10 +290,8 @@
             <div class="container">
                 <div class="wrap-gallery d-flex py-3" id="mom-movie-gallery"
                     style="background-color:white; overflow-x: auto; width:100%;">
-                    <div class="gallery" v-for="context in listFilm">
-                        <ClientOnly>
-                            <img v-lazy="context.imageurl" :alt="`${filmTitle}-${index}`" style="margin-right:10px;border-radius: 10px;" />
-                        </ClientOnly>
+                    <div class="gallery" v-for="(context, index) in listFilm" :key="index">                        
+                            <NuxtImg format="webp" :src="context.imageurl" :alt="`${filmTitle}-${index}`" style="margin-right:10px;border-radius: 10px;" />                        
                     </div>
                 </div>
             </div>
@@ -319,10 +305,8 @@
             <div class="container">
                 <div class="wrap-gallery d-flex py-3" id="kids-movie-gallery"
                     style="background-color:white; overflow-x: auto; width:100%;">
-                    <div class="gallery" v-for="context in listKid">
-                        <ClientOnly>
-                            <img v-lazy="context.imageurl" :alt="`${kidTitle}-${index}`" style="margin-right:10px;border-radius: 10px;" />
-                        </ClientOnly>
+                    <div class="gallery" v-for="(context, index) in listKid" :key="index">                        
+                        <NuxtImg format="webp" :src="context.imageurl" :alt="`${kidTitle}-${index}`" style="margin-right:10px;border-radius: 10px;" />                        
                     </div>
                 </div>
             </div>
@@ -342,7 +326,7 @@
                 <div class="modal-body rounded" v-if="dataBanner">
                     <!-- <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
                             class="bi bi-x"></i></button> -->
-                    <img :src="dataBanner.imagedesktop" :alt="dataBanner.title" class="w-100 rounded" />
+                    <NuxtImg format="webp" :src="dataBanner.imagedesktop" :alt="dataBanner.title" class="w-100 rounded" />
                     <h5 class="fw-bold mt-3">{{dataBanner.title}}</h5>
                     <div :class="dataBanner.shadow == 1 ? 'note-shadow' : ''" style="line-height:1.5;"
                         v-html="dataBanner.notedetail"></div>
@@ -353,7 +337,7 @@
                                 @click="$ctaBanner(dataBanner.id, context.id)">
                                 <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
                                     style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                    <img :alt="'ecommerce'" :src="context.logo" style="height:23px;max-width:100%;" />
+                                    <NuxtImg format="webp" :alt="'ecommerce'" :src="context.logo" style="height:23px;max-width:100%;" />
                                 </div>
                             </a>
                         </div>
