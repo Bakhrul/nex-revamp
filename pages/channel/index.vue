@@ -4,7 +4,7 @@
         <div class="show-on-mobile">
             <div class="d-flex align-items-center"
                 :style="`background-image:url('${backgroundImageMobile}');background-size:100% 100%;width:100%;position:relative;`">
-                <img :src="backgroundImageMobile" class="w-100" style="visibility: hidden;" />
+                <img alt="channel" :src="backgroundImageMobile" class="w-100" style="visibility: hidden;" />
                 <div class="d-flex align-items-center" style="position:absolute;left:0;top:0;width:100%;height:100%;">
                     <div class="container" style="padding:15px 15px">
                         <h6 class="text-white fw-bold">Channel</h6>
@@ -15,7 +15,7 @@
         <div class="show-on-desktop">
             <div class="d-flex align-items-center"
                 :style="`background-image:url('${backgroundImageDesktop}');background-size:100% 100%;width:100%;position:relative;`">
-                <img :src="backgroundImageDesktop" class="w-100" style="visibility: hidden;" />
+                <img alt="channel" :src="backgroundImageDesktop" class="w-100" style="visibility: hidden;" />
                 <div class="d-flex align-items-center" style="position:absolute;left:0;top:0;width:100%;height:100%;">
                     <div class="container" style="padding:15px 0">
                         <h1 class="text-white fw-bold">Channel</h1>
@@ -45,10 +45,10 @@
                                     </span>
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item"
+                                    <li><div class="dropdown-item c-pointer"
                                                         style="color:#00539B !important;font-weight:400;font-size: 13px;"
-                                                        v-for="context in listTanggal" href="javascript:void(0)"
-                                                        @click="selectDate = context.trxdatetext; selectDateId = context.trxdate;getSchedule()">{{context.trxdatetext}}</a>
+                                                        v-for="context in listTanggal"
+                                                        @click="selectDate = context.trxdatetext; selectDateId = context.trxdate;getSchedule()">{{context.trxdatetext}}</div>
                                                 </li>
                                 </ul>
                             </div>
@@ -65,10 +65,10 @@
                                     </span>
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item"
+                                    <li><div class="dropdown-item c-pointer"
                                                         style="color:#00539B !important;font-weight:400;font-size: 13px;"
-                                                        v-for="context in listKategori" href="javascript:void(0)"
-                                                        @click="selectCategory = context.category; selectCategoryId = context.id;getSchedule()">{{context.category}}</a>
+                                                        v-for="context in listKategori"
+                                                        @click="selectCategory = context.category; selectCategoryId = context.id;getSchedule()">{{context.category}}</div>
                                                 </li>
                                 </ul>
                             </div>
@@ -85,10 +85,10 @@
                                     </span>
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item"
+                                    <li><div class="dropdown-item c-pointer"
                                                         style="color:#00539B !important;font-weight:400;font-size: 13px;"
-                                                        v-for="context in listChannel" href="javascript:void(0)"
-                                                        @click="selectChannel = context.channel; selectChannelId = context.id;getSchedule()">{{context.channel}}</a>
+                                                        v-for="context in listChannel"
+                                                        @click="selectChannel = context.channel; selectChannelId = context.id;getSchedule()">{{context.channel}}</div>
                                                 </li>
                                 </ul>
                             </div>
@@ -101,9 +101,9 @@
             </div>
             <div class="mt-3 py-5 bg-section">
                 <div class="container">
-                    <img :src="imageKompetisi" class="mb-1 show-on-desktop" v-if="imageKompetisi" style="width:150px;">
+                    <NuxtImg alt="about" loading="lazy" format="webp" :src="imageKompetisi" class="mb-1 show-on-desktop" v-if="imageKompetisi" style="width:150px;"/>
                     <div class="d-flex justify-content-center">
-                        <img :src="imageKompetisi" class="mb-1 show-on-mobile" v-if="imageKompetisi" style="width:150px;">
+                        <NuxtImg alt="about" loading="lazy" format="webp" :src="imageKompetisi" class="mb-1 show-on-mobile" v-if="imageKompetisi" style="width:150px;"/>
                     </div>
                     <div class="table-responsive mt-3">
                         <table class="table table-custom">
@@ -134,8 +134,8 @@
 
 <script setup>
     import axios from "axios";
-    import backgroundImageMobile from "~/assets/header/channel.png"
-    import backgroundImageDesktop from "~/assets/header/channel.png"
+    import backgroundImageMobile from "~/public/header/channel.png"
+    import backgroundImageDesktop from "~/public/header/channel.png"
     import logoNex from "~/public/bg-about-2.png";
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"

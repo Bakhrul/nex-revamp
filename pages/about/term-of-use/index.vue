@@ -4,7 +4,7 @@
         <div class="show-on-mobile">
             <div class="d-flex align-items-center"
                 :style="`background-image:url('${backgroundImageMobile}');background-size:100% 100%;width:100%;position:relative;`">
-                <img :src="backgroundImageMobile" class="w-100" style="visibility: hidden;" />
+                <img alt="term" :src="backgroundImageMobile" class="w-100" style="visibility: hidden;" />
                 <div class="d-flex align-items-center" style="position:absolute;left:0;top:0;width:100%;height:100%;">
                     <div class="container" style="padding:15px 15px">
                         <h6 class="text-white fw-bold">Syarat dan Ketentuan</h6>
@@ -15,7 +15,7 @@
         <div class="show-on-desktop">
             <div class="d-flex align-items-center"
                 :style="`background-image:url('${backgroundImageDesktop}');background-size:100% 100%;width:100%;position:relative;`">
-                <img :src="backgroundImageDesktop" class="w-100" style="visibility: hidden;" />
+                <img alt="term" :src="backgroundImageDesktop" class="w-100" style="visibility: hidden;" />
                 <div class="d-flex align-items-center" style="position:absolute;left:0;top:0;width:100%;height:100%;">
                     <div class="container" style="padding:15px 0">
                         <h1 class="text-white fw-bold">Syarat dan Ketentuan</h1>

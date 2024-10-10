@@ -4,7 +4,7 @@
         <div class="show-on-mobile">
             <div class="d-flex align-items-center"
                 :style="`background-image:url('${backgroundImageMobile}');background-size:100% 100%;width:100%;position:relative;`">
-                <img :src="backgroundImageMobile" class="w-100" style="visibility: hidden;" />
+                <img alt="header" :src="backgroundImageMobile" class="w-100" style="visibility: hidden;" />
                 <div class="d-flex align-items-center" style="position:absolute;left:0;top:0;width:100%;height:100%;">
                     <div class="container" style="padding:15px 15px">
                         <h6 class="text-white fw-bold">Teknisi</h6>
@@ -15,7 +15,7 @@
         <div class="show-on-desktop">
             <div class="d-flex align-items-center"
                 :style="`background-image:url('${backgroundImageDesktop}');background-size:100% 100%;width:100%;position:relative;`">
-                <img :src="backgroundImageDesktop" class="w-100" style="visibility: hidden;" />
+                <img alt="header" :src="backgroundImageDesktop" class="w-100" style="visibility: hidden;" />
                 <div class="d-flex align-items-center" style="position:absolute;left:0;top:0;width:100%;height:100%;">
                     <div class="container" style="padding:15px 0">
                         <h1 class="text-white fw-bold">Teknisi</h1>
@@ -42,15 +42,14 @@
                             <ul class="dropdown-menu dropdown-menu-city" style="max-height:300px;overflow: auto;">
                                 <li style="padding:15px"><input type="text" class="form-control" v-model="searchCity"
                                         placeholder="Search"></li>
-                                <li><a class="dropdown-item"
+                                <li><div class="dropdown-item c-pointer"
                                         style="color:#00539B !important;font-weight:400;font-size: 15px;"
-                                        href="javascript:void(0)"
-                                        @click="search = '';currentPage = 1; totalData = 0;selectCity = 'Semua'; selectCityId = '0';getList()">Semua</a>
+                                        @click="search = '';currentPage = 1; totalData = 0;selectCity = 'Semua'; selectCityId = '0';getList()">Semua</div>
                                 </li>
-                                <li><a class="dropdown-item"
+                                <li><div class="dropdown-item c-pointer"
                                         style="color:#00539B !important;font-weight:400;font-size: 15px;"
-                                        v-for="context in getQueryCity()" href="javascript:void(0)"
-                                        @click="search = ''; currentPage = 1; totalData = 0;selectCity = context.city; selectCityId = context.id;getList()">{{context.city}}</a>
+                                        v-for="context in getQueryCity()"
+                                        @click="search = ''; currentPage = 1; totalData = 0;selectCity = context.city; selectCityId = context.id;getList()">{{context.city}}</div>
                                 </li>
                             </ul>
                         </div>
@@ -145,8 +144,8 @@
 </template>
 
 <script setup>
-    import backgroundImageMobile from "~/assets/header/teknisi.png"
-    import backgroundImageDesktop from "~/assets/header/teknisi.png"
+    import backgroundImageMobile from "~/public/header/teknisi.png"
+    import backgroundImageDesktop from "~/public/header/teknisi.png"
     import logoNex from "~/public/bg-about-2.png";
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"

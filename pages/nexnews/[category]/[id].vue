@@ -11,7 +11,7 @@
                                     style="background:#8E8E93;color:#fff;border-radius: 10px">{{category}}</span>
                                 <h1 style="font-weight:600;" class="mt-3 mb-3">{{title}}</h1>
                                 <div class="fs-5 pt-1" style="color:#8a8686">{{date}}</div>
-                                <img :src="image" class="w-100 mb-5 mt-3" />
+                                <NuxtImg alt="article" loading="lazy" format="webp" :src="image" class="w-100 mb-5 mt-3" />
                                 <div class="mb-5" v-html="content"></div>
                             </div>
                             <div class="col-lg-4 show-on-desktop">
@@ -21,7 +21,7 @@
                                 <div class="w-100" style="max-width:300px;display: block;margin:auto"
                                     v-for="(packet, idx) in listPacket">
                                     <div class="shadow-product mb-3 w-100 product-box bg-white">
-                                        <img :src="packet.image" />
+                                        <NuxtImg alt="paket" loading="lazy" format="webp" :src="packet.image" />
                                         <div class="p-3 " style="min-height:210px">
                                             <div class="d-flex justify-content-between mb-3 align-items-start">
                                                 <div class="fw-bold fs-6 pe-2">{{packet.name}}</div>
@@ -54,7 +54,7 @@
                                 <div class="slider-news slider-paket">
                                     <div class="shadow-product width-slider-news mb-3 product-box bg-white"
                                         v-for="(packet, idx) in listPacket">
-                                        <img :src="packet.image" />
+                                        <NuxtImg alt="paket" loading="lazy" format="webp" :src="packet.image" />
                                         <div class="p-3 " style="min-height:210px">
                                             <div class="d-flex justify-content-between mb-3 align-items-start">
                                                 <div class="fw-bold fs-6 pe-2">{{packet.name}}</div>
@@ -87,7 +87,7 @@
                                 <div class="slider-news slider-paket">
                                     <div class="width-slider-news mb-3" v-for="a in other">
                                         <div class="shadow-product w-100 product-box">
-                                            <img :src="a.image" />
+                                            <NuxtImg alt="article" loading="lazy" format="webp" :src="a.image" />
                                             <div
                                                 class="d-flex px-3 py-2 mt-1 justify-content-between align-items-center">
                                                 <span class="px-3 py-2"
@@ -125,7 +125,7 @@
                     <div class="modal-body rounded">
                         <!-- <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
                                 class="bi bi-x"></i></button> -->
-                        <img :src="imagePacket" class="w-100 rounded" />
+                        <NuxtImg alt="paket" loading="lazy" format="webp" :src="imagePacket" class="w-100 rounded" />
                         <div class="d-flex justify-content-between align-items-start">
                             <div class="fs-6 fw-bold mt-3 pe-3" style="word-break: break-word">{{namePacket}}</div>
                             <div style="width:160px" class="d-flex justify-content-end" v-if="badgePacket">
@@ -142,7 +142,7 @@
                                     @click="$ctaPacket(idPacket, context.id)">
                                     <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
                                         style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                        <img :src="context.logo" style="height:23px;max-width:100%;" />
+                                        <NuxtImg alt="ecommerce" loading="lazy" format="webp" :src="context.logo" style="height:23px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>

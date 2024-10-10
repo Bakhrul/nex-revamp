@@ -4,7 +4,7 @@
         <div class="show-on-mobile">
             <div class="d-flex align-items-center"
                 :style="`background-image:url('${backgroundImageMobile}');background-size:100% 100%;width:100%;position:relative;`">
-                <img :src="backgroundImageMobile" class="w-100" style="visibility: hidden;" />
+                <img alt="header" :src="backgroundImageMobile" class="w-100" style="visibility: hidden;" />
                 <div class="d-flex align-items-center" style="position:absolute;left:0;top:0;width:100%;height:100%;">
                     <div class="container" style="padding:15px 15px">
                         <h6 class="text-white fw-bold">Paket</h6>
@@ -15,7 +15,7 @@
         <div class="show-on-desktop">
             <div class="d-flex align-items-center"
                 :style="`background-image:url('${backgroundImageDesktop}');background-size:100% 100%;width:100%;position:relative;`">
-                <img :src="backgroundImageDesktop" class="w-100" style="visibility: hidden;" />
+                <img alt="header" :src="backgroundImageDesktop" class="w-100" style="visibility: hidden;" />
                 <div class="d-flex align-items-center" style="position:absolute;left:0;top:0;width:100%;height:100%;">
                     <div class="container" style="padding:15px 0">
                         <h1 class="text-white fw-bold">PAKET</h1>
@@ -51,7 +51,7 @@
                         <div class="me-3 width-slider-packet" style="width:330px;"
                             v-for="(packet, idx) in category.packet">
                             <div class="shadow-product w-100 product-box bg-white">
-                                <img :src="packet.image" />
+                                <NuxtImg alt="paket" loading="lazy" format="webp" :src="packet.image" />
                                 <div class="p-3 " style="min-height:210px">
                                     <div class="d-flex justify-content-between mb-3 align-items-start">
                                         <div class="fw-bold fs-6 pe-2">{{packet.name}}</div>
@@ -90,7 +90,7 @@
                     <div class="modal-body rounded">
                         <!-- <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
                                 class="bi bi-x"></i></button> -->
-                        <img :src="image" class="w-100 rounded" />
+                        <NuxtImg alt="paket" loading="lazy" format="webp" :src="image" class="w-100 rounded" />
                         <div class="d-flex justify-content-between align-items-start">
                             <div class="fs-6 fw-bold mt-3 pe-3" style="word-break: break-word">{{name}}</div>
                             <div style="width:160px" class="d-flex justify-content-end" v-if="badge">
@@ -107,7 +107,7 @@
                                     @click="$ctaPacket(id, context.id)">
                                     <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
                                         style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                        <img :src="context.logo" style="height:23px;max-width:100%;" />
+                                        <NuxtImg alt="ecommerce" loading="lazy" format="webp" :src="context.logo" style="height:23px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>
@@ -123,8 +123,8 @@
 <script setup>
     import axios from "axios"
 
-    import backgroundImageMobile from "~/assets/header/paket.png"
-    import backgroundImageDesktop from "~/assets/header/paket.png"
+    import backgroundImageMobile from "~/public/header/paket.png"
+    import backgroundImageDesktop from "~/public/header/paket.png"
     import logoNex from "~/public/bg-about-2.png";
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"

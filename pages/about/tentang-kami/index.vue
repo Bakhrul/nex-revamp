@@ -14,7 +14,7 @@
                                 bagi seluruh keluarga di Indonesia.</div>
                         </div>
                         <div class="col-lg-6 d-flex justify-content-center">
-                            <img src="~/assets/bg-about.png" class="w-100" style="max-width: 400px;">
+                            <NuxtImg alt="about" loading="lazy" format="webp" src="/bg-about.png" class="w-100" style="max-width: 400px;"/>
                         </div>
                     </div>
 
@@ -24,7 +24,7 @@
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-6 d-flex justify-content-center">
-                            <img src="~/assets/hero-about.png" class="w-100">
+                            <NuxtImg alt="about" loading="lazy" format="webp" src="/hero-about.png" class="w-100"/>
                         </div>
                         <div class="col-lg-6">
                             <h2 class=" fw-bold line-after-text"><span>Keunggulan NEX</span></h2>
@@ -63,7 +63,7 @@
                             </div>
                         </div>
                         <div class="col-lg-6 d-flex justify-content-center">
-                            <img src="~/assets/hero-about-3.png" class="w-100" style="max-width: 400px;">
+                            <NuxtImg alt="about" loading="lazy" format="webp" src="/hero-about-3.png" class="w-100" style="max-width: 400px;"/>
                         </div>
                     </div>
 
@@ -111,8 +111,8 @@
                                                         bagi seluruh keluarga di Indonesia.</div>
                                                 </div>
                                                 <div class="col-lg-6 d-flex justify-content-center">
-                                                    <img src="~/assets/bg-about-2.png" class="w-100 mt-3"
-                                                        style="max-width: 100%;width:100%">
+                                                    <NuxtImg alt="about" loading="lazy" format="webp" src="/bg-about-2.png" class="w-100 mt-3"
+                                                        style="max-width: 100%;width:100%"/>
                                                 </div>
                                             </div>
 
@@ -146,8 +146,8 @@
                                         <li>Akses Jangkauan Seluruh Indonesia</li>
                                     </ol>
                                     <div class="px-3 mb-3">
-                                    <img src="~/assets/hero-about-2.png" class="w-100 mt-3"
-                                        style="width:100%">
+                                    <NuxtImg alt="about" loading="lazy" format="webp" src="/hero-about-2.png" class="w-100 mt-3"
+                                        style="width:100%"/>
                                     </div>
                                     </div>
                                 </div>
@@ -185,8 +185,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-6 d-flex justify-content-center">
-                                                    <img src="~/assets/bg-about-2.png" class="w-100 mt-3"
-                                                        style="max-width: 100%;">
+                                                    <NuxtImg alt="about" loading="lazy" format="webp" src="/bg-about-2.png" class="w-100 mt-3"
+                                                        style="max-width: 100%;"/>
                                                 </div>
                                             </div>
 
@@ -205,9 +205,9 @@
 </template>
 
 <script setup>
-    import backgroundImageMobile from "~/assets/header/about.png"
-    import backgroundImageDesktop from "~/assets/header/about.png"
-    import backgroundImageDesktop2 from "~/assets/bg-about-3.png"
+    import backgroundImageMobile from "~/public/header/about.png"
+    import backgroundImageDesktop from "~/public/header/about.png"
+    import backgroundImageDesktop2 from "~/public/bg-about-3.png"
     import logoNex from "~/public/bg-about-2.png";
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"

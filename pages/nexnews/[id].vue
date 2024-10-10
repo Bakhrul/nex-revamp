@@ -4,7 +4,7 @@
         <div class="show-on-mobile">
             <div class="d-flex align-items-center"
                 :style="`background-image:url('${backgroundImageMobile}');background-size:100% 100%;width:100%;position:relative;`">
-                <img :src="backgroundImageMobile" class="w-100" style="visibility: hidden;" />
+                <img alt="header" :src="backgroundImageMobile" class="w-100" style="visibility: hidden;" />
                 <div class="d-flex align-items-center" style="position:absolute;left:0;top:0;width:100%;height:100%;">
                     <div class="container" style="padding:15px 15px">
                         <h6 class="text-white fw-bold">NEX NEWS</h6>
@@ -15,7 +15,7 @@
         <div class="show-on-desktop">
             <div class="d-flex align-items-center"
                 :style="`background-image:url('${backgroundImageDesktop}');background-size:100% 100%;width:100%;position:relative;`">
-                <img :src="backgroundImageDesktop" class="w-100" style="visibility: hidden;" />
+                <img alt="header" :src="backgroundImageDesktop" class="w-100" style="visibility: hidden;" />
                 <div class="d-flex align-items-center" style="position:absolute;left:0;top:0;width:100%;height:100%;">
                     <div class="container" style="padding:15px 0">
                         <h1 class="text-white fw-bold">NEX NEWS</h1>
@@ -46,7 +46,7 @@
                 <div class="row">
                     <div class="col-lg-4 mb-5" v-for="a in listNews">
                         <div class="shadow-product w-100 product-box bg-white">
-                            <img :src="a.image" />
+                            <NuxtImg alt="article" loading="lazy" format="webp" :src="a.image" />
                             <div class="d-flex px-3 py-2 mt-1 justify-content-between align-items-center">
                                 <span class="px-3 py-2"
                                     style="background:#8E8E93;color:#fff;border-radius: 10px;font-size:12px;">{{a.category}}</span>
@@ -98,8 +98,8 @@
 </template>
 
 <script setup>
-    import backgroundImageMobile from "~/assets/header/news.png"
-    import backgroundImageDesktop from "~/assets/header/news.png"
+    import backgroundImageMobile from "~/public/header/news.png"
+    import backgroundImageDesktop from "~/public/header/news.png"
     import logoNex from "~/public/bg-about-2.png";
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"
