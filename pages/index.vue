@@ -291,7 +291,7 @@
                 </div>
             </div>
             <div class="container d-flex justify-content-center">
-                <img src="@/assets/ilustrator-mobile.png" class="w-100 show-on-mobile mb-3" style="max-width:500px" />
+                <img src="@/assets/ilustrator-mobile.png" alt="Jadwal pertandingan" class="w-100 show-on-mobile mb-3" style="max-width:500px" />
             </div>
         </section>
         <section class="mb-3">
