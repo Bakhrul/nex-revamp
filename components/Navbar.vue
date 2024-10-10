@@ -4,7 +4,7 @@
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
                 <router-link to="/">
-                    <NuxtImg loading="lazy" format="webp" src="/logo-nex.svg" alt="logo-nex" class="mb-3 mt-3" style="width:130px" />
+                    <NuxtImg loading="lazy" src="/logo-nex.svg" alt="logo-nex" class="mb-3 mt-3" style="width:130px" />
                 </router-link>
                 <!-- <form class="d-flex form-nav" role="search">
                     <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -52,7 +52,7 @@
 
                 </button>
                 <router-link to="/">
-                    <NuxtImg loading="lazy" format="webp" src="/logo-nex.svg" alt="logo-nex" style="width:80px" />
+                    <NuxtImg loading="lazy" src="/logo-nex.svg" alt="logo-nex" style="width:80px" />
                 </router-link>
                 <div>
                     <!-- <button class="btn btn-sm" style="padding:0 !important;"><svg width="23" height="23" viewBox="0 0 30 31"
@@ -72,7 +72,7 @@
                     </li>
                     <li class="nav-item nav-item-spesial-deals">
                         <router-link to="/special-deals" class="nav-link">
-                            <NuxtImg loading="lazy" format="webp" src="/special-deals.svg" alt="special-deals" class="show-on-desktop" style="width:65px" />
+                            <NuxtImg loading="lazy" src="/special-deals.svg" alt="special-deals" class="show-on-desktop" style="width:65px" />
                             <span class="show-on-mobile">Spesial Deals</span>
                         </router-link>
                     </li>
