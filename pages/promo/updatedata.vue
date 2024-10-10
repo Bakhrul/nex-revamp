@@ -1,7 +1,7 @@
 <template>
     <div>
         <Navbar></Navbar>
-        <img :src="headerImageDesktop1" class="w-100">
+        <img alt="header" :src="headerImageDesktop1" class="w-100">
         <section class="py-5">
             <div class="container">
                 <h4 class="fw-bold text-center">RAIH GRATIS NONTON FILM DAN SERIES SEPUASNYA  SELAMA 30 HARI DI NEX PARABOLA</h4>
@@ -36,7 +36,7 @@
 </template>
 
 <script setup>
-    import headerImageDesktop1 from "~/assets/static-content/banner/2-detail.png"
+    import headerImageDesktop1 from "~/public/static-content/banner/2-detail.png"
     import logoNex from "~/public/bg-about-2.png";
 
     import Navbar from "~/components/Navbar.vue"

@@ -4,7 +4,7 @@
         <div class="show-on-mobile">
             <div class="d-flex align-items-center"
                 :style="`background-image:url('${backgroundImageMobile}');background-size:100% 100%;width:100%;position:relative;`">
-                <img :src="backgroundImageMobile" class="w-100" style="visibility: hidden;" />
+                <img alt="header" :src="backgroundImageMobile" class="w-100" style="visibility: hidden;" />
                 <div class="d-flex align-items-center" style="position:absolute;left:0;top:0;width:100%;height:100%;">
                     <div class="container" style="padding:15px 25px">
                         <h6 class="text-white fw-bold" style="max-width:120px;margin-block-end: 0 !important;">Promo
@@ -16,7 +16,7 @@
         <div class="show-on-desktop">
             <div class="d-flex align-items-center"
                 :style="`background-image:url('${backgroundImageDesktop}');background-size:100% 100%;width:100%;position:relative;`">
-                <img :src="backgroundImageDesktop" class="w-100" style="visibility: hidden;" />
+                <img alt="header" :src="backgroundImageDesktop" class="w-100" style="visibility: hidden;" />
                 <div class="d-flex align-items-center" style="position:absolute;left:0;top:0;width:100%;height:100%;">
                     <div class="container" style="padding:15px 0">
                         <h1 class="text-white fw-bold">PROMO RECEIVER & PAKET</h1>
@@ -41,7 +41,7 @@
                             <div style="position: relative;width:100%">
                                 <div class="shadow-product w-100 product-box rounded-special-deals bg-black rounded"
                                     style="border:0 !important">
-                                    <img :src="context.image" />
+                                    <NuxtImg alt="paket" loading="lazy" format="webp" :src="context.image" />
                                     <div class="p-3 " style="min-height:150px">
                                         <div class="d-flex justify-content-between mb-3">
                                             <div class="fw-bold fs-6 text-white">{{context.title}}</div>
@@ -49,9 +49,9 @@
                                         <div class="text-white">{{context.note}} </div>
                                     </div>
                                     <div class="py-3 px-3 d-flex justify-content-center footer">
-                                        <a @click="openTerbatas(index)" href="javascript:void(0)"
+                                        <div @click="openTerbatas(index)"
                                             style="border-radius: 20px;background:#F3753A;"
-                                            class="text-center btn text-white w-100 p-3">LEBIH LANJUT</a>
+                                            class="text-center btn text-white c-pointer w-100 p-3">LEBIH LANJUT</div>
                                     </div>
                                 </div>
                             </div>
@@ -65,7 +65,7 @@
                                 v-for="(context, index) in listTerbatas" :key="index">
                                 <div class="shadow-product w-100 product-box rounded-special-deals bg-black rounded"
                                     style="border:0 !important">
-                                    <img :src="context.image" />
+                                    <NuxtImg alt="paket" loading="lazy" format="webp" :src="context.image" />
                                     <div class="p-3 " style="min-height:200px">
                                         <div class="d-flex justify-content-between mb-3">
                                             <div class="fw-bold fs-6 text-white">{{context.title}}</div>
@@ -73,9 +73,9 @@
                                         <div class="text-white">{{context.note}} </div>
                                     </div>
                                     <div class="py-3 px-3 d-flex justify-content-center footer">
-                                        <a @click="openTerbatas(index)" href="javascript:void(0)"
+                                        <div @click="openTerbatas(index)"
                                             style="border-radius: 20px;background:#F3753A;"
-                                            class="text-center btn text-white w-100 p-3">LEBIH LANJUT</a>
+                                            class="text-center btn text-white w-100 p-3 c-pointer">LEBIH LANJUT</div>
                                     </div>
                                 </div>
                             </div>
@@ -93,7 +93,7 @@
                     <div class="row">
                         <div class="col-md-4 col-sm-12 mb-3" v-for="(context, index) in listLainnya" :key="index">
                             <div class="shadow-product product-box rounded-special-deals bg-white w-100">
-                                <img :src="context.image" />
+                                <NuxtImg alt="paket" loading="lazy" format="webp" :src="context.image" />
                                 <div class="p-3 " style="min-height:180px">
                                     <div class="d-flex justify-content-between mb-3">
                                         <div class="fw-bold fs-6">{{context.title}}</div>
@@ -102,9 +102,9 @@
                                     </div>
                                 </div>
                                 <div class="py-3 px-3 d-flex justify-content-center footer">
-                                    <a @click="openLainnya(index)" href="javascript:void(0)"
+                                    <div @click="openLainnya(index)"
                                         style="border-radius: 20px;"
-                                        class="text-center btn bg-primary text-white w-100 p-3">LEBIH LANJUT</a>
+                                        class="text-center btn bg-primary text-white c-pointer w-100 p-3">LEBIH LANJUT</div>
                                 </div>
                             </div>
                         </div>
@@ -113,7 +113,7 @@
                 <div class="slider-paket show-on-desktop">
                     <div class="shadow-product product-box rounded-special-deals bg-white me-3 width-slider-packet"
                         style="width:330px" v-for="(context, index) in listLainnya" :key="index">
-                        <img :src="context.image" />
+                        <NuxtImg alt="paket" loading="lazy" format="webp" :src="context.image" />
                         <div class="p-3 " style="min-height:180px">
                             <div class="d-flex justify-content-between mb-3">
                                 <div class="fw-bold fs-6">{{context.title}}</div>
@@ -121,8 +121,8 @@
                             <div>{{context.note}}</div>
                         </div>
                         <div class="py-3 px-3 d-flex justify-content-center footer">
-                            <a @click="openLainnya(index)" href="javascript:void(0)" style="border-radius: 20px;"
-                                class="text-center btn bg-primary text-white w-100 p-3">LEBIH LANJUT</a>
+                            <div @click="openLainnya(index)" style="border-radius: 20px;"
+                                class="text-center btn bg-primary c-pointer text-white w-100 p-3">LEBIH LANJUT</div>
                         </div>
                     </div>
                 </div>
@@ -137,7 +137,7 @@
                     <div class="modal-body rounded" v-if="dataDetail">
                         <!-- <button class="btn-close-modal-custom" type="button" data-bs-dismiss="modal"><i
                                 class="bi bi-x"></i></button> -->
-                        <img :src="dataDetail.image" class="w-100 rounded" />
+                        <NuxtImg alt="paket" loading="lazy" format="webp" :src="dataDetail.image" class="w-100 rounded" />
                         <h5 class="fw-bold mt-3">{{dataDetail.title}}</h5>
                         <div :class="dataDetail.shadow == 1 ? 'note-shadow' : ''" style="line-height:1.5;"
                             v-html="dataDetail.notedetail"></div>
@@ -147,7 +147,7 @@
                                 <a :href="context.url" target="_blank" class="w-100" @click="$ctaSpecialDeals(dataDetail.id, context.id)"> 
                                     <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
                                         style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                        <img :src="context.logo" style="height:23px;max-width:100%;" />
+                                        <NuxtImg alt="ecommerce" loading="lazy" format="webp" :src="context.logo" style="height:23px;max-width:100%;" />
                                     </div>
                                 </a>
                             </div>

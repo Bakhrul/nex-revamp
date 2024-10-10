@@ -922,13 +922,13 @@ button:disabled {
 }
 
 .c-pointer{
-    cursor: pointer;
+    cursor: pointer !important;
 }
 .pointer{
-    cursor: pointer;
+    cursor: pointer !important;
 }
 .cursor-pointer{
-    cursor: pointer;
+    cursor: pointer !important;
 }
 
 .popup-home img {

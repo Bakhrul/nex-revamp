@@ -4,7 +4,7 @@
         <div class="show-on-mobile">
             <div class="d-flex align-items-center"
                 :style="`background-image:url('${backgroundImageMobile}');background-size:100% 100%;width:100%;position:relative;`">
-                <img :src="backgroundImageMobile" class="w-100" style="visibility: hidden;" />
+                <img alt="header" :src="backgroundImageMobile" class="w-100" style="visibility: hidden;" />
                 <div class="d-flex align-items-center" style="position:absolute;left:0;top:0;width:100%;height:100%;">
                     <div class="container" style="padding:15px 15px">
                         <h6 class="text-white fw-bold">Receiver</h6>
@@ -15,7 +15,7 @@
         <div class="show-on-desktop">
             <div class="d-flex align-items-center"
                 :style="`background-image:url('${backgroundImageDesktop}');background-size:100% 100%;width:100%;position:relative;`">
-                <img :src="backgroundImageDesktop" class="w-100" style="visibility: hidden;" />
+                <img alt="header" :src="backgroundImageDesktop" class="w-100" style="visibility: hidden;" />
                 <div class="d-flex align-items-center" style="position:absolute;left:0;top:0;width:100%;height:100%;">
                     <div class="container" style="padding:15px 0">
                         <h1 class="text-white fw-bold">RECEIVER</h1>
@@ -34,63 +34,63 @@
                         <div class="card bg-white card-receiver" style="border:0 !important">
                             <div class="card-body bg-white p-3">
                                 <div class="d-flex justify-content-center">
-                                    <img :src="receiver1" style="width:100%;max-width:100%;height: unset !important" />
+                                    <NuxtImg alt="receiver" loading="lazy" format="webp" src="/static-content/receiver/1.png" style="width:100%;max-width:100%;height: unset !important" />
                                 </div>
                                 <div class="text-center pt-4 fs-6 fw-bold c-primary black-on-mobile">Nex Parabola</div>
                                 <div class="text-center pt-2 fs-6 fw-bold c-primary black-on-mobile">Tipe Biru</div>
                                 <div class="text-center pt-2">Lebih canggih tampilan baru</div>
                                 <div class="d-flex justify-content-center text-center pt-3 pb-3">
-                                    <a href="javascript:void(0)"
+                                    <div class="c-pointer"
                                         @click="openReceiver(1, link1, linkLazada1, linkTiktok1)"
                                         style="color:black !important;font-weight:600;"><span
                                             style="border-bottom:1px #ddd solid">BELI SEKARANG</span>&ensp;<i
-                                            class="bi bi-arrow-right c-primary-custom"></i></a>
+                                            class="bi bi-arrow-right c-primary-custom"></i></div>
                                 </div>
                                 <div class="w-100 pt-3 receiver-fitur-border-top">
                                     <div class="receiver-group">
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/spec.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/spec.svg"/>
                                             <div class="text">CS 8001 Chipset</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/wifi.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/wifi.svg"/>
                                             <div class="text">WIFI Dongle</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/ota.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/ota.svg"/>
                                             <div class="text">Super OTA</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/ui.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/ui.svg"/>
                                             <div class="text">Modern UI</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/play.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/play.svg"/>
                                             <div class="text">H.264/SD/HD
                                                 Video</div>
                                         </div>
                                     </div>
                                     <div class="receiver-group">
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/tv-icon.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/tv-icon.svg"/>
                                             <div class="text">TV Icon
                                                 List</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/usb.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/usb.svg"/>
                                             <div class="text">2x back
                                                 USB</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/meecast.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/meecast.svg"/>
                                             <div class="text">MeeCast</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/512mb.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/512mb.svg"/>
                                             <div class="text">Memory</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/8mb.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/8mb.svg"/>
                                             <div class="text">RAM</div>
                                         </div>
                                     </div>
@@ -102,48 +102,48 @@
                         <div class="card bg-white card-receiver" style="border:0 !important">
                             <div class="card-body bg-white p-3">
                                 <div class="d-flex justify-content-center">
-                                    <img :src="receiver2" style="width:100%;max-width:100%;height: unset !important" />
+                                    <NuxtImg alt="receiver" loading="lazy" format="webp" src="/static-content/receiver/2.png" style="width:100%;max-width:100%;height: unset !important" />
                                 </div>
                                 <div class="text-center pt-4 fs-6 fw-bold c-primary black-on-mobile">Nex Parabola</div>
                                 <div class="text-center pt-2 fs-6 fw-bold c-primary black-on-mobile">Tipe Kuning</div>
                                 <div class="text-center pt-2">Lebih canggih tampilan baru</div>
                                 <div class="d-flex justify-content-center text-center pt-3 pb-3">
-                                    <a href="javascript:void(0)"
+                                    <div class="c-pointer"
                                         @click="openReceiver(2, link2, linkLazada2, linkTiktok2)"
                                         style="color:black !important;font-weight:600;"><span
                                             style="border-bottom:1px #ddd solid">BELI SEKARANG</span>&ensp;<i
-                                            class="bi bi-arrow-right c-primary-custom"></i></a>
+                                            class="bi bi-arrow-right c-primary-custom c-pointer"></i></div>
                                 </div>
                                 <div class="w-100 pt-3 receiver-fitur-border-top">
                                     <div class="receiver-group">
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/spec.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/spec.svg"/>
                                             <div class="text">CS 8001 Chipset</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/512mb.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/512mb.svg"/>
                                             <div class="text">Memory</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/8mb.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/8mb.svg"/>
                                             <div class="text">Flash</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/play.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/play.svg"/>
                                             <div class="text">H.264/MPEG-2/MPEG-4 Video</div>
                                         </div>
                                     </div>
                                     <div class="receiver-group">
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/wifi.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/wifi.svg"/>
                                             <div class="text">WIFI Dongle</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/ota.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/ota.svg"/>
                                             <div class="text">Super OTA</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/usb.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/usb.svg"/>
                                             <div class="text">2x back
                                                 USB</div>
                                         </div>
@@ -156,48 +156,48 @@
                         <div class="card bg-white card-receiver" style="border:0 !important">
                             <div class="card-body bg-white p-3">
                                 <div class="d-flex justify-content-center">
-                                    <img :src="receiver3" style="width:100%;max-width:100%;height: unset !important" />
+                                    <NuxtImg alt="receiver" loading="lazy" format="webp" src="/static-content/receiver/3.png" style="width:100%;max-width:100%;height: unset !important" />
                                 </div>
                                 <div class="text-center pt-4 fs-6 fw-bold c-primary black-on-mobile">Nex Parabola</div>
                                 <div class="text-center pt-2 fs-6 fw-bold c-primary black-on-mobile">Tipe Merah</div>
                                 <div class="text-center pt-2">Lebih canggih tampilan baru</div>
                                 <div class="d-flex justify-content-center text-center pt-3 pb-3">
-                                    <a href="javascript:void(0)"
+                                    <div class="c-pointer"
                                         @click="openReceiver(3, link3, linkLazada3, linkTiktok3)"
                                         style="color:black !important;font-weight:600;"><span
                                             style="border-bottom:1px #ddd solid">BELI SEKARANG</span>&ensp;<i
-                                            class="bi bi-arrow-right c-primary-custom"></i></a>
+                                            class="bi bi-arrow-right c-pointer c-primary-custom"></i></div>
                                 </div>
                                 <div class="w-100 pt-3 receiver-fitur-border-top">
                                     <div class="receiver-group">
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/spec.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/spec.svg"/>
                                             <div class="text">CS 8001 Chipset</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/512mb.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/512mb.svg"/>
                                             <div class="text">Memory</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/8mb.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/8mb.svg"/>
                                             <div class="text">Flash</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/play.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/play.svg"/>
                                             <div class="text">H.264/MPEG-2/MPEG-4 Video</div>
                                         </div>
                                     </div>
                                     <div class="receiver-group">
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/wifi.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/wifi.svg"/>
                                             <div class="text">WIFI Dongle</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/ota.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/ota.svg"/>
                                             <div class="text">Super OTA</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/usb.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/usb.svg"/>
                                             <div class="text">2x back
                                                 USB</div>
                                         </div>
@@ -210,56 +210,56 @@
                         <div class="card bg-white card-receiver" style="border:0 !important">
                             <div class="card-body bg-white p-3">
                                 <div class="d-flex justify-content-center">
-                                    <img :src="receiver4" style="width:100%;max-width:100%;height: unset !important" />
+                                    <NuxtImg alt="receiver" loading="lazy" format="webp" src="/static-content/receiver/4.png" style="width:100%;max-width:100%;height: unset !important" />
                                 </div>
                                 <div class="text-center pt-4 fs-6 fw-bold c-primary black-on-mobile">Nex Parabola</div>
                                 <div class="text-center pt-2 fs-6 fw-bold c-primary black-on-mobile">Combo Kuning</div>
                                 <div class="text-center pt-2">Lebih canggih tampilan baru</div>
                                 <div class="d-flex justify-content-center text-center pt-3 pb-3">
-                                    <a href="javascript:void(0)"
+                                    <div class="c-pointer"
                                         @click="openReceiver(4, link4, linkLazada4, linkTiktok4)"
                                         style="color:black !important;font-weight:600;"><span
                                             style="border-bottom:1px #ddd solid">BELI SEKARANG</span>&ensp;<i
-                                            class="bi bi-arrow-right c-primary-custom"></i></a>
+                                            class="bi bi-arrow-right c-pointer c-primary-custom"></i></div>
                                 </div>
                                 <div class="w-100 pt-3 receiver-fitur-border-top">
                                     <div class="receiver-group">
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/spec.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/spec.svg"/>
                                             <div class="text">MM230 Chipset</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/wifi.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/wifi.svg"/>
                                             <div class="text">MT7601 & RT5370 WIFI Dongle</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/ota.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/ota.svg"/>
                                             <div class="text">OTA Support</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/ota.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/ota.svg"/>
                                             <div class="text">Super OTA</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/play.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/play.svg"/>
                                             <div class="text">H.265 HEVC/H.264/MPEG-5/MPEG-4 Video</div>
                                         </div>
                                     </div>
                                     <div class="receiver-group">
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/play.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/play.svg"/>
                                             <div class="text">MPEG-5 Audio</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/usb.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/usb.svg"/>
                                             <div class="text">1x Port USB Depan</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/512mb.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/512mb.svg"/>
                                             <div class="text">Memory</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/8mb.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/8mb.svg"/>
                                             <div class="text">Flash</div>
                                         </div>
                                     </div>
@@ -271,66 +271,66 @@
                         <div class="card bg-white card-receiver" style="border:0 !important">
                             <div class="card-body bg-white p-3">
                                 <div class="d-flex justify-content-center">
-                                    <img :src="receiver5" style="width:100%;max-width:100%;height: unset !important" />
+                                    <NuxtImg alt="receiver" loading="lazy" format="webp" src="/static-content/receiver/5.png" style="width:100%;max-width:100%;height: unset !important" />
                                 </div>
                                 <div class="text-center pt-4 fs-6 fw-bold c-primary black-on-mobile">Nex Parabola</div>
                                 <div class="text-center pt-2 fs-6 fw-bold c-primary black-on-mobile">Combo Merah</div>
                                 <div class="text-center pt-2">Lebih canggih tampilan baru</div>
                                 <div class="d-flex justify-content-center text-center pt-3 pb-3">
-                                    <a href="javascript:void(0)"
+                                    <div class="c-pointer"
                                         @click="openReceiver(5, link5, linkLazada5, linkTiktok5)"
                                         style="color:black !important;font-weight:600;"><span
                                             style="border-bottom:1px #ddd solid">BELI SEKARANG</span>&ensp;<i
-                                            class="bi bi-arrow-right c-primary-custom"></i></a>
+                                            class="bi bi-arrow-right c-pointer c-primary-custom"></i></div>
                                 </div>
                                 <div class="w-100 pt-3 receiver-fitur-border-top">
                                     <div class="receiver-group">
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/spec.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/spec.svg"/>
                                             <div class="text">GX 6711
                                                 Chipset</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/wifi.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/wifi.svg"/>
                                             <div class="text">MT7601 & RT5370 WIFI Dongle</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/ota.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/ota.svg"/>
                                             <div class="text">OTA Support</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/play.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/play.svg"/>
                                             <div class="text">H.264/MPEG-4 HD/SD Video</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/play.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/play.svg"/>
                                             <div class="text">MPEG-1 Audio</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/play.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/play.svg"/>
                                             <div class="text">Mitube/Youtube/IPTV</div>
                                         </div>
                                     </div>
                                     <div class="receiver-group">
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/usb.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/usb.svg"/>
                                             <div class="text">2x Port USB Depan
                                                 Belakang</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/meecast.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/meecast.svg"/>
                                             <div class="text">MeeCast</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/tv-icon.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/tv-icon.svg"/>
                                             <div class="text">Net Update Software</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/512mb.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/512mb.svg"/>
                                             <div class="text">Memory</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/8mb.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/8mb.svg"/>
                                             <div class="text">Flash</div>
                                         </div>
                                     </div>
@@ -342,33 +342,33 @@
                         <div class="card bg-white card-receiver" style="border:0 !important">
                             <div class="card-body bg-white p-3">
                                 <div class="d-flex justify-content-center">
-                                    <img :src="receiver6" style="width:100%;max-width:100%;height: unset !important" />
+                                    <NuxtImg alt="receiver" loading="lazy" format="webp" src="/static-content/receiver/6.png" style="width:100%;max-width:100%;height: unset !important" />
                                 </div>
                                 <div class="text-center pt-4 fs-6 fw-bold c-primary black-on-mobile">NexVidio</div>
                                 <div class="text-center pt-4">Lebih canggih tampilan baru</div>
                                 <div class="d-flex justify-content-center text-center pt-4 pb-3">
-                                    <a href="javascript:void(0)"
+                                    <div class="c-pointer"
                                         @click="openReceiver(6, link6, linkLazada6, linkTiktok6)"
                                         style="color:black !important;font-weight:600;"><span
                                             style="border-bottom:1px #ddd solid">BELI SEKARANG</span>&ensp;<i
-                                            class="bi bi-arrow-right c-primary-custom"></i></a>
+                                            class="bi bi-arrow-right c-pointer c-primary-custom"></i></div>
                                 </div>
                                 <div class="w-100 pt-3 receiver-fitur-border-top">
                                     <div class="receiver-group">
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/android.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/android.svg"/>
                                             <div class="text">Android 10 OS</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/play.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/play.svg"/>
                                             <div class="text">H.265 HEVC Video | 4K Resolution</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/16gb.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/16gb.svg"/>
                                             <div class="text">Memory</div>
                                         </div>
                                         <div class="receiver-fitur">
-                                            <img src="~/assets/static-content/receiver/2gb.svg">
+                                            <NuxtImg alt="spec" loading="lazy" format="webp" src="/static-content/receiver/2gb.svg"/>
                                             <div class="text">RAM</div>
                                         </div>
                                     </div>
@@ -389,12 +389,12 @@
                         <div class="row">
                             <div
                                 class="col-lg-6 px-3 d-flex align-items-center justify-content-center height-modal-receiver">
-                                <img :src="receiver1" class="w-100" v-if="type == 1" />
-                                <img :src="receiver2" class="w-100" v-if="type == 2" />
-                                <img :src="receiver3" class="w-100" v-if="type == 3" />
-                                <img :src="receiver4" class="w-100" v-if="type == 4" />
-                                <img :src="receiver5" class="w-100" v-if="type == 5" />
-                                <img :src="receiver6" class="w-100" v-if="type == 6" />
+                                <NuxtImg alt="receiver" loading="lazy" format="webp" src="/static-content/receiver/1.png" class="w-100" v-if="type == 1" />
+                                <NuxtImg alt="receiver" loading="lazy" format="webp" src="/static-content/receiver/2.png" class="w-100" v-if="type == 2" />
+                                <NuxtImg alt="receiver" loading="lazy" format="webp" src="/static-content/receiver/3.png" class="w-100" v-if="type == 3" />
+                                <NuxtImg alt="receiver" loading="lazy" format="webp" src="/static-content/receiver/4.png" class="w-100" v-if="type == 4" />
+                                <NuxtImg alt="receiver" loading="lazy" format="webp" src="/static-content/receiver/5.png" class="w-100" v-if="type == 5" />
+                                <NuxtImg alt="receiver" loading="lazy" format="webp" src="/static-content/receiver/6.png" class="w-100" v-if="type == 6" />
                             </div>
                             <div class="col-lg-6">
                                 <div class="p-3">
@@ -402,36 +402,12 @@
                                     <div class="text-left pt-1 fs-7 pb-3 show-on-desktop" style="color:black;">Dapatkan
                                         Produk Kami di Ecommerce</div>
                                     <div class="text-center fs-7 show-on-mobile">Dapatkan Produk Kami di Ecommerce</div>
-                                    <div class="row justify-content-center show-on-desktop mt-1">
-                                        <!-- <div class="col-lg-12 mb-3">
-                                            <a href="javascript:void(0)">
-                                                <div class=" px-3 py-3 rounded d-flex justify-content-center"
-                                                    style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                                    <img src="~/assets/tokopedia.png" style="height:40px;" />
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-lg-12 mb-3">
-                                            <a href="javascript:void(0)">
-                                                <div class=" px-3 py-3 rounded d-flex justify-content-center"
-                                                    style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                                    <img src="~/assets/bukalapak.png" style="height:25px;" />
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-lg-12 mb-3">
-                                            <a href="javascript:void(0)">
-                                                <div class=" px-3 py-3 rounded d-flex justify-content-center"
-                                                    style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                                    <img src="~/assets/lazada.jpg" style="height:25px;" />
-                                                </div>
-                                            </a>
-                                        </div> -->
+                                    <div class="row justify-content-center show-on-desktop mt-1">                                       
                                         <div class="col-lg-12 mb-3 d-flex justify-content-center" v-if="lazada">
                                             <a :href="lazada" target="_blank" class="w-100" @click="$ctaReceiver(id,'LAZADA')">
                                                 <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
                                                     style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                                    <img src="~/assets/social-media/lazada.jpg"
+                                                    <NuxtImg alt="ecommerce" loading="lazy" format="webp" src="/social-media/lazada.jpg"
                                                         style="height:25px;max-width:100%;" />
                                                 </div>
                                             </a>
@@ -440,7 +416,7 @@
                                             <a :href="tiktok" target="_blank" class="w-100" @click="$ctaReceiver(id,'TIKTOK')">
                                                 <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
                                                     style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                                    <img src="~/assets/social-media/tiktok.png"
+                                                    <NuxtImg alt="ecommerce" loading="lazy" format="webp" src="/social-media/tiktok.png"
                                                         style="height:25px;max-width:100%;" />
                                                 </div>
                                             </a>
@@ -449,7 +425,7 @@
                                             <a :href="url" target="_blank" @click="$ctaReceiver(id,'SHOPEE')">
                                                 <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
                                                     style="box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, .09);height:43px">
-                                                    <img src="~/assets/social-media/shopee.png"
+                                                    <NuxtImg alt="ecommerce" loading="lazy" format="webp" src="/social-media/shopee.png"
                                                         style="height:25px;max-width:100%;" />
                                                 </div>
                                             </a>
@@ -459,36 +435,12 @@
                             </div>
                             <div class="col-lg-12">
                                 <div class="show-on-mobile">
-                                    <div class="row justify-content-center">
-                                        <!-- <div class="col-lg-12 mb-3">
-                                            <a href="javascript:void(0)">
-                                                <div class=" px-3 py-3 rounded d-flex justify-content-center"
-                                                    style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                                    <img src="~/assets/tokopedia.png" style="height:40px;" />
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-lg-12 mb-3">
-                                            <a href="javascript:void(0)">
-                                                <div class=" px-3 py-3 rounded d-flex justify-content-center"
-                                                    style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                                    <img src="~/assets/bukalapak.png" style="height:25px;" />
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-lg-12 mb-3">
-                                            <a href="javascript:void(0)">
-                                                <div class=" px-3 py-3 rounded d-flex justify-content-center"
-                                                    style="box-shadow: 0 5px 5px rgba(17, 24, 39, .09);">
-                                                    <img src="~/assets/lazada.jpg" style="height:25px;" />
-                                                </div>
-                                            </a>
-                                        </div> -->
+                                    <div class="row justify-content-center">                                       
                                         <div class="col-lg-12 mb-3 d-flex justify-content-center" v-if="lazada">
                                             <a :href="lazada" target="_blank" class="w-100" @click="$ctaReceiver(id,'LAZADA')">
                                                 <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
                                                     style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                                    <img src="~/assets/social-media/lazada.jpg"
+                                                    <NuxtImg alt="ecommerce" loading="lazy" format="webp" src="/social-media/lazada.jpg"
                                                         style="height:25px;max-width:100%;" />
                                                 </div>
                                             </a>
@@ -497,7 +449,7 @@
                                             <a :href="tiktok" target="_blank" class="w-100" @click="$ctaReceiver(id,'TIKTOK')">
                                                 <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
                                                     style="box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, .09);height:43px">
-                                                    <img src="~/assets/social-media/tiktok.png"
+                                                    <NuxtImg alt="ecommerce" loading="lazy" format="webp" src="/social-media/tiktok.png"
                                                         style="height:25px;max-width:100%;" />
                                                 </div>
                                             </a>
@@ -506,7 +458,7 @@
                                             <a :href="url" target="_blank" @click="$ctaReceiver(id,'SHOPEE')">
                                                 <div class=" px-3 py-1 rounded w-100 d-flex justify-content-center align-items-center"
                                                     style="box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, .09);height:43px">
-                                                    <img src="~/assets/social-media/shopee.png"
+                                                    <NuxtImg alt="ecommerce" loading="lazy" format="webp" src="/social-media/shopee.png"
                                                         style="height:25px;max-width:100%;" />
                                                 </div>
                                             </a>
@@ -526,15 +478,9 @@
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"
     import logoNex from "~/public/bg-about-2.png";
-    import backgroundImageMobile from "~/assets/header/receiver.png"
-    import backgroundImageDesktop from "~/assets/header/receiver.png"
+    import backgroundImageMobile from "~/public/header/receiver.png"
+    import backgroundImageDesktop from "~/public/header/receiver.png"
 
-    import receiver1 from "~/assets/static-content/receiver/1.png";
-    import receiver2 from "~/assets/static-content/receiver/2.png";
-    import receiver3 from "~/assets/static-content/receiver/3.png";
-    import receiver4 from "~/assets/static-content/receiver/4.png";
-    import receiver5 from "~/assets/static-content/receiver/5.png";
-    import receiver6 from "~/assets/static-content/receiver/6.png";
     const { $ctaReceiver } = useNuxtApp()
     const link1 = ref(
         'https://shopee.co.id/Nex-Parabola-Type-Biru-i.1311323005.27256686729?sp_atk=49f9c6de-7d91-4389-9246-f7b010c9e65d&xptdk=49f9c6de-7d91-4389-9246-f7b010c9e65d'
