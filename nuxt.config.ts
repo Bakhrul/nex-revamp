@@ -92,10 +92,7 @@ export default defineNuxtConfig({
     'vue3-carousel-nuxt',
     '@zadigetvoltaire/nuxt-gtm',
     '@nuxt/image'
-  ],
-  image: {
-    dir: 'assets',
-  },
+  ],  
   plugins:['~/plugins/cta',{src: '~/plugins/vue-lazyload', mode: 'all'}]
 
 })
