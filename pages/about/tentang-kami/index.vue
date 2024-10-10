@@ -208,7 +208,7 @@
     import backgroundImageMobile from "~/assets/header/about.png"
     import backgroundImageDesktop from "~/assets/header/about.png"
     import backgroundImageDesktop2 from "~/assets/bg-about-3.png"
-    import logoNex from "~/assets/logo-nex-2.png";
+    import logoNex from "~/public/bg-about-2.png";
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"
 

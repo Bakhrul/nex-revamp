@@ -136,7 +136,7 @@
     import axios from "axios";
     import backgroundImageMobile from "~/assets/header/channel.png"
     import backgroundImageDesktop from "~/assets/header/channel.png"
-    import logoNex from "~/assets/logo-nex-2.png";
+    import logoNex from "~/public/bg-about-2.png";
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"
 

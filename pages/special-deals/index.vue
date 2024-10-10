@@ -166,9 +166,9 @@
 
 <script setup>
     import axios from "axios";
-    import backgroundImageMobile from "~/assets/header/promo.png"
-    import backgroundImageDesktop from "~/assets/header/promo.png"
-    import logoNex from "~/assets/logo-nex-2.png";
+    import backgroundImageMobile from "~/public/header/promo.png"
+    import backgroundImageDesktop from "~/public/header/promo.png"
+    import logoNex from "~/public/bg-about-2.png";
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"
 
@@ -224,15 +224,6 @@
         }
         next()
     })
-
-    function openPacketTerbatas(type) {
-        $("#modal-paket-terbatas-" + type).modal('show');
-    }
-
-    function openPacketLainnya(type) {
-        console.log(type)
-        $("#modal-paket-lainnya-" + type).modal('show');
-    }
 
     function initSlider() {
 

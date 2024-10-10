@@ -159,7 +159,7 @@
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"
     const route = useRoute()
-    import logoNex from "~/assets/logo-nex-2.png";
+    import logoNex from "~/public/bg-about-2.png";
     import axios from "axios";
 
     definePageMeta({

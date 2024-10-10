@@ -100,7 +100,7 @@
 <script setup>
     import backgroundImageMobile from "~/assets/header/news.png"
     import backgroundImageDesktop from "~/assets/header/news.png"
-    import logoNex from "~/assets/logo-nex-2.png";
+    import logoNex from "~/public/bg-about-2.png";
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"
     const route = useRoute()

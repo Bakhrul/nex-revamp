@@ -4,7 +4,7 @@
         <div class="show-on-mobile">
             <div class="d-flex align-items-center"
                 :style="`background-image:url('${backgroundImageMobile}');background-size:100% 100%;width:100%;position:relative;`">
-                <img :src="backgroundImageMobile" class="w-100" style="visibility: hidden;" />
+                <img alt="header" :src="backgroundImageMobile" class="w-100" style="visibility: hidden;" />
                 <div class="d-flex align-items-center" style="position:absolute;left:0;top:0;width:100%;height:100%;">
                     <div class="container" style="padding:15px 15px">
                         <h6 class="text-white fw-bold">FAQ</h6>
@@ -165,11 +165,11 @@
                                                 <div class="accordion-body"
                                                     style="color:unset !important;padding:20px !important">
                                                     <div class="container">
-                                                        <img src="~/assets/payment/dana.png" class="mb-3 ms-2" /><br>
-                                                        <img src="~/assets/payment/ovo.png" class="mb-3" /><br>
-                                                        <img src="~/assets/payment/linkaja.png" class="mb-3" /><br>
-                                                        <img src="~/assets/payment/shopeepay.png" class="mb-3" /><br>
-                                                        <img src="~/assets/payment/gopay.png" class="mb-3" />
+                                                        <NuxtImg alt="payment" loading="lazy" format="webp" src="/payment/dana.png" class="mb-3 ms-2" /><br>
+                                                        <NuxtImg alt="payment" loading="lazy" format="webp" src="/payment/ovo.png" class="mb-3" /><br>
+                                                        <NuxtImg alt="payment" loading="lazy" format="webp" src="/payment/linkaja.png" class="mb-3" /><br>
+                                                        <NuxtImg alt="payment" loading="lazy" format="webp" src="/payment/shopeepay.png" class="mb-3" /><br>
+                                                        <NuxtImg alt="payment" loading="lazy" format="webp" src="/payment/gopay.png" class="mb-3" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -191,11 +191,11 @@
                                                     style="color:unset !important;padding:20px !important">
 
                                                     <div class="container">
-                                                        <img src="~/assets/payment/permata.png" class="mb-3" /><br>
-                                                        <img src="~/assets/payment/mandiri.png" class="mb-3" /><br>
-                                                        <img src="~/assets/payment/bni.png" class="mb-3" /><br>
-                                                        <img src="~/assets/payment/bri.png" class="mb-3" /><br>
-                                                        <img src="~/assets/payment/bca.png" class="mb-3" />
+                                                        <NuxtImg alt="payment" loading="lazy" format="webp" src="/payment/permata.png" class="mb-3" /><br>
+                                                        <NuxtImg alt="payment" loading="lazy" format="webp" src="/payment/mandiri.png" class="mb-3" /><br>
+                                                        <NuxtImg alt="payment" loading="lazy" format="webp" src="/payment/bni.png" class="mb-3" /><br>
+                                                        <NuxtImg alt="payment" loading="lazy" format="webp" src="/payment/bri.png" class="mb-3" /><br>
+                                                        <NuxtImg alt="payment" loading="lazy" format="webp" src="/payment/bca.png" class="mb-3" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -217,8 +217,8 @@
                                                 <div class="accordion-body"
                                                     style="color:unset !important;padding:20px !important">
                                                     <div class="container">
-                                                        <img src="~/assets/payment/visa.png" class="mb-3" /><br>
-                                                        <img src="~/assets/payment/mastercard.png" class="mb-3" />
+                                                        <NuxtImg alt="payment" loading="lazy" format="webp" src="/payment/visa.png" class="mb-3" /><br>
+                                                        <NuxtImg alt="payment" loading="lazy" format="webp" src="/payment/mastercard.png" class="mb-3" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -240,7 +240,7 @@
                                                 <div class="accordion-body"
                                                     style="color:unset !important;padding:20px !important">
                                                     <div class="container">
-                                                        <img src="~/assets/payment/qris.png" class="mb-3" /><br>                                                        
+                                                        <NuxtImg alt="payment" loading="lazy" format="webp" src="/payment/qris.png" class="mb-3" /><br>                                                        
                                                     </div>
                                                 </div>
                                             </div>
@@ -262,7 +262,7 @@
                                                 <div class="accordion-body"
                                                     style="color:unset !important;padding:20px !important">
                                                     <div class="container">
-                                                        <img src="~/assets/payment/paylater.png" class="mb-3" /><br>                                                        
+                                                        <NuxtImg alt="payment" loading="lazy" format="webp" src="/payment/paylater.png" class="mb-3" /><br>                                                        
                                                     </div>
                                                 </div>
                                             </div>
@@ -279,7 +279,7 @@
         <div class="show-on-desktop">
             <div class="d-flex align-items-center"
                 :style="`background-image:url('${backgroundImageDesktop}');background-size:100% 100%;width:100%;position:relative;`">
-                <img :src="backgroundImageDesktop" class="w-100" style="visibility: hidden;" />
+                <img alt="header" :src="backgroundImageDesktop" class="w-100" style="visibility: hidden;" />
                 <div class="d-flex align-items-center" style="position:absolute;left:0;top:0;width:100%;height:100%;">
                     <div class="container" style="padding:15px 0">
                         <h1 class="text-white fw-bold">FAQ & PAYMENT</h1>
@@ -292,7 +292,7 @@
                 <div class="container">
                     <div class="row mb-5">
                         <div class="col-lg-5 d-flex ">
-                            <img src="~/assets/bg-about.png" class="w-100">
+                            <NuxtImg alt="about" loading="lazy" format="webp" src="/bg-about.png" class="w-100"/>
                         </div>
                         <div class="col-lg-7">
                             <div class="accordion accordion-custom accordion-custom-2" id="accordionExample-desktop">
@@ -410,11 +410,11 @@
                                 <div class="col-lg-3 fw-bold">E-Wallet</div>
                                 <div class="col-lg-9">
                                     <div class="d-flex flex-wrap">
-                                        <img src="~/assets/payment/dana.png" class="me-2" />
-                                        <img src="~/assets/payment/ovo.png" class="me-2" />
-                                        <img src="~/assets/payment/linkaja.png" class="me-2" />
-                                        <img src="~/assets/payment/shopeepay.png" class="me-2" />
-                                        <img src="~/assets/payment/gopay.png" class="me-2" />
+                                        <NuxtImg alt="payment" loading="lazy" format="webp" src="/payment/dana.png" class="me-2" />
+                                        <NuxtImg alt="payment" loading="lazy" format="webp" src="/payment/ovo.png" class="me-2" />
+                                        <NuxtImg alt="payment" loading="lazy" format="webp" src="/payment/linkaja.png" class="me-2" />
+                                        <NuxtImg alt="payment" loading="lazy" format="webp" src="/payment/shopeepay.png" class="me-2" />
+                                        <NuxtImg alt="payment" loading="lazy" format="webp" src="/payment/gopay.png" class="me-2" />
                                     </div>
                                 </div>
                             </div>
@@ -422,11 +422,11 @@
                                 <div class="col-lg-3 fw-bold">Bank Transfer</div>
                                 <div class="col-lg-9">
                                     <div class="d-flex flex-wrap">
-                                        <img src="~/assets/payment/permata.png" class="me-2" />
-                                        <img src="~/assets/payment/mandiri.png" class="me-2" />
-                                        <img src="~/assets/payment/bni.png" class="me-2" />
-                                        <img src="~/assets/payment/bri.png" class="me-2" />
-                                        <img src="~/assets/payment/bca.png" class="me-2" />
+                                        <NuxtImg alt="payment" loading="lazy" format="webp" src="/payment/permata.png" class="me-2" />
+                                        <NuxtImg alt="payment" loading="lazy" format="webp" src="/payment/mandiri.png" class="me-2" />
+                                        <NuxtImg alt="payment" loading="lazy" format="webp" src="/payment/bni.png" class="me-2" />
+                                        <NuxtImg alt="payment" loading="lazy" format="webp" src="/payment/bri.png" class="me-2" />
+                                        <NuxtImg alt="payment" loading="lazy" format="webp" src="/payment/bca.png" class="me-2" />
                                     </div>
                                 </div>
                             </div>
@@ -434,8 +434,8 @@
                                 <div class="col-lg-3 fw-bold">Kartu Kredit</div>
                                 <div class="col-lg-9">
                                     <div class="d-flex flex-wrap">
-                                        <img src="~/assets/payment/visa.png" class="me-2" />
-                                        <img src="~/assets/payment/mastercard.png" class="me-2" />
+                                        <NuxtImg alt="payment" loading="lazy" format="webp" src="/payment/visa.png" class="me-2" />
+                                        <NuxtImg alt="payment" loading="lazy" format="webp" src="/payment/mastercard.png" class="me-2" />
                                     </div>
                                 </div>
                             </div>
@@ -443,7 +443,7 @@
                                 <div class="col-lg-3 fw-bold">QRIS</div>
                                 <div class="col-lg-9">
                                     <div class="d-flex flex-wrap">
-                                        <img src="~/assets/payment/qris.png" class="me-2" />                                        
+                                        <NuxtImg alt="payment" loading="lazy" format="webp" src="/payment/qris.png" class="me-2" />                                        
                                     </div>
                                 </div>
                             </div>
@@ -451,7 +451,7 @@
                                 <div class="col-lg-3 fw-bold">Pay Later</div>
                                 <div class="col-lg-9">
                                     <div class="d-flex flex-wrap">
-                                        <img src="~/assets/payment/paylater.png" class="me-2" />                                        
+                                        <NuxtImg alt="payment" loading="lazy" format="webp" src="/payment/paylater.png" class="me-2" />                                        
                                     </div>
                                 </div>
                             </div>
@@ -465,9 +465,9 @@
 </template>
 
 <script setup>
-    import backgroundImageMobile from "~/assets/header/faq.png"
-    import backgroundImageDesktop from "~/assets/header/faq.png"
-    import logoNex from "~/assets/logo-nex-2.png";
+    import backgroundImageMobile from "~/public/header/faq.png"
+    import backgroundImageDesktop from "~/public/header/faq.png"
+    import logoNex from "~/public/bg-about-2.png";
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"
 

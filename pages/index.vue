@@ -353,7 +353,7 @@
 
 <script setup>
     import axios from "axios"
-    import backgroundImage from "~/assets/bg-pertandingan.png"
+    import backgroundImage from "~/public/bg-pertandingan.png"
 
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"
@@ -390,7 +390,7 @@
 
     const dataBanner = ref(null);
 
-    import logoNex from "~/assets/logo-nex-2.png";
+    import logoNex from "~/public/bg-about-2.png";
 
     const titleHightlight = ref('')
     const subTitleHightlight = ref('');

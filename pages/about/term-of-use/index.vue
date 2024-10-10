@@ -325,9 +325,9 @@
 </template>
 
 <script setup>
-    import backgroundImageMobile from "~/assets/header/terms.png"
-    import backgroundImageDesktop from "~/assets/header/terms.png"
-    import logoNex from "~/assets/logo-nex-2.png";
+    import backgroundImageMobile from "~/public/header/terms.png"
+    import backgroundImageDesktop from "~/public/header/terms.png"
+    import logoNex from "~/public/bg-about-2.png";
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"
     useHead({

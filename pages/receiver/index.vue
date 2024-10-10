@@ -525,7 +525,7 @@
 <script setup>
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"
-    import logoNex from "~/assets/logo-nex-2.png";
+    import logoNex from "~/public/bg-about-2.png";
     import backgroundImageMobile from "~/assets/header/receiver.png"
     import backgroundImageDesktop from "~/assets/header/receiver.png"
 

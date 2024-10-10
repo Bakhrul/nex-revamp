@@ -125,7 +125,7 @@
 
     import backgroundImageMobile from "~/assets/header/paket.png"
     import backgroundImageDesktop from "~/assets/header/paket.png"
-    import logoNex from "~/assets/logo-nex-2.png";
+    import logoNex from "~/public/bg-about-2.png";
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"
     const type = ref('all')
