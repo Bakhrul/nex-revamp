@@ -36,7 +36,7 @@
                                     </li>
                                     <li>Siaran Ajang Sepak Bola Premium
                                     </li>
-                                    <li>Jaringan Dealer & Service Center Yang Tersebar Secara Nasional
+                                    <li>Jaringan Dealer & <nuxt-link to="/about/service-center">Service Center</nuxt-link> Yang Tersebar Secara Nasional
                                     </li>
                                     <li>Akses Jangkauan Seluruh Indonesia</li>
                                 </ol>
@@ -141,7 +141,7 @@
                                         </li>
                                         <li>Siaran Ajang Sepak Bola Premium
                                         </li>
-                                        <li>Jaringan Dealer & Service Center Yang Tersebar Secara Nasional
+                                        <li>Jaringan Dealer & <nuxt-link to="/about/service-center">Service Center</nuxt-link> Yang Tersebar Secara Nasional
                                         </li>
                                         <li>Akses Jangkauan Seluruh Indonesia</li>
                                     </ol>
