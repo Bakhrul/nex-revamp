@@ -7,7 +7,7 @@
                 <img alt="header" :src="backgroundImageMobile" class="w-100" style="visibility: hidden;" />
                 <div class="d-flex align-items-center" style="position:absolute;left:0;top:0;width:100%;height:100%;">
                     <div class="container" style="padding:15px 15px">
-                        <h6 class="text-white fw-bold">Reseller</h6>
+                        <h6 class="text-white fw-bold">Service Center</h6>
                     </div>
                 </div>
             </div>
@@ -18,8 +18,8 @@
                 <img alt="header" :src="backgroundImageDesktop" class="w-100" style="visibility: hidden;" />
                 <div class="d-flex align-items-center" style="position:absolute;left:0;top:0;width:100%;height:100%;">
                     <div class="container" style="padding:15px 0">
-                        <h1 class="text-white fw-bold">Reseller</h1>
-                        <div class="text-white">Temukan Nex di kotamu!</div>
+                        <h1 class="text-white fw-bold">Service Center</h1>
+                        <div class="text-white">Layanan Perbaikan Nex Hadir di Kotamu!</div>
                     </div>
                 </div>
             </div>
@@ -30,7 +30,7 @@
                 <div class="row">
                     <div class="col-lg-6 mb-3">
                         <div class="dropdown">
-                            <button class="btn btn-secondary  btn-dropdown-city dropdown-toggle text-left"
+                            <button class="btn btn-secondary btn-dropdown-city dropdown-toggle text-left"
                                 @click="searchCity = ''"
                                 style="padding: 10px 15px;color:#00539B !important;border:1px #00539B solid;background:#fff"
                                 type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -44,19 +44,18 @@
                                         placeholder="Search"></li>
                                 <li><div class="dropdown-item c-pointer"
                                         style="color:#00539B !important;font-weight:400;font-size: 15px;"
-                                       
                                         @click="search = '';currentPage = 1; totalData = 0;selectCity = 'Semua'; selectCityId = '0';getList()">Semua</div>
                                 </li>
                                 <li><div class="dropdown-item c-pointer"
                                         style="color:#00539B !important;font-weight:400;font-size: 15px;"
                                         v-for="context in getQueryCity()"
-                                        @click="search = '';currentPage = 1; totalData = 0;selectCity = context.city; selectCityId = context.id;getList()">{{context.city}}</div>
+                                        @click="search = ''; currentPage = 1; totalData = 0;selectCity = context.city; selectCityId = context.id;getList()">{{context.city}}</div>
                                 </li>
                             </ul>
                         </div>
 
                     </div>
-                    <div class="col-lg-6 mb-3 d-flex justify-content-end align-items-center show-on-desktop">
+                    <div class="col-lg-6 mb-3 d-flex justify-content-end show-on-desktop align-items-center">
                         <div class="d-flex form-nav" role="search" style="border:1px #ddd solid">
                             <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -68,32 +67,32 @@
                             <input class="form-control" type="search"
                                 style="outline:none !important;border:0 !important;" v-model="search"
                                 @keyup.enter="selectCity = 'Semua'; selectCityId = '0';currentPage = 1; totalData = 0;getList()"
-                                placeholder="Search">
+                                placeholder="Search" aria-label="Search">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="mt-3 bg-section pt-3" id="reseller-section">
+            <div class="mt-3 bg-section pt-3" id="teknisi-section">
                 <div class="container">
                     <div class="d-flex justify-content-center mt-3 mb-3" v-if="pageStatus == 'data-load'">
-                        <div class="spinner-border text-primary" style="width:50px;height:50px;" role="status">
-                        </div>
+                    <div class="spinner-border text-primary" style="width:50px;height:50px;" role="status">
                     </div>
+                </div>
                     <div class="row">
                         <div class="col-lg-4 mt-3 mb-3" v-for="a in result">
                             <div class="card"
                                 style="box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px rgba(0, 0, 0, 0.3);height:100%;">
                                 <div class="card-body">
                                     <div class="fs-5 c-primary fw-bolder pb-2" style="border-bottom: 2px #ddd solid;">
-                                        {{ a.dealer }}</div>
-                                    <a target="_blank" class="link-dealer" :href="a.locationurl">
+                                        {{ a.scname }}</div>
+                                
                                         <div class="d-flex align-items-center mt-3">
                                             <div class="me-2"><i style="font-size:20px" class="bi bi-geo-alt-fill"></i>
 
                                             </div>
                                             <div>{{a.address}}</div>
                                         </div>
-                                    </a>
+                                
                                     <div class="d-flex align-items-center mt-3">
                                         <div class="me-2">
 
@@ -145,8 +144,8 @@
 </template>
 
 <script setup>
-    import backgroundImageMobile from "~/public/header/reseller.png"
-    import backgroundImageDesktop from "~/public/header/reseller.png"
+    import backgroundImageMobile from "~/public/header/teknisi.png"
+    import backgroundImageDesktop from "~/public/header/teknisi.png"
     import logoNex from "~/public/bg-about-2.png";
     import Navbar from "~/components/Navbar.vue"
     import Footer from "~/components/Footer.vue"
@@ -162,6 +161,7 @@
 
     const result = ref([]);
 
+
     const currentPage = ref(1);
     const totalData = ref(0);
     const perPage = ref(15)
@@ -173,7 +173,7 @@
     } = await getSourceCity()
 
     async function getSourceCity() {
-        let res = await axios.get(config.public.API_URL + 'about/cityreseller', {
+        let res = await axios.get(config.public.API_URL + 'about/citysc', {
             headers: {
                 'WEBCORP-APIKEY': config.public.API_KEY
             }
@@ -192,8 +192,8 @@
 
     async function getList() {
         result.value = [];
-        pageStatus.value = 'data-load'
-        let res = await axios.get(config.public.API_URL + 'about/reseller', {
+         pageStatus.value = 'data-load'
+        let res = await axios.get(config.public.API_URL + 'about/servicecenter', {
             params: {
                 cityid: selectCityId.value,
                 search: search.value,
@@ -204,7 +204,7 @@
                 'WEBCORP-APIKEY': config.public.API_KEY
             }
         })
-        pageStatus.value = 'standby'
+         pageStatus.value = 'standby'
         if (res.status == 200) {
             result.value = res.data.data.list;
             totalData.value = Number(res.data.data.total_data)
@@ -219,20 +219,15 @@
             return listCity.value
         }
     }
-
     useHead({
-        title: 'Reseller | Nex',
+        title: 'Service Center | Nex',
         meta: [{
                 name: 'title',
-                content: 'Reseller | Nex'
+                content: 'Service Center | Nex'
             },
             {
                 name: 'ogTitle',
-                content: 'Reseller | Nex'
-            },
-            {
-                name: 'keywords',
-                content: 'official store nex parabola'
+                content: 'Service Center | Nex'
             },
             {
                 name: 'description',
@@ -283,7 +278,7 @@
 
     function listPage() {
 
-        const range = [];
+        const range = [];       
 
         for (let x = startPage(); x <= Math.min(startPage() + 5 - 1, totalPage()); x++) {
             if (x > 0) {
@@ -320,7 +315,7 @@
     function changePage(page) {
         currentPage.value = page
         result.value = []
-        document.getElementById("reseller-section").scrollIntoView();
+        document.getElementById("teknisi-section").scrollIntoView();
         getList()
     }
 </script>

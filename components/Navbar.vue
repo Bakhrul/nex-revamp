@@ -153,13 +153,9 @@
                                     FAQ & Payment</nuxt-link>
                             </li>
                             <li>
-                                <nuxt-link to="/about/reseller" class="dropdown-item">
-                                    Reseller</nuxt-link>
-                            </li>
-                            <li>
-                                <nuxt-link to="/about/teknisi" class="dropdown-item">
-                                    Teknisi</nuxt-link>
-                            </li>
+                                <nuxt-link to="/about/service-center" class="dropdown-item">
+                                    Service Center</nuxt-link>
+                            </li>                        
                             <li>
                                 <nuxt-link to="/about/term-of-use" class="dropdown-item">
                                     Term of Use</nuxt-link>

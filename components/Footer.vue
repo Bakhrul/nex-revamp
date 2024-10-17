@@ -120,12 +120,12 @@
                     <div class="row">
                         <div class="col-lg-12 col-5 mb-5">
                             <div class="footer-title mb-2">Payment Partners</div>
-                            <NuxtImg format="webp" src="/payment.svg" alt="payment" style="max-width:100%"/>
+                            <NuxtImg format="webp" src="/payment.svg" class="w-100" alt="payment" style="max-width:100%"/>
                         </div>
                         <div class="col-lg-12 col-7 mb-5">
                             <div class="footer-title mb-2">Download Apps Nex</div>
                             <div class="d-flex align-items-center">
-                                <NuxtImg format="webp" src="/sample-qr.png" alt="qr" class="me-2" style="max-width:80px"/>
+                                <NuxtImg format="webp" src="/sample-qr.png" alt="qr" class="me-2 w-100" style="max-width:80px"/>
                                 <a class="w-100"
                                     href="https://play.google.com/store/apps/details?id=ezlink.project.nexparabola&pli=1"><NuxtImg format="webp" loading="lazy"
                                         src="/google-play.png" alt="google-play"
